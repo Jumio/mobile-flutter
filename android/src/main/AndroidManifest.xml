@@ -1,0 +1,28 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jumio.jumiomobilesdk">
+
+    <application>
+        <activity
+            android:theme="@style/CustomNetverifyTheme"
+            android:hardwareAccelerated="true"
+            android:name="com.jumio.nv.NetverifyActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+        <activity
+            android:name="com.jumio.bam.BamActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.Bam"/>
+        <activity
+            android:name="com.jumio.dv.DocumentVerificationActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.DocumentVerification"/>
+        <activity
+            android:name="com.jumio.auth.AuthenticationActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+            android:hardwareAccelerated="true"
+            android:theme="@style/Theme.Authentication"
+            android:windowSoftInputMode="adjustResize"/>
+    </application>
+</manifest>

@@ -1,15 +1,28 @@
 # See https://www.dartlang.org/guides/libraries/private-files
 
-# Files and directories created by pub
+#flutter specific
+.flutter-plugins
+.DS_Store
 .dart_tool/
 .packages
+.pub/
 build/
-# If you're building an application, you may want to check-in your pubspec.lock
+android/app/google-services.json
+.idea/
+android/key.properties
 pubspec.lock
+doc/api/
+
+# If you're building an application, you may want to check-in your pubspec.lock
+# https://dart.dev/guides/libraries/private-files#the-rules
+./pubspec.lock
 
 # Directory created by dartdoc
 # If you don't generate documentation locally you can remove this line.
 doc/api/
+
+android/.idea
+.symlinks/
 
 # Avoid committing generated Javascript files:
 *.dart.js
@@ -19,3 +32,9 @@ doc/api/
 *.js_
 *.js.deps
 *.js.map
+
+# Gradle and Maven with auto-import
+.idea/modules.xml
+.idea/*.iml
+.idea/modules
+*.iml

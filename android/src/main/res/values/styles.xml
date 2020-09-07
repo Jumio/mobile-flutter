@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <style name="CustomNetverifyTheme" parent="Theme.Netverify">
+        <!-- Customize your theme with our Surface Tool - https://jumio.github.io/surface-android/  and copy the XML output from the Tool here -->
+    </style>
+</resources>
