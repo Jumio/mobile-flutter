@@ -118,7 +118,7 @@ class AuthenticationModule : ModuleBase() {
 		val errorCode: String = data.getStringExtra(AuthenticationSDK.EXTRA_ERROR_CODE)
 		sendResult(mapOf<String, String>(
                 "errorCode" to errorCode,
-                "errorMessage" to errorMessage,
+                "errorMessage" to errorMessage
         ))
 	}
 
