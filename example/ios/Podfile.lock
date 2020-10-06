@@ -1,6 +1,6 @@
 PODS:
   - Flutter (1.0.0)
-  - jumio_mobile_sdk_flutter (3.7.1):
+  - jumio_mobile_sdk_flutter (3.8.0-beta1):
     - Flutter
     - JumioMobileSDK (= 3.7.1)
   - JumioMobileSDK (3.7.1):
@@ -23,9 +23,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  jumio_mobile_sdk_flutter: a62cabfe84b18af9c10465a201490b0b075ae7cc
+  jumio_mobile_sdk_flutter: f471b977ca9301ac48914e0a6c5520f556fd53f1
   JumioMobileSDK: d6508dff44b2a54d0fbf5623d40da2569d8ed93c
 
 PODFILE CHECKSUM: af6b891fb448119e2e3d0a226fcad7567aa13204
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

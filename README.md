@@ -21,7 +21,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^3.7.1
+  jumio_mobile_sdk_flutter: ^3.8.0-beta1
 ```
 
 And install the dependency:
