@@ -364,7 +364,7 @@ Scan results are returned from the startXXX() methods asynchronously. Await the 
 ### Android
 
 #### Netverify
-The Netverify SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.7.2/docs/integration_netverify-fastfill.md#customization).
+The Netverify SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.7.2/docs/integration_id-verification-fastfill.md#customization).
 
 #### Authentication
 The Authentication SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.7.2/docs/integration_authentication.md#customization).
