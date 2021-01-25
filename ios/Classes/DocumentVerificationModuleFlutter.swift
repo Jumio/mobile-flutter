@@ -24,6 +24,7 @@ class DocumentVerificationModuleFlutter: NSObject, JumioMobileSdkModule {
         } catch {
             let nsError = error as NSError
             result(FlutterError(code: "\(nsError.code)", message: nsError.localizedDescription, details: nil))
+            return
         }
         
         result(nil)

@@ -26,6 +26,7 @@ class BAMCheckoutModuleFlutter: NSObject, JumioMobileSdkModule {
         } catch {
             let nsError = error as NSError
             result(FlutterError(code: "\(nsError.code)", message: nsError.localizedDescription, details: nil))
+            return
         }
 
         setupCustomization(args: args)

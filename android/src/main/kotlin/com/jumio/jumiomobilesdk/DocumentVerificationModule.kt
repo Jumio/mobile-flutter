@@ -27,26 +27,26 @@ class DocumentVerificationModule : ModuleBase() {
     private var documentVerificationSDK: DocumentVerificationSDK? = null
 
     private fun initDocumentVerification(apiToken: String, apiSecret: String, dataCenter: String, options: Map<String, Any?>?) {
-        if (DocumentVerificationSDK.isSupportedPlatform(hostActivity)) {
+        if (apiToken.isNotEmpty() && apiSecret.isNotEmpty() && dataCenter.isNotEmpty()) {
+            val center = try {
+                JumioDataCenter.valueOf(dataCenter.toUpperCase(Locale.ROOT))
+            } catch (e: Exception) {
+                throw Exception("Datacenter not valid: $dataCenter")
+            }
+            if (this.documentVerificationSDK != null) {
+                //SDK isn't null because it's already initialized or still being cleaned up
+                return
+            }
             try {
-                if (apiToken.isNotEmpty() && apiSecret.isNotEmpty() && dataCenter.isNotEmpty()) {
-                    val center = try {
-                        JumioDataCenter.valueOf(dataCenter.toUpperCase(Locale.ROOT))
-                    } catch (e: Exception) {
-                        throw Exception("Datacenter not valid: $dataCenter")
-                    }
-                    val sdk = DocumentVerificationSDK.create(hostActivity, apiToken, apiSecret, center)
-                    documentVerificationSDK = sdk
-                    configureSdk(sdk, options?.withLowercaseKeys() ?: emptyMap())
-                    sendResult(null)
-                } else {
-                    showErrorMessage("Missing required parameters apiToken, apiSecret or dataCenter.")
-                }
+                val sdk = DocumentVerificationSDK.create(hostActivity, apiToken, apiSecret, center)
+                documentVerificationSDK = sdk
+                configureSdk(sdk, options?.withLowercaseKeys() ?: emptyMap())
+                sendResult(null)
             } catch (e: Exception) {
                 showErrorMessage("Error initializing the Document Verification SDK: " + e.localizedMessage)
             }
         } else {
-            showErrorMessage("This platform is not supported.")
+            showErrorMessage("Missing required parameters apiToken, apiSecret or dataCenter.")
         }
     }
 
@@ -80,23 +80,30 @@ class DocumentVerificationModule : ModuleBase() {
     }
 
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
-        if (requestCode != DocumentVerificationSDK.REQUEST_CODE || data == null) {
-            return false
-        } else {
-            val scanReference = if (data.getStringExtra(DocumentVerificationSDK.EXTRA_SCAN_REFERENCE) != null) data.getStringExtra(DocumentVerificationSDK.EXTRA_SCAN_REFERENCE) else ""
-            if (resultCode == Activity.RESULT_OK) {
-                val result = mapOf("scanReference" to scanReference)
-                sendResult(result)
-            } else if (resultCode == RESULT_CANCELED) {
-                val errorMessage: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_MESSAGE)
-                val errorCode: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_CODE)
-                sendResult(mapOf<String, String>(
-                        "errorCode" to errorCode,
-                        "errorMessage" to errorMessage,
-                        "scanReference" to scanReference
-                ))
+        if (requestCode == DocumentVerificationSDK.REQUEST_CODE) {
+            if (data != null) {
+                val scanReference = data.getStringExtra(DocumentVerificationSDK.EXTRA_SCAN_REFERENCE) ?: ""
+
+                if (resultCode == Activity.RESULT_OK) {
+                    val result = mapOf("scanReference" to scanReference)
+                    sendResult(result)
+                } else if (resultCode == RESULT_CANCELED) {
+                    val errorMessage: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_MESSAGE)
+                    val errorCode: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_CODE)
+                    sendResult(mapOf<String, String>(
+                            "errorCode" to errorCode,
+                            "errorMessage" to errorMessage,
+                            "scanReference" to scanReference
+                    ))
+                }
+            }
+            if (documentVerificationSDK != null) {
+                documentVerificationSDK?.destroy()
+                documentVerificationSDK = null
             }
             return true
+        } else {
+            return false
         }
     }
 }

@@ -1,12 +1,12 @@
 name: jumio_mobile_sdk_flutter
 description: The Jumio Mobile SDK for Flutter
-version: 3.8.0-beta1
+version: 3.8.0
 homepage: https://github.com/Jumio/mobile-flutter
 license: SEE LICENSE IN README.md
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.10.0"
+  flutter: ">=1.22.5"
 
 dependencies:
   flutter:

@@ -18,11 +18,12 @@ import com.jumio.nv.data.document.NVMRZFormat
 import com.jumio.nv.enums.NVExtractionMethod
 import com.jumio.nv.enums.NVGender
 import com.jumio.nv.enums.NVWatchlistScreening
+import com.jumio.nv.NetverifyDeallocationCallback
 import io.flutter.plugin.common.MethodCall
 import java.util.*
 import kotlin.collections.ArrayList
 
-class NetverifyModule : ModuleBase() {
+class NetverifyModule : ModuleBase(), NetverifyDeallocationCallback {
     @Suppress("RedundantLambdaArrow")
     override val methods: Map<String, (MethodCall) -> Unit> = mapOf(
             "initNetverify" to { call ->
@@ -39,10 +40,11 @@ class NetverifyModule : ModuleBase() {
     private var netverifySDK: NetverifySDK? = null
 
     private fun initNetverify(apiToken: String, apiSecret: String, dataCenter: String, options: Map<String, Any>?) {
-        if (!NetverifySDK.isSupportedPlatform(hostActivity)) {
-            showErrorMessage("Netverify: This platform is not supported.")
-        } else if (apiToken.isEmpty() || apiSecret.isEmpty() || dataCenter.isEmpty()) {
+        if (apiToken.isEmpty() || apiSecret.isEmpty() || dataCenter.isEmpty()) {
             showErrorMessage("Missing required parameters apiToken, apiSecret or dataCenter.")
+        } else if (this.netverifySDK != null) {
+            //SDK isn't null because it's already initialized or still being cleaned up
+            return
         } else {
             try {
                 initSdk(dataCenter, apiToken, apiSecret, options)
@@ -113,13 +115,18 @@ class NetverifyModule : ModuleBase() {
     }
 
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
-        return if (requestCode == NetverifySDK.REQUEST_CODE && data != null) {
-            val scanReference = data.getStringExtra(NetverifySDK.EXTRA_SCAN_REFERENCE) ?: ""
-
-            if (resultCode == Activity.RESULT_OK) {
-                sendScanResult(data, scanReference)
-            } else if (resultCode == RESULT_CANCELED) {
-                sendCancelResult(data, scanReference)
+        return if (requestCode == NetverifySDK.REQUEST_CODE) {
+            if (data != null) {
+                val scanReference = data.getStringExtra(NetverifySDK.EXTRA_SCAN_REFERENCE) ?: ""
+                if (resultCode == Activity.RESULT_OK) {
+                    sendScanResult(data, scanReference)
+                } else if (resultCode == RESULT_CANCELED) {
+                    sendCancelResult(data, scanReference)
+                }
+            }
+            if(netverifySDK != null) {
+                netverifySDK?.destroy()
+                netverifySDK?.checkDeallocation(this)
             }
             true
         } else {
@@ -214,4 +221,9 @@ class NetverifyModule : ModuleBase() {
         netverifySDK?.setEnableEMRTD(true)
                 ?: showErrorMessage("The Netverify SDK is not initialized yet. Call initNetverify() first.")
     }
+
+    override fun onNetverifyDeallocated() {
+        netverifySDK = null
+    }
+
 }

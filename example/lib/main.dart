@@ -54,12 +54,6 @@ class _HomePageState extends State<HomePage> {
                 },
               ),
               RaisedButton(
-                child: Text("Start Authentication"),
-                onPressed: () {
-                  startAuthentication();
-                },
-              ),
-              RaisedButton(
                 child: Text("Start Document Verification"),
                 onPressed: () {
                   startDocumentVerification();
@@ -98,20 +92,6 @@ class _HomePageState extends State<HomePage> {
       });
       final result = await JumioMobileSDK.startNetverify();
       await _showDialogWithMessage("Netverify has completed. Result: $result");
-    });
-  }
-
-  Future<void> startAuthentication() async {
-    await _logErrors(() async {
-      await JumioMobileSDK.initAuthentication(
-          API_TOKEN, API_SECRET, DATACENTER, {
-        "enrollmentTransactionReference": "EnrollmentTransactionReference",
-        //"userReference": "UserReference",
-        //"callbackUrl": "URL",
-        //"authenticationTransactionReference": "AuthenticationTransactionReference",
-      });
-      final result = await JumioMobileSDK.startAuthentication();
-      await _showDialogWithMessage("Authentication has completed. Result: $result");
     });
   }
 

@@ -4,7 +4,7 @@ Official Jumio Mobile SDK plugin for Flutter
 
 ## Compatibility
 
-Compatibility has been tested with a Flutter version of 1.17 and Dart 2.8
+Compatibility has been tested with a Flutter version of 1.22 and Dart 2.10
 
 ## Setup
 
@@ -21,7 +21,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^3.8.0-beta1
+  jumio_mobile_sdk_flutter: ^3.8.0
 ```
 
 And install the dependency:
@@ -76,7 +76,7 @@ android {
 
 4. Upgrade Gradle build tools
 The plugin requires at least version 4.0.0 of the android build tools. This transitively requires and upgrade of the Gradle wrapper to version 6.
-Without this change the Gradle build will fail with a Jetifier error about bcprov. 
+Without this change the Gradle build will fail with a Jetifier error about bcprov.
 
 Upgrade build tools version to 4.0.1 in android/build.gradle:
 
@@ -90,7 +90,7 @@ buildscript {
 }
 ```
 
-Modify the Gradle Wrapper version in android/gradle.properties. 
+Modify the Gradle Wrapper version in android/gradle.properties.
 
 ## Usage
 
@@ -104,7 +104,6 @@ import 'package:jumio_mobile_sdk_flutter/jumio_mobile_sdk_flutter.dart';
 
 ```dart
 JumioMobileSDK.initNetverify(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
-JumioMobileSDK.initAuthentication(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 JumioMobileSDK.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 JumioMobileSDK.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
@@ -175,7 +174,7 @@ If you are using eMRTD scanning, following lines are needed in your `proguard-ru
 -dontwarn org.bouncycastle.**
 ```
 
-Add the needed dependencies following [this chapter](https://github.com/Jumio/mobile-sdk-android/blob/master/docs/integration_netverify-fastfill.md#dependencies) of the android integration guide.
+Add the needed dependencies following [this chapter](https://github.com/Jumio/mobile-sdk-android/blob/master/docs/integration_id-verification-fastfill.md#dependencies) of the android integration guide.
 
 Enable eMRTD by using the following method in your native android code:
 
@@ -187,43 +186,6 @@ As soon as the sdk is initialized, the sdk is started by the following call.
 
 ```dart
 JumioMobileSDK.startNetverify();
-```
-
-### Authentication
-
-To initialize and start the SDK, perform the following call.
-
-```dart
-JumioMobileSDK.initAuthentication(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
-```
-
-Datacenter can either be **US** or **EU**.
-
-Configure the SDK with the *configuration*-Object. **(configuration marked with * are mandatory)**
-
-In order to connect the Authentication transaction to a specific Netverify user identity the parameter `enrollmentTransactionReference` must be set. In case an Authentication transaction has been created via the facemap server to server API `authenticationTransactionReference` should be used. Therefore `enrollmentTransactionReference` should not be set.
-
-| Configuration | Datatype | Description |
-| ------ | -------- | ----------- |
-| **enrollmentTransactionReference*** | String | The reference of the enrollment scan to authenticate for |
-| **authenticationTransactionReference*** | String | The reference of the authentication scan to authenticate for |
-| **userReference*** | String | Set a customer identifier (max. 100 characters) |
-
-Initialization example with configuration:
-
-```dart
-await JumioMobileSDK.initAuthentication(API_TOKEN, API_SECRET, DATACENTER, {
-  "enrollmentTransactionReference": "EnrollmentTransactionReference",
-  //"userReference": "UserReference",
-  //"callbackUrl": "URL",
-  //"authenticationTransactionReference": "AuthenticationTransactionReference",
-});
-```
-
-As soon as the sdk is initialized, the sdk is started by the following call.
-
-```dart
-bool result = await JumioMobileSDK.startAuthentication();
 ```
 
 ### Document Verification
@@ -364,16 +326,13 @@ Scan results are returned from the startXXX() methods asynchronously. Await the 
 ### Android
 
 #### Netverify
-The Netverify SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.7.2/docs/integration_id-verification-fastfill.md#customization).
-
-#### Authentication
-The Authentication SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.7.2/docs/integration_authentication.md#customization).
+The Netverify SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.8.0/docs/integration_id-verification-fastfill.md#customization).
 
 #### BAM Checkout
-The BAM Checkout SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.7.2/docs/integration_bam-checkout.md#customization).
+The BAM Checkout SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.8.0/docs/integration_bam-checkout.md#customization).
 
 #### Document Verification
-The Document Verification SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.7.2/docs/integration_document-verification.md#customization).
+The Document Verification SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.8.0/docs/integration_document-verification.md#customization).
 
 
 ### iOS
@@ -383,7 +342,6 @@ The SDK can be customized to the respective needs by using the following initial
 JumioMobileSDKNetverify.initNetverify(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
 JumioMobileSDKDocumentVerification.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
 JumioMobileSDKBamCheckout.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
-JumioMobileSDKAuthentication.initAuthentication(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
 ```
 
 You can pass the following customization options to the initializer:
@@ -479,15 +437,6 @@ The Map with all the extracted data that is returned for the specific products i
 | expiryDateValid |    BOOL| |    True if date of expiry check digit is valid or not available, otherwise false|
 | personalNumberValid | BOOL | | True if personal number check digit is valid or not available, otherwise false |
 | compositeValid | BOOL | | True if composite check digit is valid, otherwise false |
-
-
-### Authentication
-
-*AuthenticationResult:*
-
-| Parameter |Type | Max. length | Description |
-|:---------------|:------------- |:-------------|:-----------------|
-| authenticationResult | String |  8| SUCCESS or FAILED |
 
 ### BAM Checkout
 

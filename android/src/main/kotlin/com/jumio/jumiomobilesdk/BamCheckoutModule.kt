@@ -38,10 +38,11 @@ class BamCheckoutModule : ModuleBase() {
     )
 
     private fun initBAM(apiToken: String, apiSecret: String, dataCenter: String, options: Map<String, Any?>?) {
-        if (!BamSDK.isSupportedPlatform(hostActivity)) {
-            showErrorMessage("This platform is not supported.")
-        } else if (apiToken.isEmpty() || apiSecret.isEmpty() || dataCenter.isEmpty()) {
+        if (apiToken.isEmpty() || apiSecret.isEmpty() || dataCenter.isEmpty()) {
             showErrorMessage("Missing required parameters apiToken, apiSecret or dataCenter.")
+        } else if (this.bamSDK != null) {
+            //SDK isn't null because it's already initialized or still being cleaned up
+            return
         } else {
             initializeSDK(dataCenter, apiToken, apiSecret, options)
         }
@@ -112,14 +113,21 @@ class BamCheckoutModule : ModuleBase() {
     }
 
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
-        if (requestCode == BamSDK.REQUEST_CODE && data != null) {
-            val scanReferenceList = data.getStringArrayListExtra(BamSDK.EXTRA_SCAN_ATTEMPTS)
-                    ?: ArrayList<String>()
+        if (requestCode == BamSDK.REQUEST_CODE) {
+            if (data != null) {
+                val scanReferenceList = data.getStringArrayListExtra(BamSDK.EXTRA_SCAN_ATTEMPTS)
+                        ?: ArrayList<String>()
 
-            if (resultCode == Activity.RESULT_OK) {
-                sendScanResult(data, scanReferenceList)
-            } else if (resultCode == Activity.RESULT_CANCELED) {
-                sendCancelResult(data, scanReferenceList)
+                if (resultCode == Activity.RESULT_OK) {
+                    sendScanResult(data, scanReferenceList)
+                } else if (resultCode == Activity.RESULT_CANCELED) {
+                    sendCancelResult(data, scanReferenceList)
+                }
+            }
+
+            if(bamSDK != null) {
+                bamSDK?.destroy()
+                bamSDK = null
             }
             return true
         }

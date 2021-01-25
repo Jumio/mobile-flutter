@@ -1,11 +1,17 @@
 PODS:
   - Flutter (1.0.0)
-  - jumio_mobile_sdk_flutter (3.8.0-beta1):
+  - iProov (8.1.1):
+    - Socket.IO-Client-Swift (~> 15.2)
+  - jumio_mobile_sdk_flutter (3.8.0):
     - Flutter
-    - JumioMobileSDK (= 3.7.1)
-  - JumioMobileSDK (3.7.1):
-    - JumioMobileSDK/JumioMobileSDK (= 3.7.1)
-  - JumioMobileSDK/JumioMobileSDK (3.7.1)
+    - JumioMobileSDK (= 3.8.0)
+  - JumioMobileSDK (3.8.0):
+    - JumioMobileSDK/JumioMobileSDK (= 3.8.0)
+  - JumioMobileSDK/JumioMobileSDK (3.8.0):
+    - iProov (= 8.1.1)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -13,7 +19,10 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - iProov
     - JumioMobileSDK
+    - Socket.IO-Client-Swift
+    - Starscream
 
 EXTERNAL SOURCES:
   Flutter:
@@ -23,9 +32,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  jumio_mobile_sdk_flutter: f471b977ca9301ac48914e0a6c5520f556fd53f1
-  JumioMobileSDK: d6508dff44b2a54d0fbf5623d40da2569d8ed93c
+  iProov: 5cefb12ff4890c260f190d6e2426737ab389eb79
+  jumio_mobile_sdk_flutter: a911f0cebfd99c547a3754bef8a1f8e16bca6b0a
+  JumioMobileSDK: c686a7afd079218163810d29031adac0b5e602b1
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: af6b891fb448119e2e3d0a226fcad7567aa13204
+PODFILE CHECKSUM: f98b40307341e12b160260f07db11cda9e1697c8
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

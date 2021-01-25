@@ -4,7 +4,6 @@ import Netverify
 import UIKit
 
 public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
-    private let authenticationModule:       JumioMobileSdkModule    = AuthenticationModuleFlutter()
     private let netverifyModule:            NetverifyModuleFlutter  = NetverifyModuleFlutter()
     private let documentVerificaitonModule: JumioMobileSdkModule    = DocumentVerificationModuleFlutter()
     private let bamCheckoutModule:          JumioMobileSdkModule    = BAMCheckoutModuleFlutter()
@@ -21,10 +20,6 @@ public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
             netverifyModule.initialize(call: call, result: result)
         case "startNetverify":
             netverifyModule.start(result: result)
-        case "initAuthentication":
-            authenticationModule.initialize(call: call, result: result)
-        case "startAuthentication":
-            authenticationModule.start(result: result)
         case "initDocumentVerification":
             documentVerificaitonModule.initialize(call: call, result: result)
         case "startDocumentVerification":

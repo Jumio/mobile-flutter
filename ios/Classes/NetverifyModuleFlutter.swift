@@ -7,8 +7,6 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
     private var netverifyViewController: NetverifyViewController?
     
     func initialize(call: FlutterMethodCall, result: @escaping FlutterResult) {
-        netverifyViewController?.destroy()
-        
         let args = call.arguments as? [String: Any?] ?? [:]
         
         let configuration = NetverifyConfiguration()
@@ -26,7 +24,8 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
             }
         } catch {
             let nsError = error as NSError
-            result(nsError)
+            result(FlutterError(code: "\(nsError.code)", message: nsError.localizedDescription, details: nil))
+            return
         }
         
         result(nil)
@@ -153,7 +152,7 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
         }
         
         if let fallbackButtonBackgroundColor = customizations["fallbackButtonBackgroundColor"] as? String {
-            NetverifyFallbackButton.jumioAppearance().backgroundColor = UIColor(hexString: fallbackButtonBackgroundColor)
+            NetverifyFallbackButton.jumioAppearance().setBackgroundColor(UIColor(hexString: fallbackButtonBackgroundColor), for: .normal)
         }
         
         if let fallbackButtonBorderColor = customizations["fallbackButtonBorderColor"] as? String {
@@ -165,7 +164,7 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
         }
         
         if let positiveButtonBackgroundColor = customizations["positiveButtonBackgroundColor"] as? String {
-            NetverifyPositiveButton.jumioAppearance().backgroundColor = UIColor(hexString: positiveButtonBackgroundColor)
+            NetverifyPositiveButton.jumioAppearance().setBackgroundColor(UIColor(hexString: positiveButtonBackgroundColor), for: .normal)
         }
         
         if let positiveButtonBorderColor = customizations["positiveButtonBorderColor"] as? String {
@@ -173,11 +172,11 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
         }
         
         if let positiveButtonTitleColor = customizations["positiveButtonTitleColor"] as? String {
-            NetverifyPositiveButton.jumioAppearance().tintColor = UIColor(hexString: positiveButtonTitleColor)
+            NetverifyPositiveButton.jumioAppearance().setTitleColor(UIColor(hexString: positiveButtonTitleColor), for: .normal)
         }
         
         if let negativeButtonBackgroundColor = customizations["negativeButtonBackgroundColor"] as? String {
-            NetverifyNegativeButton.jumioAppearance().backgroundColor = UIColor(hexString: negativeButtonBackgroundColor)
+            NetverifyNegativeButton.jumioAppearance().setBackgroundColor(UIColor(hexString: negativeButtonBackgroundColor), for: .normal)
         }
         
         if let negativeButtonBorderColor = customizations["negativeButtonBorderColor"] as? String {
