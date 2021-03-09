@@ -18,8 +18,7 @@ This plugin is compatible with version 3.8.0 of the Jumio SDK. If you have quest
     - [Retrieving Information](#retrieving-information)
 - [Customization](#customization)
 - [FAQ](#faq)
-    - [iOS: Language Localization iOS](#ios:-Language-Localization)
-    - [iOS: App Crash at Launch](#ios:-app-crash-at-launch)
+    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
 - [Result Objects](#result-objects)
 - [Support](#support)
 
@@ -468,13 +467,8 @@ The Map with all the extracted data that is returned for the specific products i
 No data returned.
 
 ## FAQ
-
-### iOS: Language Localization
-At this point in time, iOS workflow is only available in English.
-
-### iOS: App Crash at Launch
+### App Crash at Launch for iOS
 If iOS application crashes immediately after launch and without additional information, but works fine for Android, please make sure to the following lines have been added to your `podfile`:
-
 ```
 post_install do |installer|
     installer.pods_project.targets.each do |target|
