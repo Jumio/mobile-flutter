@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Potrdi";
+"auth.alert-view.camera-access-disabled.description" = "%@ potrebuje dostop do kamere. Preverite nastavitve zasebnosti.";
+"auth.alert-view.camera-access-disabled.title" = "Dostop do kamere je onemogočen.";
+"auth.error-view.button.cancel.title" = "Prekliči";
+"auth.error-view.button.retry.title" = "Poskusi znova";
+"auth.error-view.error.header.title" = "Napaka";
+"auth.error.authentication-failed.title" = "Preverjanje pristnosti ni uspelo";
+"auth.error.cancelled-by-user.title" = "Preklical končni uporabnik.";
+"auth.error.device-is-offline.title" = "Internetna povezava ni na voljo";
+"auth.error.invalid-key.title" = "Potrdilo ni več veljavno. Obrnite se na prodajalca aplikacije.";
+"auth.error.network-problem.title" = "Naleteli smo na težavo z omrežno komunikacijo";
+"auth.error.setup-error.title" = "Optično branje trenutno ni na voljo, obrnite se na prodajalca aplikacije.";
+"auth.error.transaction-already-finished.title" = "Transakcija je že zaključena";
+"auth.scan-help-view.liveness-help.bad-angle" = "Napravo držite na višini oči in glejte naravnost vanjo.";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Preprečite sence in odseve na obrazu.";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Tapnite za nadaljevanje";
+"auth.scan-help-view.liveness-help.general" = "Sledite postopku v dveh korakih in poravnajte obraz z okvirjem. Napravo držite na višini oči in glejte naravnost v kamero. Vaš obraz bo zajet samodejno.";
+"auth.scan-view.accessibility-label.close-button" = "Prekliči optično branje";
+"auth.scan-view.liveness-help.navigation-item.title" = "Imate težave?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Zajemite svoj obraz";
+"auth.scanview.liveness.landscape.description" = "Telefon obrnite pokončno in se fotografirajte";
+"auth.scanview.liveness.landscape.header" = "Obrnite napravo";
+"zoom_feedback_a_little_too_close" = "Malo se oddaljite";
+"zoom_feedback_a_little_too_close_tablet" = "Malo se oddaljite";
+"zoom_feedback_center_face" = "Obraz postavite na sredino";
+"zoom_feedback_face_not_found" = "Obraz vstavite v okvir";
+"zoom_feedback_face_not_looking_straight_ahead" = "Glejte naravnost";
+"zoom_feedback_face_not_upright" = "Ne nagibajte glave";
+"zoom_feedback_hold_steady" = "Ne premikajte se";
+"zoom_feedback_move_phone_away" = "Malo se oddaljite";
+"zoom_feedback_move_phone_closer" = "Malo se približajte";
+"zoom_feedback_move_phone_even_closer" = "Malo bližje";
+"zoom_feedback_move_phone_to_eye_level" = "Napravo držite na višini oči.";
+"zoom_feedback_move_tablet_away" = "Malo se oddaljite";
+"zoom_feedback_move_tablet_closer" = "Malo se približajte";
+"zoom_feedback_move_tablet_to_eye_level" = "Napravo držite na višini oči.";

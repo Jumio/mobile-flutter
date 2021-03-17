@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Confirmar";
+"auth.alert-view.camera-access-disabled.description" = "%@ necesita acceso a su cámara. Compruebe sus ajustes de privacidad.";
+"auth.alert-view.camera-access-disabled.title" = "Acceso a la cámara inactivo";
+"auth.error-view.button.cancel.title" = "Cancelar";
+"auth.error-view.button.retry.title" = "Reintentar";
+"auth.error-view.error.header.title" = "Error";
+"auth.error.authentication-failed.title" = "Error de autenticación";
+"auth.error.cancelled-by-user.title" = "Cancelado por el usuario final";
+"auth.error.device-is-offline.title" = "Ninguna conexión de internet disponible";
+"auth.error.invalid-key.title" = "El certificado ya no es válido. Ponte en contacto con el proveedor de la aplicación";
+"auth.error.network-problem.title" = "Hemos detectado un problema de comunicación de red";
+"auth.error.setup-error.title" = "El escáner no está disponible ahora. Póngase en contacto con el proveedor de la aplicación.";
+"auth.error.transaction-already-finished.title" = "Transacción finalizada";
+"auth.scan-help-view.liveness-help.bad-angle" = "Mantenga el dispositivo al nivel de los ojos y mírelo directamente";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Evite sombras y reflejos en su rostro";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Pulse para continuar";
+"auth.scan-help-view.liveness-help.general" = "Sigue el proceso de dos pasos y coloca tu rostro dentro del marco. Mantén el dispositivo a la altura de los ojos y mira directamente a la cámara. Tu rostro se capturará automáticamente.";
+"auth.scan-view.accessibility-label.close-button" = "Salir del escáner";
+"auth.scan-view.liveness-help.navigation-item.title" = "¿Hay problemas?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Captura tu rostro";
+"auth.scanview.liveness.landscape.description" = "Ponga el móvil en vertical para hacer un selfie";
+"auth.scanview.liveness.landscape.header" = "Gire su dispositivo";
+"zoom_feedback_a_little_too_close" = "Retroceda un poco";
+"zoom_feedback_a_little_too_close_tablet" = "Retroceda un poco";
+"zoom_feedback_center_face" = "Centre su cara";
+"zoom_feedback_face_not_found" = "Colóquese dentro del marco";
+"zoom_feedback_face_not_looking_straight_ahead" = "Mire hacia adelante";
+"zoom_feedback_face_not_upright" = "Mantenga la cabeza recta";
+"zoom_feedback_hold_steady" = "No se mueva";
+"zoom_feedback_move_phone_away" = "Retroceda un poco";
+"zoom_feedback_move_phone_closer" = "Acérquese un poco";
+"zoom_feedback_move_phone_even_closer" = "Un poco más cerca";
+"zoom_feedback_move_phone_to_eye_level" = "Mantenga el dispositivo al nivel de los ojos";
+"zoom_feedback_move_tablet_away" = "Retroceda un poco";
+"zoom_feedback_move_tablet_closer" = "Acérquese un poco";
+"zoom_feedback_move_tablet_to_eye_level" = "Mantenga el dispositivo al nivel de los ojos";

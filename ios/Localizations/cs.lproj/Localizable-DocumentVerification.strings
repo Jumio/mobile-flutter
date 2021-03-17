@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Ověření selhalo.";
+"dv.error-view.button.cancel" = "Zrušit";
+"dv.error-view.button.retry" = "Zkusit znovu";
+"dv.error-view.camera-access-disabled.button.title" = "Potvrdit";
+"dv.error-view.camera-access-disabled.content" = "%@ potřebuje přístup ke kameře. Zkontrolujte nastavení ochrany osobních údajů.";
+"dv.error-view.camera-access-disabled.title" = "Přístup ke kameře zamítnut";
+"dv.error-view.cancelled-by-user" = "Zrušeno koncovým uživatelem";
+"dv.error-view.device-is-offline" = "Internetové připojení není k dispozici.";
+"dv.error-view.error.headline" = "Chyba";
+"dv.error-view.invalid-key" = "Certifikát již není platný. Obraťte se prosím na dodavatele aplikace.";
+"dv.error-view.network-problem" = "Při síťové komunikaci došlo k problému.";
+"dv.scan-options.accessibility-label.close-button" = "Ukončit skenování";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Přepnout na zadní kameru";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Přepnout na přední kameru";
+"dv.scan-view.accessibility-label.button.take-photo" = "Pořídit fotografii";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Zapnout blesk";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Vypnout blesk";
+"dv.scan-view.confirmation.button.readable" = "Pokračovat";
+"dv.scan-view.confirmation.button.retake" = "Opakovat";
+"dv.scan-view.confirmation.text" = "Ujistěte se, že veškeré údaje na vašem dokumentu jsou viditelné a čitelné, bez odlesků, či rozmazané.";
+"dv.scan-view.help.document-BC" = "Rodný list";
+"dv.scan-view.help.document-BS" = "Výpis z bankovního účtu";
+"dv.scan-view.help.document-CAAP" = "Žádost o hotovostní zálohu";
+"dv.scan-view.help.document-CB" = "Majetková daň";
+"dv.scan-view.help.document-CC" = "Platební karta";
+"dv.scan-view.help.document-CCS" = "Výpis z kreditní karty";
+"dv.scan-view.help.document-CRC" = "Plná moc";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Zdravotní průkaz pojištěnce";
+"dv.scan-view.help.document-IC" = "Karta pojištěnce";
+"dv.scan-view.help.document-LAG" = "Smlouva o pronájmu";
+"dv.scan-view.help.document-LOAP" = "Žádost o půjčku";
+"dv.scan-view.help.document-MEDC" = "Zdravotní průkaz pojištěnce";
+"dv.scan-view.help.document-MOAP" = "Žádost o hypotéku";
+"dv.scan-view.help.document-PB" = "Účet za telefon";
+"dv.scan-view.help.document-SEL" = "Potvrzení o přijetí do studia";
+"dv.scan-view.help.document-SENC" = "Průkaz totožnosti pro seniory pracující nad předepsaný rámec (Seniors card)";
+"dv.scan-view.help.document-SS" = "Výkaz starobního důchodu nebo podobného zabezpečení";
+"dv.scan-view.help.document-SSC" = "Průkaz sociálního zabezpečení";
+"dv.scan-view.help.document-STUC" = "Studentský průkaz";
+"dv.scan-view.help.document-TAC" = "Průkaz totožnosti člena obchodního sdružení";
+"dv.scan-view.help.document-TR" = "Daňové přiznání";
+"dv.scan-view.help.document-UB" = "SIPO/Inkaso";
+"dv.scan-view.help.document-VC" = "Neplatná osvědčení";
+"dv.scan-view.help.document-VT" = "Osvědčení o registraci vozidla";
+"dv.scan-view.help.document-WWCC" = "Osvědčení pro práci s dětmi";
+"dv.scan-view.help.document.headline" = "Vyfotit %@";
+"dv.scan-view.navigationItem.title" = "Oskenuj";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Nahrání proběhlo úspěšně.";
+"dv.submission-view.uploading.description" = "V závislosti na rychlosti vašeho připojení by to mělo trvat jen několik sekund.";
+"dv.submission-view.uploading.headline" = "Vaše dokumenty se právě nahrávají.";

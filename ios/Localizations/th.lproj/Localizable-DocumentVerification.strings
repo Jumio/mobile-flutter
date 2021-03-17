@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "การรับรองความถูกต้องล้มเหลว";
+"dv.error-view.button.cancel" = "ยกเลิก";
+"dv.error-view.button.retry" = "ลองอีกครั้ง";
+"dv.error-view.camera-access-disabled.button.title" = "ยืนยัน";
+"dv.error-view.camera-access-disabled.content" = "%@ ต้องการเข้าถึงกล้อง โปรดตรวจสอบการตั้งค่าความเป็นส่วนตัวของคุณ";
+"dv.error-view.camera-access-disabled.title" = "การเข้าถึงกล้องถูกปิดใช้งาน";
+"dv.error-view.cancelled-by-user" = "ยกเลิกโดยผู้ใช้ปลายทาง";
+"dv.error-view.device-is-offline" = "ไม่มีการเชื่อมต่ออินเทอร์เน็ต";
+"dv.error-view.error.headline" = "ข้อผิดพลาด";
+"dv.error-view.invalid-key" = "ใบรับรองใช้งานไม่ได้แล้ว โปรดติดต่อผู้จําหน่ายแอป";
+"dv.error-view.network-problem" = "เราพบปัญหาการสื่อสารเครือข่าย";
+"dv.scan-options.accessibility-label.close-button" = "ออกจากการสแกน";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "เปลี่ยนเป็นกล้องหลัง";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "เปลี่ยนเป็นกล้องหน้า";
+"dv.scan-view.accessibility-label.button.take-photo" = "ถ่ายรูป";
+"dv.scan-view.accessibility-label.flash-button.activate" = "เปิดแฟลช";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "ปิดแฟลช";
+"dv.scan-view.confirmation.button.readable" = "ดำเนินการต่อ";
+"dv.scan-view.confirmation.button.retake" = "ถ่ายใหม่";
+"dv.scan-view.confirmation.text" = "ตรวจสอบให้แน่ใจว่าข้อมูลในเอกสารทั้งหมดสามารถมองเห็นได้ชัดเจน ไม่มีแสงสะท้อน และความพร่ามัว";
+"dv.scan-view.help.document-BC" = "สูติบัตร";
+"dv.scan-view.help.document-BS" = "ใบแจ้งยอดจากธนาคาร";
+"dv.scan-view.help.document-CAAP" = "ใบสมัครบัตรเงินสด";
+"dv.scan-view.help.document-CB" = "คอนซิลบิล";
+"dv.scan-view.help.document-CC" = "บัตรเครดิต";
+"dv.scan-view.help.document-CCS" = "ใบแจ้งยอดบัตรเครดิต";
+"dv.scan-view.help.document-CRC" = "ใบรับรองมติองค์กร";
+"dv.scan-view.help.document-CUSTOM" = "เอกสาร";
+"dv.scan-view.help.document-HCC" = "บัตรประกันสุขภาพ";
+"dv.scan-view.help.document-IC" = "บัตรประกัน";
+"dv.scan-view.help.document-LAG" = "สัญญาเช่า";
+"dv.scan-view.help.document-LOAP" = "ใบสมัครสินเชื่อ";
+"dv.scan-view.help.document-MEDC" = "บัตรเมดิแคร์";
+"dv.scan-view.help.document-MOAP" = "ใบยื่นขอจำนอง";
+"dv.scan-view.help.document-PB" = "บิลค่าโทรศัพท์";
+"dv.scan-view.help.document-SEL" = "จดหมายลงทะเบียนของโรงเรียน";
+"dv.scan-view.help.document-SENC" = "บัตรผู้สูงอายุ";
+"dv.scan-view.help.document-SS" = "หนังสือเงินซูเปอร์";
+"dv.scan-view.help.document-SSC" = "บัตรประกันสังคม";
+"dv.scan-view.help.document-STUC" = "บัตรนักเรียน";
+"dv.scan-view.help.document-TAC" = "บัตรสมาคมการค้า";
+"dv.scan-view.help.document-TR" = "เอกสารการคืนภาษี";
+"dv.scan-view.help.document-UB" = "บิลค่าสาธารณูปโภค";
+"dv.scan-view.help.document-VC" = "เช็คที่เป็นโมฆะ";
+"dv.scan-view.help.document-VT" = "ใบรับรองชื่อรถยนต์";
+"dv.scan-view.help.document-WWCC" = "ใบตรวจสอบประวัติสำหรับการทำงานกับเด็ก";
+"dv.scan-view.help.document.headline" = "จับภาพ %@";
+"dv.scan-view.navigationItem.title" = "สแกนเอกสาร";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "อัปโหลดสำเร็จ";
+"dv.submission-view.uploading.description" = "ขั้นตอนนี้ใช้เวลาสักครู่ ขึ้นอยู่กับกับการเชื่อมต่อเครือข่ายของคุณ";
+"dv.submission-view.uploading.headline" = "กำลังอัปโหลดเอกสารของคุณ";

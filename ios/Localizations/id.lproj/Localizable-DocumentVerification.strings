@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Autentikasi gagal";
+"dv.error-view.button.cancel" = "Batal";
+"dv.error-view.button.retry" = "Coba lagi";
+"dv.error-view.camera-access-disabled.button.title" = "Konfirmasikan";
+"dv.error-view.camera-access-disabled.content" = "%@ membutuhkan akses ke kamera Anda. Periksa pengaturan privasi Anda.";
+"dv.error-view.camera-access-disabled.title" = "Akses kamera dinonaktifkan";
+"dv.error-view.cancelled-by-user" = "Dibatalkan oleh pengguna akhir";
+"dv.error-view.device-is-offline" = "Koneksi internet tidak tersedia";
+"dv.error-view.error.headline" = "Ksalahn";
+"dv.error-view.invalid-key" = "Sertifikat tidak berlaku lagi. Hubungi vendor aplikasi";
+"dv.error-view.network-problem" = "Kami mengalami masalah komunikasi jaringan";
+"dv.scan-options.accessibility-label.close-button" = "Berhenti memindai";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Alihkan ke kamera belakang";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Alihkan ke kamera depan";
+"dv.scan-view.accessibility-label.button.take-photo" = "Ambil foto";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Aktifkan flash";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Nonaktifkan flash";
+"dv.scan-view.confirmation.button.readable" = "Lanjutkan";
+"dv.scan-view.confirmation.button.retake" = "Ambil lagi";
+"dv.scan-view.confirmation.text" = "Pastikan semua data dokumen terlihat jelas, bebas silau dan tidak kabur";
+"dv.scan-view.help.document-BC" = "Akta kelahiran";
+"dv.scan-view.help.document-BS" = "Laporan bank";
+"dv.scan-view.help.document-CAAP" = "Permohonan pengajuan uang tunai";
+"dv.scan-view.help.document-CB" = "RUU Dewan";
+"dv.scan-view.help.document-CC" = "Kartu kredit";
+"dv.scan-view.help.document-CCS" = "Laporan kartu kredit";
+"dv.scan-view.help.document-CRC" = "Akta resolusi perusahaan";
+"dv.scan-view.help.document-CUSTOM" = "Dokumen";
+"dv.scan-view.help.document-HCC" = "Kartu layanan kesehatan";
+"dv.scan-view.help.document-IC" = "Kartu asuransi";
+"dv.scan-view.help.document-LAG" = "Perjanjian sewa menyewa";
+"dv.scan-view.help.document-LOAP" = "Permohonan pinjaman";
+"dv.scan-view.help.document-MEDC" = "Kartu Medicare";
+"dv.scan-view.help.document-MOAP" = "Permohonan pegadaian";
+"dv.scan-view.help.document-PB" = "Tagihan telepon";
+"dv.scan-view.help.document-SEL" = "Surat pendaftaran sekolah";
+"dv.scan-view.help.document-SENC" = "Kartu lansia";
+"dv.scan-view.help.document-SS" = "Laporan pensiun";
+"dv.scan-view.help.document-SSC" = "Kartu jaminan sosial";
+"dv.scan-view.help.document-STUC" = "Kartu pelajar";
+"dv.scan-view.help.document-TAC" = "Kartu asosiasi perdagangan";
+"dv.scan-view.help.document-TR" = "Pajak penghasilan";
+"dv.scan-view.help.document-UB" = "Tagihan air, listrik, dsb.";
+"dv.scan-view.help.document-VC" = "Cek kosong";
+"dv.scan-view.help.document-VT" = "Buku Pemilik Kendaraan Bermotor";
+"dv.scan-view.help.document-WWCC" = "Izin bekerja dengan anak-anak";
+"dv.scan-view.help.document.headline" = "Tangkap %@";
+"dv.scan-view.navigationItem.title" = "Pindai dokumen";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Pengunggahan berhasil";
+"dv.submission-view.uploading.description" = "Ini seharusnya hanya memakan waktu beberapa detik, tergantung pada konektivitas jaringan Anda";
+"dv.submission-view.uploading.headline" = "Mengunggah dokumen Anda";

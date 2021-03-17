@@ -11,12 +11,12 @@
             android:name="com.jumio.bam.BamActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:hardwareAccelerated="true"
-            android:theme="@style/Theme.Bam"/>
+            android:theme="@style/CustomBamTheme"/>
         <activity
             android:name="com.jumio.dv.DocumentVerificationActivity"
             android:windowSoftInputMode="adjustResize"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
             android:hardwareAccelerated="true"
-            android:theme="@style/Theme.DocumentVerification"/>
+            android:theme="@style/CustomDocumentVerificationTheme"/>
     </application>
 </manifest>

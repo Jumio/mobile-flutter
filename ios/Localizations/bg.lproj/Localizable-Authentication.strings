@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Потвърждавам";
+"auth.alert-view.camera-access-disabled.description" = "%@ изисква достъп до камерата ви. Моля, проверете настройките си за поверителност.";
+"auth.alert-view.camera-access-disabled.title" = "Достъпът до камерата е деактивиран";
+"auth.error-view.button.cancel.title" = "Отмяна";
+"auth.error-view.button.retry.title" = "Повторен опит";
+"auth.error-view.error.header.title" = "Грешка";
+"auth.error.authentication-failed.title" = "Удостоверяването не е успешно";
+"auth.error.cancelled-by-user.title" = "Отменено от крайния потребител";
+"auth.error.device-is-offline.title" = "Няма налична интернет връзка";
+"auth.error.invalid-key.title" = "Сертификатът вече не е валиден. Моля, свържете се с доставчика на приложението.";
+"auth.error.network-problem.title" = "Възникна проблем с мрежовата комуникация";
+"auth.error.setup-error.title" = "Сканирането не е достъпно в момента. Моля, свържете се с доставчика на приложението.";
+"auth.error.transaction-already-finished.title" = "Трансакцията вече е завършена";
+"auth.scan-help-view.liveness-help.bad-angle" = "Дръжте устройството си на нивото на очите и гледайте право в него.";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Избягвайте сенки и отражения върху лицето си";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Докоснете, за да продължите";
+"auth.scan-help-view.liveness-help.general" = "Изпълнете процеса от две стъпки и разположете лицето си в рамката. Дръжте устройството си на нивото на очите и гледайте право в камерата. Лицето ви ще бъде заснето автоматично.";
+"auth.scan-view.accessibility-label.close-button" = "Изход от сканирането";
+"auth.scan-view.liveness-help.navigation-item.title" = "Имате проблеми?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Заснемете лицето си";
+"auth.scanview.liveness.landscape.description" = "Завъртете телефона си в портретен режим, за да направите селфи";
+"auth.scanview.liveness.landscape.header" = "Завъртете устройството си";
+"zoom_feedback_a_little_too_close" = "Отдръпнете се малко назад";
+"zoom_feedback_a_little_too_close_tablet" = "Отдръпнете се малко назад";
+"zoom_feedback_center_face" = "Центрирайте лицето си";
+"zoom_feedback_face_not_found" = "Наместете лицето си в рамката";
+"zoom_feedback_face_not_looking_straight_ahead" = "Погледнете напред";
+"zoom_feedback_face_not_upright" = "Дръжте главата си изправена";
+"zoom_feedback_hold_steady" = "Останете неподвижно";
+"zoom_feedback_move_phone_away" = "Отдръпнете се малко назад";
+"zoom_feedback_move_phone_closer" = "Приближете се малко по-близо";
+"zoom_feedback_move_phone_even_closer" = "Малко по-близо";
+"zoom_feedback_move_phone_to_eye_level" = "Дръжте устройството на нивото на очите";
+"zoom_feedback_move_tablet_away" = "Отдръпнете се малко назад";
+"zoom_feedback_move_tablet_closer" = "Приближете се малко по-близо";
+"zoom_feedback_move_tablet_to_eye_level" = "Дръжте устройството на нивото на очите";

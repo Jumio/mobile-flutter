@@ -22,10 +22,6 @@ class JumioMobileSDK {
     return await _channel.invokeMethod('startNetverify');
   }
 
-  static Future<void> enableEMRTD() async {
-    await _channel.invokeMethod('enableEMRTD');
-  }
-
   static Future<void> initDocumentVerification(String apiToken,
       String apiSecret, String dataCenter, Map<String, dynamic> options,
       [Map<String, dynamic> customization]) async {

@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Удостоверяването не е успешно";
+"dv.error-view.button.cancel" = "Отмяна";
+"dv.error-view.button.retry" = "Повторен опит";
+"dv.error-view.camera-access-disabled.button.title" = "Потвърждавам";
+"dv.error-view.camera-access-disabled.content" = "%@ изисква достъп до камерата ви. Моля, проверете настройките си за поверителност.";
+"dv.error-view.camera-access-disabled.title" = "Достъпът до камерата е деактивиран";
+"dv.error-view.cancelled-by-user" = "Отменено от крайния потребител";
+"dv.error-view.device-is-offline" = "Няма налична интернет връзка";
+"dv.error-view.error.headline" = "Грешка";
+"dv.error-view.invalid-key" = "Сертификатът вече не е валиден. Моля, свържете се с доставчика на приложението.";
+"dv.error-view.network-problem" = "Възникна проблем с мрежовата комуникация";
+"dv.scan-options.accessibility-label.close-button" = "Изход от сканирането";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Превключване към задната камера";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Превключване към предната камера";
+"dv.scan-view.accessibility-label.button.take-photo" = "Заснемане на снимка";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Активиране на светкавицата";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Деактивиране на светкавицата";
+"dv.scan-view.confirmation.button.readable" = "Продължи";
+"dv.scan-view.confirmation.button.retake" = "Повторно";
+"dv.scan-view.confirmation.text" = "Уверете се, че всички данни в документа ви са напълно видими, без отблясъци и не са замъглени.";
+"dv.scan-view.help.document-BC" = "Удостоверение за раждане";
+"dv.scan-view.help.document-BS" = "Банково извлечение";
+"dv.scan-view.help.document-CAAP" = "Заявление за авансово плащане в брой";
+"dv.scan-view.help.document-CB" = "Сметка за общински данъци";
+"dv.scan-view.help.document-CC" = "Кредитна карта";
+"dv.scan-view.help.document-CCS" = "Извлечение за кредитна карта";
+"dv.scan-view.help.document-CRC" = "Сертификат за корпоративна резолюция";
+"dv.scan-view.help.document-CUSTOM" = "Документ";
+"dv.scan-view.help.document-HCC" = "Здравноосигурителна карта";
+"dv.scan-view.help.document-IC" = "Застрахователна карта";
+"dv.scan-view.help.document-LAG" = "Договор за отдаване под наем";
+"dv.scan-view.help.document-LOAP" = "Заявление за потребителски кредит";
+"dv.scan-view.help.document-MEDC" = "Здравна карта";
+"dv.scan-view.help.document-MOAP" = "Заявление за ипотечен кредит";
+"dv.scan-view.help.document-PB" = "Сметка за телефон";
+"dv.scan-view.help.document-SEL" = "Писмо за записване в училище";
+"dv.scan-view.help.document-SENC" = "Карта на пенсионер";
+"dv.scan-view.help.document-SS" = "Декларация за пенсиониране";
+"dv.scan-view.help.document-SSC" = "Социалноосигурителна карта";
+"dv.scan-view.help.document-STUC" = "Студентска карта";
+"dv.scan-view.help.document-TAC" = "Карта на търговско сдружение";
+"dv.scan-view.help.document-TR" = "Данъчна декларация";
+"dv.scan-view.help.document-UB" = "Сметка за комунални услуги";
+"dv.scan-view.help.document-VC" = "Невалиден чек";
+"dv.scan-view.help.document-VT" = "Талон на превозно средство";
+"dv.scan-view.help.document-WWCC" = "Проверка за работа с деца";
+"dv.scan-view.help.document.headline" = "Заснемане на %@";
+"dv.scan-view.navigationItem.title" = "Сканирай";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Качването е успешно";
+"dv.submission-view.uploading.description" = "Това би трябвало да отнеме само няколко секунди в зависимост от мрежовата ви връзка";
+"dv.submission-view.uploading.headline" = "Качване на документите ви";

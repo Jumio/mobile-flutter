@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Godkjenning mislyktes";
+"dv.error-view.button.cancel" = "Avbryt";
+"dv.error-view.button.retry" = "Prøv på nytt";
+"dv.error-view.camera-access-disabled.button.title" = "Bekreft";
+"dv.error-view.camera-access-disabled.content" = "%@ trenger tilgang til kameraet. Sjekk personverninnstillingene dine.";
+"dv.error-view.camera-access-disabled.title" = "Kameratilgang deaktivert";
+"dv.error-view.cancelled-by-user" = "Avbrutt av sluttbruker";
+"dv.error-view.device-is-offline" = "Ingen internettforbindelse tilgjengelig";
+"dv.error-view.error.headline" = "Feil";
+"dv.error-view.invalid-key" = "Sertifikatet er ikke gyldig lenger. Kontakt app-leverandøren";
+"dv.error-view.network-problem" = "Det har oppstått et problem med nettverkskommunikasjon";
+"dv.scan-options.accessibility-label.close-button" = "Avslutt skanning";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Bytt til bakkamera";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Bytt til frontkamera";
+"dv.scan-view.accessibility-label.button.take-photo" = "Ta et bilde";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Aktiver blits";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Deaktiver blits";
+"dv.scan-view.confirmation.button.readable" = "Fortsett";
+"dv.scan-view.confirmation.button.retake" = "TA PÅ NYTT";
+"dv.scan-view.confirmation.text" = "Kontroller at alle opplysninger i dokumentet er fullt synlige, gjenskinnsfrie og ikke uskarpe";
+"dv.scan-view.help.document-BC" = "Fødselsattest";
+"dv.scan-view.help.document-BS" = "Kontoutskrift";
+"dv.scan-view.help.document-CAAP" = "Søknad om kontantforskudd";
+"dv.scan-view.help.document-CB" = "Byrådsvedtak";
+"dv.scan-view.help.document-CC" = "Kredittkort";
+"dv.scan-view.help.document-CCS" = "Kontoutskrift";
+"dv.scan-view.help.document-CRC" = "Styrevedtaksdokument";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Helsekort";
+"dv.scan-view.help.document-IC" = "Forsikringskort";
+"dv.scan-view.help.document-LAG" = "Leieavtale";
+"dv.scan-view.help.document-LOAP" = "Lånesøknad";
+"dv.scan-view.help.document-MEDC" = "Medicare-kort";
+"dv.scan-view.help.document-MOAP" = "Boliglån-søknad";
+"dv.scan-view.help.document-PB" = "Telefonregning";
+"dv.scan-view.help.document-SEL" = "Brev om skoleregistrering";
+"dv.scan-view.help.document-SENC" = "Honnørkort";
+"dv.scan-view.help.document-SS" = "Pensjonsbevis";
+"dv.scan-view.help.document-SSC" = "Trygdekort";
+"dv.scan-view.help.document-STUC" = "Studentkort";
+"dv.scan-view.help.document-TAC" = "Handelsforeningskort";
+"dv.scan-view.help.document-TR" = "Selvangivelse";
+"dv.scan-view.help.document-UB" = "Strømregning";
+"dv.scan-view.help.document-VC" = "Annullert sjekk";
+"dv.scan-view.help.document-VT" = "Kjøretøytittel";
+"dv.scan-view.help.document-WWCC" = "Sjekk for mulighet til å jobbe med barn";
+"dv.scan-view.help.document.headline" = "Registrer %@";
+"dv.scan-view.navigationItem.title" = "Skann dokument";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Opplasting vellykket";
+"dv.submission-view.uploading.description" = "Dette skal kun ta et par sekunder, avhengig av nettverkstilkoblingen din";
+"dv.submission-view.uploading.headline" = "Laste opp dokumentene dine";

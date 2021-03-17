@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "ยืนยัน";
+"auth.alert-view.camera-access-disabled.description" = "%@ ต้องการเข้าถึงกล้อง โปรดตรวจสอบการตั้งค่าความเป็นส่วนตัวของคุณ";
+"auth.alert-view.camera-access-disabled.title" = "การเข้าถึงกล้องถูกปิดใช้งาน";
+"auth.error-view.button.cancel.title" = "ยกเลิก";
+"auth.error-view.button.retry.title" = "ลองอีกครั้ง";
+"auth.error-view.error.header.title" = "ข้อผิดพลาด";
+"auth.error.authentication-failed.title" = "การรับรองความถูกต้องล้มเหลว";
+"auth.error.cancelled-by-user.title" = "ยกเลิกโดยผู้ใช้ปลายทาง";
+"auth.error.device-is-offline.title" = "ไม่มีการเชื่อมต่ออินเทอร์เน็ต";
+"auth.error.invalid-key.title" = "ใบรับรองใช้งานไม่ได้แล้ว โปรดติดต่อผู้จําหน่ายแอป";
+"auth.error.network-problem.title" = "เราพบปัญหาการสื่อสารเครือข่าย";
+"auth.error.setup-error.title" = "ไม่สามารถสแกนได้ในขณะนี้ โปรดติดต่อผู้จำหน่ายแอป";
+"auth.error.transaction-already-finished.title" = "ธุรกรรมเสร็จสิ้นแล้ว";
+"auth.scan-help-view.liveness-help.bad-angle" = "ถืออุปกรณ์ที่ระดับสายตาและมองตรงไปที่กล้อง";
+"auth.scan-help-view.liveness-help.bad-lightning" = "หลีกเลี่ยงจุดที่ทำให้เกิดเงาและแสงสะท้อนบนใบหน้า";
+"auth.scan-help-view.liveness-help.button-continue.title" = "แตะเพื่อดำเนินการต่อ";
+"auth.scan-help-view.liveness-help.general" = "ปฏิบัติตามกระบวนการสองขั้นตอน และวางใบหน้าให้เข้ากับกรอบ ถืออุปกรณ์ในระดับสายตาและมองตรงไปที่กล้อง ระบบจะจับภาพใบหน้าของคุณโดยอัตโนมัติ";
+"auth.scan-view.accessibility-label.close-button" = "ออกจากการสแกน";
+"auth.scan-view.liveness-help.navigation-item.title" = "ประสบปัญหาใช่หรือไม่";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "จับภาพใบหน้าของคุณ";
+"auth.scanview.liveness.landscape.description" = "โปรดหมุนโทรศัพท์เป็นแนวตั้งเพื่อถ่ายภาพตัวเอง";
+"auth.scanview.liveness.landscape.header" = "หมุนอุปกรณ์";
+"zoom_feedback_a_little_too_close" = "ถอยหลังไปเล็กน้อย";
+"zoom_feedback_a_little_too_close_tablet" = "ถอยหลังไปเล็กน้อย";
+"zoom_feedback_center_face" = "วางใบหน้าให้อยู่ตรงกลาง";
+"zoom_feedback_face_not_found" = "วางใบหน้าอยู่ในกรอบ";
+"zoom_feedback_face_not_looking_straight_ahead" = "มองตรงไปข้างหน้า";
+"zoom_feedback_face_not_upright" = "ตั้งศีรษะให้ตรง";
+"zoom_feedback_hold_steady" = "ถือนิ่ง ๆ";
+"zoom_feedback_move_phone_away" = "ถอยหลังไปเล็กน้อย";
+"zoom_feedback_move_phone_closer" = "ขยับเข้ามาใกล้เล็กน้อย";
+"zoom_feedback_move_phone_even_closer" = "ใกล้เข้ามาอีก";
+"zoom_feedback_move_phone_to_eye_level" = "ถืออุปกรณ์ในระดับสายตา";
+"zoom_feedback_move_tablet_away" = "ถอยหลังไปเล็กน้อย";
+"zoom_feedback_move_tablet_closer" = "ขยับเข้ามาใกล้เล็กน้อย";
+"zoom_feedback_move_tablet_to_eye_level" = "ถืออุปกรณ์ในระดับสายตา";

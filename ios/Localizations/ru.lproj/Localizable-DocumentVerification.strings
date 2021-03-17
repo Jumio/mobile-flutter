@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Ошибка аутентификации";
+"dv.error-view.button.cancel" = "Отменить";
+"dv.error-view.button.retry" = "Повторить";
+"dv.error-view.camera-access-disabled.button.title" = "Подтвердить";
+"dv.error-view.camera-access-disabled.content" = "%@ нужен доступ к вашей камере. Проверьте настройки конфиденциальности.";
+"dv.error-view.camera-access-disabled.title" = "Доступ к камере отключен";
+"dv.error-view.cancelled-by-user" = "Отменено конечным пользователем";
+"dv.error-view.device-is-offline" = "Нет подключения к интернету";
+"dv.error-view.error.headline" = "Ошибка";
+"dv.error-view.invalid-key" = "Сертификат больше не действителен. Свяжитесь с поставщиком приложения";
+"dv.error-view.network-problem" = "Мы столкнулись с проблемой сетевой связи";
+"dv.scan-options.accessibility-label.close-button" = "Завершить сканирование";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Переключиться на заднюю камеру";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Переключиться на переднюю камеру";
+"dv.scan-view.accessibility-label.button.take-photo" = "Сфотографировать";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Включить вспышку";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Отключить вспышку";
+"dv.scan-view.confirmation.button.readable" = "Продолжить";
+"dv.scan-view.confirmation.button.retake" = "ПЕРЕСНЯТЬ";
+"dv.scan-view.confirmation.text" = "Убедитесь, что все данные в вашем документе полностью видны, без бликов и не размыты";
+"dv.scan-view.help.document-BC" = "Свидетельство о рождении";
+"dv.scan-view.help.document-BS" = "Выписка из банка";
+"dv.scan-view.help.document-CAAP" = "Заявка на выдачу наличных";
+"dv.scan-view.help.document-CB" = "Муниципальный счет";
+"dv.scan-view.help.document-CC" = "Кредитная карта";
+"dv.scan-view.help.document-CCS" = "Выписка по кредитной карте";
+"dv.scan-view.help.document-CRC" = "Сертификат корпоративной резолюции";
+"dv.scan-view.help.document-CUSTOM" = "Документ";
+"dv.scan-view.help.document-HCC" = "Карта здравоохранения";
+"dv.scan-view.help.document-IC" = "Страховой полис";
+"dv.scan-view.help.document-LAG" = "Договор аренды";
+"dv.scan-view.help.document-LOAP" = "Заявка на получение кредита";
+"dv.scan-view.help.document-MEDC" = "Карта медицинской помощи";
+"dv.scan-view.help.document-MOAP" = "Заявка на ипотеку";
+"dv.scan-view.help.document-PB" = "Телефонный счет";
+"dv.scan-view.help.document-SEL" = "Письмо о зачислении в учебное заведение";
+"dv.scan-view.help.document-SENC" = "Карта пенсионера";
+"dv.scan-view.help.document-SS" = "Выписка с пенсионного счета";
+"dv.scan-view.help.document-SSC" = "Карточка социального обеспечения";
+"dv.scan-view.help.document-STUC" = "Студенческая карта";
+"dv.scan-view.help.document-TAC" = "Карта торговой ассоциации";
+"dv.scan-view.help.document-TR" = "Налоговая декларация";
+"dv.scan-view.help.document-UB" = "Счет за коммунальные услуги";
+"dv.scan-view.help.document-VC" = "Аннулированный чек";
+"dv.scan-view.help.document-VT" = "Название транспортного средства";
+"dv.scan-view.help.document-WWCC" = "Работа с проверкой детей";
+"dv.scan-view.help.document.headline" = "Сделать снимок %@";
+"dv.scan-view.navigationItem.title" = "Отсканируйте";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Загрузка успешно завершена";
+"dv.submission-view.uploading.description" = "Это должно занять всего несколько секунд, в зависимости от вашего подключения к сети";
+"dv.submission-view.uploading.headline" = "Загрузка документов";

@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "فشلت المصادقة";
+"dv.error-view.button.cancel" = "إلغاء";
+"dv.error-view.button.retry" = "إعادة المحاولة";
+"dv.error-view.camera-access-disabled.button.title" = "تأكيد";
+"dv.error-view.camera-access-disabled.content" = "يحتاج %@ إلى الوصول إلى الكاميرا. يُرجى التحقق من إعدادات الخصوصية الخاصة بك.";
+"dv.error-view.camera-access-disabled.title" = "تم تعطيل الوصول إلى الكاميرا";
+"dv.error-view.cancelled-by-user" = "تم إلغاؤه من قبل المستخدم النهائي";
+"dv.error-view.device-is-offline" = "لا يتوفر اتصال بالإنترنت";
+"dv.error-view.error.headline" = "خطأ";
+"dv.error-view.invalid-key" = "الشهادة لم تعد صالحة. يُرجى الاتصال ببائع التطبيق";
+"dv.error-view.network-problem" = "واجهنا مشكلة في الاتصال بالشبكة";
+"dv.scan-options.accessibility-label.close-button" = "إنهاء المسح";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "التبديل إلى الكاميرا الخلفية";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "التبديل إلى الكاميرا الأمامية";
+"dv.scan-view.accessibility-label.button.take-photo" = "التقاط صورة";
+"dv.scan-view.accessibility-label.flash-button.activate" = "تنشيط الفلاش";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "إلغاء تنشيط الفلاش";
+"dv.scan-view.confirmation.button.readable" = "متابعة";
+"dv.scan-view.confirmation.button.retake" = "إعادة الالتقاط";
+"dv.scan-view.confirmation.text" = "تأكد من أن جميع البيانات الموجودة في المستند مرئية تمامًا وخالية من الوهج وواضحة";
+"dv.scan-view.help.document-BC" = "شهادة ميلاد";
+"dv.scan-view.help.document-BS" = "كشف حساب بنكى";
+"dv.scan-view.help.document-CAAP" = "طلب السلفة النقدية";
+"dv.scan-view.help.document-CB" = "فاتورة المجلس";
+"dv.scan-view.help.document-CC" = "بطاقة ائتمان";
+"dv.scan-view.help.document-CCS" = "كشف حساب بطاقة الائتمان";
+"dv.scan-view.help.document-CRC" = "شهادة قرار الشركة";
+"dv.scan-view.help.document-CUSTOM" = "المستند";
+"dv.scan-view.help.document-HCC" = "بطاقة الرعاية الصحية";
+"dv.scan-view.help.document-IC" = "بطاقة التأمين";
+"dv.scan-view.help.document-LAG" = "عقد الإيجار";
+"dv.scan-view.help.document-LOAP" = "طلب القرض";
+"dv.scan-view.help.document-MEDC" = "بطاقة الرعاية الطبية";
+"dv.scan-view.help.document-MOAP" = "طلب الرهن العقاري";
+"dv.scan-view.help.document-PB" = "فاتورة الهاتف";
+"dv.scan-view.help.document-SEL" = "خطاب الالتحاق بالمدرسة";
+"dv.scan-view.help.document-SENC" = "بطاقة كبار السن";
+"dv.scan-view.help.document-SS" = "بيان التقاعد";
+"dv.scan-view.help.document-SSC" = "بطاقة الضمان الاجتماعي";
+"dv.scan-view.help.document-STUC" = "بطاقة الطالب";
+"dv.scan-view.help.document-TAC" = "بطاقة الجمعية التجارية";
+"dv.scan-view.help.document-TR" = "الإقرار الضريبي";
+"dv.scan-view.help.document-UB" = "فاتورة مرافق";
+"dv.scan-view.help.document-VC" = "التحقق الملغي";
+"dv.scan-view.help.document-VT" = "ملكية السيارة";
+"dv.scan-view.help.document-WWCC" = "إﻓﺎدة اﻟﺗﺣﻘﱡق ﻟﻠﻌﻣل ﻣﻊ اﻷطﻔﺎل";
+"dv.scan-view.help.document.headline" = "التقاط %@";
+"dv.scan-view.navigationItem.title" = "مسح المستند";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "تحميل ناجح";
+"dv.submission-view.uploading.description" = "يجب أن يستغرق ذلك بضع ثوانٍ فقط، اعتمادًا على اتصال الشبكة";
+"dv.submission-view.uploading.headline" = "جارٍ تحميل مستنداتك";

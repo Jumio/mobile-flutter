@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Bevestig";
+"auth.alert-view.camera-access-disabled.description" = "%@ benodig toegang tot u kamera. Gaan asseblief u privaatheidsinstellings na.";
+"auth.alert-view.camera-access-disabled.title" = "Toegang tot kamera is gedeaktiveer";
+"auth.error-view.button.cancel.title" = "Kanselleer";
+"auth.error-view.button.retry.title" = "Probeer weer";
+"auth.error-view.error.header.title" = "Fout";
+"auth.error.authentication-failed.title" = "Verifikasie het misluk";
+"auth.error.cancelled-by-user.title" = "Gekanselleer deur eindgebruiker";
+"auth.error.device-is-offline.title" = "Geen internetverbinding beskikbaar nie";
+"auth.error.invalid-key.title" = "Sertifikaat is nie meer geldig nie. Kontak asseblief die programverskaffer.";
+"auth.error.network-problem.title" = "Daar was 'n netwerkkommunikasieprobleem";
+"auth.error.setup-error.title" = "Skandering is tans nie beskikbaar nie; kontak asseblief die programverskaffer";
+"auth.error.transaction-already-finished.title" = "Transaksie is reeds voltooi";
+"auth.scan-help-view.liveness-help.bad-angle" = "Hou u toestel op ooghoogte en kyk direk daarna";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Moenie dat daar skaduwees en weerkaatsings op u gesig is nie";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Druk om voort te gaan";
+"auth.scan-help-view.liveness-help.general" = "Volg die tweestap-proses en sit u gesig in die raam. Hou u toestel op ooghoogte en kyk direk na die kamera. U gesig sal outomaties vasgelê word.";
+"auth.scan-view.accessibility-label.close-button" = "Verlaat skandering";
+"auth.scan-view.liveness-help.navigation-item.title" = "Ondervind u probleme?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Lê u gesig vas";
+"auth.scanview.liveness.landscape.description" = "Draai asseblief u foon na portret om 'n selfie te neem";
+"auth.scanview.liveness.landscape.header" = "Draai u toestel";
+"zoom_feedback_a_little_too_close" = "Gaan 'n bietjie terug";
+"zoom_feedback_a_little_too_close_tablet" = "Gaan 'n bietjie terug";
+"zoom_feedback_center_face" = "Sit u gesig in die middel";
+"zoom_feedback_face_not_found" = "Sit u gesig in die raam";
+"zoom_feedback_face_not_looking_straight_ahead" = "Kyk reguit vorentoe";
+"zoom_feedback_face_not_upright" = "Hou u kop regop";
+"zoom_feedback_hold_steady" = "Hou stil";
+"zoom_feedback_move_phone_away" = "Gaan 'n bietjie terug";
+"zoom_feedback_move_phone_closer" = "Kom 'n bietjie nader";
+"zoom_feedback_move_phone_even_closer" = "'n Bietjie nader";
+"zoom_feedback_move_phone_to_eye_level" = "Hou toestel op ooghoogte";
+"zoom_feedback_move_tablet_away" = "Gaan 'n bietjie terug";
+"zoom_feedback_move_tablet_closer" = "Kom 'n bietjie nader";
+"zoom_feedback_move_tablet_to_eye_level" = "Hou toestel op ooghoogte";

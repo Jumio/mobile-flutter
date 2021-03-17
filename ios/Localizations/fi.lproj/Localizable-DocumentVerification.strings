@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Todennus epäonnistui";
+"dv.error-view.button.cancel" = "Peruuta";
+"dv.error-view.button.retry" = "Yritä uudelleen";
+"dv.error-view.camera-access-disabled.button.title" = "Vahvista";
+"dv.error-view.camera-access-disabled.content" = "%@ tarvitsee kameran käyttöoikeuden. Tarkista tietosuoja-asetukset.";
+"dv.error-view.camera-access-disabled.title" = "Kamera on poistettu käytöstä";
+"dv.error-view.cancelled-by-user" = "Loppukäyttäjän peruuttama";
+"dv.error-view.device-is-offline" = "Internet-yhteyttä ei ole käytettävissä";
+"dv.error-view.error.headline" = "Virhe";
+"dv.error-view.invalid-key" = "Varmenne on vanhentunut. Ota yhteyttä sovelluksen toimittajaan";
+"dv.error-view.network-problem" = "Verkkoyhteyden toiminnassa on jokin ongelma";
+"dv.scan-options.accessibility-label.close-button" = "Lopeta skannaus";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Vaihda takakameraan";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Vaihda etukameraan";
+"dv.scan-view.accessibility-label.button.take-photo" = "Ota kuva";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Ota salama käyttöön";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Poista salama";
+"dv.scan-view.confirmation.button.readable" = "Jatka";
+"dv.scan-view.confirmation.button.retake" = "Ota uudelleen";
+"dv.scan-view.confirmation.text" = "Varmista, että kaikki asiakirjan tiedot näkyvät kokonaan, kuvassa ei ole heijastuksia eivätkä tiedot ole epäselviä";
+"dv.scan-view.help.document-BC" = "Syntymätodistus";
+"dv.scan-view.help.document-BS" = "Tiliote";
+"dv.scan-view.help.document-CAAP" = "Ennakkomaksuhakemus";
+"dv.scan-view.help.document-CB" = "Kunnallisverolasku";
+"dv.scan-view.help.document-CC" = "Luottokortti";
+"dv.scan-view.help.document-CCS" = "Luottokortin tiliote";
+"dv.scan-view.help.document-CRC" = "Yrityksen päätöslauselma";
+"dv.scan-view.help.document-CUSTOM" = "Asiakirja";
+"dv.scan-view.help.document-HCC" = "Terveydenhoitokortti";
+"dv.scan-view.help.document-IC" = "Vakuutuskortti";
+"dv.scan-view.help.document-LAG" = "Vuokrasopimus";
+"dv.scan-view.help.document-LOAP" = "Lainahakemus";
+"dv.scan-view.help.document-MEDC" = "Sairaanhoitokortti";
+"dv.scan-view.help.document-MOAP" = "Asuntolainahakemus";
+"dv.scan-view.help.document-PB" = "Puhelinlasku";
+"dv.scan-view.help.document-SEL" = "Koulun ilmoittautumiskirje";
+"dv.scan-view.help.document-SENC" = "Eläkeläiskortti";
+"dv.scan-view.help.document-SS" = "Eläkelausunto";
+"dv.scan-view.help.document-SSC" = "Sosiaaliturvakortti";
+"dv.scan-view.help.document-STUC" = "Opiskelijakortti";
+"dv.scan-view.help.document-TAC" = "Ammattiyhdistyskortti";
+"dv.scan-view.help.document-TR" = "Veroilmoitus";
+"dv.scan-view.help.document-UB" = "Energia- tai vesilasku";
+"dv.scan-view.help.document-VC" = "Mitätöity shekki";
+"dv.scan-view.help.document-VT" = "Ajoneuvon omistajatiedot";
+"dv.scan-view.help.document-WWCC" = "Rikostaustaote lasten kanssa toimimiseen";
+"dv.scan-view.help.document.headline" = "Tallenna %@";
+"dv.scan-view.navigationItem.title" = "Skannaa asiakirja";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Lataaminen onnistui";
+"dv.submission-view.uploading.description" = "Tämän pitäisi kestää vain pari sekuntia verkkoyhteytesi nopeudesta riippuen";
+"dv.submission-view.uploading.headline" = "Asiakirjoja ladataan";

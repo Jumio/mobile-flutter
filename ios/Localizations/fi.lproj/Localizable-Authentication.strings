@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Vahvista";
+"auth.alert-view.camera-access-disabled.description" = "%@ tarvitsee kameran käyttöoikeuden. Tarkista tietosuoja-asetukset.";
+"auth.alert-view.camera-access-disabled.title" = "Kamera on poistettu käytöstä";
+"auth.error-view.button.cancel.title" = "Peruuta";
+"auth.error-view.button.retry.title" = "Yritä uudelleen";
+"auth.error-view.error.header.title" = "Virhe";
+"auth.error.authentication-failed.title" = "Todennus epäonnistui";
+"auth.error.cancelled-by-user.title" = "Loppukäyttäjän peruuttama";
+"auth.error.device-is-offline.title" = "Internet-yhteyttä ei ole käytettävissä";
+"auth.error.invalid-key.title" = "Varmenne on vanhentunut. Ota yhteyttä sovelluksen toimittajaan";
+"auth.error.network-problem.title" = "Verkkoyhteyden toiminnassa on jokin ongelma";
+"auth.error.setup-error.title" = "Skannaus ei ole tällä hetkellä käytettävissä. Ota yhteyttä sovelluksen toimittajaan";
+"auth.error.transaction-already-finished.title" = "Tapahtuma on jo suoritettu";
+"auth.scan-help-view.liveness-help.bad-angle" = "Pidä laitetta silmien tasolla ja katso suoraan laitteeseen";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Vältä varjoja ja heijastuksia";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Jatka napauttamalla";
+"auth.scan-help-view.liveness-help.general" = "Noudata kaksivaiheista prosessia ja kohdista kasvosi kehykseen. Pidä laitetta silmien tasolla ja katso suoraan kameraan. Kuva tallennetaan automaattisesti";
+"auth.scan-view.accessibility-label.close-button" = "Lopeta skannaus";
+"auth.scan-view.liveness-help.navigation-item.title" = "Onko sinulla ongelmia?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Kuvaa kasvosi";
+"auth.scanview.liveness.landscape.description" = "Ota selfie kääntämällä puhelin pystyasentoon";
+"auth.scanview.liveness.landscape.header" = "Käännä laitettasi";
+"zoom_feedback_a_little_too_close" = "Siirry hieman taaksepäin";
+"zoom_feedback_a_little_too_close_tablet" = "Siirry hieman taaksepäin";
+"zoom_feedback_center_face" = "Keskitä kasvosi";
+"zoom_feedback_face_not_found" = "Sovita kasvosi kehykseen";
+"zoom_feedback_face_not_looking_straight_ahead" = "Katso suoraan eteenpäin";
+"zoom_feedback_face_not_upright" = "Pidä pää suorassa";
+"zoom_feedback_hold_steady" = "Pysy paikoillasi";
+"zoom_feedback_move_phone_away" = "Siirry hieman taaksepäin";
+"zoom_feedback_move_phone_closer" = "Siirry hieman lähemmäksi";
+"zoom_feedback_move_phone_even_closer" = "Hieman lähemmäksi";
+"zoom_feedback_move_phone_to_eye_level" = "Pidä laitetta silmien tasolla";
+"zoom_feedback_move_tablet_away" = "Siirry hieman taaksepäin";
+"zoom_feedback_move_tablet_closer" = "Siirry hieman lähemmäksi";
+"zoom_feedback_move_tablet_to_eye_level" = "Pidä laitetta silmien tasolla";

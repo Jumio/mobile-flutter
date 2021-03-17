@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Preverjanje pristnosti ni uspelo";
+"dv.error-view.button.cancel" = "Prekliči";
+"dv.error-view.button.retry" = "Poskusi znova";
+"dv.error-view.camera-access-disabled.button.title" = "Potrdi";
+"dv.error-view.camera-access-disabled.content" = "%@ potrebuje dostop do kamere. Preverite nastavitve zasebnosti.";
+"dv.error-view.camera-access-disabled.title" = "Dostop do kamere je onemogočen.";
+"dv.error-view.cancelled-by-user" = "Preklical končni uporabnik.";
+"dv.error-view.device-is-offline" = "Internetna povezava ni na voljo";
+"dv.error-view.error.headline" = "Napaka";
+"dv.error-view.invalid-key" = "Potrdilo ni več veljavno. Obrnite se na prodajalca aplikacije.";
+"dv.error-view.network-problem" = "Naleteli smo na težavo z omrežno komunikacijo";
+"dv.scan-options.accessibility-label.close-button" = "Prekliči optično branje";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Preklopi na zadnjo kamero";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Preklopi na sprednjo kamero";
+"dv.scan-view.accessibility-label.button.take-photo" = "Posnemi fotografijo";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Vklopi bliskavico";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Izklopi bliskavico";
+"dv.scan-view.confirmation.button.readable" = "Naprej";
+"dv.scan-view.confirmation.button.retake" = "PONOVNO POSNEMI";
+"dv.scan-view.confirmation.text" = "Poskrbite, da so vsi podatki na vašem dokumentu povsem vidni, brez odsevov in niso zamegljeni.";
+"dv.scan-view.help.document-BC" = "Rojstni list";
+"dv.scan-view.help.document-BS" = "Bančni izpisek";
+"dv.scan-view.help.document-CAAP" = "Vloga za predplačilo v gotovini";
+"dv.scan-view.help.document-CB" = "Račun občinskega organa";
+"dv.scan-view.help.document-CC" = "Kreditna kartica";
+"dv.scan-view.help.document-CCS" = "Izpisek kreditne kartice";
+"dv.scan-view.help.document-CRC" = "Potrdilo o sklepu upravnega odbora podjetja";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Kartica zdravstvenega zavarovanja";
+"dv.scan-view.help.document-IC" = "Kartica zavarovanja";
+"dv.scan-view.help.document-LAG" = "Najemna pogodba";
+"dv.scan-view.help.document-LOAP" = "Vloga za posojilo";
+"dv.scan-view.help.document-MEDC" = "Izkaznica Medicare";
+"dv.scan-view.help.document-MOAP" = "Hipotekarna vloga";
+"dv.scan-view.help.document-PB" = "Telefonski račun";
+"dv.scan-view.help.document-SEL" = "Dopis o vpisu v šolo";
+"dv.scan-view.help.document-SENC" = "Upokojenska izkaznica";
+"dv.scan-view.help.document-SS" = "Pokojninski izpisek";
+"dv.scan-view.help.document-SSC" = "Izkaznica socialnega zavarovanja";
+"dv.scan-view.help.document-STUC" = "Študentska izkaznica";
+"dv.scan-view.help.document-TAC" = "Izkaznica trgovinskega združenja";
+"dv.scan-view.help.document-TR" = "Davčna napoved";
+"dv.scan-view.help.document-UB" = "Račun za javne storitve";
+"dv.scan-view.help.document-VC" = "Razveljavljen ček";
+"dv.scan-view.help.document-VT" = "Prometno dovoljenje";
+"dv.scan-view.help.document-WWCC" = "Dovoljenje za delo z otroki";
+"dv.scan-view.help.document.headline" = "Zajemi %@";
+"dv.scan-view.navigationItem.title" = "Optično branje";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Nalaganje uspešno";
+"dv.submission-view.uploading.description" = "To bi moralo trajati le nekaj sekund, odvisno od vaše omrežne povezljivosti.";
+"dv.submission-view.uploading.headline" = "Nalaganje dokumentov";

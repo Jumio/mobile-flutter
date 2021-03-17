@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Ikkonferma";
+"auth.alert-view.camera-access-disabled.description" = "%@ għandu bżonn aċċess għall-kamera tiegħek. Jekk jogħġbok iċċekkja s-settings tal-privatezza tiegħek.";
+"auth.alert-view.camera-access-disabled.title" = "L-aċċess għall-kamera huwa ddiżattivat";
+"auth.error-view.button.cancel.title" = "Ikkanċella";
+"auth.error-view.button.retry.title" = "Erġa' pprova";
+"auth.error-view.error.header.title" = "Żball";
+"auth.error.authentication-failed.title" = "L-awtentikazzjoni ma rnexxietx";
+"auth.error.cancelled-by-user.title" = "Ikkanċellata mill-utent aħħari";
+"auth.error.device-is-offline.title" = "M'hawnx konnessjoni mal-Internet";
+"auth.error.invalid-key.title" = "Iċ-ċertifikat m'għadux aktar validu. Jekk jogħġbok ikkuntattja lill-bejjiegħ tal-app.";
+"auth.error.network-problem.title" = "Iltqajna ma' problema fil-komunikazzjoni tan-netwerk";
+"auth.error.setup-error.title" = "Bħalissa ma tistax tiskennja, jekk jogħġbok ikkuntattja lill-bejjiegħ tal-app";
+"auth.error.transaction-already-finished.title" = "It-tranżazzjoni diġà lesta";
+"auth.scan-help-view.liveness-help.bad-angle" = "Żomm it-tagħmir tiegħek f'livell mal-għajnejn u ħares dritt lejh";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Evita dellijiet u riflessjonijiet fuq wiċċek";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Agħfas biex tkompli";
+"auth.scan-help-view.liveness-help.general" = "Segwi l-proċess li fih żewġ passi u allinja wiċċek mal-frejm. Żomm it-tagħmir tiegħek f'livell mal-għajnejn u ħares dritt fil-kamera. Se jinġibed ritratt ta' wiċċek awtomatikament.";
+"auth.scan-view.accessibility-label.close-button" = "Waqqaf l-iskenn";
+"auth.scan-view.liveness-help.navigation-item.title" = "Qed tesperjenza xi problemi?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Iġbed ritratt ta' wiċċek";
+"auth.scanview.liveness.landscape.description" = "Jekk jogħġbok dawwar il-mowbajl tiegħek fil-pożizzjoni portrait biex tieħu stessu";
+"auth.scanview.liveness.landscape.header" = "Dawwar it-tagħmir tiegħek";
+"zoom_feedback_a_little_too_close" = "Imxi ftit lura";
+"zoom_feedback_a_little_too_close_tablet" = "Imxi ftit lura";
+"zoom_feedback_center_face" = "Poġġi wiċċek fiċ-ċentru";
+"zoom_feedback_face_not_found" = "Daħħal wiċċek fil-frejm";
+"zoom_feedback_face_not_looking_straight_ahead" = "Ħares dritt 'il quddiem";
+"zoom_feedback_face_not_upright" = "Żomm rasek dritta";
+"zoom_feedback_hold_steady" = "Tiċċaqlaqx";
+"zoom_feedback_move_phone_away" = "Imxi ftit lura";
+"zoom_feedback_move_phone_closer" = "Imxi ftit aktar viċin";
+"zoom_feedback_move_phone_even_closer" = "Ftit aktar viċin";
+"zoom_feedback_move_phone_to_eye_level" = "Żomm it-tagħmir f'livell mal-għajnejn";
+"zoom_feedback_move_tablet_away" = "Imxi ftit lura";
+"zoom_feedback_move_tablet_closer" = "Imxi ftit aktar viċin";
+"zoom_feedback_move_tablet_to_eye_level" = "Żomm it-tagħmir f'livell mal-għajnejn";

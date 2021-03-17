@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Xác nhận";
+"auth.alert-view.camera-access-disabled.description" = "%@ cần truy cập máy ảnh của bạn. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.";
+"auth.alert-view.camera-access-disabled.title" = "Quyền truy cập máy ảnh bị vô hiệu hóa";
+"auth.error-view.button.cancel.title" = "Hủy";
+"auth.error-view.button.retry.title" = "Thử lại";
+"auth.error-view.error.header.title" = "Lỗi";
+"auth.error.authentication-failed.title" = "Xác thực thất bại";
+"auth.error.cancelled-by-user.title" = "Đã hủy bởi người dùng cuối";
+"auth.error.device-is-offline.title" = "Không có kết nối internet";
+"auth.error.invalid-key.title" = "Chứng chỉ không còn hợp lệ. Vui lòng liên hệ với nhà cung cấp ứng dụng";
+"auth.error.network-problem.title" = "Chúng tôi đã gặp sự cố về giao tiếp mạng";
+"auth.error.setup-error.title" = "Chức năng quét hiện không khả dụng, vui lòng liên hệ với nhà cung cấp ứng dụng";
+"auth.error.transaction-already-finished.title" = "Giao dịch đã hoàn tất";
+"auth.scan-help-view.liveness-help.bad-angle" = "Giữ thiết bị ngang tầm mắt và nhìn thẳng vào đó";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Tránh bóng tối và bóng phản chiếu trên khuôn mặt bạn";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Nhấn để tiếp tục";
+"auth.scan-help-view.liveness-help.general" = "Làm theo quy trình gồm hai bước và căn chỉnh khuôn mặt của bạn vào khung. Giữ yên thiết bị ngang tầm mắt và nhìn thẳng vào máy ảnh. Khuôn mặt của bạn sẽ được tự động chụp.";
+"auth.scan-view.accessibility-label.close-button" = "Thoát khỏi quét";
+"auth.scan-view.liveness-help.navigation-item.title" = "Bạn gặp vấn đề?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Chụp ảnh khuôn mặt bạn";
+"auth.scanview.liveness.landscape.description" = "Hãy xoay dọc điện thoại để chụp ảnh tự chụp";
+"auth.scanview.liveness.landscape.header" = "Xoay thiết bị của bạn";
+"zoom_feedback_a_little_too_close" = "Di chuyển ra xa một chút";
+"zoom_feedback_a_little_too_close_tablet" = "Di chuyển ra xa một chút";
+"zoom_feedback_center_face" = "Chỉnh khuôn mặt bạn vào giữa";
+"zoom_feedback_face_not_found" = "Chỉnh khuôn mặt vào trong khung";
+"zoom_feedback_face_not_looking_straight_ahead" = "Nhìn thẳng về phía trước";
+"zoom_feedback_face_not_upright" = "Giữ thẳng đầu";
+"zoom_feedback_hold_steady" = "Giữ yên";
+"zoom_feedback_move_phone_away" = "Di chuyển ra xa một chút";
+"zoom_feedback_move_phone_closer" = "Di chuyển lại gần hơn một chút";
+"zoom_feedback_move_phone_even_closer" = "Gần hơn một chút";
+"zoom_feedback_move_phone_to_eye_level" = "Giữ thiết bị ngang tầm mắt";
+"zoom_feedback_move_tablet_away" = "Di chuyển ra xa một chút";
+"zoom_feedback_move_tablet_closer" = "Di chuyển lại gần hơn một chút";
+"zoom_feedback_move_tablet_to_eye_level" = "Giữ thiết bị ngang tầm mắt";

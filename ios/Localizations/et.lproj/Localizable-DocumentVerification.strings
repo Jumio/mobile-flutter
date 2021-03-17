@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Tuvastamine ebaõnnestus";
+"dv.error-view.button.cancel" = "Tühista";
+"dv.error-view.button.retry" = "Proovi uuesti";
+"dv.error-view.camera-access-disabled.button.title" = "Kinnitage";
+"dv.error-view.camera-access-disabled.content" = "%@ vajab juurdepääsu teie kaamerale. Kontrollige oma privaatsusseadeid.";
+"dv.error-view.camera-access-disabled.title" = "Juurdepääs kaamerale on keelatud";
+"dv.error-view.cancelled-by-user" = "Lõppkasutaja poolt tühistatud";
+"dv.error-view.device-is-offline" = "Internetiühendus puudub";
+"dv.error-view.error.headline" = "Viga";
+"dv.error-view.invalid-key" = "Sertifikaat ei kehti enam. Võtke ühendust rakenduse pakkujaga";
+"dv.error-view.network-problem" = "Meil on tekkinud võrgusuhtluse probleem";
+"dv.scan-options.accessibility-label.close-button" = "Lõpeta skannimine";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Lülitu tagakaamerale";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Lülitu esikaamerale";
+"dv.scan-view.accessibility-label.button.take-photo" = "Pildista";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Aktiveeri välk";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Inaktiveeri välk";
+"dv.scan-view.confirmation.button.readable" = "Jätka";
+"dv.scan-view.confirmation.button.retake" = "Uuesti";
+"dv.scan-view.confirmation.text" = "Veenduge, et kõik dokumendi andmed oleksid täielikult nähtavad, pimestamata ja mitte hägused";
+"dv.scan-view.help.document-BC" = "Sünnitunnistus";
+"dv.scan-view.help.document-BS" = "Panga väljavõte";
+"dv.scan-view.help.document-CAAP" = "Ettemakse taotlus";
+"dv.scan-view.help.document-CB" = "Volikogu arve";
+"dv.scan-view.help.document-CC" = "Krediitkaart";
+"dv.scan-view.help.document-CCS" = "Krediitkaardi väljavõte";
+"dv.scan-view.help.document-CRC" = "Juhatuse otsus";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Ravikindlustuskaart";
+"dv.scan-view.help.document-IC" = "Kindlustuskaart";
+"dv.scan-view.help.document-LAG" = "Rendileping";
+"dv.scan-view.help.document-LOAP" = "Laenutaotlus";
+"dv.scan-view.help.document-MEDC" = "Ravikindlustuskaart";
+"dv.scan-view.help.document-MOAP" = "Hüpoteegi taotlus";
+"dv.scan-view.help.document-PB" = "Telefoniarve";
+"dv.scan-view.help.document-SEL" = "Kooli registreerimise kiri";
+"dv.scan-view.help.document-SENC" = "Pensionitunnistus";
+"dv.scan-view.help.document-SS" = "Vanaduspensioni avaldus";
+"dv.scan-view.help.document-SSC" = "Sotsiaalkindlustuskaart";
+"dv.scan-view.help.document-STUC" = "Õpilaspilet";
+"dv.scan-view.help.document-TAC" = "Ametiühingu kaart";
+"dv.scan-view.help.document-TR" = "Maksutagastus";
+"dv.scan-view.help.document-UB" = "Kommunaalarve";
+"dv.scan-view.help.document-VC" = "Tühistatud tšekk";
+"dv.scan-view.help.document-VT" = "Sõiduki nimetus";
+"dv.scan-view.help.document-WWCC" = "Lastega töötamise piirangu kontroll";
+"dv.scan-view.help.document.headline" = "Jäädvustage %@";
+"dv.scan-view.navigationItem.title" = "Skannige";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Üleslaadimine õnnestus";
+"dv.submission-view.uploading.description" = "Olenevalt võrguühendusest peaks see võtma ainult paar sekundit";
+"dv.submission-view.uploading.headline" = "Dokumentide üleslaadimine";

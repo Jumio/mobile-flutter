@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Autentifikācija neizdevās";
+"dv.error-view.button.cancel" = "Atcelt";
+"dv.error-view.button.retry" = "Mēģiniet vēlreiz";
+"dv.error-view.camera-access-disabled.button.title" = "Apstiprināt";
+"dv.error-view.camera-access-disabled.content" = "%@ nepieciešama piekļuve jūsu kamerai. Lūdzu, pārbaudiet savus privātuma iestatījumus.";
+"dv.error-view.camera-access-disabled.title" = "Piekļuve kamerai ir atspējota";
+"dv.error-view.cancelled-by-user" = "Gala lietotājs atcēla procesu";
+"dv.error-view.device-is-offline" = "Nav pieejams interneta savienojums";
+"dv.error-view.error.headline" = "Kļūda";
+"dv.error-view.invalid-key" = "Sertifikāts vairs nav derīgs. Lūdzu, sazinieties ar lietotnes pārdevēju.";
+"dv.error-view.network-problem" = "Esam saskārušies ar tīkla komunikācijas problēmu";
+"dv.scan-options.accessibility-label.close-button" = "Pārtraukt seknēšanu";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Pārslēgties uz aizmugurējo kameru";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Pārslēgties uz priekšējo kameru";
+"dv.scan-view.accessibility-label.button.take-photo" = "Uzņemt fotoattēlu";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Ieslēgt zibspuldzi";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Izslēgt zibspuldzi";
+"dv.scan-view.confirmation.button.readable" = "Turpināt";
+"dv.scan-view.confirmation.button.retake" = "ņem vēlreiz";
+"dv.scan-view.confirmation.text" = "Pārliecinieties, vai visi jūsu dokumentā esošie dati ir labi redzami, bez atspīdumiem un nav izplūduši.";
+"dv.scan-view.help.document-BC" = "Dzimšanas apliecība";
+"dv.scan-view.help.document-BS" = "Bankas izraksts";
+"dv.scan-view.help.document-CAAP" = "Avansa pieteikums";
+"dv.scan-view.help.document-CB" = "Rēķins no domes";
+"dv.scan-view.help.document-CC" = "Kredītkarte";
+"dv.scan-view.help.document-CCS" = "Kredītkartes izraksts";
+"dv.scan-view.help.document-CRC" = "Uzņēmuma sertifikāts";
+"dv.scan-view.help.document-CUSTOM" = "Dokuments";
+"dv.scan-view.help.document-HCC" = "Veselības aprūpes karte";
+"dv.scan-view.help.document-IC" = "Apdrošināšanas karte";
+"dv.scan-view.help.document-LAG" = "Nomas līgums";
+"dv.scan-view.help.document-LOAP" = "Aizdevuma pieteikums";
+"dv.scan-view.help.document-MEDC" = "Medicīniskās aprūpes karte";
+"dv.scan-view.help.document-MOAP" = "Hipotēkas pieteikums";
+"dv.scan-view.help.document-PB" = "Telefona rēķins";
+"dv.scan-view.help.document-SEL" = "Skolas uzņemšanas vēstule";
+"dv.scan-view.help.document-SENC" = "Pensionāra apliecība";
+"dv.scan-view.help.document-SS" = "Paziņojums par vecuma pensiju";
+"dv.scan-view.help.document-SSC" = "Sociālās apdrošināšanas karte";
+"dv.scan-view.help.document-STUC" = "Studenta apliecība";
+"dv.scan-view.help.document-TAC" = "Tirdzniecības asociācijas karte";
+"dv.scan-view.help.document-TR" = "Nodokļu deklarācija";
+"dv.scan-view.help.document-UB" = "Komunālo pakalpojumu rēķins";
+"dv.scan-view.help.document-VC" = "Anulēts čeks";
+"dv.scan-view.help.document-VT" = "Transportlīdzekļa nosaukums";
+"dv.scan-view.help.document-WWCC" = "Izziņa par darbu ar bērniem";
+"dv.scan-view.help.document.headline" = "Uzņemt %@";
+"dv.scan-view.navigationItem.title" = "Skenēt";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Augšupielāde veiksmīga";
+"dv.submission-view.uploading.description" = "Atkarībā no tīkla savienojamības process var ilgt tikai dažas sekundes";
+"dv.submission-view.uploading.headline" = "Augšupielādē jūsu dokumentus";

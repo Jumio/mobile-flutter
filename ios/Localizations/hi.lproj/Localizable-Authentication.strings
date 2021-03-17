@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "पुष्टि करें";
+"auth.alert-view.camera-access-disabled.description" = "%@ को आपके कैमरे के एक्सेस की आवश्यकता है। कृपया अपनी गोपनीयता सेटिंग जांचें।";
+"auth.alert-view.camera-access-disabled.title" = "कैमरा एक्सेस अक्षम किया गया है";
+"auth.error-view.button.cancel.title" = "रद्द करें";
+"auth.error-view.button.retry.title" = "पुन: प्रयास करें";
+"auth.error-view.error.header.title" = "त्रुटि";
+"auth.error.authentication-failed.title" = "प्रमाणीकरण विफल हो गया";
+"auth.error.cancelled-by-user.title" = "अंतिम उपयोगकर्ता द्वारा रद्द";
+"auth.error.device-is-offline.title" = "इंटरनेट कनेक्शन उपलब्ध नहीं है";
+"auth.error.invalid-key.title" = "प्रमाण पत्र अब मान्य नहीं है। कृपया ऐप विक्रेता से संपर्क करें";
+"auth.error.network-problem.title" = "हमें एक नेटवर्क संचार समस्या का सामना करना पड़ा है";
+"auth.error.setup-error.title" = "स्कैनिंग इस समय उपलब्ध नहीं है, कृपया ऐप विक्रेता से संपर्क करें";
+"auth.error.transaction-already-finished.title" = "लेन-देन पहले से ही समाप्त हो गया है";
+"auth.scan-help-view.liveness-help.bad-angle" = "अपने डिवाइस को आंखों के स्तर पर पकड़ें और सीधे इसमें देखें";
+"auth.scan-help-view.liveness-help.bad-lightning" = "आपके चेहरे को छाया और परावर्तन से बचाएं";
+"auth.scan-help-view.liveness-help.button-continue.title" = "जारी रखने के लिए टैप करें";
+"auth.scan-help-view.liveness-help.general" = "दो चरण की प्रक्रिया का पालन करें और फ्रेम के साथ अपने चेहरे को संरेखित करें। आंखके स्तर पर अपने डिवाइस पकडें  और सीधे कैमरे में देखें। आपका चेहरा स्वचालित रूप से कैप्चर हो जाएगा";
+"auth.scan-view.accessibility-label.close-button" = "स्कैन से बाहर निकलें";
+"auth.scan-view.liveness-help.navigation-item.title" = "समस्याएँ आ रही हैं?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "अपना चेहरा कैप्चर करें";
+"auth.scanview.liveness.landscape.description" = "सेल्फी लेने के लिए कृपया अपने फोन को पोर्ट्रेट के लिए घुमाएं";
+"auth.scanview.liveness.landscape.header" = "अपने डिवाइस को घुमाएं";
+"zoom_feedback_a_little_too_close" = "थोड़ा पीछे ले जाएँ";
+"zoom_feedback_a_little_too_close_tablet" = "थोड़ा पीछे ले जाएँ";
+"zoom_feedback_center_face" = "अपने चेहरे को केंद्र में लाएं";
+"zoom_feedback_face_not_found" = "अपने चेहरे को फ्रेम करें";
+"zoom_feedback_face_not_looking_straight_ahead" = "सीधे आगे देखें";
+"zoom_feedback_face_not_upright" = "अपने सिर को सीधा रखें";
+"zoom_feedback_hold_steady" = "स्थिर पकड़े रखें";
+"zoom_feedback_move_phone_away" = "थोड़ा पीछे ले जाएँ";
+"zoom_feedback_move_phone_closer" = "थोड़ा और करीब ले जाएँ";
+"zoom_feedback_move_phone_even_closer" = "थोड़ा सा करीब";
+"zoom_feedback_move_phone_to_eye_level" = "डिवाइस को आंखों के स्तर पर पकड़ें";
+"zoom_feedback_move_tablet_away" = "थोड़ा पीछे ले जाएँ";
+"zoom_feedback_move_tablet_closer" = "थोड़ा और करीब ले जाएँ";
+"zoom_feedback_move_tablet_to_eye_level" = "डिवाइस को आंखों के स्तर पर पकड़ें";

@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Potvrdit";
+"auth.alert-view.camera-access-disabled.description" = "%@ potřebuje přístup ke kameře. Zkontrolujte nastavení ochrany osobních údajů.";
+"auth.alert-view.camera-access-disabled.title" = "Přístup ke kameře zamítnut";
+"auth.error-view.button.cancel.title" = "Zrušit";
+"auth.error-view.button.retry.title" = "Zkusit znovu";
+"auth.error-view.error.header.title" = "Chyba";
+"auth.error.authentication-failed.title" = "Ověření selhalo.";
+"auth.error.cancelled-by-user.title" = "Zrušeno koncovým uživatelem";
+"auth.error.device-is-offline.title" = "Internetové připojení není k dispozici.";
+"auth.error.invalid-key.title" = "Certifikát již není platný. Obraťte se prosím na dodavatele aplikace.";
+"auth.error.network-problem.title" = "Při síťové komunikaci došlo k problému.";
+"auth.error.setup-error.title" = "Skenování není v tuto chvíli k dispozici, obraťte prosím se na dodavatele aplikace.";
+"auth.error.transaction-already-finished.title" = "Transakce již byla dokončena.";
+"auth.scan-help-view.liveness-help.bad-angle" = "Držte zařízení na úrovni očí a dívejte se přímo do něj.";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Vyvarujte se stínů a odrazů na tváři.";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Pokračujte klepnutím";
+"auth.scan-help-view.liveness-help.general" = "Postupujte podle následujících instrukcí a zarovnejte obličej s rámečkem. Držte zařízení na úrovni očí a hleďte přímo do kamery. Vaše tvář bude zachycena automaticky.";
+"auth.scan-view.accessibility-label.close-button" = "Ukončit skenování";
+"auth.scan-view.liveness-help.navigation-item.title" = "Potřebujete poradit?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Vyfoť si obličej";
+"auth.scanview.liveness.landscape.description" = "Prosím, otočte telefon na výšku, abyste pořídili selfie.";
+"auth.scanview.liveness.landscape.header" = "Natočte vaše zařízení";
+"zoom_feedback_a_little_too_close" = "Vraťte se trochu zpět";
+"zoom_feedback_a_little_too_close_tablet" = "Vraťte se trochu zpět";
+"zoom_feedback_center_face" = "Vycentruj svou tvář";
+"zoom_feedback_face_not_found" = "Ujistěte se, že váš obličej je v rámečku.";
+"zoom_feedback_face_not_looking_straight_ahead" = "Dívejte se přímo před sebe";
+"zoom_feedback_face_not_upright" = "Držte hlavu rovně.";
+"zoom_feedback_hold_steady" = "Nehýbejte se";
+"zoom_feedback_move_phone_away" = "Vraťte se trochu zpět";
+"zoom_feedback_move_phone_closer" = "Přibližte se trochu";
+"zoom_feedback_move_phone_even_closer" = "Trochu blíž";
+"zoom_feedback_move_phone_to_eye_level" = "Držte fotoaparát v úrovni očí.";
+"zoom_feedback_move_tablet_away" = "Vraťte se trochu zpět";
+"zoom_feedback_move_tablet_closer" = "Přibližte se trochu";
+"zoom_feedback_move_tablet_to_eye_level" = "Držte fotoaparát v úrovni očí.";

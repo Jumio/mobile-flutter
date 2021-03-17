@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Authentificatie mislukt";
+"dv.error-view.button.cancel" = "Annuleer";
+"dv.error-view.button.retry" = "Probeer nog eens";
+"dv.error-view.camera-access-disabled.button.title" = "Bevestig";
+"dv.error-view.camera-access-disabled.content" = "%@ heeft toegang tot uw camera nodig. Controleer uw privacy instellingen alstublieft.";
+"dv.error-view.camera-access-disabled.title" = "Cameratoegang ontgrendeld";
+"dv.error-view.cancelled-by-user" = "Geannuleerd door eindgebruiker";
+"dv.error-view.device-is-offline" = "Geen internetverbinding beschikbaar";
+"dv.error-view.error.headline" = "Fout";
+"dv.error-view.invalid-key" = "Certificaat niet langer geldig. Neem contact op met de verkoper van de app";
+"dv.error-view.network-problem" = "We zijn gestuit op een netwerk communicatieprobleem";
+"dv.scan-options.accessibility-label.close-button" = "Stop scannen";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Verander naar achterste camera";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Verander naar voorste camera";
+"dv.scan-view.accessibility-label.button.take-photo" = "Neem een foto";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Zet flits aan";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Zet flits uit";
+"dv.scan-view.confirmation.button.readable" = "Doorgaan";
+"dv.scan-view.confirmation.button.retake" = "Opnieuw";
+"dv.scan-view.confirmation.text" = "Zorg ervoor dat alle data op uw document volledig zichtbaar is, glansvrij en niet wazig";
+"dv.scan-view.help.document-BC" = "Geboortecertificaat";
+"dv.scan-view.help.document-BS" = "Bankafschrift";
+"dv.scan-view.help.document-CAAP" = "Geldvoorschotverzoek";
+"dv.scan-view.help.document-CB" = "Raadsvoorstel";
+"dv.scan-view.help.document-CC" = "Creditcard";
+"dv.scan-view.help.document-CCS" = "Creditcardafschrift";
+"dv.scan-view.help.document-CRC" = "Certificaat bedrijfsresolutie";
+"dv.scan-view.help.document-CUSTOM" = "Document";
+"dv.scan-view.help.document-HCC" = "Zorgpas";
+"dv.scan-view.help.document-IC" = "Verzekeringskaart";
+"dv.scan-view.help.document-LAG" = "Huurovereenkomst";
+"dv.scan-view.help.document-LOAP" = "Leningsverzoek";
+"dv.scan-view.help.document-MEDC" = "Zorgverzekeringspas";
+"dv.scan-view.help.document-MOAP" = "Hypotheekaanvraag";
+"dv.scan-view.help.document-PB" = "Telefoonrekening";
+"dv.scan-view.help.document-SEL" = "Schoolinschrijvingsbrief";
+"dv.scan-view.help.document-SENC" = "Seniorenpas";
+"dv.scan-view.help.document-SS" = "Pensioenafschrift";
+"dv.scan-view.help.document-SSC" = "Sociale zekerheidspas";
+"dv.scan-view.help.document-STUC" = "Studentenkaart";
+"dv.scan-view.help.document-TAC" = "Pas van handelsvereniging";
+"dv.scan-view.help.document-TR" = "Belastingteruggave";
+"dv.scan-view.help.document-UB" = "Energierekening";
+"dv.scan-view.help.document-VC" = "Nietig verklaarde cheque";
+"dv.scan-view.help.document-VT" = "Voertuigtitel";
+"dv.scan-view.help.document-WWCC" = "Cheque voor het werken met kinderen";
+"dv.scan-view.help.document.headline" = "Vastleggen %@";
+"dv.scan-view.navigationItem.title" = "Scan";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Uploaden succesvol";
+"dv.submission-view.uploading.description" = "Dit duurt slechts een paar seconden, afhankelijk van uw netwerkverbinding";
+"dv.submission-view.uploading.headline" = "Uw documenten worden geupload";

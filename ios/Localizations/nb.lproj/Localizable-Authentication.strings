@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Bekreft";
+"auth.alert-view.camera-access-disabled.description" = "%@ trenger tilgang til kameraet. Sjekk personverninnstillingene dine.";
+"auth.alert-view.camera-access-disabled.title" = "Kameratilgang deaktivert";
+"auth.error-view.button.cancel.title" = "Avbryt";
+"auth.error-view.button.retry.title" = "Prøv på nytt";
+"auth.error-view.error.header.title" = "Feil";
+"auth.error.authentication-failed.title" = "Godkjenning mislyktes";
+"auth.error.cancelled-by-user.title" = "Avbrutt av sluttbruker";
+"auth.error.device-is-offline.title" = "Ingen internettforbindelse tilgjengelig";
+"auth.error.invalid-key.title" = "Sertifikatet er ikke gyldig lenger. Kontakt app-leverandøren";
+"auth.error.network-problem.title" = "Det har oppstått et problem med nettverkskommunikasjon";
+"auth.error.setup-error.title" = "Skanning er ikke tilgjengelig for øyeblikket. Kontakt appleverandøren";
+"auth.error.transaction-already-finished.title" = "Transaksjonen er allerede fullført";
+"auth.scan-help-view.liveness-help.bad-angle" = "Hold enheten i øyehøyde og se rett inn i den";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Unngå skygger og refleksjoner i ansiktet ditt";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Trykk for å fortsette";
+"auth.scan-help-view.liveness-help.general" = "Følg totrinnsprosessen og juster ansiktet ditt mot rammen. Hold enheten din i øyehøyde og se rett inn i kameraet. Ansiktet ditt registreres automatisk";
+"auth.scan-view.accessibility-label.close-button" = "Avslutt skanning";
+"auth.scan-view.liveness-help.navigation-item.title" = "Har du problemer?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Registrer ansiktet ditt";
+"auth.scanview.liveness.landscape.description" = "Roter telefonen til portrett for å ta en selfie";
+"auth.scanview.liveness.landscape.header" = "Roter enheten";
+"zoom_feedback_a_little_too_close" = "Gå litt tilbake";
+"zoom_feedback_a_little_too_close_tablet" = "Gå litt tilbake";
+"zoom_feedback_center_face" = "Midtstill ansiktet ditt";
+"zoom_feedback_face_not_found" = "Hold ansiktet innenfor rammen";
+"zoom_feedback_face_not_looking_straight_ahead" = "Se rett frem";
+"zoom_feedback_face_not_upright" = "Hold hodet rett";
+"zoom_feedback_hold_steady" = "Stå stille";
+"zoom_feedback_move_phone_away" = "Gå litt tilbake";
+"zoom_feedback_move_phone_closer" = "Gå litt nærmere";
+"zoom_feedback_move_phone_even_closer" = "Litt nærmere";
+"zoom_feedback_move_phone_to_eye_level" = "Hold enheten i øyehøyde";
+"zoom_feedback_move_tablet_away" = "Gå litt tilbake";
+"zoom_feedback_move_tablet_closer" = "Gå litt nærmere";
+"zoom_feedback_move_tablet_to_eye_level" = "Hold enheten i øyehøyde";

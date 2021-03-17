@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Bekræft";
+"auth.alert-view.camera-access-disabled.description" = "%@ skal have adgang til kameraet. Tjek dine indstillinger for beskyttelse af personlige oplysninger.";
+"auth.alert-view.camera-access-disabled.title" = "Kameraadgang deaktiveret";
+"auth.error-view.button.cancel.title" = "Annuller";
+"auth.error-view.button.retry.title" = "Forsøg igen";
+"auth.error-view.error.header.title" = "Fejl";
+"auth.error.authentication-failed.title" = "Godkendelse mislykkedes";
+"auth.error.cancelled-by-user.title" = "Annulleret af slutbrugeren";
+"auth.error.device-is-offline.title" = "Der er ingen tilgængelig internetforbindelse";
+"auth.error.invalid-key.title" = "Certifikatet er ikke længere gyldigt. Kontakt app-leverandøren";
+"auth.error.network-problem.title" = "Der er opstået et problem med netværksforbindelsen";
+"auth.error.setup-error.title" = "Scanning er ikke tilgængelig på dette tidspunkt. Kontakt app-leverandøren";
+"auth.error.transaction-already-finished.title" = "Transaktionen er allerede afsluttet";
+"auth.scan-help-view.liveness-help.bad-angle" = "Hold enheden i øjenhøjde og kig direkte ind i den";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Undgå skygger og refleksioner på dit ansigt";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Tryk for at fortsætte";
+"auth.scan-help-view.liveness-help.general" = "Følg de to trin og placer dit ansigt inden for rammen. Hold enheden i øjenhøjde, og kig direkte ind i kameraet. Billedet tages automatisk.";
+"auth.scan-view.accessibility-label.close-button" = "Afslut scanning";
+"auth.scan-view.liveness-help.navigation-item.title" = "Har du problemer?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Tag et billede af dit ansigt";
+"auth.scanview.liveness.landscape.description" = "Roter din telefon til portrættilstand for at tage en selfie";
+"auth.scanview.liveness.landscape.header" = "Roter din enhed";
+"zoom_feedback_a_little_too_close" = "Ryk lidt tilbage";
+"zoom_feedback_a_little_too_close_tablet" = "Ryk lidt tilbage";
+"zoom_feedback_center_face" = "Centrer dit ansigt";
+"zoom_feedback_face_not_found" = "Placer dit ansigt i rammen";
+"zoom_feedback_face_not_looking_straight_ahead" = "Se lige frem";
+"zoom_feedback_face_not_upright" = "Hold hovedet lige";
+"zoom_feedback_hold_steady" = "Hold stille";
+"zoom_feedback_move_phone_away" = "Ryk lidt tilbage";
+"zoom_feedback_move_phone_closer" = "Ryk lidt tættere på";
+"zoom_feedback_move_phone_even_closer" = "Lidt tættere på";
+"zoom_feedback_move_phone_to_eye_level" = "Hold enheden i øjenhøjde";
+"zoom_feedback_move_tablet_away" = "Ryk lidt tilbage";
+"zoom_feedback_move_tablet_closer" = "Ryk lidt tættere på";
+"zoom_feedback_move_tablet_to_eye_level" = "Hold enheden i øjenhøjde";

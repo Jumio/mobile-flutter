@@ -88,8 +88,8 @@ class DocumentVerificationModule : ModuleBase() {
                     val result = mapOf("scanReference" to scanReference)
                     sendResult(result)
                 } else if (resultCode == RESULT_CANCELED) {
-                    val errorMessage: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_MESSAGE)
-                    val errorCode: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_CODE)
+                    val errorMessage: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_MESSAGE) ?: ""
+                    val errorCode: String = data.getStringExtra(DocumentVerificationSDK.EXTRA_ERROR_CODE) ?: ""
                     sendResult(mapOf<String, String>(
                             "errorCode" to errorCode,
                             "errorMessage" to errorMessage,

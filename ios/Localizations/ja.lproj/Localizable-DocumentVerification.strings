@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "認証に失敗しました";
+"dv.error-view.button.cancel" = "キャンセル";
+"dv.error-view.button.retry" = "リトライ";
+"dv.error-view.camera-access-disabled.button.title" = "確認";
+"dv.error-view.camera-access-disabled.content" = "%@はカメラにアクセスする必要があります。プライバシー設定を確認してください。";
+"dv.error-view.camera-access-disabled.title" = "カメラへのアクセスが無効になっています";
+"dv.error-view.cancelled-by-user" = "エンドユーザーによりキャンセルされました";
+"dv.error-view.device-is-offline" = "インターネット接続ができません";
+"dv.error-view.error.headline" = "エラー";
+"dv.error-view.invalid-key" = "証明書は無効になりました。アプリのベンダーにお問い合わせください";
+"dv.error-view.network-problem" = "ネットワーク通信の問題が発生しました";
+"dv.scan-options.accessibility-label.close-button" = "スキャンを終了";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "バックカメラに切り替える";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "フロントカメラに切り替える";
+"dv.scan-view.accessibility-label.button.take-photo" = "写真を撮る";
+"dv.scan-view.accessibility-label.flash-button.activate" = "フラッシュを有効にする";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "フラッシュを無効にする";
+"dv.scan-view.confirmation.button.readable" = "続行";
+"dv.scan-view.confirmation.button.retake" = "撮り直す";
+"dv.scan-view.confirmation.text" = "ドキュメントのすべてのデータが完全に表示され、ぎらつきがなくぼやけていないことを確認してください";
+"dv.scan-view.help.document-BC" = "出生証明書";
+"dv.scan-view.help.document-BS" = "銀行取引明細書";
+"dv.scan-view.help.document-CAAP" = "キャッシングサービス申込書";
+"dv.scan-view.help.document-CB" = "地方税請求書";
+"dv.scan-view.help.document-CC" = "クレジットカード";
+"dv.scan-view.help.document-CCS" = "クレジットカード明細書";
+"dv.scan-view.help.document-CRC" = "取締役会決議証明書";
+"dv.scan-view.help.document-CUSTOM" = "ドキュメント";
+"dv.scan-view.help.document-HCC" = "ヘルスケアカード";
+"dv.scan-view.help.document-IC" = "保険証";
+"dv.scan-view.help.document-LAG" = "リース契約書";
+"dv.scan-view.help.document-LOAP" = "ローン申込書";
+"dv.scan-view.help.document-MEDC" = "メディケアカード";
+"dv.scan-view.help.document-MOAP" = "住宅ローン申込書";
+"dv.scan-view.help.document-PB" = "電話代金請求書";
+"dv.scan-view.help.document-SEL" = "入学通知書";
+"dv.scan-view.help.document-SENC" = "シニアカード";
+"dv.scan-view.help.document-SS" = "退職年金明細書";
+"dv.scan-view.help.document-SSC" = "社会保障カード";
+"dv.scan-view.help.document-STUC" = "学生証";
+"dv.scan-view.help.document-TAC" = "事業社団体カード";
+"dv.scan-view.help.document-TR" = "納税申告書";
+"dv.scan-view.help.document-UB" = "公共料金請求書";
+"dv.scan-view.help.document-VC" = "無効小切手";
+"dv.scan-view.help.document-VT" = "車両所有権証明書";
+"dv.scan-view.help.document-WWCC" = "無罪証明書";
+"dv.scan-view.help.document.headline" = "%@をキャプチャ";
+"dv.scan-view.navigationItem.title" = "スキャン";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "正常にアップロードされました";
+"dv.submission-view.uploading.description" = "ネットワーク接続にもよりますが、数秒で完了します。";
+"dv.submission-view.uploading.headline" = "ドキュメントをアップロードしています";

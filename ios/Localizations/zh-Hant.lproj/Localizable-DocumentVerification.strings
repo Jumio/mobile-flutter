@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "驗證失敗";
+"dv.error-view.button.cancel" = "取消";
+"dv.error-view.button.retry" = "重試";
+"dv.error-view.camera-access-disabled.button.title" = "確認";
+"dv.error-view.camera-access-disabled.content" = "%@ 需要存取您的相機。請檢查您的隱私設定。";
+"dv.error-view.camera-access-disabled.title" = "相機存取權限已停用";
+"dv.error-view.cancelled-by-user" = "最終使用者已取消";
+"dv.error-view.device-is-offline" = "無網際網路連線可用";
+"dv.error-view.error.headline" = "錯誤";
+"dv.error-view.invalid-key" = "證書不再有效。請聯絡 APP 供應商";
+"dv.error-view.network-problem" = "我們遇到了網路通訊問題";
+"dv.scan-options.accessibility-label.close-button" = "退出掃描";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "切換至後置相機";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "切換至前置相機";
+"dv.scan-view.accessibility-label.button.take-photo" = "拍照";
+"dv.scan-view.accessibility-label.flash-button.activate" = "啟動閃光燈";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "停用閃光燈";
+"dv.scan-view.confirmation.button.readable" = "繼續";
+"dv.scan-view.confirmation.button.retake" = "重拍";
+"dv.scan-view.confirmation.text" = "確保證件上的所有資料完全可見，無眩光且不模糊";
+"dv.scan-view.help.document-BC" = "出生證明";
+"dv.scan-view.help.document-BS" = "銀行對帳單";
+"dv.scan-view.help.document-CAAP" = "現金透支申請";
+"dv.scan-view.help.document-CB" = "議會法案";
+"dv.scan-view.help.document-CC" = "信用卡";
+"dv.scan-view.help.document-CCS" = "信用卡賬單";
+"dv.scan-view.help.document-CRC" = "公司決議證書";
+"dv.scan-view.help.document-CUSTOM" = "文件";
+"dv.scan-view.help.document-HCC" = "保健卡";
+"dv.scan-view.help.document-IC" = "保險卡";
+"dv.scan-view.help.document-LAG" = "租賃協議";
+"dv.scan-view.help.document-LOAP" = "貸款申請";
+"dv.scan-view.help.document-MEDC" = "醫療保險卡";
+"dv.scan-view.help.document-MOAP" = "抵押申請";
+"dv.scan-view.help.document-PB" = "電話賬單";
+"dv.scan-view.help.document-SEL" = "入學通知書";
+"dv.scan-view.help.document-SENC" = "老年人卡";
+"dv.scan-view.help.document-SS" = "退休金賬單";
+"dv.scan-view.help.document-SSC" = "社會保障卡";
+"dv.scan-view.help.document-STUC" = "學生卡";
+"dv.scan-view.help.document-TAC" = "行業協會卡";
+"dv.scan-view.help.document-TR" = "退稅";
+"dv.scan-view.help.document-UB" = "公用事業賬單";
+"dv.scan-view.help.document-VC" = "無效支票";
+"dv.scan-view.help.document-VT" = "車輛名稱";
+"dv.scan-view.help.document-WWCC" = "使用兒童體檢套餐";
+"dv.scan-view.help.document.headline" = "捕捉 %@";
+"dv.scan-view.navigationItem.title" = "掃描證件";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "上傳成功";
+"dv.submission-view.uploading.description" = "這僅需要幾秒鐘，具體取決於您的網路連線";
+"dv.submission-view.uploading.headline" = "上傳文件";

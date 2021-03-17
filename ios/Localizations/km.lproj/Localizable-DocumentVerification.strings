@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "ការផ្ទៀងផ្ទាត់បានបរាជ័យ";
+"dv.error-view.button.cancel" = "បោះបង់";
+"dv.error-view.button.retry" = "ព្យាយាមម្តងទៀត";
+"dv.error-view.camera-access-disabled.button.title" = "បញ្ជាក់";
+"dv.error-view.camera-access-disabled.content" = "%@ ត្រូវការចូលប្រើកាមេរ៉ារបស់អ្នក។ សូមពិនិត្យមើលការកំណត់ឯកជនភាពរបស់អ្នក។";
+"dv.error-view.camera-access-disabled.title" = "ការចូលប្រើកាមេរ៉ាត្រូវបានបិទ";
+"dv.error-view.cancelled-by-user" = "ត្រូវបានបោះបង់ដោយអ្នកប្រើចុងក្រោយ";
+"dv.error-view.device-is-offline" = "គ្មានការភ្ជាប់អ៊ីនធឺណិតទេ";
+"dv.error-view.error.headline" = "កំហុស";
+"dv.error-view.invalid-key" = "វិញ្ញាបនបត្រលែងមានសុពលភាពទៀតហើយ។ សូមទាក់ទងអ្នកលក់កម្មវិធី";
+"dv.error-view.network-problem" = "យើងបានជួបបញ្ហាទំនាក់ទំនងបណ្តាញ";
+"dv.scan-options.accessibility-label.close-button" = "ឈប់ស្កេន";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "ប្តូរទៅកាមេរ៉ាក្រោយ";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "ប្តូរទៅកាមេរ៉ាមុខ";
+"dv.scan-view.accessibility-label.button.take-photo" = "ថតរូប";
+"dv.scan-view.accessibility-label.flash-button.activate" = "បើកដំណើរការផ្លាស";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "បិទដំណើរការផ្លាស";
+"dv.scan-view.confirmation.button.readable" = "បន្ត";
+"dv.scan-view.confirmation.button.retake" = "ថតម្តងទៀត";
+"dv.scan-view.confirmation.text" = "ត្រូវប្រាកដថារាល់ទិន្នន័យនៅលើឯកសាររបស់អ្នកអាចមើលឃើញបានពេញលេញ និងមិនមានព្រិល";
+"dv.scan-view.help.document-BC" = "សំបុត្រកំណើត";
+"dv.scan-view.help.document-BS" = "របាយការណ៍ធនាគារ";
+"dv.scan-view.help.document-CAAP" = "ពាក្យស្នើសុំប្រាក់បុរេប្រទាន";
+"dv.scan-view.help.document-CB" = "វិក្កយបត្រក្រុមប្រឹក្សា";
+"dv.scan-view.help.document-CC" = "បណ្ណឥណទាន";
+"dv.scan-view.help.document-CCS" = "របាយការណ៍បណ្ណឥណទាន";
+"dv.scan-view.help.document-CRC" = "វិញ្ញាបនបត្រស្តីពីសេចក្តីសម្រេចរបស់ក្រុមហ៊ុន";
+"dv.scan-view.help.document-CUSTOM" = "ឯកសារ";
+"dv.scan-view.help.document-HCC" = "បណ្ណថែទាំសុខភាព";
+"dv.scan-view.help.document-IC" = "បណ្ណធានារ៉ាប់រង";
+"dv.scan-view.help.document-LAG" = "កិច្ចសន្យាជួល";
+"dv.scan-view.help.document-LOAP" = "ពាក្យស្នើសុំប្រាក់កម្ចី";
+"dv.scan-view.help.document-MEDC" = "បណ្ណ Medicare";
+"dv.scan-view.help.document-MOAP" = "ពាក្យស្នើសុំខ្ចីប្រាក់ដោយដាក់វត្ថុបញ្ចាំ";
+"dv.scan-view.help.document-PB" = "វិក្កយបត្រទូរសព្ទ";
+"dv.scan-view.help.document-SEL" = "សំបុត្រចុះឈ្មោះចូលរៀន";
+"dv.scan-view.help.document-SENC" = "បណ្ណមនុស្សចាស់";
+"dv.scan-view.help.document-SS" = "របាយការណ៍ប្រាក់សោធននិវត្តន៍";
+"dv.scan-view.help.document-SSC" = "បណ្ណសន្តិសុខសង្គម";
+"dv.scan-view.help.document-STUC" = "កាតសិស្ស";
+"dv.scan-view.help.document-TAC" = "បណ្ណសមាគមពាណិជ្ជកម្ម";
+"dv.scan-view.help.document-TR" = "លិខិតប្រកាសពន្ធ";
+"dv.scan-view.help.document-UB" = "វិក្កយបត្រសេវាសាធារណៈ";
+"dv.scan-view.help.document-VC" = "បណ្ណត្រូវបានធ្វើមោឃភាព";
+"dv.scan-view.help.document-VT" = "បណ្ណកម្មសិទ្ធិយានយន្ត";
+"dv.scan-view.help.document-WWCC" = "បណ្ណធ្វើការជាមួយកុមារ";
+"dv.scan-view.help.document.headline" = "ថត %@";
+"dv.scan-view.navigationItem.title" = "ស្កេនឯកសារ";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "ការផ្ទុកឡើងបានជោគជ័យ";
+"dv.submission-view.uploading.description" = "វាគួរចំណាយពេលតែពីរបីវិនាទីប៉ុណ្ណោះអាស្រ័យលើការភ្ជាប់បណ្តាញរបស់អ្នក";
+"dv.submission-view.uploading.headline" = "កំពុងផ្ទុកឡើងឯកសាររបស់អ្នក";

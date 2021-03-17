@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Godkendelse mislykkedes";
+"dv.error-view.button.cancel" = "Annuller";
+"dv.error-view.button.retry" = "Forsøg igen";
+"dv.error-view.camera-access-disabled.button.title" = "Bekræft";
+"dv.error-view.camera-access-disabled.content" = "%@ skal have adgang til kameraet. Tjek dine indstillinger for beskyttelse af personlige oplysninger.";
+"dv.error-view.camera-access-disabled.title" = "Kameraadgang deaktiveret";
+"dv.error-view.cancelled-by-user" = "Annulleret af slutbrugeren";
+"dv.error-view.device-is-offline" = "Der er ingen tilgængelig internetforbindelse";
+"dv.error-view.error.headline" = "Fejl";
+"dv.error-view.invalid-key" = "Certifikatet er ikke længere gyldigt. Kontakt app-leverandøren";
+"dv.error-view.network-problem" = "Der er opstået et problem med netværksforbindelsen";
+"dv.scan-options.accessibility-label.close-button" = "Afslut scanning";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Skift til kamera på bagsiden";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Skift til frontkamera";
+"dv.scan-view.accessibility-label.button.take-photo" = "Tag et billede";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Aktiver blitz";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Deaktiver blitz";
+"dv.scan-view.confirmation.button.readable" = "Fortsæt";
+"dv.scan-view.confirmation.button.retake" = "TAG NYT BILLEDE";
+"dv.scan-view.confirmation.text" = "Sørg for, at alle oplysningerne i dokumentet er fuldt synlige, blændfri og læsbare";
+"dv.scan-view.help.document-BC" = "Fødselsattest";
+"dv.scan-view.help.document-BS" = "Kontoudtog";
+"dv.scan-view.help.document-CAAP" = "Ansøgning om kontant forskud";
+"dv.scan-view.help.document-CB" = "Kommunal opkrævning";
+"dv.scan-view.help.document-CC" = "Kreditkort";
+"dv.scan-view.help.document-CCS" = "Kreditkortudtog";
+"dv.scan-view.help.document-CRC" = "Virksomhedsbeslutningsattest";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Sygesikringskort";
+"dv.scan-view.help.document-IC" = "Forsikringskort";
+"dv.scan-view.help.document-LAG" = "Leasingaftale";
+"dv.scan-view.help.document-LOAP" = "Låneansøgning";
+"dv.scan-view.help.document-MEDC" = "Medicinkort";
+"dv.scan-view.help.document-MOAP" = "Ansøgning om realkreditlån";
+"dv.scan-view.help.document-PB" = "Telefonregning";
+"dv.scan-view.help.document-SEL" = "Skoleindskrivningsbrev";
+"dv.scan-view.help.document-SENC" = "Pensionistkort";
+"dv.scan-view.help.document-SS" = "Pensionsopgørelse";
+"dv.scan-view.help.document-SSC" = "Sygesikringskort";
+"dv.scan-view.help.document-STUC" = "Studiekort";
+"dv.scan-view.help.document-TAC" = "Handelsforeningskort";
+"dv.scan-view.help.document-TR" = "Selvangivelse";
+"dv.scan-view.help.document-UB" = "Forbrugsregning";
+"dv.scan-view.help.document-VC" = "Annulleret check";
+"dv.scan-view.help.document-VT" = "Registreringsattest";
+"dv.scan-view.help.document-WWCC" = "Arbejde med børn-kontrol";
+"dv.scan-view.help.document.headline" = "Tag billede %@";
+"dv.scan-view.navigationItem.title" = "Scan dokument";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Upload gennemført";
+"dv.submission-view.uploading.description" = "Dette bør kun tage et par sekunder, afhængigt af din netværksforbindelse";
+"dv.submission-view.uploading.headline" = "Uploader dine dokumenter";

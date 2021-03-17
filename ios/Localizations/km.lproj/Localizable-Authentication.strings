@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "បញ្ជាក់";
+"auth.alert-view.camera-access-disabled.description" = "%@ ត្រូវការចូលប្រើកាមេរ៉ារបស់អ្នក។ សូមពិនិត្យមើលការកំណត់ឯកជនភាពរបស់អ្នក។";
+"auth.alert-view.camera-access-disabled.title" = "ការចូលប្រើកាមេរ៉ាត្រូវបានបិទ";
+"auth.error-view.button.cancel.title" = "បោះបង់";
+"auth.error-view.button.retry.title" = "ព្យាយាមម្តងទៀត";
+"auth.error-view.error.header.title" = "កំហុស";
+"auth.error.authentication-failed.title" = "ការផ្ទៀងផ្ទាត់បានបរាជ័យ";
+"auth.error.cancelled-by-user.title" = "ត្រូវបានបោះបង់ដោយអ្នកប្រើចុងក្រោយ";
+"auth.error.device-is-offline.title" = "គ្មានការភ្ជាប់អ៊ីនធឺណិតទេ";
+"auth.error.invalid-key.title" = "វិញ្ញាបនបត្រលែងមានសុពលភាពទៀតហើយ។ សូមទាក់ទងអ្នកលក់កម្មវិធី";
+"auth.error.network-problem.title" = "យើងបានជួបបញ្ហាទំនាក់ទំនងបណ្តាញ";
+"auth.error.setup-error.title" = "ការស្កេនមិនអាចប្រើបាននៅពេលនេះ សូមទាក់ទងអ្នកលក់កម្មវិធី";
+"auth.error.transaction-already-finished.title" = "ប្រតិបត្តិការបានបញ្ចប់រួចរាល់";
+"auth.scan-help-view.liveness-help.bad-angle" = "ដាក់ឧបករណ៍របស់អ្នកនៅកម្ពស់ត្រឹមភ្នែកហើយសម្លឹងឱ្យចំវា";
+"auth.scan-help-view.liveness-help.bad-lightning" = "ចៀសវាងស្រមោល និងការផ្លាតពន្លឺលើផ្ទៃមុខរបស់អ្នក";
+"auth.scan-help-view.liveness-help.button-continue.title" = "ប៉ះដើម្បីបន្ត";
+"auth.scan-help-view.liveness-help.general" = "អនុវត្តតាមដំណើរការពីរជំហាន ហើយតម្រង់មុខរបស់អ្នកឱ្យចំស៊ុម។ ដាក់ឧបករណ៍របស់អ្នកនៅកម្ពស់ត្រឹមភ្នែក ហើយសម្លឹងឱ្យចំកាមេរ៉ា។ មុខរបស់អ្នកនឹងត្រូវបានថតដោយស្វ័យប្រវត្តិ";
+"auth.scan-view.accessibility-label.close-button" = "ឈប់ស្កេន";
+"auth.scan-view.liveness-help.navigation-item.title" = "តើមានជួបបញ្ហាឬទេ?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "ថតមុខរបស់អ្នក";
+"auth.scanview.liveness.landscape.description" = "សូមបង្វិលទូរសព្ទរបស់អ្នកទៅបញ្ឈរដើម្បីថតសែលហ្វី";
+"auth.scanview.liveness.landscape.header" = "បង្វិលឧបករណ៍របស់អ្នក";
+"zoom_feedback_a_little_too_close" = "ខិតថយក្រោយបន្តិច";
+"zoom_feedback_a_little_too_close_tablet" = "ខិតថយក្រោយបន្តិច";
+"zoom_feedback_center_face" = "ដាក់មុខរបស់អ្នកឱ្យនៅចំកណ្ដាល";
+"zoom_feedback_face_not_found" = "ដាក់ស៊ុមជុំវិញមុខរបស់អ្នក";
+"zoom_feedback_face_not_looking_straight_ahead" = "មើលឱ្យត្រង់ទៅមុខ";
+"zoom_feedback_face_not_upright" = "ដាក់ក្បាលរបស់អ្នកឱ្យត្រង់";
+"zoom_feedback_hold_steady" = "កាន់ឲ្យនឹង";
+"zoom_feedback_move_phone_away" = "ខិតថយក្រោយបន្តិច";
+"zoom_feedback_move_phone_closer" = "ខិតឱ្យជិតបន្តិចទៀត";
+"zoom_feedback_move_phone_even_closer" = "ឱ្យជិតបន្តិចទៀត";
+"zoom_feedback_move_phone_to_eye_level" = "ដាក់ឧបករណ៍នៅកម្ពស់ត្រឹមភ្នែក";
+"zoom_feedback_move_tablet_away" = "ខិតថយក្រោយបន្តិច";
+"zoom_feedback_move_tablet_closer" = "ខិតឱ្យជិតបន្តិចទៀត";
+"zoom_feedback_move_tablet_to_eye_level" = "ដាក់ឧបករណ៍នៅកម្ពស់ត្រឹមភ្នែក";

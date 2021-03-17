@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Apstiprināt";
+"auth.alert-view.camera-access-disabled.description" = "%@ nepieciešama piekļuve jūsu kamerai. Lūdzu, pārbaudiet savus privātuma iestatījumus.";
+"auth.alert-view.camera-access-disabled.title" = "Piekļuve kamerai ir atspējota";
+"auth.error-view.button.cancel.title" = "Atcelt";
+"auth.error-view.button.retry.title" = "Mēģiniet vēlreiz";
+"auth.error-view.error.header.title" = "Kļūda";
+"auth.error.authentication-failed.title" = "Autentifikācija neizdevās";
+"auth.error.cancelled-by-user.title" = "Gala lietotājs atcēla procesu";
+"auth.error.device-is-offline.title" = "Nav pieejams interneta savienojums";
+"auth.error.invalid-key.title" = "Sertifikāts vairs nav derīgs. Lūdzu, sazinieties ar lietotnes pārdevēju.";
+"auth.error.network-problem.title" = "Esam saskārušies ar tīkla komunikācijas problēmu";
+"auth.error.setup-error.title" = "Skenēšana pašlaik nav pieejama. Lūdzu, sazinieties ar lietotnes pārdevēju.";
+"auth.error.transaction-already-finished.title" = "Darījums jau ir pabeigts";
+"auth.scan-help-view.liveness-help.bad-angle" = "Turiet ierīci acu līmenī un skatieties tieši tajā";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Izvairieties no ēnām un atspulgiem uz sejas";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Pieskarieties, lai turpinātu";
+"auth.scan-help-view.liveness-help.general" = "Sekojiet divpakāpju procesam un novietojiet seju tā, lai tā ietilpst rāmī. Turiet ierīci acu līmenī un skatieties tieši kamerā. Jūsu sejas attēls tiks uzņemts automātiski.";
+"auth.scan-view.accessibility-label.close-button" = "Pārtraukt seknēšanu";
+"auth.scan-view.liveness-help.navigation-item.title" = "Vai rodas problēmas?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Uzņemt sejas attēlu";
+"auth.scanview.liveness.landscape.description" = "Lūdzu, pagrieziet tālruni portreta režīmā, lai ņemtu pašportretu";
+"auth.scanview.liveness.landscape.header" = "Pagrieziet savu ierīci";
+"zoom_feedback_a_little_too_close" = "Paejiet nedaudz tālāk";
+"zoom_feedback_a_little_too_close_tablet" = "Paejiet nedaudz tālāk";
+"zoom_feedback_center_face" = "Centrējiet savu seju";
+"zoom_feedback_face_not_found" = "Kadrējiet savu seju";
+"zoom_feedback_face_not_looking_straight_ahead" = "Skatieties taisni uz priekšu";
+"zoom_feedback_face_not_upright" = "Turiet galvu taisni";
+"zoom_feedback_hold_steady" = "Stāviet un nekustieties";
+"zoom_feedback_move_phone_away" = "Paejiet nedaudz tālāk";
+"zoom_feedback_move_phone_closer" = "Pieejiet nedaudz tuvāk";
+"zoom_feedback_move_phone_even_closer" = "Nedaudz tuvāk";
+"zoom_feedback_move_phone_to_eye_level" = "Turiet ierīci acu līmenī";
+"zoom_feedback_move_tablet_away" = "Paejiet nedaudz tālāk";
+"zoom_feedback_move_tablet_closer" = "Pieejiet nedaudz tuvāk";
+"zoom_feedback_move_tablet_to_eye_level" = "Turiet ierīci acu līmenī";

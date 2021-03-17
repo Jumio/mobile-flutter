@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Ukuqinisekisa kuhlulekile";
+"dv.error-view.button.cancel" = "Khansela";
+"dv.error-view.button.retry" = "Phinda uzame";
+"dv.error-view.camera-access-disabled.button.title" = "Qinisekisa";
+"dv.error-view.camera-access-disabled.content" = "%@ idinga ukusebenzisa ikhamera yakho. Sicela uhlola amasethingi akho obumfihlo.";
+"dv.error-view.camera-access-disabled.title" = "Ukusebenzisa ikhamera kuvaliwe";
+"dv.error-view.cancelled-by-user" = "Ikhanselwe ngumsebenzisi";
+"dv.error-view.device-is-offline" = "Ayikho i-inthanethi";
+"dv.error-view.error.headline" = "Iphutha";
+"dv.error-view.invalid-key" = "Isitifiketi asisasebenzi. Sicela uxhumane nomthengisi we-app";
+"dv.error-view.network-problem" = "Sithole inkinga yokuxhumana kwenethiwekhi";
+"dv.scan-options.accessibility-label.close-button" = "Yeka ukuskena";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Shintshela kukhamera yangemuva";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Shintshela kwikhamera yaphambili";
+"dv.scan-view.accessibility-label.button.take-photo" = "Thatha isithombe";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Yenza i-flash isebenze";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Yenza kungasebenzi i-flash";
+"dv.scan-view.confirmation.button.readable" = "Qhubeka";
+"dv.scan-view.confirmation.button.retake" = "Thatha futhi";
+"dv.scan-view.confirmation.text" = "Qinisekisa ukuthi yonke imininingwane ekudokhumenti yakho ibonakala kahle, ayifilizi futhi ayifiphalanga";
+"dv.scan-view.help.document-BC" = "Isitifiketi sokuzalwa";
+"dv.scan-view.help.document-BS" = "Isitatimende sasebhange";
+"dv.scan-view.help.document-CAAP" = "Isicelo sokuboleka imali ngekhadi lasebhange";
+"dv.scan-view.help.document-CB" = "Izindleko zomkhandlu";
+"dv.scan-view.help.document-CC" = "Ikhadi lesikweletu";
+"dv.scan-view.help.document-CCS" = "Isitatimende sekhadi lesikweletu";
+"dv.scan-view.help.document-CRC" = "Isitifiketi sezinqumo zenkampani";
+"dv.scan-view.help.document-CUSTOM" = "Idokhumenti";
+"dv.scan-view.help.document-HCC" = "Ikhadi lokunakekelwa kwempilo";
+"dv.scan-view.help.document-IC" = "Ikhadi lomshwalense";
+"dv.scan-view.help.document-LAG" = "Isicelo sokuboleka imali yokuthenga isakhiwo";
+"dv.scan-view.help.document-LOAP" = "Isicelo sokuboleka imali";
+"dv.scan-view.help.document-MEDC" = "Ikhadi lohlelo lokunakekelwa kwempilo";
+"dv.scan-view.help.document-MOAP" = "Isicelo sokuboleka imali yokuthenga isakhiwo";
+"dv.scan-view.help.document-PB" = "Izindleko zocingo";
+"dv.scan-view.help.document-SEL" = "Incwadi yokubhalisa esikoleni";
+"dv.scan-view.help.document-SENC" = "Ikhadi labantu abakhulile";
+"dv.scan-view.help.document-SS" = "Isitatimende sesikhwama sempesheni";
+"dv.scan-view.help.document-SSC" = "Ikhadi lokuphepha kwezenhlalo";
+"dv.scan-view.help.document-STUC" = "Ikhadi lomfundi";
+"dv.scan-view.help.document-TAC" = "Ikhadi lenhlangano yokuhweba";
+"dv.scan-view.help.document-TR" = "Umbiko wentela";
+"dv.scan-view.help.document-UB" = "Isikweletu samanzi, ugesi nodoti";
+"dv.scan-view.help.document-VC" = "Ukuhlola okungasebenzi";
+"dv.scan-view.help.document-VT" = "Iphepha lokuba umnikazi wemoto";
+"dv.scan-view.help.document-WWCC" = "Ukuhlola ukusebenza nezingane";
+"dv.scan-view.help.document.headline" = "Thatha isithombe %@";
+"dv.scan-view.navigationItem.title" = "Skena";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Ukufaka kuphumelele";
+"dv.submission-view.uploading.description" = "Lokhu kuzothatha imizuzwana embalwa, kuye ngoku inethiwekhi yakho idonsa kanjani";
+"dv.submission-view.uploading.headline" = "Ifaka amadokhumenti akho";

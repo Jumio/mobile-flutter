@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "L-awtentikazzjoni ma rnexxietx";
+"dv.error-view.button.cancel" = "Ikkanċella";
+"dv.error-view.button.retry" = "Erġa' pprova";
+"dv.error-view.camera-access-disabled.button.title" = "Ikkonferma";
+"dv.error-view.camera-access-disabled.content" = "%@ għandu bżonn aċċess għall-kamera tiegħek. Jekk jogħġbok iċċekkja s-settings tal-privatezza tiegħek.";
+"dv.error-view.camera-access-disabled.title" = "L-aċċess għall-kamera huwa ddiżattivat";
+"dv.error-view.cancelled-by-user" = "Ikkanċellata mill-utent aħħari";
+"dv.error-view.device-is-offline" = "M'hawnx konnessjoni mal-Internet";
+"dv.error-view.error.headline" = "Żball";
+"dv.error-view.invalid-key" = "Iċ-ċertifikat m'għadux aktar validu. Jekk jogħġbok ikkuntattja lill-bejjiegħ tal-app.";
+"dv.error-view.network-problem" = "Iltqajna ma' problema fil-komunikazzjoni tan-netwerk";
+"dv.scan-options.accessibility-label.close-button" = "Waqqaf l-iskenn";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Eqleb għall-kamera tan-naħa ta' wara";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Eqleb għall-kamera ta' quddiem";
+"dv.scan-view.accessibility-label.button.take-photo" = "Ħu ritratt";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Attiva l-flash";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Iddiżattiva l-flash";
+"dv.scan-view.confirmation.button.readable" = "Kompli";
+"dv.scan-view.confirmation.button.retake" = "TIEĦU KONTRA";
+"dv.scan-view.confirmation.text" = "Kun żgur li d-dejta kollha fuq id-dokument tiegħek tidher kollha, m'għandhiex leqqa fuqha u mhijiex imċajpra";
+"dv.scan-view.help.document-BC" = "Ċertifikat tat-twelid";
+"dv.scan-view.help.document-BS" = "Rendikont tal-bank";
+"dv.scan-view.help.document-CAAP" = "Applikazzjoni għal avvanz ta' flus kontanti";
+"dv.scan-view.help.document-CB" = "Kont tal-kunsill";
+"dv.scan-view.help.document-CC" = "Karta tal-kreditu";
+"dv.scan-view.help.document-CCS" = "Rendikont tal-karta tal-kreditu";
+"dv.scan-view.help.document-CRC" = "Ċertifikat tar-riżoluzzjoni korporattiva";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Kard tal-kura tas-saħħa";
+"dv.scan-view.help.document-IC" = "Kard tal-assigurazzjoni";
+"dv.scan-view.help.document-LAG" = "Ftehim tal-kiri";
+"dv.scan-view.help.document-LOAP" = "Applikazzjoni għal self";
+"dv.scan-view.help.document-MEDC" = "Kard tal-Medicare";
+"dv.scan-view.help.document-MOAP" = "Applikazzjoni għal ipoteka";
+"dv.scan-view.help.document-PB" = "Kont tat-telefon";
+"dv.scan-view.help.document-SEL" = "Ittra tar-reġistrazzjoni fl-iskola";
+"dv.scan-view.help.document-SENC" = "Kard tal-anzjani";
+"dv.scan-view.help.document-SS" = "Rendikont tal-ħlas tal-pensjoni";
+"dv.scan-view.help.document-SSC" = "Kard tas-sigurtà soċjali";
+"dv.scan-view.help.document-STUC" = "Kard tal-istudenti";
+"dv.scan-view.help.document-TAC" = "Kard tal-assoċjazzjoni kummerċjali";
+"dv.scan-view.help.document-TR" = "Dikjarazzjoni fiskali";
+"dv.scan-view.help.document-UB" = "Kont tal-utilità";
+"dv.scan-view.help.document-VC" = "Ċekk annullat";
+"dv.scan-view.help.document-VT" = "Titolu tal-vettura";
+"dv.scan-view.help.document-WWCC" = "Verifika ta' ħidma mat-tfal";
+"dv.scan-view.help.document.headline" = "Iġbed ritratt %@";
+"dv.scan-view.navigationItem.title" = "Skennja";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Telgħu b'suċċess";
+"dv.submission-view.uploading.description" = "Dan għandu jieħu ftit sekondi biss, skont il-konnettività tan-netwerk tiegħek";
+"dv.submission-view.uploading.headline" = "Qed itella' d-dokumenti tiegħek";

@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Potwierdź";
+"auth.alert-view.camera-access-disabled.description" = "%@ wymaga dostępu do aparatu. Sprawdź ustawienia prywatności.";
+"auth.alert-view.camera-access-disabled.title" = "Dostęp do aparatu wyłączony";
+"auth.error-view.button.cancel.title" = "Anuluj";
+"auth.error-view.button.retry.title" = "Ponów";
+"auth.error-view.error.header.title" = "Błąd";
+"auth.error.authentication-failed.title" = "Uwierzytelnianie nie powiodło się";
+"auth.error.cancelled-by-user.title" = "Anulowano przez użytkownika końcowego";
+"auth.error.device-is-offline.title" = "Brak dostępnego połączenia z Internetem";
+"auth.error.invalid-key.title" = "Certyfikat nie jest już ważny. Skontaktuj się ze sprzedawcą aplikacji";
+"auth.error.network-problem.title" = "Napotkaliśmy problem z komunikacją sieciową";
+"auth.error.setup-error.title" = "Obecnie skanowanie nie jest dostępne, skontaktuj się ze sprzedawcą aplikacji";
+"auth.error.transaction-already-finished.title" = "Transakcja już zakończona";
+"auth.scan-help-view.liveness-help.bad-angle" = "Trzymaj urządzenie na wysokości oczu i patrz prosto przed siebie";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Unikaj cieni i odbić na twarzy";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Kontynuuj";
+"auth.scan-help-view.liveness-help.general" = "Postępuj zgodnie z dwuetapowym procesem i dopasuj swoją twarz do ramki. Trzymaj urządzenie na wysokości oczu i patrz prosto w aparat. Twoja twarz zostanie uchwycona automatycznie";
+"auth.scan-view.accessibility-label.close-button" = "Zakończ skanowanie";
+"auth.scan-view.liveness-help.navigation-item.title" = "Występują problemy?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Uchwyć swoją twarz";
+"auth.scanview.liveness.landscape.description" = "Obróć telefon do pozycji pionowej, aby zrobić sobie zdjęcie";
+"auth.scanview.liveness.landscape.header" = "Obróć urządzenie";
+"zoom_feedback_a_little_too_close" = "Oddal się trochę";
+"zoom_feedback_a_little_too_close_tablet" = "Oddal się trochę";
+"zoom_feedback_center_face" = "Wyśrodkuj twarz";
+"zoom_feedback_face_not_found" = "Dopasuj twarz";
+"zoom_feedback_face_not_looking_straight_ahead" = "Patrz prosto przed siebie";
+"zoom_feedback_face_not_upright" = "Trzymaj głowę prosto";
+"zoom_feedback_hold_steady" = "Nie ruszaj się";
+"zoom_feedback_move_phone_away" = "Oddal się trochę";
+"zoom_feedback_move_phone_closer" = "Przybliż się";
+"zoom_feedback_move_phone_even_closer" = "Trochę bliżej";
+"zoom_feedback_move_phone_to_eye_level" = "Trzymaj urządzenie na wysokości oczu";
+"zoom_feedback_move_tablet_away" = "Oddal się trochę";
+"zoom_feedback_move_tablet_closer" = "Przybliż się";
+"zoom_feedback_move_tablet_to_eye_level" = "Trzymaj urządzenie na wysokości oczu";

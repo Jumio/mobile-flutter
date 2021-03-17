@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Επιβεβαίωση";
+"auth.alert-view.camera-access-disabled.description" = "Το %@ χρειάζεται πρόσβαση στην κάμερά σας. Ελέγξτε τις ρυθμίσεις απορρήτου σας.";
+"auth.alert-view.camera-access-disabled.title" = "Η πρόσβαση στην κάμερα είναι απενεργοποιημένη";
+"auth.error-view.button.cancel.title" = "Ακύρωση";
+"auth.error-view.button.retry.title" = "Επανάληψη";
+"auth.error-view.error.header.title" = "Σφάλμα";
+"auth.error.authentication-failed.title" = "Ο έλεγχος ταυτότητας απέτυχε";
+"auth.error.cancelled-by-user.title" = "Ακυρώθηκε από τον τελικό χρήστη";
+"auth.error.device-is-offline.title" = "Δεν υπάρχει διαθέσιμη σύνδεση στο διαδίκτυο";
+"auth.error.invalid-key.title" = "Το πιστοποιητικό δεν ισχύει πια. Επικοινωνήστε με τον προμηθευτή της εφαρμογής";
+"auth.error.network-problem.title" = "Αντιμετωπίσαμε πρόβλημα επικοινωνίας δικτύου";
+"auth.error.setup-error.title" = "Η σάρωση δεν είναι διαθέσιμη αυτή τη στιγμή, επικοινωνήστε με τον προμηθευτή της εφαρμογής";
+"auth.error.transaction-already-finished.title" = "Η συναλλαγή έχει ήδη ολοκληρωθεί";
+"auth.scan-help-view.liveness-help.bad-angle" = "Κρατήστε τη συσκευή σας στο επίπεδο των ματιών και κοιτάξτε απευθείας σε αυτή";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Αποφύγετε τις σκιές και τις αντανακλάσεις στο πρόσωπό σας";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Συνέχεια";
+"auth.scan-help-view.liveness-help.general" = "Ακολουθήστε τη διαδικασία δύο βημάτων και κεντράρετε το πρόσωπό σας στο πλαίσιο. Κρατήστε τη συσκευή σας στο επίπεδο των ματιών και κοιτάξτε απευθείας στην κάμερα. Η λήψη του προσώπου σας θα γίνει αυτόματα";
+"auth.scan-view.accessibility-label.close-button" = "Τερματισμός σάρωσης";
+"auth.scan-view.liveness-help.navigation-item.title" = "Προβλήματά";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Σύλληψη προσώπου";
+"auth.scanview.liveness.landscape.description" = "Περιστρέψτε το τηλέφωνό σας σε λειτουργία πορτραίτου για να τραβήξετε μια σέλφι";
+"auth.scanview.liveness.landscape.header" = "Περιστρέψτε τη συσκευή σας";
+"zoom_feedback_a_little_too_close" = "Μετακινηθείτε λίγο πιο πίσω";
+"zoom_feedback_a_little_too_close_tablet" = "Μετακινηθείτε λίγο πιο πίσω";
+"zoom_feedback_center_face" = "Κεντρική όψη";
+"zoom_feedback_face_not_found" = "Κεντράρετε το πρόσωπό σας στο πλαίσιο";
+"zoom_feedback_face_not_looking_straight_ahead" = "Κοιτάξτε ευθεία μπροστά";
+"zoom_feedback_face_not_upright" = "Κρατήστε το κεφάλι σας ίσιο";
+"zoom_feedback_hold_steady" = "Μείνετε ακίνητοι.";
+"zoom_feedback_move_phone_away" = "Μετακινηθείτε λίγο πιο πίσω";
+"zoom_feedback_move_phone_closer" = "Μετακινηθείτε λίγο πιο κοντά";
+"zoom_feedback_move_phone_even_closer" = "Λίγο πιο κοντά";
+"zoom_feedback_move_phone_to_eye_level" = "Κρατήστε τη συσκευή στο επίπεδο των ματιών";
+"zoom_feedback_move_tablet_away" = "Μετακινηθείτε λίγο πιο πίσω";
+"zoom_feedback_move_tablet_closer" = "Μετακινηθείτε λίγο πιο κοντά";
+"zoom_feedback_move_tablet_to_eye_level" = "Κρατήστε τη συσκευή στο επίπεδο των ματιών";

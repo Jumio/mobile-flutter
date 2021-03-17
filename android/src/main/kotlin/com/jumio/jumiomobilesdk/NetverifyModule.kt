@@ -34,7 +34,6 @@ class NetverifyModule : ModuleBase(), NetverifyDeallocationCallback {
                         call.argument("options"))
             },
             "startNetverify" to { _ -> startNetverify() },
-            "enableEMRTD" to { _ -> enableEMRTD() }
     )
 
     private var netverifySDK: NetverifySDK? = null
@@ -74,7 +73,6 @@ class NetverifyModule : ModuleBase(), NetverifyDeallocationCallback {
         (options["customerinternalreference"] as? String)?.let { netverifySDK.setCustomerInternalReference(it) }
         (options["reportingcriteria"] as? String)?.let { netverifySDK.setReportingCriteria(it) }
         (options["userreference"] as? String)?.let { netverifySDK.setUserReference(it) }
-        (options["enableepassport"] as? Boolean)?.let { netverifySDK.setEnableEMRTD(it) }
 
         (options["watchlistsearchprofile"] as? String)?.let { netverifySDK.setWatchlistSearchProfile(it) }
         (options["senddebuginfotojumio"] as? Boolean)?.let { netverifySDK.sendDebugInfoToJumio(it) }
@@ -208,8 +206,8 @@ class NetverifyModule : ModuleBase(), NetverifyDeallocationCallback {
     }
 
     private fun sendCancelResult(data: Intent, scanReference: String) {
-        val errorMessage = data.getStringExtra(EXTRA_ERROR_MESSAGE)
-        val errorCode = data.getStringExtra(EXTRA_ERROR_CODE)
+        val errorMessage = data.getStringExtra(EXTRA_ERROR_MESSAGE) ?: ""
+        val errorCode = data.getStringExtra(EXTRA_ERROR_CODE) ?: ""
         sendResult(mapOf<String, String>(
                 "errorCode" to errorCode,
                 "errorMessage" to errorMessage,
@@ -217,13 +215,7 @@ class NetverifyModule : ModuleBase(), NetverifyDeallocationCallback {
         ))
     }
 
-    private fun enableEMRTD() {
-        netverifySDK?.setEnableEMRTD(true)
-                ?: showErrorMessage("The Netverify SDK is not initialized yet. Call initNetverify() first.")
-    }
-
     override fun onNetverifyDeallocated() {
         netverifySDK = null
     }
-
 }

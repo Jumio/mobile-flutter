@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "प्रमाणीकरण विफल हो गया";
+"dv.error-view.button.cancel" = "रद्द करें";
+"dv.error-view.button.retry" = "पुन: प्रयास करें";
+"dv.error-view.camera-access-disabled.button.title" = "पुष्टि करें";
+"dv.error-view.camera-access-disabled.content" = "%@ को आपके कैमरे के एक्सेस की आवश्यकता है। कृपया अपनी गोपनीयता सेटिंग जांचें।";
+"dv.error-view.camera-access-disabled.title" = "कैमरा एक्सेस अक्षम किया गया है";
+"dv.error-view.cancelled-by-user" = "अंतिम उपयोगकर्ता द्वारा रद्द";
+"dv.error-view.device-is-offline" = "इंटरनेट कनेक्शन उपलब्ध नहीं है";
+"dv.error-view.error.headline" = "त्रुटि";
+"dv.error-view.invalid-key" = "प्रमाण पत्र अब मान्य नहीं है। कृपया ऐप विक्रेता से संपर्क करें";
+"dv.error-view.network-problem" = "हमें एक नेटवर्क संचार समस्या का सामना करना पड़ा है";
+"dv.scan-options.accessibility-label.close-button" = "स्कैन से बाहर निकलें";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "बैक कैमरा पर स्विच करें";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "फ्रंट कैमरा पर स्विच करें";
+"dv.scan-view.accessibility-label.button.take-photo" = "एक तस्वीर लें";
+"dv.scan-view.accessibility-label.flash-button.activate" = "फ़्लैश सक्रिय करें";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "फ़्लैश को निष्क्रिय करें";
+"dv.scan-view.confirmation.button.readable" = "जारी रखें";
+"dv.scan-view.confirmation.button.retake" = "फिर से लें";
+"dv.scan-view.confirmation.text" = "सुनिश्चित करें कि आपके दस्तावेज़ का सभी डेटा पूरी तरह से दिखाई दे रहा है, चमक से मुक्त और धुंधला नहीं है";
+"dv.scan-view.help.document-BC" = "जन्म प्रमाणपत्र";
+"dv.scan-view.help.document-BS" = "बैंक स्टेटमेंट";
+"dv.scan-view.help.document-CAAP" = "कैश एडवांस एप्लीकेशन";
+"dv.scan-view.help.document-CB" = "काउंसिल बिल";
+"dv.scan-view.help.document-CC" = "क्रेडिट कार्ड";
+"dv.scan-view.help.document-CCS" = "क्रेडिट कार्ड स्टेटमेंट";
+"dv.scan-view.help.document-CRC" = "कॉर्पोरेट रिजोल्युशन सर्टिफिकेट";
+"dv.scan-view.help.document-CUSTOM" = "दस्तावेज़";
+"dv.scan-view.help.document-HCC" = "हेल्थ केयर कार्ड";
+"dv.scan-view.help.document-IC" = "बीमा कार्ड";
+"dv.scan-view.help.document-LAG" = "लीज़ अग्रीमेंट";
+"dv.scan-view.help.document-LOAP" = "लोन एप्लीकेशन ";
+"dv.scan-view.help.document-MEDC" = "मेडिकेयर कार्ड";
+"dv.scan-view.help.document-MOAP" = "मॉर्गेज एप्लीकेशन ";
+"dv.scan-view.help.document-PB" = "फ़ोन बिल";
+"dv.scan-view.help.document-SEL" = "स्कूल नामांकन पत्र";
+"dv.scan-view.help.document-SENC" = "सीनियर्स कार्ड";
+"dv.scan-view.help.document-SS" = "सेवानिवृत्ति स्टेटमेंट";
+"dv.scan-view.help.document-SSC" = "सोशल सिक्योरिटी कार्ड";
+"dv.scan-view.help.document-STUC" = "छात्र कार्ड";
+"dv.scan-view.help.document-TAC" = "ट्रेड एसोसिएशन कार्ड";
+"dv.scan-view.help.document-TR" = "टैक्स रिटर्न";
+"dv.scan-view.help.document-UB" = "यूटिलिटी बिल";
+"dv.scan-view.help.document-VC" = "अमान्य चेक";
+"dv.scan-view.help.document-VT" = "वाहन का टाइटल";
+"dv.scan-view.help.document-WWCC" = "बच्चों पर निगरानी के साथ काम करना";
+"dv.scan-view.help.document.headline" = "कैप्चर %@करें";
+"dv.scan-view.navigationItem.title" = "दस्तावेज़ स्कैन करें";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "अपलोड सफल";
+"dv.submission-view.uploading.description" = "यह आपके नेटवर्क कनेक्टिविटी के आधार पर केवल कुछ सेकंड का समय लेना चाहिए";
+"dv.submission-view.uploading.headline" = "आपके दस्तावेज़ों को अपलोड किया जा रहा है";

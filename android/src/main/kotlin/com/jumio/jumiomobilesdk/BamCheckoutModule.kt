@@ -168,8 +168,8 @@ class BamCheckoutModule : ModuleBase() {
     }
 
     private fun sendCancelResult(data: Intent, scanReferenceList: ArrayList<String>) {
-        val errorMessage: String = data.getStringExtra(EXTRA_ERROR_MESSAGE)
-        val errorCode: String = data.getStringExtra(EXTRA_ERROR_CODE)
+        val errorMessage: String = data.getStringExtra(EXTRA_ERROR_MESSAGE) ?: ""
+        val errorCode: String = data.getStringExtra(EXTRA_ERROR_CODE) ?: ""
 
         sendResult(mapOf<String, Any>(
                 "errorCode" to errorCode,

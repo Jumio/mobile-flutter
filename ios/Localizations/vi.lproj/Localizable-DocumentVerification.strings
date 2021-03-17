@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Xác thực thất bại";
+"dv.error-view.button.cancel" = "Hủy";
+"dv.error-view.button.retry" = "Thử lại";
+"dv.error-view.camera-access-disabled.button.title" = "Xác nhận";
+"dv.error-view.camera-access-disabled.content" = "%@ cần truy cập máy ảnh của bạn. Vui lòng kiểm tra cài đặt quyền riêng tư của bạn.";
+"dv.error-view.camera-access-disabled.title" = "Quyền truy cập máy ảnh bị vô hiệu hóa";
+"dv.error-view.cancelled-by-user" = "Đã hủy bởi người dùng cuối";
+"dv.error-view.device-is-offline" = "Không có kết nối internet";
+"dv.error-view.error.headline" = "Lỗi";
+"dv.error-view.invalid-key" = "Chứng chỉ không còn hợp lệ. Vui lòng liên hệ với nhà cung cấp ứng dụng";
+"dv.error-view.network-problem" = "Chúng tôi đã gặp sự cố về giao tiếp mạng";
+"dv.scan-options.accessibility-label.close-button" = "Thoát khỏi quét";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Chuyển sang máy ảnh sau";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Chuyển sang máy ảnh trước";
+"dv.scan-view.accessibility-label.button.take-photo" = "Chụp ảnh";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Bật đèn flash";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Tắt đèn flash";
+"dv.scan-view.confirmation.button.readable" = "Tiếp tục";
+"dv.scan-view.confirmation.button.retake" = "Chụp lại";
+"dv.scan-view.confirmation.text" = "Hãy đảm bảo rằng tất cả dữ liệu trên tài liệu của bạn đều rõ ràng, không bị chói và không bị mờ";
+"dv.scan-view.help.document-BC" = "Ngày sinh";
+"dv.scan-view.help.document-BS" = "Bản sao kê ngân hàng";
+"dv.scan-view.help.document-CAAP" = "Đơn xin tạm ứng tiền mặt";
+"dv.scan-view.help.document-CB" = "Hóa đơn thuế hội đồng";
+"dv.scan-view.help.document-CC" = "Thẻ tín dụng";
+"dv.scan-view.help.document-CCS" = "Bản sao kê thẻ tín dụng";
+"dv.scan-view.help.document-CRC" = "Chứng nhận nghị quyết công ty";
+"dv.scan-view.help.document-CUSTOM" = "Tài liệu";
+"dv.scan-view.help.document-HCC" = "Thẻ chăm sóc sức khỏe";
+"dv.scan-view.help.document-IC" = "Thẻ bảo hiểm";
+"dv.scan-view.help.document-LAG" = "Hợp đồng thuê nhà";
+"dv.scan-view.help.document-LOAP" = "Đơn xin vay tiền";
+"dv.scan-view.help.document-MEDC" = "Thẻ chăm sóc y tế";
+"dv.scan-view.help.document-MOAP" = "Đơn xin thế chấp";
+"dv.scan-view.help.document-PB" = "Hóa đơn điện thoại";
+"dv.scan-view.help.document-SEL" = "Thư ghi danh học";
+"dv.scan-view.help.document-SENC" = "Thẻ người cao tuổi";
+"dv.scan-view.help.document-SS" = "Báo cáo phụ cấp hưu trí";
+"dv.scan-view.help.document-SSC" = "Thẻ an sinh xã hội";
+"dv.scan-view.help.document-STUC" = "Thẻ sinh viên";
+"dv.scan-view.help.document-TAC" = "Thẻ hiệp hội thương mại";
+"dv.scan-view.help.document-TR" = "Tờ khai thuế";
+"dv.scan-view.help.document-UB" = "Hóa đơn tiện ích";
+"dv.scan-view.help.document-VC" = "Séc không có hiệu lực";
+"dv.scan-view.help.document-VT" = "Chứng nhận quyền sở hữu xe";
+"dv.scan-view.help.document-WWCC" = "Chứng nhận đủ điều kiện tiếp xúc với trẻ em";
+"dv.scan-view.help.document.headline" = "Chụp %@";
+"dv.scan-view.navigationItem.title" = "Quét tài liệu";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Tải lên thành công";
+"dv.submission-view.uploading.description" = "Quá trình này chỉ mất vài giây tùy theo kết nối mạng của bạn";
+"dv.submission-view.uploading.headline" = "Đang tải tài liệu của bạn lên";

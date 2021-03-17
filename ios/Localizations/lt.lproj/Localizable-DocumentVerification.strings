@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Autentifikavimas nepavyko";
+"dv.error-view.button.cancel" = "Atšaukti";
+"dv.error-view.button.retry" = "Bandyti iš naujo";
+"dv.error-view.camera-access-disabled.button.title" = "Patvirtinti";
+"dv.error-view.camera-access-disabled.content" = "%@ reikia prieigis prie jūsų fotoaparato. Prašome patikrinti savo privatumo nustatymus.";
+"dv.error-view.camera-access-disabled.title" = "Prieiga prie fotoaparato išjungta";
+"dv.error-view.cancelled-by-user" = "Atšaukė galutinis naudotojas";
+"dv.error-view.device-is-offline" = "Nėra interneto ryšio";
+"dv.error-view.error.headline" = "Klaida";
+"dv.error-view.invalid-key" = "Sertifikatas nebegalioja. Prašome susisiekti su programėlės pardavėju";
+"dv.error-view.network-problem" = "Aptikta ryšio problema";
+"dv.scan-options.accessibility-label.close-button" = "Nutraukti skenavimą";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Perjungti į gale esančią kamerą";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Perjungti į priekyje esančią kamerą";
+"dv.scan-view.accessibility-label.button.take-photo" = "Nufotografuokite";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Įjungti blykstę";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Išjungti blykstę";
+"dv.scan-view.confirmation.button.readable" = "Tęsti";
+"dv.scan-view.confirmation.button.retake" = "Pakartokite";
+"dv.scan-view.confirmation.text" = "Patikrinkite, ar visi jūsų dokumento duomenys gerai matomi, nėra blizgesio ir išsiliejimų";
+"dv.scan-view.help.document-BC" = "Gimimo liudijimas";
+"dv.scan-view.help.document-BS" = "Banko išrašas";
+"dv.scan-view.help.document-CAAP" = "Avanso grynaisiais pinigais paraiška";
+"dv.scan-view.help.document-CB" = "Tarybos sprendimas";
+"dv.scan-view.help.document-CC" = "Kredito kortelė";
+"dv.scan-view.help.document-CCS" = "Kredito kortelės išrašas";
+"dv.scan-view.help.document-CRC" = "Įmonės sprendimo pažymėjimas";
+"dv.scan-view.help.document-CUSTOM" = "Dokumentas";
+"dv.scan-view.help.document-HCC" = "Sveikatos priežiūros kortelė";
+"dv.scan-view.help.document-IC" = "Draudimo kortelė";
+"dv.scan-view.help.document-LAG" = "Nuomos sutartis";
+"dv.scan-view.help.document-LOAP" = "Paskolos paraiška";
+"dv.scan-view.help.document-MEDC" = "„Medicare“ kortelė";
+"dv.scan-view.help.document-MOAP" = "Hipotekos paraiška";
+"dv.scan-view.help.document-PB" = "Telefono sąskaita";
+"dv.scan-view.help.document-SEL" = "Priėmimo į mokyklą laiškas";
+"dv.scan-view.help.document-SENC" = "Senjoro kortelė";
+"dv.scan-view.help.document-SS" = "Senatvės pensijos pareiškimas";
+"dv.scan-view.help.document-SSC" = "Socialinio draudimo kortelė";
+"dv.scan-view.help.document-STUC" = "Studento kortelė";
+"dv.scan-view.help.document-TAC" = "Prekybos asociacijos kortelė";
+"dv.scan-view.help.document-TR" = "Mokesčių grąžinimas";
+"dv.scan-view.help.document-UB" = "Komunalinių paslaugų sąskaita";
+"dv.scan-view.help.document-VC" = "Anuliuotas čekis";
+"dv.scan-view.help.document-VT" = "Transporto priemonės registracijos liudijimas";
+"dv.scan-view.help.document-WWCC" = "Darbo su vaikais žyma";
+"dv.scan-view.help.document.headline" = "Fotografuoti %@";
+"dv.scan-view.navigationItem.title" = "Nuskenuokite";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Įkėlimas sėkmingas";
+"dv.submission-view.uploading.description" = "Tai turėtų užtrukti tik keletą sekundžių, priklausomai nuo jūsų tinklo";
+"dv.submission-view.uploading.headline" = "Įkeliami jūsų dokumentai";

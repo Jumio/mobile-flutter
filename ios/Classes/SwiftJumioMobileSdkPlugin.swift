@@ -28,8 +28,6 @@ public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
             bamCheckoutModule.initialize(call: call, result: result)
         case "startBAM":
             bamCheckoutModule.start(result: result)
-        case "enableEMRTD":
-            netverifyModule.enableEMRTD()
         default:
             break
         }

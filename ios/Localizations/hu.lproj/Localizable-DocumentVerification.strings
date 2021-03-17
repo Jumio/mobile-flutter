@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "A hitelesítés sikertelen";
+"dv.error-view.button.cancel" = "Mégse";
+"dv.error-view.button.retry" = "Újra";
+"dv.error-view.camera-access-disabled.button.title" = "Megerősítés";
+"dv.error-view.camera-access-disabled.content" = "%@ hozzáférést igényel a kamerához. Kérjük, ellenőrizze adatvédelmi beállításait.";
+"dv.error-view.camera-access-disabled.title" = "A kamera hozzáférése letiltva";
+"dv.error-view.cancelled-by-user" = "Végfelhasználó által megszakítva";
+"dv.error-view.device-is-offline" = "Nincs elérhető internetkapcsolat";
+"dv.error-view.error.headline" = "Hiba";
+"dv.error-view.invalid-key" = "A tanúsítvány már nem érvényes. Vegye fel a kapcsolatot az alkalmazás gyártójával";
+"dv.error-view.network-problem" = "Hálózati kommunikációs problémába ütköztünk";
+"dv.scan-options.accessibility-label.close-button" = "Kilépés a beolvasásból";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Váltás a hátlapi kamerára";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Váltás az előlapi kamerára";
+"dv.scan-view.accessibility-label.button.take-photo" = "Fénykép készítése";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Vaku bekapcsolása";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Vaku kikapcsolása";
+"dv.scan-view.confirmation.button.readable" = "Tovább";
+"dv.scan-view.confirmation.button.retake" = "Újra készítés";
+"dv.scan-view.confirmation.text" = "Győződjön meg arról, hogy a dokumentumon szereplő összes adat jól látható, tükröződésmentes és nincs elmosódva";
+"dv.scan-view.help.document-BC" = "Születési anyakönyvi kivonat";
+"dv.scan-view.help.document-BS" = "Bankszámlakivonat";
+"dv.scan-view.help.document-CAAP" = "Készpénzelőleg-kérelem";
+"dv.scan-view.help.document-CB" = "Önkormányzati előterjesztés";
+"dv.scan-view.help.document-CC" = "Hitelkártya";
+"dv.scan-view.help.document-CCS" = "Hitelkártya kimutatás";
+"dv.scan-view.help.document-CRC" = "Testületi döntés tanúsítvány";
+"dv.scan-view.help.document-CUSTOM" = "Dokumentum";
+"dv.scan-view.help.document-HCC" = "Egészségügyi kártya";
+"dv.scan-view.help.document-IC" = "Biztosítási kártya";
+"dv.scan-view.help.document-LAG" = "Bérleti szerződés";
+"dv.scan-view.help.document-LOAP" = "Hiteligénylés";
+"dv.scan-view.help.document-MEDC" = "Medicare kártya";
+"dv.scan-view.help.document-MOAP" = "Jelzáloghitel-kérelem";
+"dv.scan-view.help.document-PB" = "Telefonszámla";
+"dv.scan-view.help.document-SEL" = "Iskolai beiratkozási levél";
+"dv.scan-view.help.document-SENC" = "Nyugdíjaskártya";
+"dv.scan-view.help.document-SS" = "Magánnyugdíj kimutatás";
+"dv.scan-view.help.document-SSC" = "Társadalombiztosítási kártya";
+"dv.scan-view.help.document-STUC" = "Diákigazolvány";
+"dv.scan-view.help.document-TAC" = "Szakmai szövetség tagkártya";
+"dv.scan-view.help.document-TR" = "Adóbevallás";
+"dv.scan-view.help.document-UB" = "Közüzemi számla";
+"dv.scan-view.help.document-VC" = "Érvénytelenített csekk";
+"dv.scan-view.help.document-VT" = "Jármű tulajdonjoga";
+"dv.scan-view.help.document-WWCC" = "Gyermekekkel való munka ellenőrzése";
+"dv.scan-view.help.document.headline" = "Rögzítés %@";
+"dv.scan-view.navigationItem.title" = "Beolvasás";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Feltöltés sikeres";
+"dv.submission-view.uploading.description" = "Ez a hálózati kapcsolattól függően csak pár másodpercet vesz igénybe";
+"dv.submission-view.uploading.headline" = "Dokumentumok feltöltése";

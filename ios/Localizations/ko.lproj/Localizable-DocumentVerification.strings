@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "인증 실패";
+"dv.error-view.button.cancel" = "취소";
+"dv.error-view.button.retry" = "다시 시도";
+"dv.error-view.camera-access-disabled.button.title" = "확인";
+"dv.error-view.camera-access-disabled.content" = "%@이(가) 카메라에 액세스해야 합니다. 개인 정보 설정을 확인하세요.";
+"dv.error-view.camera-access-disabled.title" = "카메라 액세스 비활성화";
+"dv.error-view.cancelled-by-user" = "최종 사용자가 취소";
+"dv.error-view.device-is-offline" = "인터넷에 연결되어 있지 않습니다";
+"dv.error-view.error.headline" = "오류";
+"dv.error-view.invalid-key" = "인증서가 유효하지 않습니다. 앱 공급업체에 문의 바랍니다.";
+"dv.error-view.network-problem" = "네트워크 통신 문제가 발생했습니다";
+"dv.scan-options.accessibility-label.close-button" = "스캔 종료";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "후면 카메라로 전환";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "전면 카메라로 전환";
+"dv.scan-view.accessibility-label.button.take-photo" = "사진 촬영";
+"dv.scan-view.accessibility-label.flash-button.activate" = "플래시 활성화";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "플래시 비활성화";
+"dv.scan-view.confirmation.button.readable" = "계속";
+"dv.scan-view.confirmation.button.retake" = "다시 찍기";
+"dv.scan-view.confirmation.text" = "문서의 모든 데이터가 완전히 표시되며 눈부심이 없고 흐릿하지 않아야 합니다.";
+"dv.scan-view.help.document-BC" = "출생 증명서";
+"dv.scan-view.help.document-BS" = "은행 명세서";
+"dv.scan-view.help.document-CAAP" = "현금 선지금 신청서";
+"dv.scan-view.help.document-CB" = "위원회 고지서";
+"dv.scan-view.help.document-CC" = "신용 카드";
+"dv.scan-view.help.document-CCS" = "신용 카드 명세서";
+"dv.scan-view.help.document-CRC" = "이사회 결의 인증서";
+"dv.scan-view.help.document-CUSTOM" = "문서";
+"dv.scan-view.help.document-HCC" = "건강 관리 카드";
+"dv.scan-view.help.document-IC" = "보험증";
+"dv.scan-view.help.document-LAG" = "임대 계약서";
+"dv.scan-view.help.document-LOAP" = "대출 신청서";
+"dv.scan-view.help.document-MEDC" = "메디케어 카드";
+"dv.scan-view.help.document-MOAP" = "모기지 신청서";
+"dv.scan-view.help.document-PB" = "전화 요금";
+"dv.scan-view.help.document-SEL" = "입학 허가서";
+"dv.scan-view.help.document-SENC" = "노인 복지 카드";
+"dv.scan-view.help.document-SS" = "연금 명세서";
+"dv.scan-view.help.document-SSC" = "사회 보장 카드";
+"dv.scan-view.help.document-STUC" = "학생증";
+"dv.scan-view.help.document-TAC" = "무역 협회 카드";
+"dv.scan-view.help.document-TR" = "소득 신고서";
+"dv.scan-view.help.document-UB" = "공과금 청구서";
+"dv.scan-view.help.document-VC" = "실효된 수표";
+"dv.scan-view.help.document-VT" = "자동차 등록증";
+"dv.scan-view.help.document-WWCC" = "Working with children check";
+"dv.scan-view.help.document.headline" = "%@ 촬영";
+"dv.scan-view.navigationItem.title" = "문서 스캔";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "업로드 성공";
+"dv.submission-view.uploading.description" = "네트워크 연결에 따라 몇 초밖에 걸리지 않습니다.";
+"dv.submission-view.uploading.headline" = "문서 업로드";

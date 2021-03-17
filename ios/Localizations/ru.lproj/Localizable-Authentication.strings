@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Подтвердить";
+"auth.alert-view.camera-access-disabled.description" = "%@ нужен доступ к вашей камере. Проверьте настройки конфиденциальности.";
+"auth.alert-view.camera-access-disabled.title" = "Доступ к камере отключен";
+"auth.error-view.button.cancel.title" = "Отменить";
+"auth.error-view.button.retry.title" = "Повторить";
+"auth.error-view.error.header.title" = "Ошибка";
+"auth.error.authentication-failed.title" = "Ошибка аутентификации";
+"auth.error.cancelled-by-user.title" = "Отменено конечным пользователем";
+"auth.error.device-is-offline.title" = "Нет подключения к интернету";
+"auth.error.invalid-key.title" = "Сертификат больше не действителен. Свяжитесь с поставщиком приложения";
+"auth.error.network-problem.title" = "Мы столкнулись с проблемой сетевой связи";
+"auth.error.setup-error.title" = "Сканирование сейчас не доступно, свяжитесь с поставщиком приложения";
+"auth.error.transaction-already-finished.title" = "Транзакция уже завершена";
+"auth.scan-help-view.liveness-help.bad-angle" = "Держите устройство на уровне глаз и смотрите прямо в него";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Избегайте теней и отражений на лице";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Нажмите, чтобы продолжить";
+"auth.scan-help-view.liveness-help.general" = "Пройдите двухэтапный процесс и выровняйте свое лицо по рамке. Держите устройство на уровне глаз и смотрите прямо в камеру. Ваше лицо будет снято автоматически";
+"auth.scan-view.accessibility-label.close-button" = "Завершить сканирование";
+"auth.scan-view.liveness-help.navigation-item.title" = "Возникли проблемы?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Сделайте снимок своего лица";
+"auth.scanview.liveness.landscape.description" = "Поверните телефон вертикально, чтобы сделать селфи";
+"auth.scanview.liveness.landscape.header" = "Поверните устройство";
+"zoom_feedback_a_little_too_close" = "Отодвиньте немного дальше";
+"zoom_feedback_a_little_too_close_tablet" = "Отодвиньте немного дальше";
+"zoom_feedback_center_face" = "Выровняйте лицо по центру";
+"zoom_feedback_face_not_found" = "Поместите лицо в рамку";
+"zoom_feedback_face_not_looking_straight_ahead" = "Смотрите прямо перед собой";
+"zoom_feedback_face_not_upright" = "Держите голову прямо";
+"zoom_feedback_hold_steady" = "Не двигайтесь";
+"zoom_feedback_move_phone_away" = "Отодвиньте немного дальше";
+"zoom_feedback_move_phone_closer" = "Пододвиньте немного ближе";
+"zoom_feedback_move_phone_even_closer" = "Немного ближе";
+"zoom_feedback_move_phone_to_eye_level" = "Держите устройство на уровне глаз";
+"zoom_feedback_move_tablet_away" = "Отодвиньте немного дальше";
+"zoom_feedback_move_tablet_closer" = "Пододвиньте немного ближе";
+"zoom_feedback_move_tablet_to_eye_level" = "Держите устройство на уровне глаз";

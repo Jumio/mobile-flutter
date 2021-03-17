@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "確認";
+"auth.alert-view.camera-access-disabled.description" = "%@ 需要存取您的相機。請檢查您的隱私設定。";
+"auth.alert-view.camera-access-disabled.title" = "相機存取權限已停用";
+"auth.error-view.button.cancel.title" = "取消";
+"auth.error-view.button.retry.title" = "重試";
+"auth.error-view.error.header.title" = "錯誤";
+"auth.error.authentication-failed.title" = "驗證失敗";
+"auth.error.cancelled-by-user.title" = "最終使用者已取消";
+"auth.error.device-is-offline.title" = "無網際網路連線可用";
+"auth.error.invalid-key.title" = "證書不再有效。請聯絡 APP 供應商";
+"auth.error.network-problem.title" = "我們遇到了網路通訊問題";
+"auth.error.setup-error.title" = "目前無法掃描，請聯絡應用程式供應商";
+"auth.error.transaction-already-finished.title" = "交易已完成";
+"auth.scan-help-view.liveness-help.bad-angle" = "將裝置放在視線高度並直視它";
+"auth.scan-help-view.liveness-help.bad-lightning" = "避免臉上出現陰影和反射";
+"auth.scan-help-view.liveness-help.button-continue.title" = "點按以繼續";
+"auth.scan-help-view.liveness-help.general" = "遵循兩步過程，將您的臉與框架對齊。將您的裝置放在視線水平的位置，直視攝像機。您的臉將被自動捕捉";
+"auth.scan-view.accessibility-label.close-button" = "退出掃描";
+"auth.scan-view.liveness-help.navigation-item.title" = "遇到問題了嗎？";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "捕捉您的臉";
+"auth.scanview.liveness.landscape.description" = "請旋轉手機至人像以自拍";
+"auth.scanview.liveness.landscape.header" = "旋轉裝置";
+"zoom_feedback_a_little_too_close" = "移後一點";
+"zoom_feedback_a_little_too_close_tablet" = "移後一點";
+"zoom_feedback_center_face" = "臉部居中";
+"zoom_feedback_face_not_found" = "框住您的臉";
+"zoom_feedback_face_not_looking_straight_ahead" = "直視前方";
+"zoom_feedback_face_not_upright" = "保持頭直";
+"zoom_feedback_hold_steady" = "保持不動";
+"zoom_feedback_move_phone_away" = "移後一點";
+"zoom_feedback_move_phone_closer" = "移近一點";
+"zoom_feedback_move_phone_even_closer" = "靠近一點";
+"zoom_feedback_move_phone_to_eye_level" = "將裝置放在視線高度";
+"zoom_feedback_move_tablet_away" = "移後一點";
+"zoom_feedback_move_tablet_closer" = "移近一點";
+"zoom_feedback_move_tablet_to_eye_level" = "將裝置放在視線高度";

@@ -2,30 +2,12 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 3.8.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
-
-# Table of Contents
-- [Compatibility](#compatibility)
-- [Setup](#setup)
-- [Integration](#integration)
-  - [iOS](#ios)
-  - [Android](#android)
-- [Usage](#usage)
-    - [Netverify & Fastfill](#Netverify-&-Fastfill)
-    - [Document Verification](#document-verification)
-    - [BAM Checkout](#bam-checkout)
-    - [Android Netverify eMRTD](#android-netverify-eMRTD)
-    - [Retrieving Information](#retrieving-information)
-- [Customization](#customization)
-- [FAQ](#faq)
-    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
-- [Result Objects](#result-objects)
-- [Support](#support)
-
 ## Compatibility
-Compatibility has been tested with a Flutter version of 1.22 and Dart 2.10
+
+Compatibility has been tested with a Flutter version of 2.0.1 and Dart 2.12
 
 ## Setup
+
 Create Flutter project and add the Jumio Mobile SDK module to it.
 
 ```sh
@@ -37,9 +19,9 @@ Add the Jumio Mobile SDK as a dependency to your `pubspec.yaml` file:
 ```yaml
 dependencies:
   flutter:
-    SDK: flutter
+    sdk: flutter
 
-  jumio_mobile_SDK_flutter: ^3.8.0
+  jumio_mobile_sdk_flutter: ^3.9.1
 ```
 
 And install the dependency:
@@ -52,10 +34,12 @@ flutter pub get
 ## Integration
 
 ### iOS
+
 1. Add the "**NSCameraUsageDescription**"-key to your Info.plist file.
 2. Your app's deployment target must be at least iOS 10.0
 
 ### Android
+
 1. Open your AndroidManifest.xml file and change allowBackup to false.
 
 ```xml
@@ -66,12 +50,12 @@ android:allowBackup="false">
 </application>
 ```
 
-2. Make sure your compileSDKVersion, minSDKVersion and buildToolsVersion are high enough.
+2. Make sure your compileSdkVersion, minSdkVersion and buildToolsVersion are high enough.
 
 ```groovy
 android {
-  minSDKVersion 19
-  compileSDKVersion 29
+  minSdkVersion 19
+  compileSdkVersion 29
   buildToolsVersion "29.0.3"
   ...
 }
@@ -94,14 +78,14 @@ android {
 The plugin requires at least version 4.0.0 of the android build tools. This transitively requires and upgrade of the Gradle wrapper to version 6.
 Without this change the Gradle build will fail with a Jetifier error about bcprov.
 
-Upgrade build tools version to 4.0.1 in android/build.gradle:
+Upgrade build tools version to 4.1.2 in android/build.gradle:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:4.0.1'
+    classpath 'com.android.tools.build:gradle:4.1.2'
   }
 }
 ```
@@ -109,10 +93,11 @@ buildscript {
 Modify the Gradle Wrapper version in android/gradle.properties.
 
 ## Usage
-1. Import "**jumiomobileSDK.dart**"
+
+1. Import "**jumiomobilesdk.dart**"
 
 ```dart
-import 'package:jumio_mobile_SDK_flutter/jumio_mobile_SDK_flutter.dart';
+import 'package:jumio_mobile_sdk_flutter/jumio_mobile_sdk_flutter.dart';
 ```
 
 2. The SDKs can be initialized with the following calls
@@ -123,14 +108,19 @@ JumioMobileSDK.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>,
 JumioMobileSDK.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-### Netverify & Fastfill
+Datacenter can either be **us**, **eu** or **sg**.
+
+## Usage
+
+### Netverify / Fastfill
+
 To initialize the SDK, perform the following call.
 
 ```dart
 JumioMobileSDK.initNetverify(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-Datacenter can either be **US**, **EU** or **SG**.
+Datacenter can either be **US** or **EU**.
 
 
 Configure the SDK with the *configuration*-Object.
@@ -184,28 +174,23 @@ If you are using eMRTD scanning, following lines are needed in your `proguard-ru
 -dontwarn org.bouncycastle.**
 ```
 
-Add the needed dependencies following [this chapter](https://github.com/Jumio/mobile-SDK-android/blob/master/docs/integration_id-verification-fastfill.md#dependencies) of the android integration guide.
+Add the needed dependencies following [this chapter](https://github.com/Jumio/mobile-sdk-android/blob/master/docs/integration_id-verification-fastfill.md#dependencies) of the android integration guide.
 
-Enable eMRTD by using the following method in your native android code:
-
-```dart
-netverifySDK.setEnableEMRTD(true);
-```
-
-As soon as the SDK is initialized, the SDK is started by the following call.
+As soon as the sdk is initialized, the sdk is started by the following call.
 
 ```dart
 JumioMobileSDK.startNetverify();
 ```
 
 ### Document Verification
+
 To initialize the SDK, perform the following call.
 
 ```dart
 JumioMobileSDK.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-Datacenter can either be **US**, **EU** or **SG**.
+Datacenter can either be **US** or **EU**.
 
 Configure the SDK with the *configuration*-Object. **(configuration marked with * are mandatory)**
 
@@ -244,7 +229,7 @@ Possible types:
 *  WWCC (Working with children check)
 *  SS (Superannuation statement)
 *  TAC (Trade association card)
-*  SEL (School enrollment letter)
+*  SEL (School enrolment letter)
 *  PB (Phone bill)
 *  USSS (US social security card)
 *  SSC (Social security card)
@@ -267,20 +252,21 @@ await JumioMobileSDK.initDocumentVerification(API_TOKEN, API_SECRET, DATACENTER,
 });
 ```
 
-As soon as the SDK is initialized, the SDK is started by the following call.
+As soon as the sdk is initialized, the sdk is started by the following call.
 
 ```dart
 final String result = await JumioMobileSDK.startDocumentVerification();
 ```
 
 ### BAM Checkout
+
 To Initialize the SDK, perform the following call.
 
 ```dart
 JumioMobileSDK.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-Datacenter can either be **US**, **EU** or **SG**.
+Datacenter can either be **US** or **EU**.
 
 Configure the SDK with the *configuration*-Object.
 
@@ -311,40 +297,34 @@ await JumioMobileSDK.initBAM(API_TOKEN, API_SECRET, DATACENTER, {
 });
 ```
 
-As soon as the SDK is initialized, the SDK is started by the following call.
+As soon as the sdk is initialized, the sdk is started by the following call.
 
 ```dart
 bool result = await JumioMobileSDK.startBAM();
 ```
 
-### Android Netverify eMRTD
-Use `enableEMRTD` to read the NFC chip of an eMRTD.
+### Retrieving information
 
-```dart
-await JumioMobileSDK.enableEMRTD();
-```
-
-### Retrieving Information
-
-Scan results are returned from the startXXX() methods asynchronously. Await the returned values to get the results. Exceptions are thrown issues such as invalid credentials, missing API keys, permissions errors and such.
+Scan results are returned from the startXXX() methods asynchronously. Await the returned values to get the results. Exceptions are thrown issuees such as invalid credentials, missing API keys, permissions errors and such.
 
 ## Customization
 
 ### Android
 
 #### Netverify
-The Netverify SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-SDK-android/blob/v3.8.0/docs/integration_id-verification-fastfill.md#customization).
+The Netverify SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.9.1/docs/integration_id-verification-fastfill.md#customization).
 
 #### BAM Checkout
-The BAM Checkout SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-SDK-android/blob/v3.8.0/docs/integration_bam-checkout.md#customization).
+The BAM Checkout SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.9.1/docs/integration_bam-checkout.md#customization).
 
 #### Document Verification
-The Document Verification SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-SDK-android/blob/v3.8.0/docs/integration_document-verification.md#customization).
+The Document Verification SDK can be customized to the respective needs by following this [customization chapter](https://github.com/Jumio/mobile-sdk-android/blob/v3.9.1/docs/integration_document-verification.md#customization).
 
 
 ### iOS
+
 The SDK can be customized to the respective needs by using the following initializers instead.
-```dart
+```javascript
 JumioMobileSDKNetverify.initNetverify(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
 JumioMobileSDKDocumentVerification.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
 JumioMobileSDKBamCheckout.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
@@ -385,7 +365,7 @@ All colors are provided with a HEX string with the following format: #ff00ff.
 
 **Customization example**
 
-```
+```dart
 JumioMobileSDK.initNetverify("API_TOKEN", "API_SECRET", "US", {
   "enableVerification": false,
   ...
@@ -396,7 +376,8 @@ JumioMobileSDK.initNetverify("API_TOKEN", "API_SECRET", "US", {
 );
 ```
 
-## Result Objects
+## Result objects
+
 To get information about result fields, Netverify Retrieval API, Netverify Delete API and Global Netverify settings and more, please read our [page with server related information](https://github.com/Jumio/implementation-guides/blob/master/netverify/callback.md).
 
 The Map with all the extracted data that is returned for the specific products is described in the following subchapters:
@@ -464,29 +445,17 @@ The Map with all the extracted data that is returned for the specific products i
 | cardAccountNumberValid | BOOL |  | True if account number code valid, otherwise false |
 
 ### Document Verification
-No data returned.
 
-## FAQ
-### App Crash at Launch for iOS
-If iOS application crashes immediately after launch and without additional information, but works fine for Android, please make sure to the following lines have been added to your `podfile`:
-```
-post_install do |installer|
-    installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-          config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-      end
-    end
-end
-```
-Please refer to [iOS guide](https://github.com/Jumio/mobile-sdk-ios#via-cocoapods) for more details.
+No data returned.
 
 # Support
 
 ## Contact
+
 If you have any questions regarding our implementation guide please contact Jumio Customer Service at support@jumio.com or https://support.jumio.com. The Jumio online helpdesk contains a wealth of information regarding our service including demo videos, product descriptions, FAQs and other things that may help to get you started with Jumio. Check it out at: https://support.jumio.com.
 
 ## Licenses
-The software contains third-party open source software. For more information, please see [Android licenses](https://github.com/Jumio/mobile-SDK-android/tree/master/licenses) and [iOS licenses](https://github.com/Jumio/mobile-SDK-ios/tree/master/licenses)
+The software contains third-party open source software. For more information, please see [Android licenses](https://github.com/Jumio/mobile-sdk-android/tree/master/licenses) and [iOS licenses](https://github.com/Jumio/mobile-sdk-ios/tree/master/licenses)
 
 This software is based in part on the work of the Independent JPEG Group.
 

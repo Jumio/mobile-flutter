@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Overenie zlyhalo";
+"dv.error-view.button.cancel" = "Zrušiť";
+"dv.error-view.button.retry" = "Opakovať";
+"dv.error-view.camera-access-disabled.button.title" = "Potvrdiť";
+"dv.error-view.camera-access-disabled.content" = "%@ potrebuje prístup k vášmu fotoaparátu. Skontrolujte svoje nastavenia súkromia.";
+"dv.error-view.camera-access-disabled.title" = "Prístup k fotoaparátu je zamietnutý";
+"dv.error-view.cancelled-by-user" = "Zrušené koncovým používateľom";
+"dv.error-view.device-is-offline" = "Nie je k dispozícii pripojenie na internet";
+"dv.error-view.error.headline" = "Chyba";
+"dv.error-view.invalid-key" = "Certifikát už nie je platný. Obráťte sa na dodávateľa aplikácie";
+"dv.error-view.network-problem" = "Vyskytli sa problémy so sieťovou komunikáciou";
+"dv.scan-options.accessibility-label.close-button" = "Ukončiť skenovanie";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Prepnúť na zadný fotoaparát";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Prepnúť na predný fotoaparát";
+"dv.scan-view.accessibility-label.button.take-photo" = "Zhotoviť fotografiu";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Zapnúť blesk";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Vypnúť blesk";
+"dv.scan-view.confirmation.button.readable" = "Pokračovať";
+"dv.scan-view.confirmation.button.retake" = "OPAKOVAŤ";
+"dv.scan-view.confirmation.text" = "Uistite sa, že všetky údaje v dokumente sú úplne viditeľné, bez oslnenia a nie sú rozmazané";
+"dv.scan-view.help.document-BC" = "Rodný list";
+"dv.scan-view.help.document-BS" = "Výpis z účtu";
+"dv.scan-view.help.document-CAAP" = "Žiadosť o hotovostnú zálohu";
+"dv.scan-view.help.document-CB" = "Účet za miestnu daň";
+"dv.scan-view.help.document-CC" = "Kreditná karta";
+"dv.scan-view.help.document-CCS" = "Výpis z účtu kreditnej karty";
+"dv.scan-view.help.document-CRC" = "Osvedčenie o uznesení spoločnosti";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Zdravotná karta";
+"dv.scan-view.help.document-IC" = "Preukaz poistenca";
+"dv.scan-view.help.document-LAG" = "Nájomná zmluva";
+"dv.scan-view.help.document-LOAP" = "Žiadosť o úver";
+"dv.scan-view.help.document-MEDC" = "Zdravotný preukaz Medicare";
+"dv.scan-view.help.document-MOAP" = "Žiadosť o hypotéku";
+"dv.scan-view.help.document-PB" = "Účet za telefón";
+"dv.scan-view.help.document-SEL" = "Potvrdenie o zápise do školy";
+"dv.scan-view.help.document-SENC" = "Seniorský preukaz";
+"dv.scan-view.help.document-SS" = "Výkaz starobného dôchodku";
+"dv.scan-view.help.document-SSC" = "Preukaz sociálneho zabezpečenia";
+"dv.scan-view.help.document-STUC" = "Študentský preukaz";
+"dv.scan-view.help.document-TAC" = "Preukaz totožnosti člena obchodného združenia";
+"dv.scan-view.help.document-TR" = "Daňové priznanie";
+"dv.scan-view.help.document-UB" = "Účet za energie";
+"dv.scan-view.help.document-VC" = "Neplatný šek";
+"dv.scan-view.help.document-VT" = "Osvedčenie o registrácii vozidla";
+"dv.scan-view.help.document-WWCC" = "Potvrdenie spôsobilosti na prácu s deťmi";
+"dv.scan-view.help.document.headline" = "Nasnímať%@";
+"dv.scan-view.navigationItem.title" = "Skenovať";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Nahrávanie úspešné";
+"dv.submission-view.uploading.description" = "V závislosti od sieťového pripojenia by to malo trvať iba niekoľko sekúnd";
+"dv.submission-view.uploading.headline" = "Nahrávanie vašich dokumentov";

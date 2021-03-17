@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Potvrda";
+"auth.alert-view.camera-access-disabled.description" = "%@ treba pristup vašoj kameri. Provjerite postavke privatnosti.";
+"auth.alert-view.camera-access-disabled.title" = "Pristup kameri onemogućen";
+"auth.error-view.button.cancel.title" = "Otkaži";
+"auth.error-view.button.retry.title" = "Pokušaj ponovno";
+"auth.error-view.error.header.title" = "Pogreška";
+"auth.error.authentication-failed.title" = "Provjera autentičnosti nije uspjela";
+"auth.error.cancelled-by-user.title" = "Otkazano od krajnjeg korisnika";
+"auth.error.device-is-offline.title" = "Nije dostupna internetska veza";
+"auth.error.invalid-key.title" = "Certifikat više ne vrijedi. Obratite se prodavaču aplikacije";
+"auth.error.network-problem.title" = "Naišli smo na problem u mrežnoj komunikaciji";
+"auth.error.setup-error.title" = "Skeniranje trenutno nije dostupno, obratite se prodavaču aplikacije";
+"auth.error.transaction-already-finished.title" = "Transakcija je već završena";
+"auth.scan-help-view.liveness-help.bad-angle" = "Držite uređaj u razini očiju i gledajte ravno u njega";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Izbjegavajte sjene i refleksije na licu";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Dodirnite za nastavak";
+"auth.scan-help-view.liveness-help.general" = "Slijedite postupak u dva koraka i poravnajte lice s okvirom. Držite uređaj na razini očiju i gledajte ravno u kameru. Vaše će se lice automatski snimiti";
+"auth.scan-view.accessibility-label.close-button" = "Izađi iz skeniranja";
+"auth.scan-view.liveness-help.navigation-item.title" = "Imate problema?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Snimite svoje lice";
+"auth.scanview.liveness.landscape.description" = "Zakrenite telefon za portret kako biste snimili selfie";
+"auth.scanview.liveness.landscape.header" = "Zakrenite uređaj";
+"zoom_feedback_a_little_too_close" = "Pomaknite se malo unatrag";
+"zoom_feedback_a_little_too_close_tablet" = "Pomaknite se malo unatrag";
+"zoom_feedback_center_face" = "Centrirajte lice";
+"zoom_feedback_face_not_found" = "Uokvirite svoje lice";
+"zoom_feedback_face_not_looking_straight_ahead" = "Gledajte ravno naprijed";
+"zoom_feedback_face_not_upright" = "Glavu držite ravno";
+"zoom_feedback_hold_steady" = "Budite mirni";
+"zoom_feedback_move_phone_away" = "Pomaknite se malo unatrag";
+"zoom_feedback_move_phone_closer" = "Pomaknite se malo bliže";
+"zoom_feedback_move_phone_even_closer" = "Malo bliže";
+"zoom_feedback_move_phone_to_eye_level" = "Držite uređaj u razini očiju";
+"zoom_feedback_move_tablet_away" = "Pomaknite se malo unatrag";
+"zoom_feedback_move_tablet_closer" = "Pomaknite se malo bliže";
+"zoom_feedback_move_tablet_to_eye_level" = "Držite uređaj u razini očiju";

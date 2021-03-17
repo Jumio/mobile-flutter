@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Ο έλεγχος ταυτότητας απέτυχε";
+"dv.error-view.button.cancel" = "Ακύρωση";
+"dv.error-view.button.retry" = "Επανάληψη";
+"dv.error-view.camera-access-disabled.button.title" = "Επιβεβαίωση";
+"dv.error-view.camera-access-disabled.content" = "Το %@ χρειάζεται πρόσβαση στην κάμερά σας. Ελέγξτε τις ρυθμίσεις απορρήτου σας.";
+"dv.error-view.camera-access-disabled.title" = "Η πρόσβαση στην κάμερα είναι απενεργοποιημένη";
+"dv.error-view.cancelled-by-user" = "Ακυρώθηκε από τον τελικό χρήστη";
+"dv.error-view.device-is-offline" = "Δεν υπάρχει διαθέσιμη σύνδεση στο διαδίκτυο";
+"dv.error-view.error.headline" = "Σφάλμα";
+"dv.error-view.invalid-key" = "Το πιστοποιητικό δεν ισχύει πια. Επικοινωνήστε με τον προμηθευτή της εφαρμογής";
+"dv.error-view.network-problem" = "Αντιμετωπίσαμε πρόβλημα επικοινωνίας δικτύου";
+"dv.scan-options.accessibility-label.close-button" = "Τερματισμός σάρωσης";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Μετάβαση στην πίσω κάμερα";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Μετάβαση στην μπροστινή κάμερα";
+"dv.scan-view.accessibility-label.button.take-photo" = "Λήψη φωτογραφίας";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Ενεργοποίηση φλας";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Απενεργοποίηση φλας";
+"dv.scan-view.confirmation.button.readable" = "Συνέχεια";
+"dv.scan-view.confirmation.button.retake" = "Επανάληψη";
+"dv.scan-view.confirmation.text" = "Βεβαιωθείτε ότι όλα τα δεδομένα στο έγγραφό σας είναι ορατά, δεν έχουν αντανακλάσεις και δεν είναι θολά";
+"dv.scan-view.help.document-BC" = "Πιστοποιητικό γέννησης";
+"dv.scan-view.help.document-BS" = "Αντίγραφο κίνησης τραπεζικού λογαριασμού";
+"dv.scan-view.help.document-CAAP" = "Αίτηση προκαταβολής μετρητών";
+"dv.scan-view.help.document-CB" = "Λογαριασμός δήμου";
+"dv.scan-view.help.document-CC" = "Πιστωτική κάρτα";
+"dv.scan-view.help.document-CCS" = "Λογαριασμός πιστωτικής κάρτας";
+"dv.scan-view.help.document-CRC" = "Πιστοποιητικό εταιρικού ψηφίσματος";
+"dv.scan-view.help.document-CUSTOM" = "Έγγραφο";
+"dv.scan-view.help.document-HCC" = "Κάρτα υγειονομικής περίθαλψης";
+"dv.scan-view.help.document-IC" = "Κάρτα ασφάλισης";
+"dv.scan-view.help.document-LAG" = "Συμφωνητικό μίσθωσης";
+"dv.scan-view.help.document-LOAP" = "Αίτηση δανείου";
+"dv.scan-view.help.document-MEDC" = "Κάρτα Medicare";
+"dv.scan-view.help.document-MOAP" = "Αίτηση προσημείωσης υποθήκης";
+"dv.scan-view.help.document-PB" = "Λογαριασμός τηλεφώνου";
+"dv.scan-view.help.document-SEL" = "Βεβαίωση εγγραφής σε σχολείο";
+"dv.scan-view.help.document-SENC" = "Κάρτα ηλικιωμένων";
+"dv.scan-view.help.document-SS" = "Βεβαίωση σύνταξης";
+"dv.scan-view.help.document-SSC" = "Κάρτα κοινωνικής ασφάλισης";
+"dv.scan-view.help.document-STUC" = "Φοιτητική ταυτότητα";
+"dv.scan-view.help.document-TAC" = "Κάρτα επαγγελματικής ένωσης";
+"dv.scan-view.help.document-TR" = "Επιστροφή φόρου";
+"dv.scan-view.help.document-UB" = "Λογαριασμός κοινής ωφελείας";
+"dv.scan-view.help.document-VC" = "Ακυρωμένη επιταγή";
+"dv.scan-view.help.document-VT" = "Άδεια οχήματος";
+"dv.scan-view.help.document-WWCC" = "Έλεγχος εργασίας με παιδιά";
+"dv.scan-view.help.document.headline" = "Λήψη %@";
+"dv.scan-view.navigationItem.title" = "Σάρωση";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Η φόρτωση ήταν επιτυχής";
+"dv.submission-view.uploading.description" = "Θα χρειαστούν μερικά μόνο δευτερόλεπτα, ανάλογα με τη σύνδεση του δικτύου σας";
+"dv.submission-view.uploading.headline" = "Γίνεται φόρτωση των εγγράφων σας";

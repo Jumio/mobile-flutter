@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Verifikasie het misluk";
+"dv.error-view.button.cancel" = "Kanselleer";
+"dv.error-view.button.retry" = "Probeer weer";
+"dv.error-view.camera-access-disabled.button.title" = "Bevestig";
+"dv.error-view.camera-access-disabled.content" = "%@ benodig toegang tot u kamera. Gaan asseblief u privaatheidsinstellings na.";
+"dv.error-view.camera-access-disabled.title" = "Toegang tot kamera is gedeaktiveer";
+"dv.error-view.cancelled-by-user" = "Gekanselleer deur eindgebruiker";
+"dv.error-view.device-is-offline" = "Geen internetverbinding beskikbaar nie";
+"dv.error-view.error.headline" = "Fout";
+"dv.error-view.invalid-key" = "Sertifikaat is nie meer geldig nie. Kontak asseblief die programverskaffer.";
+"dv.error-view.network-problem" = "Daar was 'n netwerkkommunikasieprobleem";
+"dv.scan-options.accessibility-label.close-button" = "Verlaat skandering";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Skakel oor na agterste kamera";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Skakel oor na voorste kamera";
+"dv.scan-view.accessibility-label.button.take-photo" = "Neem 'n foto";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Aktiveer flits";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Deaktiveer flits";
+"dv.scan-view.confirmation.button.readable" = "Gaan voort";
+"dv.scan-view.confirmation.button.retake" = "Neem weer af";
+"dv.scan-view.confirmation.text" = "Maak seker dat alle data op u dokument heeltemal sigbaar is, sonder skynsel en nie dof nie";
+"dv.scan-view.help.document-BC" = "Geboortesertifikaat";
+"dv.scan-view.help.document-BS" = "Bankstaat";
+"dv.scan-view.help.document-CAAP" = "Aansoek om kontantvoorskot";
+"dv.scan-view.help.document-CB" = "Munisipaliteitsrekening";
+"dv.scan-view.help.document-CC" = "Kredietkaart";
+"dv.scan-view.help.document-CCS" = "Kredietkaartstaat";
+"dv.scan-view.help.document-CRC" = "Korporatieweresolusie-sertifikaat";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Mediesefondskaart";
+"dv.scan-view.help.document-IC" = "Versekeringskaart";
+"dv.scan-view.help.document-LAG" = "Huurkontrak";
+"dv.scan-view.help.document-LOAP" = "Leningaansoek";
+"dv.scan-view.help.document-MEDC" = "Medicare-kaart";
+"dv.scan-view.help.document-MOAP" = "Verbandaansoek";
+"dv.scan-view.help.document-PB" = "Telefoonrekening";
+"dv.scan-view.help.document-SEL" = "Skoolinskrywingsbrief";
+"dv.scan-view.help.document-SENC" = "Pensioenariskaart";
+"dv.scan-view.help.document-SS" = "Aftreespaarrekeningstaat";
+"dv.scan-view.help.document-SSC" = "Welsynskaart";
+"dv.scan-view.help.document-STUC" = "Studentekaart";
+"dv.scan-view.help.document-TAC" = "Handelsverenigingskaart";
+"dv.scan-view.help.document-TR" = "Belastingopgawe";
+"dv.scan-view.help.document-UB" = "Munisipale rekening";
+"dv.scan-view.help.document-VC" = "Gekanselleerde tjek";
+"dv.scan-view.help.document-VT" = "Voertuigeienaarskap-dokument";
+"dv.scan-view.help.document-WWCC" = "Werk-met-kinders-kontrole";
+"dv.scan-view.help.document.headline" = "Lê %@ vas";
+"dv.scan-view.navigationItem.title" = "Skandeer";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Oplaai was suksesvol";
+"dv.submission-view.uploading.description" = "Dit behoort slegs 'n paar sekondes te neem afhangend van u netwerkverbinding";
+"dv.submission-view.uploading.headline" = "Besig om u dokumente op te laai";

@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "확인";
+"auth.alert-view.camera-access-disabled.description" = "%@이(가) 카메라에 액세스해야 합니다. 개인 정보 설정을 확인하세요.";
+"auth.alert-view.camera-access-disabled.title" = "카메라 액세스 비활성화";
+"auth.error-view.button.cancel.title" = "취소";
+"auth.error-view.button.retry.title" = "다시 시도";
+"auth.error-view.error.header.title" = "오류";
+"auth.error.authentication-failed.title" = "인증 실패";
+"auth.error.cancelled-by-user.title" = "최종 사용자가 취소";
+"auth.error.device-is-offline.title" = "인터넷에 연결되어 있지 않습니다";
+"auth.error.invalid-key.title" = "인증서가 유효하지 않습니다. 앱 공급업체에 문의 바랍니다.";
+"auth.error.network-problem.title" = "네트워크 통신 문제가 발생했습니다";
+"auth.error.setup-error.title" = "현재 스캔을 사용할 수 없습니다. 앱 공급업체에 문의 바랍니다.";
+"auth.error.transaction-already-finished.title" = "트랜잭션이 이미 완료되었습니다";
+"auth.scan-help-view.liveness-help.bad-angle" = "기기를 눈높이에서 들고 똑바로 보세요";
+"auth.scan-help-view.liveness-help.bad-lightning" = "얼굴에 그림자와 반사가 일어나지 않게 하세요";
+"auth.scan-help-view.liveness-help.button-continue.title" = "계속하려면 탭하세요";
+"auth.scan-help-view.liveness-help.general" = "2단계 과정을 따라 얼굴을 프레임에 맞춥니다. 기기를 눈높이에서 들고 카메라를 똑바로 봅니다. 얼굴이 자동으로 촬영됩니다.";
+"auth.scan-view.accessibility-label.close-button" = "스캔 종료";
+"auth.scan-view.liveness-help.navigation-item.title" = "문제가 있습니까?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "얼굴 촬영";
+"auth.scanview.liveness.landscape.description" = "셀카를 찍으려면 휴대폰을 세로로 회전하세요";
+"auth.scanview.liveness.landscape.header" = "기기 회전";
+"zoom_feedback_a_little_too_close" = "조금 뒤로 이동";
+"zoom_feedback_a_little_too_close_tablet" = "조금 뒤로 이동";
+"zoom_feedback_center_face" = "얼굴을 중앙에 놓아주세요";
+"zoom_feedback_face_not_found" = "얼굴을 프레임에 맞추세요";
+"zoom_feedback_face_not_looking_straight_ahead" = "정면을 보세요";
+"zoom_feedback_face_not_upright" = "머리를 똑바로 맞춰주세요";
+"zoom_feedback_hold_steady" = "가만히 계세요";
+"zoom_feedback_move_phone_away" = "조금 뒤로 이동";
+"zoom_feedback_move_phone_closer" = "조금 더 가까이 이동";
+"zoom_feedback_move_phone_even_closer" = "조금 더 가까이";
+"zoom_feedback_move_phone_to_eye_level" = "기기를 눈높이에서 들고 계세요";
+"zoom_feedback_move_tablet_away" = "조금 뒤로 이동";
+"zoom_feedback_move_tablet_closer" = "조금 더 가까이 이동";
+"zoom_feedback_move_tablet_to_eye_level" = "기기를 눈높이에서 들고 계세요";

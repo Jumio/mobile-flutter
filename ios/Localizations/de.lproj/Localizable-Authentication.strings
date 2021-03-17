@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Bestätigen";
+"auth.alert-view.camera-access-disabled.description" = "%@ benötigt Zugriff auf Ihre Kamera. Bitte überprüfen Sie Ihre Privatsphäre-Einstellungen.";
+"auth.alert-view.camera-access-disabled.title" = "Kamerazugriff ist deaktiviert";
+"auth.error-view.button.cancel.title" = "Beenden";
+"auth.error-view.button.retry.title" = "Wiederholen";
+"auth.error-view.error.header.title" = "Fehler";
+"auth.error.authentication-failed.title" = "Authentifizierung fehlgeschlagen";
+"auth.error.cancelled-by-user.title" = "Beendet durch Benutzer";
+"auth.error.device-is-offline.title" = "Keine Internetverbindung verfügbar";
+"auth.error.invalid-key.title" = "Zertifikat ist nicht mehr gültig. Bitte kontaktieren Sie den App-Anbieter";
+"auth.error.network-problem.title" = "Es ist ein Verbindungsproblem aufgetreten";
+"auth.error.setup-error.title" = "Scannen ist zum jetzigen Zeitpunkt nicht verfügbar. Bitte kontaktieren Sie den App-Anbieter";
+"auth.error.transaction-already-finished.title" = "Transaktion bereits abgeschlossen";
+"auth.scan-help-view.liveness-help.bad-angle" = "Halten Sie Ihre Kamera auf Augenhöhe und schauen Sie hinein";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Schatten und Spiegelungen auf Ihrem Gesicht vermeiden";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Zum Fortsetzen tippen";
+"auth.scan-help-view.liveness-help.general" = "Folgen Sie dem zweistufigen Prozess und richten Sie Ihr Gesicht am Rahmen aus. Halten Sie Ihr Gerät auf Augenhöhe und schauen Sie direkt in die Kamera. Ihr Gesicht wird automatisch erfasst.";
+"auth.scan-view.accessibility-label.close-button" = "Scan beenden";
+"auth.scan-view.liveness-help.navigation-item.title" = "Brauchen Sie Hilfe?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Erfasse dein Gesicht";
+"auth.scanview.liveness.landscape.description" = "Bitte halten Sie Ihr Handy im Hochformat, um ein Selfie aufzunehmen.";
+"auth.scanview.liveness.landscape.header" = "Drehen Sie Ihr Gerät";
+"zoom_feedback_a_little_too_close" = "Etwas weiter weg";
+"zoom_feedback_a_little_too_close_tablet" = "Etwas weiter weg";
+"zoom_feedback_center_face" = "Gesicht zentrieren";
+"zoom_feedback_face_not_found" = "Gesicht am Rahmen ausrichten";
+"zoom_feedback_face_not_looking_straight_ahead" = "Geradeaus blicken";
+"zoom_feedback_face_not_upright" = "Kopf gerade halten";
+"zoom_feedback_hold_steady" = "Ruhig halten";
+"zoom_feedback_move_phone_away" = "Etwas weiter weg";
+"zoom_feedback_move_phone_closer" = "Etwas näher kommen";
+"zoom_feedback_move_phone_even_closer" = "Ein wenig näher";
+"zoom_feedback_move_phone_to_eye_level" = "Kamera auf Augenhöhe halten";
+"zoom_feedback_move_tablet_away" = "Etwas weiter weg";
+"zoom_feedback_move_tablet_closer" = "Etwas näher kommen";
+"zoom_feedback_move_tablet_to_eye_level" = "Kamera auf Augenhöhe halten";

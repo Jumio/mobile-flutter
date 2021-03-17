@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Onayla";
+"auth.alert-view.camera-access-disabled.description" = "%@ kamera erişimine ihtiyaç duyuyor. Lütfen gizlilik ayarlarınızı kontrol edin.";
+"auth.alert-view.camera-access-disabled.title" = "Kamera erişimi devre dışı";
+"auth.error-view.button.cancel.title" = "İptal";
+"auth.error-view.button.retry.title" = "Tekrar Dene";
+"auth.error-view.error.header.title" = "Hata";
+"auth.error.authentication-failed.title" = "Kimlik doğrulama başarısız oldu";
+"auth.error.cancelled-by-user.title" = "Son kullanıcı tarafından iptal edildi";
+"auth.error.device-is-offline.title" = "Kullanılabilir internet bağlantısı yok";
+"auth.error.invalid-key.title" = "Sertifika artık geçerli değil. Lütfen uygulama satıcısıyla iletişime geçin";
+"auth.error.network-problem.title" = "Bir ağ iletişimi sorunuyla karşılaştık";
+"auth.error.setup-error.title" = "Tarama şu anda kullanılamıyor, lütfen uygulama satıcısıyla iletişime geçin";
+"auth.error.transaction-already-finished.title" = "İşlem zaten tamamlandı";
+"auth.scan-help-view.liveness-help.bad-angle" = "Cihazınızı göz hizasında tutun ve doğrudan kameraya bakın";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Yüzünüzde oluşabilecek gölgelerden ve yansımalardan kaçının";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Devam etmek için dokun";
+"auth.scan-help-view.liveness-help.general" = "İki adımlı süreci izleyip yüzünüzü çerçeveyle hizalayın. Cihazınızı göz hizasında tutun ve doğrudan kameraya bakın. Yüzünüzün resmi otomatik olarak çekilir.";
+"auth.scan-view.accessibility-label.close-button" = "Taramadan çık";
+"auth.scan-view.liveness-help.navigation-item.title" = "Sorun mu yaşıyorsunuz?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Yüzünüzün resmini çekin";
+"auth.scanview.liveness.landscape.description" = "Lütfen selfie çekmek için telefonunuzu dikey konuma döndürün";
+"auth.scanview.liveness.landscape.header" = "Cihazınızı döndürün";
+"zoom_feedback_a_little_too_close" = "Biraz uzaklaşın";
+"zoom_feedback_a_little_too_close_tablet" = "Biraz uzaklaşın";
+"zoom_feedback_center_face" = "Yüzünüzü ortalayın";
+"zoom_feedback_face_not_found" = "Yüzünüzü çerçeveye sığdırın";
+"zoom_feedback_face_not_looking_straight_ahead" = "Tam karşıya bakın";
+"zoom_feedback_face_not_upright" = "Kafanızı dik tutun";
+"zoom_feedback_hold_steady" = "Sabit durun";
+"zoom_feedback_move_phone_away" = "Biraz uzaklaşın";
+"zoom_feedback_move_phone_closer" = "Biraz daha yaklaşın";
+"zoom_feedback_move_phone_even_closer" = "Biraz daha yakından";
+"zoom_feedback_move_phone_to_eye_level" = "Cihazı göz hizasında tutun";
+"zoom_feedback_move_tablet_away" = "Biraz uzaklaşın";
+"zoom_feedback_move_tablet_closer" = "Biraz daha yaklaşın";
+"zoom_feedback_move_tablet_to_eye_level" = "Cihazı göz hizasında tutun";

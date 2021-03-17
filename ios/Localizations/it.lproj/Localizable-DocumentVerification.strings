@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Autenticazione non riuscita";
+"dv.error-view.button.cancel" = "Annulla";
+"dv.error-view.button.retry" = "Riprova";
+"dv.error-view.camera-access-disabled.button.title" = "Conferma";
+"dv.error-view.camera-access-disabled.content" = "%@ richiede l'accesso alla vostra fotocamera. Si prega di controllare le impostazioni della privacy.";
+"dv.error-view.camera-access-disabled.title" = "Accesso alla fotocamera disabilitato";
+"dv.error-view.cancelled-by-user" = "Annullato dall'utente finale";
+"dv.error-view.device-is-offline" = "Nessuna connessione internet disponibile";
+"dv.error-view.error.headline" = "Errore";
+"dv.error-view.invalid-key" = "Il certificato non è più valido. Si prega di contattare il fornitore dell'applicazione";
+"dv.error-view.network-problem" = "Abbiamo riscontrato un problema di comunicazione di rete";
+"dv.scan-options.accessibility-label.close-button" = "Uscire dalla scansione";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Passare alla fotocamera posteriore";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Passare alla fotocamera frontale";
+"dv.scan-view.accessibility-label.button.take-photo" = "Scattare una foto";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Attivare il flash";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Disattivare il flash";
+"dv.scan-view.confirmation.button.readable" = "Continua";
+"dv.scan-view.confirmation.button.retake" = "Rifare";
+"dv.scan-view.confirmation.text" = "Assicuratevi che tutti i dati dei vostri documenti siano perfettamente visibili, senza riflessi e sfocature";
+"dv.scan-view.help.document-BC" = "Certificato di nascita";
+"dv.scan-view.help.document-BS" = "Rendiconto bancario";
+"dv.scan-view.help.document-CAAP" = "Richiesta di anticipo contanti";
+"dv.scan-view.help.document-CB" = "Tributo comunale";
+"dv.scan-view.help.document-CC" = "Carta di credito";
+"dv.scan-view.help.document-CCS" = "Resoconto della carta di credito";
+"dv.scan-view.help.document-CRC" = "Certificato di delibera aziendale";
+"dv.scan-view.help.document-CUSTOM" = "Documento";
+"dv.scan-view.help.document-HCC" = "Tessera sanitaria";
+"dv.scan-view.help.document-IC" = "Tessera assicurativa";
+"dv.scan-view.help.document-LAG" = "Contratto d'affitto";
+"dv.scan-view.help.document-LOAP" = "Richiesta di prestito";
+"dv.scan-view.help.document-MEDC" = "Tessera Medicare";
+"dv.scan-view.help.document-MOAP" = "Richiesta di mutuo";
+"dv.scan-view.help.document-PB" = "Bolletta del telefono";
+"dv.scan-view.help.document-SEL" = "Lettera d'iscrizione scolastica";
+"dv.scan-view.help.document-SENC" = "Tessera anziani";
+"dv.scan-view.help.document-SS" = "Certificato contributi pensionistici";
+"dv.scan-view.help.document-SSC" = "Tessera di previdenza sociale";
+"dv.scan-view.help.document-STUC" = "Tessera dello studente";
+"dv.scan-view.help.document-TAC" = "Tessera associazione di categoria";
+"dv.scan-view.help.document-TR" = "Dichiarazione dei redditi";
+"dv.scan-view.help.document-UB" = "Bolletta";
+"dv.scan-view.help.document-VC" = "Assegno invalidato";
+"dv.scan-view.help.document-VT" = "Atto di proprietà di un veicolo";
+"dv.scan-view.help.document-WWCC" = "Certificato d'idoneità per lavorare con bambini";
+"dv.scan-view.help.document.headline" = "Acquisire %@";
+"dv.scan-view.navigationItem.title" = "Scansiona";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Caricamento completato";
+"dv.submission-view.uploading.description" = "Il procedimento dovrebbe durare un paio di secondi, a seconda della vostra connettività di rete";
+"dv.submission-view.uploading.headline" = "Caricamento dei vostri documenti";

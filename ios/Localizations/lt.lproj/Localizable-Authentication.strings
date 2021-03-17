@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Patvirtinti";
+"auth.alert-view.camera-access-disabled.description" = "%@ reikia prieigis prie jūsų fotoaparato. Prašome patikrinti savo privatumo nustatymus.";
+"auth.alert-view.camera-access-disabled.title" = "Prieiga prie fotoaparato išjungta";
+"auth.error-view.button.cancel.title" = "Atšaukti";
+"auth.error-view.button.retry.title" = "Bandyti iš naujo";
+"auth.error-view.error.header.title" = "Klaida";
+"auth.error.authentication-failed.title" = "Autentifikavimas nepavyko";
+"auth.error.cancelled-by-user.title" = "Atšaukė galutinis naudotojas";
+"auth.error.device-is-offline.title" = "Nėra interneto ryšio";
+"auth.error.invalid-key.title" = "Sertifikatas nebegalioja. Prašome susisiekti su programėlės pardavėju";
+"auth.error.network-problem.title" = "Aptikta ryšio problema";
+"auth.error.setup-error.title" = "Šiuo metu skenavimas neprieinamas, prašome susisiekti su programėlės pardavėju";
+"auth.error.transaction-already-finished.title" = "Operacija jau baigta";
+"auth.scan-help-view.liveness-help.bad-angle" = "Laikykite savo įrenginį akių lygyje ir žiūrėkite tiesiai į jį";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Venkite šešėlių ir atspindžių ant savo veido";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Paspauskite, kad tęstumėte";
+"auth.scan-help-view.liveness-help.general" = "Sekite dviejų žingsnių procesą ir sulygiuokite savo veidą su rėmeliu. Laikykite savo įrenginį akių lygyje ir žiūrėkite tiesiai į kamerą. Jūsų veidas bus užfiksuotas automatiškai.";
+"auth.scan-view.accessibility-label.close-button" = "Nutraukti skenavimą";
+"auth.scan-view.liveness-help.navigation-item.title" = "Patiriate problemas?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Nufotografuokite savo veidą";
+"auth.scanview.liveness.landscape.description" = "Paverskite savo telefoną statmenai, kad nufotografuotumėte asmenukę";
+"auth.scanview.liveness.landscape.header" = "Pasukite savo įrenginį";
+"zoom_feedback_a_little_too_close" = "Šiek tiek atitraukite";
+"zoom_feedback_a_little_too_close_tablet" = "Šiek tiek atitraukite";
+"zoom_feedback_center_face" = "Išlaikykite veidą centre";
+"zoom_feedback_face_not_found" = "Sutalpinkite veidą į rėmelį";
+"zoom_feedback_face_not_looking_straight_ahead" = "Žiūrėkite į priekį";
+"zoom_feedback_face_not_upright" = "Laikykite galvą tiesiai";
+"zoom_feedback_hold_steady" = "Laikykite ramiai";
+"zoom_feedback_move_phone_away" = "Šiek tiek atitraukite";
+"zoom_feedback_move_phone_closer" = "Šiek tiek priartinkite";
+"zoom_feedback_move_phone_even_closer" = "Šiek tiek arčiau";
+"zoom_feedback_move_phone_to_eye_level" = "Laikykite įrenginį akių lygyje";
+"zoom_feedback_move_tablet_away" = "Šiek tiek atitraukite";
+"zoom_feedback_move_tablet_closer" = "Šiek tiek priartinkite";
+"zoom_feedback_move_tablet_to_eye_level" = "Laikykite įrenginį akių lygyje";

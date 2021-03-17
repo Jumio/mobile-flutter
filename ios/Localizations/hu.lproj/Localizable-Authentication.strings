@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Megerősítés";
+"auth.alert-view.camera-access-disabled.description" = "%@ hozzáférést igényel a kamerához. Kérjük, ellenőrizze adatvédelmi beállításait.";
+"auth.alert-view.camera-access-disabled.title" = "A kamera hozzáférése letiltva";
+"auth.error-view.button.cancel.title" = "Mégse";
+"auth.error-view.button.retry.title" = "Újra";
+"auth.error-view.error.header.title" = "Hiba";
+"auth.error.authentication-failed.title" = "A hitelesítés sikertelen";
+"auth.error.cancelled-by-user.title" = "Végfelhasználó által megszakítva";
+"auth.error.device-is-offline.title" = "Nincs elérhető internetkapcsolat";
+"auth.error.invalid-key.title" = "A tanúsítvány már nem érvényes. Vegye fel a kapcsolatot az alkalmazás gyártójával";
+"auth.error.network-problem.title" = "Hálózati kommunikációs problémába ütköztünk";
+"auth.error.setup-error.title" = "A beolvasás jelenleg nem érhető el, vegye fel a kapcsolatot az alkalmazás gyártójával";
+"auth.error.transaction-already-finished.title" = "A tranzakció már befejeződött";
+"auth.scan-help-view.liveness-help.bad-angle" = "Tartsa a készüléket szemmagasságban és egyenesen nézzen bele";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Kerülje az árnyékokat és a tükröződéseket az arcán";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Tovább";
+"auth.scan-help-view.liveness-help.general" = "Kövesse a két lépéses folyamatot és Igazítsa arcát a kerethez. Tartsa az eszközt szemmagasságban és nézzen egyenesen a kamerába. Az arca automatikusan rögzítésre kerül.";
+"auth.scan-view.accessibility-label.close-button" = "Kilépés a beolvasásból";
+"auth.scan-view.liveness-help.navigation-item.title" = "Problémákat tapasztal?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Arckép készítése";
+"auth.scanview.liveness.landscape.description" = "Kérjük, hogy szelfi készítéséhez forgassa a telefont álló helyzetbe";
+"auth.scanview.liveness.landscape.header" = "Forgassa el a készüléket";
+"zoom_feedback_a_little_too_close" = "Lépjen vissza egy kicsit";
+"zoom_feedback_a_little_too_close_tablet" = "Lépjen vissza egy kicsit";
+"zoom_feedback_center_face" = "Igazítsa az arcát középre";
+"zoom_feedback_face_not_found" = "Igazítsa az arcát a keretbe";
+"zoom_feedback_face_not_looking_straight_ahead" = "Nézzen egyenesen előre";
+"zoom_feedback_face_not_upright" = "Tartsa egyenesen a fejét";
+"zoom_feedback_hold_steady" = "Tartsa mozdulatanul";
+"zoom_feedback_move_phone_away" = "Lépjen vissza egy kicsit";
+"zoom_feedback_move_phone_closer" = "Menjen egy kicsit közelebb";
+"zoom_feedback_move_phone_even_closer" = "Egy kicsit közelebb";
+"zoom_feedback_move_phone_to_eye_level" = "Tartsa a készüléket szemmagasságban";
+"zoom_feedback_move_tablet_away" = "Lépjen vissza egy kicsit";
+"zoom_feedback_move_tablet_closer" = "Menjen egy kicsit közelebb";
+"zoom_feedback_move_tablet_to_eye_level" = "Tartsa a készüléket szemmagasságban";

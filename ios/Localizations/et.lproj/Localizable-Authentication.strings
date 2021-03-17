@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Kinnitage";
+"auth.alert-view.camera-access-disabled.description" = "%@ vajab juurdepääsu teie kaamerale. Kontrollige oma privaatsusseadeid.";
+"auth.alert-view.camera-access-disabled.title" = "Juurdepääs kaamerale on keelatud";
+"auth.error-view.button.cancel.title" = "Tühista";
+"auth.error-view.button.retry.title" = "Proovi uuesti";
+"auth.error-view.error.header.title" = "Viga";
+"auth.error.authentication-failed.title" = "Tuvastamine ebaõnnestus";
+"auth.error.cancelled-by-user.title" = "Lõppkasutaja poolt tühistatud";
+"auth.error.device-is-offline.title" = "Internetiühendus puudub";
+"auth.error.invalid-key.title" = "Sertifikaat ei kehti enam. Võtke ühendust rakenduse pakkujaga";
+"auth.error.network-problem.title" = "Meil on tekkinud võrgusuhtluse probleem";
+"auth.error.setup-error.title" = "Skannimine pole praegu saadaval, võtke ühendust rakenduse pakkujaga";
+"auth.error.transaction-already-finished.title" = "Tehing on juba lõpule viidud";
+"auth.scan-help-view.liveness-help.bad-angle" = "Hoidke seadet silmade kõrgusel ja vaadake otse seadmesse";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Vältige varje ja peegeldusi näol";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Jätkamiseks puudutage";
+"auth.scan-help-view.liveness-help.general" = "Järgige kaheastmelist protsessi ja joondage oma nägu raamiga. Hoidke seadet silmade kõrgusel ja vaadake otse kaamerasse. Teie nägu jäädvustatakse automaatselt.";
+"auth.scan-view.accessibility-label.close-button" = "Lõpeta skannimine";
+"auth.scan-view.liveness-help.navigation-item.title" = "Ilmnesid probleemid?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Jäädvustage oma nägu";
+"auth.scanview.liveness.landscape.description" = "Selfie pildistamiseks pöörake oma telefon portreeformaati";
+"auth.scanview.liveness.landscape.header" = "Pöörake seadet";
+"zoom_feedback_a_little_too_close" = "Liigutage natuke tagasi";
+"zoom_feedback_a_little_too_close_tablet" = "Liigutage natuke tagasi";
+"zoom_feedback_center_face" = "Tsentreerige oma nägu";
+"zoom_feedback_face_not_found" = "Raamige oma nägu";
+"zoom_feedback_face_not_looking_straight_ahead" = "Vaadake otse";
+"zoom_feedback_face_not_upright" = "Hoidke pea otse";
+"zoom_feedback_hold_steady" = "Hoidke paigal";
+"zoom_feedback_move_phone_away" = "Liigutage natuke tagasi";
+"zoom_feedback_move_phone_closer" = "Liigutage natuke lähemale";
+"zoom_feedback_move_phone_even_closer" = "Natuke lähemale";
+"zoom_feedback_move_phone_to_eye_level" = "Hoidke seadet silmade kõrgusel";
+"zoom_feedback_move_tablet_away" = "Liigutage natuke tagasi";
+"zoom_feedback_move_tablet_closer" = "Liigutage natuke lähemale";
+"zoom_feedback_move_tablet_to_eye_level" = "Hoidke seadet silmade kõrgusel";

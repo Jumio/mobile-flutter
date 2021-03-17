@@ -212,7 +212,7 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
         }
     }
     
-    private func getScanResult(scanReference: String, documentData: NetverifyDocumentData) -> [String: Any] {
+    private func getScanResult(scanReference: String, documentData: NetverifyDocumentData, accountId: String?, authenticationResult: Bool) -> [String: Any] {
         let scanResult: [String: Any?] = [
             "scanReference": scanReference,
             "addressLine": documentData.addressLine,
@@ -237,7 +237,9 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
             "extractionMethod": getExtractionMethod(fromMethod: documentData.extractionMethod),
             "issuingDate": documentData.issuingDate?.asISO8601String(),
             "expiryDate": documentData.expiryDate?.asISO8601String(),
-            "dob": documentData.dob?.asISO8601String()
+            "dob": documentData.dob?.asISO8601String(),
+            "accountId": accountId ?? "unknown",
+            "authenticationResult": authenticationResult
         ]
         
         return scanResult.compactMapValues { $0 }
@@ -349,19 +351,15 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
             return nil
         }
     }
-    
-    func enableEMRTD() {
-        result?(nil)
-    }
 }
 
 extension NetverifyModuleFlutter: NetverifyViewControllerDelegate {
-    public func netverifyViewController(_ netverifyViewController: NetverifyViewController, didFinishWith documentData: NetverifyDocumentData, scanReference: String) {
-        result?(getScanResult(scanReference: scanReference, documentData: documentData))
+    public func netverifyViewController(_ netverifyViewController: NetverifyViewController, didFinishWith documentData: NetverifyDocumentData, scanReference: String, accountId: String?, authenticationResult: Bool) {
+        result?(getScanResult(scanReference: scanReference, documentData: documentData, accountId: accountId, authenticationResult: authenticationResult))
         dismissViewController()
     }
     
-    public func netverifyViewController(_ netverifyViewController: NetverifyViewController, didCancelWithError error: NetverifyError?, scanReference: String?) {
+    public func netverifyViewController(_ netverifyViewController: NetverifyViewController, didCancelWithError error: NetverifyError?, scanReference: String?, accountId: String?) {
         
         let errorCode = error?.code ?? "unknown"
         let errorMessage = error?.message ?? "unknown"
@@ -369,7 +367,8 @@ extension NetverifyModuleFlutter: NetverifyViewControllerDelegate {
         let errorResult: [String: Any?] = [
             "errorCode": errorCode,
             "errorMessage": errorMessage,
-            "scanReference": scanReference ?? "unknown"
+            "scanReference": scanReference ?? "unknown",
+            "accountId": accountId ?? "unknown"
         ]
 
         result?(FlutterError(code: errorCode, message: errorMessage, details: errorResult))

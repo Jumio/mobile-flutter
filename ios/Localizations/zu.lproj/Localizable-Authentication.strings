@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Qinisekisa";
+"auth.alert-view.camera-access-disabled.description" = "%@ idinga ukusebenzisa ikhamera yakho. Sicela uhlola amasethingi akho obumfihlo.";
+"auth.alert-view.camera-access-disabled.title" = "Ukusebenzisa ikhamera kuvaliwe";
+"auth.error-view.button.cancel.title" = "Khansela";
+"auth.error-view.button.retry.title" = "Phinda uzame";
+"auth.error-view.error.header.title" = "Iphutha";
+"auth.error.authentication-failed.title" = "Ukuqinisekisa kuhlulekile";
+"auth.error.cancelled-by-user.title" = "Ikhanselwe ngumsebenzisi";
+"auth.error.device-is-offline.title" = "Ayikho i-inthanethi";
+"auth.error.invalid-key.title" = "Isitifiketi asisasebenzi. Sicela uxhumane nomthengisi we-app";
+"auth.error.network-problem.title" = "Sithole inkinga yokuxhumana kwenethiwekhi";
+"auth.error.setup-error.title" = "Ukuskena akukho njengamanje, sicela uthintane nomdayisi we-app";
+"auth.error.transaction-already-finished.title" = "Ukushintsha sekuphelile kakade";
+"auth.scan-help-view.liveness-help.bad-angle" = "Bamba idivayisi yakho iqondane namehlo bese ubheka ngqo kuyo";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Gwema isithunzi nezinto ezixhophayo ebusweni bakho";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Thepha ukuze uqhubeke";
+"auth.scan-help-view.liveness-help.general" = "Landela inqubo eyizinyathelo ezimbili, ubuso bakho ubumise kahle ohlakeni. Bamba idivayisi yakho iqondane namehlo bese ubuka ngqo kwikhamera. Isithombe sobuso bakho sizothathwa ngokuzenzakalelayo";
+"auth.scan-view.accessibility-label.close-button" = "Yeka ukuskena";
+"auth.scan-view.liveness-help.navigation-item.title" = "Ingabe kunezinkinga onazo?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Thatha isithombe sobuso bakho";
+"auth.scanview.liveness.landscape.description" = "Phendula ifoni yakho ime ukuze uthathe isithombe ngekhamera engaphambili";
+"auth.scanview.liveness.landscape.header" = "Jikelezisa idivayisi yakho";
+"zoom_feedback_a_little_too_close" = "Hlehla kancane";
+"zoom_feedback_a_little_too_close_tablet" = "Hlehla kancane";
+"zoom_feedback_center_face" = "Ubuso bakho mabube phakathi nendawo";
+"zoom_feedback_face_not_found" = "Faka ubuso bakho ohlakeni";
+"zoom_feedback_face_not_looking_straight_ahead" = "Bheka phambili";
+"zoom_feedback_face_not_upright" = "Gcina ikhanda lakho liqondile";
+"zoom_feedback_hold_steady" = "Yibambe unganyakazi";
+"zoom_feedback_move_phone_away" = "Hlehla kancane";
+"zoom_feedback_move_phone_closer" = "Sondela kancane";
+"zoom_feedback_move_phone_even_closer" = "Yisondeze kancane";
+"zoom_feedback_move_phone_to_eye_level" = "Bamba idivayisi yakho iqondane namehlo";
+"zoom_feedback_move_tablet_away" = "Hlehla kancane";
+"zoom_feedback_move_tablet_closer" = "Sondela kancane";
+"zoom_feedback_move_tablet_to_eye_level" = "Bamba idivayisi yakho iqondane namehlo";

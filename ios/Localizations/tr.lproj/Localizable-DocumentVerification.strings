@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Kimlik doğrulama başarısız oldu";
+"dv.error-view.button.cancel" = "İptal";
+"dv.error-view.button.retry" = "Tekrar Dene";
+"dv.error-view.camera-access-disabled.button.title" = "Onayla";
+"dv.error-view.camera-access-disabled.content" = "%@ kamera erişimine ihtiyaç duyuyor. Lütfen gizlilik ayarlarınızı kontrol edin.";
+"dv.error-view.camera-access-disabled.title" = "Kamera erişimi devre dışı";
+"dv.error-view.cancelled-by-user" = "Son kullanıcı tarafından iptal edildi";
+"dv.error-view.device-is-offline" = "Kullanılabilir internet bağlantısı yok";
+"dv.error-view.error.headline" = "Hata";
+"dv.error-view.invalid-key" = "Sertifika artık geçerli değil. Lütfen uygulama satıcısıyla iletişime geçin";
+"dv.error-view.network-problem" = "Bir ağ iletişimi sorunuyla karşılaştık";
+"dv.scan-options.accessibility-label.close-button" = "Taramadan çık";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Arka kameraya geç";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Ön kameraya geç";
+"dv.scan-view.accessibility-label.button.take-photo" = "Fotoğraf çek";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Flaşı etkinleştir";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Flaşı devreden çıkar";
+"dv.scan-view.confirmation.button.readable" = "Devam et";
+"dv.scan-view.confirmation.button.retake" = "Yeniden Çek";
+"dv.scan-view.confirmation.text" = "Belgenizdeki verilerin tümünün görüldüğünden ve parlamanın veya bulanıklığın olmadığından emin olun";
+"dv.scan-view.help.document-BC" = "Doğum belgesi";
+"dv.scan-view.help.document-BS" = "Hesap ekstresi";
+"dv.scan-view.help.document-CAAP" = "Nakit avans başvurusu";
+"dv.scan-view.help.document-CB" = "Belediye vergisi";
+"dv.scan-view.help.document-CC" = "Kredi kartı";
+"dv.scan-view.help.document-CCS" = "Kredi kartı ekstresi";
+"dv.scan-view.help.document-CRC" = "Kurul kararı belgesi";
+"dv.scan-view.help.document-CUSTOM" = "Belge";
+"dv.scan-view.help.document-HCC" = "Sağlık kartı";
+"dv.scan-view.help.document-IC" = "Sigorta kartı";
+"dv.scan-view.help.document-LAG" = "Kira sözleşmesi";
+"dv.scan-view.help.document-LOAP" = "Kredi başvurusu";
+"dv.scan-view.help.document-MEDC" = "Medicare kartı";
+"dv.scan-view.help.document-MOAP" = "Konut kredisi başvurusu";
+"dv.scan-view.help.document-PB" = "Telefon faturası";
+"dv.scan-view.help.document-SEL" = "Okula kayıt mektubu";
+"dv.scan-view.help.document-SENC" = "Yaşlı kartı";
+"dv.scan-view.help.document-SS" = "Emeklilik beyanı";
+"dv.scan-view.help.document-SSC" = "Sosyal güvenlik kartı";
+"dv.scan-view.help.document-STUC" = "Öğrenci kartı";
+"dv.scan-view.help.document-TAC" = "Ticaret birliği kartı";
+"dv.scan-view.help.document-TR" = "Vergi iadesi";
+"dv.scan-view.help.document-UB" = "Fatura";
+"dv.scan-view.help.document-VC" = "İptal edilmiş çek";
+"dv.scan-view.help.document-VT" = "Ruhsat";
+"dv.scan-view.help.document-WWCC" = "Çocuklarla çalışma kontrolü belgesi";
+"dv.scan-view.help.document.headline" = "%@ resmini çekin";
+"dv.scan-view.navigationItem.title" = "Belge tarayın";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Yükleme başarılı";
+"dv.submission-view.uploading.description" = "Ağ bağlantınıza bağlı olarak bu işlem yalnızca birkaç saniye sürer";
+"dv.submission-view.uploading.headline" = "Belgeleriniz yükleniyor";

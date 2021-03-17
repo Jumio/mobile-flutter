@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Autentificarea a eșuat";
+"dv.error-view.button.cancel" = "Anulare";
+"dv.error-view.button.retry" = "Reîncercare";
+"dv.error-view.camera-access-disabled.button.title" = "Confirmare";
+"dv.error-view.camera-access-disabled.content" = "%@ are nevoie de acces la camera dumneavoastră. Vă rugăm să verificați setările de confidențialitate.";
+"dv.error-view.camera-access-disabled.title" = "Accesul la cameră dezactivat";
+"dv.error-view.cancelled-by-user" = "Anulat de utilizatorul final";
+"dv.error-view.device-is-offline" = "Nu este disponibilă nicio rețea de internet";
+"dv.error-view.error.headline" = "Eroare";
+"dv.error-view.invalid-key" = "Certificatul nu mai este valabil. Vă rugăm să contactați furnizorul aplicației";
+"dv.error-view.network-problem" = "Am întâmpinat o problemă la comunicare în rețea";
+"dv.scan-options.accessibility-label.close-button" = "Renunțați la scanare";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Comutați la camera din spate";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Comutați la camera frontală";
+"dv.scan-view.accessibility-label.button.take-photo" = "Faceți o fotografie";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Activați blițul";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Dezactivați blițul";
+"dv.scan-view.confirmation.button.readable" = "Continuare";
+"dv.scan-view.confirmation.button.retake" = "Relua";
+"dv.scan-view.confirmation.text" = "Asigurați-vă că toate informațiile din document sunt clar vizibile, fără pete de lumină și nu sunt estompate";
+"dv.scan-view.help.document-BC" = "Certificat de naștere";
+"dv.scan-view.help.document-BS" = "Extras de cont";
+"dv.scan-view.help.document-CAAP" = "Cerere pentru avans în numerar";
+"dv.scan-view.help.document-CB" = "Decizie de impunere";
+"dv.scan-view.help.document-CC" = "Card de credit";
+"dv.scan-view.help.document-CCS" = "Extras de card de credit";
+"dv.scan-view.help.document-CRC" = "Hotărârea Adunării Generale";
+"dv.scan-view.help.document-CUSTOM" = "Document";
+"dv.scan-view.help.document-HCC" = "Card de sănătate";
+"dv.scan-view.help.document-IC" = "Card de asigurare";
+"dv.scan-view.help.document-LAG" = "Contract de închiriere";
+"dv.scan-view.help.document-LOAP" = "Cerere împrumut";
+"dv.scan-view.help.document-MEDC" = "Card Medicare";
+"dv.scan-view.help.document-MOAP" = "Cerere credit ipotecar";
+"dv.scan-view.help.document-PB" = "Factură telefonică";
+"dv.scan-view.help.document-SEL" = "Dovada de înscriere în învățământ";
+"dv.scan-view.help.document-SENC" = "Card de pensionar";
+"dv.scan-view.help.document-SS" = "Extras pentru contribuția la pensie";
+"dv.scan-view.help.document-SSC" = "Cardul de asigurări sociale";
+"dv.scan-view.help.document-STUC" = "Card de student";
+"dv.scan-view.help.document-TAC" = "Card de apartenență la o Asociație Profesională";
+"dv.scan-view.help.document-TR" = "Înapoierea impozitului";
+"dv.scan-view.help.document-UB" = "Factură de utilități";
+"dv.scan-view.help.document-VC" = "Cec anulat";
+"dv.scan-view.help.document-VT" = "Titlu de proprietate autovehicul";
+"dv.scan-view.help.document-WWCC" = "Cazier pentru persoane care lucrează cu copii";
+"dv.scan-view.help.document.headline" = "Capturează %@";
+"dv.scan-view.navigationItem.title" = "Scanare";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Încărcare reușită";
+"dv.submission-view.uploading.description" = "Ar trebui să dureze numai câteva secunde, în funcție de conectivitatea rețelei";
+"dv.submission-view.uploading.headline" = "Încărcăm documentele dumneavoastră";

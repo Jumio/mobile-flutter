@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "确认";
+"auth.alert-view.camera-access-disabled.description" = "%@ 需要访问您的摄像头。请检查您的隐私设置。";
+"auth.alert-view.camera-access-disabled.title" = "摄像头访问权限被禁用";
+"auth.error-view.button.cancel.title" = "取消";
+"auth.error-view.button.retry.title" = "重试";
+"auth.error-view.error.header.title" = "错误";
+"auth.error.authentication-failed.title" = "鉴权失败";
+"auth.error.cancelled-by-user.title" = "被最终用户取消";
+"auth.error.device-is-offline.title" = "没有可用的网络连接";
+"auth.error.invalid-key.title" = "证书不再有效。请联系应用程序供应商";
+"auth.error.network-problem.title" = "我们遇到了网络通信问题";
+"auth.error.setup-error.title" = "扫描目前不可用,请联系应用程序供应商";
+"auth.error.transaction-already-finished.title" = "交易已经完成";
+"auth.scan-help-view.liveness-help.bad-angle" = "将您的设备保持在眼睛的高度并直视设备";
+"auth.scan-help-view.liveness-help.bad-lightning" = "请避免脸部出现阴影和反光";
+"auth.scan-help-view.liveness-help.button-continue.title" = "点击继续";
+"auth.scan-help-view.liveness-help.general" = "按照这两个步骤,将你的脸与镜框对齐。将你的设备与眼睛齐平,直视摄像头。你的面部图像会被自动捕捉";
+"auth.scan-view.accessibility-label.close-button" = "退出扫描";
+"auth.scan-view.liveness-help.navigation-item.title" = "遇到问题？";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "捕捉你的脸";
+"auth.scanview.liveness.landscape.description" = "请将手机旋转至纵向来拍摄自拍照";
+"auth.scanview.liveness.landscape.header" = "旋转您的设备";
+"zoom_feedback_a_little_too_close" = "往后一点";
+"zoom_feedback_a_little_too_close_tablet" = "往后一点";
+"zoom_feedback_center_face" = "将您的脸放到中间";
+"zoom_feedback_face_not_found" = "将您的脸放到框内";
+"zoom_feedback_face_not_looking_straight_ahead" = "直视前方";
+"zoom_feedback_face_not_upright" = "头不要歪";
+"zoom_feedback_hold_steady" = "保持稳定";
+"zoom_feedback_move_phone_away" = "往后一点";
+"zoom_feedback_move_phone_closer" = "靠近一点";
+"zoom_feedback_move_phone_even_closer" = "靠近一点";
+"zoom_feedback_move_phone_to_eye_level" = "保持设备和眼睛在同一高度";
+"zoom_feedback_move_tablet_away" = "往后一点";
+"zoom_feedback_move_tablet_closer" = "靠近一点";
+"zoom_feedback_move_tablet_to_eye_level" = "保持设备和眼睛在同一高度";

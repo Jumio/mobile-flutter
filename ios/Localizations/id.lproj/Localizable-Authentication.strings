@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Konfirmasikan";
+"auth.alert-view.camera-access-disabled.description" = "%@ membutuhkan akses ke kamera Anda. Periksa pengaturan privasi Anda.";
+"auth.alert-view.camera-access-disabled.title" = "Akses kamera dinonaktifkan";
+"auth.error-view.button.cancel.title" = "Batal";
+"auth.error-view.button.retry.title" = "Coba lagi";
+"auth.error-view.error.header.title" = "Ksalahn";
+"auth.error.authentication-failed.title" = "Autentikasi gagal";
+"auth.error.cancelled-by-user.title" = "Dibatalkan oleh pengguna akhir";
+"auth.error.device-is-offline.title" = "Koneksi internet tidak tersedia";
+"auth.error.invalid-key.title" = "Sertifikat tidak berlaku lagi. Hubungi vendor aplikasi";
+"auth.error.network-problem.title" = "Kami mengalami masalah komunikasi jaringan";
+"auth.error.setup-error.title" = "Pemindaian tidak tersedia saat ini, hubungi vendor aplikasi";
+"auth.error.transaction-already-finished.title" = "Transaksi sudah selesai";
+"auth.scan-help-view.liveness-help.bad-angle" = "Pegang perangkat setinggi mata dan lihat langsung ke perangkat";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Hindari bayangan dan pantulan di wajah Anda";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Ketuk untuk melanjutka";
+"auth.scan-help-view.liveness-help.general" = "Ikuti proses dua langkah dan selaraskan wajah Anda dengan bingkai. Pegang perangkat setinggi mata dan lihat langsung ke kamera. Wajah anda akan ditangkap secara otomatis";
+"auth.scan-view.accessibility-label.close-button" = "Berhenti memindai";
+"auth.scan-view.liveness-help.navigation-item.title" = "Mengalami masalah?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Ambil gambar wajah Anda";
+"auth.scanview.liveness.landscape.description" = "Putar ponsel untuk memotret atau mengambil selfie";
+"auth.scanview.liveness.landscape.header" = "Putar perangkat Anda";
+"zoom_feedback_a_little_too_close" = "Mundur sedikit";
+"zoom_feedback_a_little_too_close_tablet" = "Mundur sedikit";
+"zoom_feedback_center_face" = "Pusatkan wajah Anda";
+"zoom_feedback_face_not_found" = "Bingkai wajah Anda";
+"zoom_feedback_face_not_looking_straight_ahead" = "Lihat lurus ke depan";
+"zoom_feedback_face_not_upright" = "Jaga kepala Anda tetap lurus";
+"zoom_feedback_hold_steady" = "Tahan terus";
+"zoom_feedback_move_phone_away" = "Mundur sedikit";
+"zoom_feedback_move_phone_closer" = "Bergeraklah sedikit lebih dekat";
+"zoom_feedback_move_phone_even_closer" = "Sedikit lebih dekat";
+"zoom_feedback_move_phone_to_eye_level" = "Pegang perangkat setinggi mata";
+"zoom_feedback_move_tablet_away" = "Mundur sedikit";
+"zoom_feedback_move_tablet_closer" = "Bergeraklah sedikit lebih dekat";
+"zoom_feedback_move_tablet_to_eye_level" = "Pegang perangkat setinggi mata";

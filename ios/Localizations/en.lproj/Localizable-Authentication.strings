@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Confirm";
+"auth.alert-view.camera-access-disabled.description" = "%@ needs access to your camera. Please check your privacy settings.";
+"auth.alert-view.camera-access-disabled.title" = "Camera access disabled";
+"auth.error-view.button.cancel.title" = "Cancel";
+"auth.error-view.button.retry.title" = "Retry";
+"auth.error-view.error.header.title" = "Error";
+"auth.error.authentication-failed.title" = "Authentication failed";
+"auth.error.cancelled-by-user.title" = "Cancelled by end-user";
+"auth.error.device-is-offline.title" = "No internet connection available";
+"auth.error.invalid-key.title" = "Certificate not valid anymore. Please contact the app vendor";
+"auth.error.network-problem.title" = "We have encountered a network communication problem";
+"auth.error.setup-error.title" = "Scanning not available at this time, please contact the app vendor";
+"auth.error.transaction-already-finished.title" = "Transaction already finished";
+"auth.scan-help-view.liveness-help.bad-angle" = "Hold your device at eye level and look straight into it";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Avoid shadows and reflections on your face";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Tap to continue";
+"auth.scan-help-view.liveness-help.general" = "Follow the two-step process and align your face with the frame. Hold your device on eye level and look straight into the camera. Your face will be captured automatically";
+"auth.scan-view.accessibility-label.close-button" = "Quit scan";
+"auth.scan-view.liveness-help.navigation-item.title" = "Experiencing problems?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Capture your face";
+"auth.scanview.liveness.landscape.description" = "Please rotate your phone to portrait to take a selfie";
+"auth.scanview.liveness.landscape.header" = "Rotate your device";
+"zoom_feedback_a_little_too_close" = "Move back a bit";
+"zoom_feedback_a_little_too_close_tablet" = "Move back a bit";
+"zoom_feedback_center_face" = "Center your face";
+"zoom_feedback_face_not_found" = "Frame your face";
+"zoom_feedback_face_not_looking_straight_ahead" = "Look straight ahead";
+"zoom_feedback_face_not_upright" = "Keep your head straight";
+"zoom_feedback_hold_steady" = "Hold still";
+"zoom_feedback_move_phone_away" = "Move back a bit";
+"zoom_feedback_move_phone_closer" = "Move a bit closer";
+"zoom_feedback_move_phone_even_closer" = "A bit closer";
+"zoom_feedback_move_phone_to_eye_level" = "Hold device at eye level";
+"zoom_feedback_move_tablet_away" = "Move back a bit";
+"zoom_feedback_move_tablet_closer" = "Move a bit closer";
+"zoom_feedback_move_tablet_to_eye_level" = "Hold device at eye level";

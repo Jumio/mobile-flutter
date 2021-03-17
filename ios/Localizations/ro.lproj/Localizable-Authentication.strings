@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "Confirmare";
+"auth.alert-view.camera-access-disabled.description" = "%@ are nevoie de acces la camera dumneavoastră. Vă rugăm să verificați setările de confidențialitate.";
+"auth.alert-view.camera-access-disabled.title" = "Accesul la cameră dezactivat";
+"auth.error-view.button.cancel.title" = "Anulare";
+"auth.error-view.button.retry.title" = "Reîncercare";
+"auth.error-view.error.header.title" = "Eroare";
+"auth.error.authentication-failed.title" = "Autentificarea a eșuat";
+"auth.error.cancelled-by-user.title" = "Anulat de utilizatorul final";
+"auth.error.device-is-offline.title" = "Nu este disponibilă nicio rețea de internet";
+"auth.error.invalid-key.title" = "Certificatul nu mai este valabil. Vă rugăm să contactați furnizorul aplicației";
+"auth.error.network-problem.title" = "Am întâmpinat o problemă la comunicare în rețea";
+"auth.error.setup-error.title" = "Procesul de scanare nu este disponibil momentan, vă rugăm să contactați furnizorul aplicației";
+"auth.error.transaction-already-finished.title" = "Tranzacția s-a încheiat deja";
+"auth.scan-help-view.liveness-help.bad-angle" = "Țineți dispozitivul la nivelul ochilor și priviți direct spre acesta";
+"auth.scan-help-view.liveness-help.bad-lightning" = "Evitați umbrele și reflexiile pe față";
+"auth.scan-help-view.liveness-help.button-continue.title" = "Continuare";
+"auth.scan-help-view.liveness-help.general" = "Urmați procesul de două etape și așezați fața în centrul cadrului. Țineți dispozitivul la nivelul ochilor și priviți direct în cameră. Fața va fi captată automat";
+"auth.scan-view.accessibility-label.close-button" = "Renunțați la scanare";
+"auth.scan-view.liveness-help.navigation-item.title" = "Aveți probleme?";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "Capturați-vă fața";
+"auth.scanview.liveness.landscape.description" = "Vă rugăm să rotiți telefonul pe modul portret pentru a face o poză a feței";
+"auth.scanview.liveness.landscape.header" = "Rotiți dispozitivul";
+"zoom_feedback_a_little_too_close" = "Mișcați-vă un pic în spate";
+"zoom_feedback_a_little_too_close_tablet" = "Mișcați-vă un pic în spate";
+"zoom_feedback_center_face" = "Încadrați fața central";
+"zoom_feedback_face_not_found" = "Încadrați-vă fața";
+"zoom_feedback_face_not_looking_straight_ahead" = "Priviți drept înainte";
+"zoom_feedback_face_not_upright" = "Țineți-vă capul drept";
+"zoom_feedback_hold_steady" = "Stați nemișcat";
+"zoom_feedback_move_phone_away" = "Mișcați-vă un pic în spate";
+"zoom_feedback_move_phone_closer" = "Mișcați-vă un pic mai aproape";
+"zoom_feedback_move_phone_even_closer" = "Un pic mai aproape";
+"zoom_feedback_move_phone_to_eye_level" = "Țineți dispozitivul la nivelul ochilor";
+"zoom_feedback_move_tablet_away" = "Mișcați-vă un pic în spate";
+"zoom_feedback_move_tablet_closer" = "Mișcați-vă un pic mai aproape";
+"zoom_feedback_move_tablet_to_eye_level" = "Țineți dispozitivul la nivelul ochilor";

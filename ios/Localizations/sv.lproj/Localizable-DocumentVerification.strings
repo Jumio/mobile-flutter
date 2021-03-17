@@ -1,0 +1,58 @@
+/*
+  Localizable-DocumentVerification.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"dv.error-view.authentication-failed" = "Autentisering misslyckades";
+"dv.error-view.button.cancel" = "Avbryt";
+"dv.error-view.button.retry" = "Försök igen";
+"dv.error-view.camera-access-disabled.button.title" = "Bekräfta";
+"dv.error-view.camera-access-disabled.content" = "%@ behöver åtkomst till din kamera. Kontrollera dina integritetsinställningar.";
+"dv.error-view.camera-access-disabled.title" = "Kameraåtkomst inaktiverad";
+"dv.error-view.cancelled-by-user" = "Avbruten av slutanvändaren";
+"dv.error-view.device-is-offline" = "Ingen internetanslutning är tillgänglig";
+"dv.error-view.error.headline" = "Fel";
+"dv.error-view.invalid-key" = "Certifikatet är inte längre giltigt. Kontakta appens leverantör";
+"dv.error-view.network-problem" = "Nätverket har stött på ett kommunikationsproblem";
+"dv.scan-options.accessibility-label.close-button" = "Avsluta skanningen";
+"dv.scan-view.accessibility-label.button.switch-to-back-camera" = "Växla till kameran på baksidan";
+"dv.scan-view.accessibility-label.button.switch-to-front-camera" = "Växla till kameran på framsidan";
+"dv.scan-view.accessibility-label.button.take-photo" = "Ta ett foto";
+"dv.scan-view.accessibility-label.flash-button.activate" = "Aktivera blixten";
+"dv.scan-view.accessibility-label.flash-button.deactivate" = "Inaktivera blixten";
+"dv.scan-view.confirmation.button.readable" = "Fortsätt";
+"dv.scan-view.confirmation.button.retake" = "TA NY BILD";
+"dv.scan-view.confirmation.text" = "Kontrollera att alla uppgifter i ditt dokument är fullt synliga, fria från reflektioner och inte suddiga.";
+"dv.scan-view.help.document-BC" = "Födelseattest";
+"dv.scan-view.help.document-BS" = "Bankkontoutdrag";
+"dv.scan-view.help.document-CAAP" = "Ansökan om kontantförskott";
+"dv.scan-view.help.document-CB" = "Faktura från kommunen";
+"dv.scan-view.help.document-CC" = "Kreditkort";
+"dv.scan-view.help.document-CCS" = "Kreditkortsutdrag";
+"dv.scan-view.help.document-CRC" = "Företagsupplösningsbevis";
+"dv.scan-view.help.document-CUSTOM" = "Dokument";
+"dv.scan-view.help.document-HCC" = "Sjukvårdskort";
+"dv.scan-view.help.document-IC" = "Försäkringskort";
+"dv.scan-view.help.document-LAG" = "Hyresavtal";
+"dv.scan-view.help.document-LOAP" = "Låneansökan";
+"dv.scan-view.help.document-MEDC" = "Medicare-kort";
+"dv.scan-view.help.document-MOAP" = "Hypoteksansökan";
+"dv.scan-view.help.document-PB" = "Telefonräkning";
+"dv.scan-view.help.document-SEL" = "Inskrivningsbrev från skola";
+"dv.scan-view.help.document-SENC" = "Seniorkort";
+"dv.scan-view.help.document-SS" = "Pensionsbesked";
+"dv.scan-view.help.document-SSC" = "Socialförsäkringsbevis";
+"dv.scan-view.help.document-STUC" = "Studentkort";
+"dv.scan-view.help.document-TAC" = "Intyg på medlemskap i branschorganisation";
+"dv.scan-view.help.document-TR" = "Skatteåterbäring";
+"dv.scan-view.help.document-UB" = "Faktura för allmännyttiga tjänster, t.ex. elräkning";
+"dv.scan-view.help.document-VC" = "Annullerad check";
+"dv.scan-view.help.document-VT" = "Registreringsbevis för fordon";
+"dv.scan-view.help.document-WWCC" = "Lämplighetsintyg för arbete med barn";
+"dv.scan-view.help.document.headline" = "Ta bild %@";
+"dv.scan-view.navigationItem.title" = "Skanna";
+"dv.submission-view.navigationItem.title" = "";
+"dv.submission-view.successful.description" = "";
+"dv.submission-view.successful.headline" = "Uppladdning klar";
+"dv.submission-view.uploading.description" = "Detta bör ta bara några få sekunder beroende på din nätverksanslutning";
+"dv.submission-view.uploading.headline" = "Laddar upp dina dokument";

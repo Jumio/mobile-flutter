@@ -1,0 +1,41 @@
+/*
+  Localizable-Authentication.strings
+  Copyright © 2020 Jumio Corporation. All rights reserved.
+*/
+  
+"auth.alert-view.button.confirm.title" = "تأكيد";
+"auth.alert-view.camera-access-disabled.description" = "يحتاج %@ إلى الوصول إلى الكاميرا. يُرجى التحقق من إعدادات الخصوصية الخاصة بك.";
+"auth.alert-view.camera-access-disabled.title" = "تم تعطيل الوصول إلى الكاميرا";
+"auth.error-view.button.cancel.title" = "إلغاء";
+"auth.error-view.button.retry.title" = "إعادة المحاولة";
+"auth.error-view.error.header.title" = "خطأ";
+"auth.error.authentication-failed.title" = "فشلت المصادقة";
+"auth.error.cancelled-by-user.title" = "تم إلغاؤه من قبل المستخدم النهائي";
+"auth.error.device-is-offline.title" = "لا يتوفر اتصال بالإنترنت";
+"auth.error.invalid-key.title" = "الشهادة لم تعد صالحة. يُرجى الاتصال ببائع التطبيق";
+"auth.error.network-problem.title" = "واجهنا مشكلة في الاتصال بالشبكة";
+"auth.error.setup-error.title" = "المسح غير متاح في الوقت الحالي، يُرجى الاتصال ببائع التطبيق";
+"auth.error.transaction-already-finished.title" = "تم إنهاء المعاملة بالفعل";
+"auth.scan-help-view.liveness-help.bad-angle" = "أمسك جهازك على مستوى العين وانظر إليه مباشرة";
+"auth.scan-help-view.liveness-help.bad-lightning" = "تجنب الظلال والانعكاسات على وجهك";
+"auth.scan-help-view.liveness-help.button-continue.title" = "اضغط للمتابعة";
+"auth.scan-help-view.liveness-help.general" = "اتبع عملية من خطوتين وقم بمحاذاة وجهك مع الإطار. أمسك جهازك على مستوى العين وانظر مباشرةً إلى الكاميرا. سيتم التقاط وجهك تلقائيًا";
+"auth.scan-view.accessibility-label.close-button" = "إنهاء المسح";
+"auth.scan-view.liveness-help.navigation-item.title" = "هل تواجه مشكلات؟";
+"auth.scan-view.liveness-help.upfront.navigation-item.title" = "التقاط صورة لوجهك";
+"auth.scanview.liveness.landscape.description" = "يُرجى تدوير هاتفك إلى الوضع الرأسي لالتقاط صورة ذاتية";
+"auth.scanview.liveness.landscape.header" = "أدر جهازك";
+"zoom_feedback_a_little_too_close" = "تحرّك للوراء قليلاً";
+"zoom_feedback_a_little_too_close_tablet" = "تحرّك للوراء قليلاً";
+"zoom_feedback_center_face" = "اجعل وجهك في الوسط";
+"zoom_feedback_face_not_found" = "ضع وجهك داخل الإطار";
+"zoom_feedback_face_not_looking_straight_ahead" = "انظر للأمام مباشرة";
+"zoom_feedback_face_not_upright" = "حافظ على استقامة رأسك";
+"zoom_feedback_hold_steady" = "اثبت في مكانك";
+"zoom_feedback_move_phone_away" = "تحرّك للوراء قليلاً";
+"zoom_feedback_move_phone_closer" = "تحرك أقرب قليلاً";
+"zoom_feedback_move_phone_even_closer" = "أقرب قليلاً";
+"zoom_feedback_move_phone_to_eye_level" = "أمسك الجهاز على مستوى العين";
+"zoom_feedback_move_tablet_away" = "تحرّك للوراء قليلاً";
+"zoom_feedback_move_tablet_closer" = "تحرك أقرب قليلاً";
+"zoom_feedback_move_tablet_to_eye_level" = "أمسك الجهاز على مستوى العين";
