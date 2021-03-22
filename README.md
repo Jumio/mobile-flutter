@@ -2,12 +2,30 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-## Compatibility
+This plugin is compatible with version 3.9.1 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
+# Table of Contents
+- [Compatibility](#compatibility)
+- [Setup](#setup)
+- [Integration](#integration)
+ - [iOS](#ios)
+ - [Android](#android)
+- [Usage](#usage)
+   - [Netverify & Fastfill](#Netverify-&-Fastfill)
+   - [Document Verification](#document-verification)
+   - [BAM Checkout](#bam-checkout)
+   - [Android Netverify eMRTD](#android-netverify-emrtd)
+   - [Retrieving Information](#retrieving-information)
+- [Customization](#customization)
+- [FAQ](#faq)
+   - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
+- [Result Objects](#result-objects)
+- [Support](#support)
+
+## Compatibility
 Compatibility has been tested with a Flutter version of 2.0.1 and Dart 2.12
 
 ## Setup
-
 Create Flutter project and add the Jumio Mobile SDK module to it.
 
 ```sh
@@ -108,19 +126,18 @@ JumioMobileSDK.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>,
 JumioMobileSDK.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-Datacenter can either be **us**, **eu** or **sg**.
+Datacenter can either be **US**, **EU** or **SG**.
 
 ## Usage
 
-### Netverify / Fastfill
-
+### Netverify & Fastfill
 To initialize the SDK, perform the following call.
 
 ```dart
 JumioMobileSDK.initNetverify(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-Datacenter can either be **US** or **EU**.
+Datacenter can either be **US**, **EU** or **SG**.
 
 
 Configure the SDK with the *configuration*-Object.
@@ -176,14 +193,13 @@ If you are using eMRTD scanning, following lines are needed in your `proguard-ru
 
 Add the needed dependencies following [this chapter](https://github.com/Jumio/mobile-sdk-android/blob/master/docs/integration_id-verification-fastfill.md#dependencies) of the android integration guide.
 
-As soon as the sdk is initialized, the sdk is started by the following call.
+As soon as the SDK is initialized, the SDK is started by the following call.
 
 ```dart
 JumioMobileSDK.startNetverify();
 ```
 
 ### Document Verification
-
 To initialize the SDK, perform the following call.
 
 ```dart
@@ -229,7 +245,7 @@ Possible types:
 *  WWCC (Working with children check)
 *  SS (Superannuation statement)
 *  TAC (Trade association card)
-*  SEL (School enrolment letter)
+*  SEL (School enrollment letter)
 *  PB (Phone bill)
 *  USSS (US social security card)
 *  SSC (Social security card)
@@ -252,21 +268,20 @@ await JumioMobileSDK.initDocumentVerification(API_TOKEN, API_SECRET, DATACENTER,
 });
 ```
 
-As soon as the sdk is initialized, the sdk is started by the following call.
+As soon as the SDK is initialized, the SDK is started by the following call.
 
 ```dart
 final String result = await JumioMobileSDK.startDocumentVerification();
 ```
 
 ### BAM Checkout
-
 To Initialize the SDK, perform the following call.
 
 ```dart
 JumioMobileSDK.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-Datacenter can either be **US** or **EU**.
+Datacenter can either be **US**, **EU** or **SG**.
 
 Configure the SDK with the *configuration*-Object.
 
@@ -297,15 +312,14 @@ await JumioMobileSDK.initBAM(API_TOKEN, API_SECRET, DATACENTER, {
 });
 ```
 
-As soon as the sdk is initialized, the sdk is started by the following call.
+As soon as the SDK is initialized, the SDK is started by the following call.
 
 ```dart
 bool result = await JumioMobileSDK.startBAM();
 ```
 
 ### Retrieving information
-
-Scan results are returned from the startXXX() methods asynchronously. Await the returned values to get the results. Exceptions are thrown issuees such as invalid credentials, missing API keys, permissions errors and such.
+Scan results are returned from the startXXX() methods asynchronously. Await the returned values to get the results. Exceptions are thrown issues such as invalid credentials, missing API keys, permissions errors and such.
 
 ## Customization
 
@@ -322,9 +336,8 @@ The Document Verification SDK can be customized to the respective needs by follo
 
 
 ### iOS
-
 The SDK can be customized to the respective needs by using the following initializers instead.
-```javascript
+```dart
 JumioMobileSDKNetverify.initNetverify(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
 JumioMobileSDKDocumentVerification.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
 JumioMobileSDKBamCheckout.initBAM(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration}, {customization});
@@ -377,7 +390,6 @@ JumioMobileSDK.initNetverify("API_TOKEN", "API_SECRET", "US", {
 ```
 
 ## Result objects
-
 To get information about result fields, Netverify Retrieval API, Netverify Delete API and Global Netverify settings and more, please read our [page with server related information](https://github.com/Jumio/implementation-guides/blob/master/netverify/callback.md).
 
 The Map with all the extracted data that is returned for the specific products is described in the following subchapters:
@@ -445,13 +457,27 @@ The Map with all the extracted data that is returned for the specific products i
 | cardAccountNumberValid | BOOL |  | True if account number code valid, otherwise false |
 
 ### Document Verification
-
 No data returned.
+
+## FAQ
+
+### App Crash at Launch for iOS
+If iOS application crashes immediately after launch and without additional information, but works fine for Android, please make sure to the following lines have been added to your `podfile`:
+
+```
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      target.build_configurations.each do |config|
+          config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+      end
+    end
+end
+```
+Please refer to [iOS guide](https://github.com/Jumio/mobile-sdk-ios#via-cocoapods) for more details.
 
 # Support
 
 ## Contact
-
 If you have any questions regarding our implementation guide please contact Jumio Customer Service at support@jumio.com or https://support.jumio.com. The Jumio online helpdesk contains a wealth of information regarding our service including demo videos, product descriptions, FAQs and other things that may help to get you started with Jumio. Check it out at: https://support.jumio.com.
 
 ## Licenses

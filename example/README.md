@@ -1,6 +1,6 @@
 # jumiomobilesdk_example
 
-Demonstrates how to use the jumiomobilesdk plugin.
+Demonstrates how to use the JumioMobileSDK plugin.
 
 ## Getting Started
 
@@ -14,3 +14,13 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+## Usage
+Adjust your credentials in **credentials.dart** file, open a bash and run the following commands:
+```
+cd MyProject
+flutter pub get
+```
+Afterwards, run your project either with iOS simulator / Android emulator or on a real device.
+
+__Note:__ Flutter supports Hot Reloads.
