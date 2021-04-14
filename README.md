@@ -19,6 +19,7 @@ This plugin is compatible with version 3.9.1 of the Jumio SDK. If you have quest
 - [Customization](#customization)
 - [FAQ](#faq)
    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
+   - [iProov String Keys Showing](#iproov-string-keys-showing)
 - [Result Objects](#result-objects)
 - [Support](#support)
 
@@ -474,6 +475,21 @@ post_install do |installer|
 end
 ```
 Please refer to [iOS guide](https://github.com/Jumio/mobile-sdk-ios#via-cocoapods) for more details.
+
+### iProov String Keys Showing
+
+Please note that as of 3.8.0. the following keys have been added to the SDK:
+
+* `"IProov_IntroFlash"`
+* `"IProov_IntroLa"`
+* `"IProov_PromptLivenessAlignFace"`
+* `"IProov_PromptLivenessNoTarget"`
+* `"IProov_PromptLivenessScanCompleted"`
+* `"IProov_PromptTooClose"`
+* `"IProov_PromptTooFar"`
+
+Make sure your `podfile` is up to date and that new pod versions are installed properly so your `Localizable` files include new strings.
+For more information, please refer to our [Changelog](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/changelog) and [Transition Guide](ttps://github.com/Jumio/mobile-sdk-ios/blob/master/docs/transition-guide_id-verification-fastfill.md#3.8.0 ).
 
 # Support
 
