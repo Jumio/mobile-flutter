@@ -140,7 +140,6 @@ JumioMobileSDK.initNetverify(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configura
 
 Datacenter can either be **US**, **EU** or **SG**.
 
-
 Configure the SDK with the *configuration*-Object.
 
 | Configuration | Datatype | Description |
@@ -207,7 +206,7 @@ To initialize the SDK, perform the following call.
 JumioMobileSDK.initDocumentVerification(<API_TOKEN>, <API_SECRET>, <DATACENTER>, {configuration});
 ```
 
-Datacenter can either be **US** or **EU**.
+Datacenter can either be **US**, **EU** or **SG**.
 
 Configure the SDK with the *configuration*-Object. **(configuration marked with * are mandatory)**
 
