@@ -19,7 +19,8 @@ This plugin is compatible with version 3.9.1 of the Jumio SDK. If you have quest
 - [Customization](#customization)
 - [FAQ](#faq)
    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
-   - [iProov String Keys Showing](#iproov-string-keys-showing)
+   - [iOS Localization](#ios-localization)
+   - [iProov String Keys](#iproov-string-keys)
 - [Result Objects](#result-objects)
 - [Support](#support)
 
@@ -475,8 +476,13 @@ end
 ```
 Please refer to [iOS guide](https://github.com/Jumio/mobile-sdk-ios#via-cocoapods) for more details.
 
-### iProov String Keys Showing
+### iOS Localization
+After installing Cocoapods, please localize your iOS application using the languages provided at the following path:   
+`ios -> Pods -> JumioMobileSDK -> JumioMobileSDK-3.9.0 -> Localizations -> xx.lproj`
 
+![Localization](images/Flutter_localization.gif)
+
+### iProov String Keys
 Please note that as of 3.8.0. the following keys have been added to the SDK:
 
 * `"IProov_IntroFlash"`
