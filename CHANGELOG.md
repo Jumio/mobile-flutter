@@ -1,3 +1,7 @@
+## 3.9.2
+* Updated Jumio SDK Android to 3.9.2 and iOS to 3.9.1
+* Update dependencies to Flutter 2.2.1 and Dart 2.13.1
+
 ## 3.9.1
 * Updated Jumio SDK Android to 3.9.1 and iOS to 3.9.0
 * Update dependencies to Flutter 2.0.1 and Dart 2.12

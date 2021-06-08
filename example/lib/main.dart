@@ -32,8 +32,15 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final String title;
+  final tokenInputController = TextEditingController();
 
   _HomePageState(this.title);
+
+  @override
+  void dispose() {
+    tokenInputController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,22 +54,37 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              RaisedButton(
+              ElevatedButton(
                 child: Text("Start Netverify"),
                 onPressed: () {
                   _startNetverify();
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text("Start Document Verification"),
                 onPressed: () {
                   startDocumentVerification();
                 },
               ),
-              RaisedButton(
+              ElevatedButton(
                 child: Text("Start BAM Checkout"),
                 onPressed: () {
                   startBam();
+                },
+              ),
+              Container(
+                width: 250.0,
+                child: TextFormField(
+                  controller: tokenInputController,
+                  decoration: InputDecoration(
+                      border: UnderlineInputBorder(),
+                      labelText: 'Authorization token'),
+                ),
+              ),
+              ElevatedButton(
+                child: Text("Start Single Session Netverify"),
+                onPressed: () {
+                  _startSingleSessionNetverify(tokenInputController.text);
                 },
               ),
             ],
@@ -147,6 +169,30 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  Future<void> _startSingleSessionNetverify(String authorizationToken) async {
+    await _logErrors(() async {
+      await JumioMobileSDK.initSingleSessionNetverify(
+          authorizationToken, DATACENTER, {
+        "enableVerification": true,
+        //"callbackUrl": "URL",
+        //"enableIdentityVerification": true,
+        //"preselectedCountry": "USA",
+        //"customerInternalReference": "123456789",
+        //"reportingCriteria": "Criteria",
+        //"userReference": "ID",
+        //"sendDebugInfoToJumio": true,
+        //"dataExtractionOnMobileOnly": false,
+        //"cameraPosition": "back",
+        //"preselectedDocumentVariant": "plastic",
+        //"documentTypes": ["PASSPORT", "DRIVER_LICENSE", "IDENTITY_CARD", "VISA"],
+        //"enableWatchlistScreening": ["enabled", "disabled" || "default"],
+        //"watchlistSearchProfile": "YOURPROFILENAME",
+      });
+      final result = await JumioMobileSDK.startNetverify();
+      await _showDialogWithMessage("Netverify has completed. Result: $result");
+    });
+  }
+
   Future<void> _logErrors(Future<void> Function() block) async {
     try {
       await block();
@@ -165,7 +211,7 @@ class _HomePageState extends State<HomePage> {
           title: Text(title),
           content: SingleChildScrollView(child: Text(message)),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               child: Text('OK'),
               onPressed: () {
                 Navigator.of(context).pop();

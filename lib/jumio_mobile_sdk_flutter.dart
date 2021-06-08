@@ -53,4 +53,15 @@ class JumioMobileSDK {
   static Future<Map<dynamic, dynamic>> startBAM() async {
     return await _channel.invokeMethod('startBAM');
   }
+
+  static Future<void> initSingleSessionNetverify(
+      String authorizationToken, String dataCenter, Map<String, dynamic> options,
+      [Map<String, dynamic> customization]) async {
+    await _channel.invokeMethod('initSingleSessionNetverify', {
+      'authorizationToken': authorizationToken,
+      'dataCenter': dataCenter,
+      'options': options,
+      'customization': customization
+    });
+  }
 }

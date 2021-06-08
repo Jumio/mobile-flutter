@@ -30,6 +30,30 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
         
         result(nil)
     }
+
+    func initializeSingleSession(call: FlutterMethodCall, result: @escaping FlutterResult) {
+            let args = call.arguments as? [String: Any?] ?? [:]
+
+            let configuration = NetverifyConfiguration()
+            configuration.delegate = self
+            configuration.authorizationToken = args["authorizationToken"] as? String ?? ""
+            configuration.dataCenter = (args["dataCenter"] as? String ?? "").toDataCenter()
+
+            setupOptions(args: args, configuration: configuration)
+            setupCustomization(args: args)
+
+            do {
+                try ObjcExceptionHelper.catchException {
+                    self.netverifyViewController = NetverifyViewController(configuration: configuration)
+                }
+            } catch {
+                let nsError = error as NSError
+                result(FlutterError(code: "\(nsError.code)", message: nsError.localizedDescription, details: nil))
+                return
+            }
+
+            result(nil)
+        }
     
     private func setupOptions(args: [String: Any?], configuration: NetverifyConfiguration) {
         let options = args["options"] as? [String: Any?] ?? [:]
@@ -187,20 +211,32 @@ class NetverifyModuleFlutter: NSObject, JumioMobileSdkModule {
             NetverifyNegativeButton.jumioAppearance().tintColor = UIColor(hexString: negativeButtonTitleColor)
         }
         
-        if let faceOvalColor = customizations["faceOvalColor"] as? String {
-            NetverifyScanOverlayView.jumioAppearance().faceOvalColor = UIColor(hexString: faceOvalColor)
+        if let iProovHeaderTextColor = customizations["iProovHeaderTextColor"] as? String {
+            NetverifyIProovScanView.jumioAppearance().iProovHeaderTextColor = UIColor(hexString: iProovHeaderTextColor)
         }
         
-        if let faceProgressColor = customizations["faceProgressColor"] as? String {
-            NetverifyScanOverlayView.jumioAppearance().faceProgressColor = UIColor(hexString: faceProgressColor)
+        if let iProovHeaderBackgroundColor = customizations["iProovHeaderBackgroundColor"] as? String {
+            NetverifyIProovScanView.jumioAppearance().iProovHeaderBackgroundColor = UIColor(hexString: iProovHeaderBackgroundColor)
         }
         
-        if let faceFeedbackBackgroundColor = customizations["faceFeedbackBackgroundColor"] as? String {
-            NetverifyScanOverlayView.jumioAppearance().faceFeedbackBackgroundColor = UIColor(hexString: faceFeedbackBackgroundColor)
+        if let iProovCloseButtonTintColor = customizations["iProovCloseButtonTintColor"] as? String {
+            NetverifyIProovScanView.jumioAppearance().iProovCloseButtonTintColor = UIColor(hexString: iProovCloseButtonTintColor)
         }
         
-        if let faceFeedbackTextColor = customizations["faceFeedbackTextColor"] as? String {
-            NetverifyScanOverlayView.jumioAppearance().faceFeedbackTextColor = UIColor(hexString: faceFeedbackTextColor)
+        if let iProovFooterTextColor = customizations["iProovFooterTextColor"] as? String {
+            NetverifyIProovScanView.jumioAppearance().iProovFooterTextColor = UIColor(hexString: iProovFooterTextColor)
+        }
+        
+        if let iProovFooterBackgroundColor = customizations["iProovFooterBackgroundColor"] as? String {
+            NetverifyIProovScanView.jumioAppearance().iProovFooterBackgroundColor = UIColor(hexString: iProovFooterBackgroundColor)
+        }
+        
+        if let iProovLivenessScanningTintColor = customizations["iProovLivenessScanningTintColor"] as? String {
+            NetverifyIProovScanView.jumioAppearance().iProovLivenessScanningTintColor = UIColor(hexString: iProovLivenessScanningTintColor)
+        }
+        
+        if let iProovProgressBarColor = customizations["iProovProgressBarColor"] as? String {
+            NetverifyIProovScanView.jumioAppearance().iProovProgressBarColor = UIColor(hexString: iProovProgressBarColor)
         }
     }
     

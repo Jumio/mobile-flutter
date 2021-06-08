@@ -18,6 +18,8 @@ public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
         switch call.method {
         case "initNetverify":
             netverifyModule.initialize(call: call, result: result)
+        case "initSingleSessionNetverify":
+            netverifyModule.initializeSingleSession(call: call, result: result)
         case "startNetverify":
             netverifyModule.start(result: result)
         case "initDocumentVerification":

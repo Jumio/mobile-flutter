@@ -1,6 +1,6 @@
 /*
   Localizable-DocumentVerification.strings
-  Copyright © 2020 Jumio Corporation. All rights reserved.
+  Copyright © 2021 Jumio Corporation. All rights reserved.
 */
   
 "dv.error-view.authentication-failed" = "प्रमाणीकरण विफल हो गया";
