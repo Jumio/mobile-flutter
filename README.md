@@ -21,6 +21,7 @@ This plugin is compatible with version 3.9.2 of the Jumio SDK. If you have quest
    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
    - [iOS Localization](#ios-localization)
    - [iProov String Keys](#iproov-string-keys)
+   - [Empty Country List for Android Release Build](#empty-country-list-for-android-release-build)
 - [Result Objects](#result-objects)
 - [Support](#support)
 
@@ -495,6 +496,13 @@ Please note that as of 3.8.0. the following keys have been added to the SDK:
 
 Make sure your `podfile` is up to date and that new pod versions are installed properly so your `Localizable` files include new strings.
 For more information, please refer to our [Changelog](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/changelog) and [Transition Guide](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/transition-guide_id-verification-fastfill.md#3.8.0).
+
+### Empty Country List for Android Release Build
+If country list is empty for the Android release build, please make sure your app has the proper internet permissions. Without a working network connection, countries won't load in and the list will stay empty.
+
+If necessary, please add `android.permission.INTERNET` permission to your `AndroidManifest.xml` file.
+
+The standard Flutter template will not include this tag automatically, but still allows Internet access during development to enable communication between Flutter tools and a running app. For more information, please refer to the [official Flutter documentation.](https://flutter.dev/docs/deployment/android#reviewing-the-app-manifest)
 
 # Support
 
