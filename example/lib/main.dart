@@ -54,24 +54,6 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              ElevatedButton(
-                child: Text("Start Netverify"),
-                onPressed: () {
-                  _startNetverify();
-                },
-              ),
-              ElevatedButton(
-                child: Text("Start Document Verification"),
-                onPressed: () {
-                  startDocumentVerification();
-                },
-              ),
-              ElevatedButton(
-                child: Text("Start BAM Checkout"),
-                onPressed: () {
-                  startBam();
-                },
-              ),
               Container(
                 width: 250.0,
                 child: TextFormField(
@@ -82,9 +64,9 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               ElevatedButton(
-                child: Text("Start Single Session Netverify"),
+                child: Text("Start"),
                 onPressed: () {
-                  _startSingleSessionNetverify(tokenInputController.text);
+                  _start(tokenInputController.text);
                 },
               ),
             ],
@@ -94,102 +76,11 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Future<void> _startNetverify() async {
+  Future<void> _start(String authorizationToken) async {
     await _logErrors(() async {
-      await JumioMobileSDK.initNetverify(API_TOKEN, API_SECRET, DATACENTER, {
-        "enableVerification": true,
-        //"callbackUrl": "URL",
-        //"enableIdentityVerification": true,
-        //"preselectedCountry": "USA",
-        //"customerInternalReference": "123456789",
-        //"reportingCriteria": "Criteria",
-        //"userReference": "ID",
-        //"sendDebugInfoToJumio": true,
-        //"dataExtractionOnMobileOnly": false,
-        //"cameraPosition": "back",
-        //"preselectedDocumentVariant": "plastic",
-        //"documentTypes": ["PASSPORT", "DRIVER_LICENSE", "IDENTITY_CARD", "VISA"],
-        //"enableWatchlistScreening": ["enabled", "disabled" || "default"],
-        //"watchlistSearchProfile": "YOURPROFILENAME",
-      });
-      final result = await JumioMobileSDK.startNetverify();
-      await _showDialogWithMessage("Netverify has completed. Result: $result");
-    });
-  }
-
-  Future<void> startDocumentVerification() async {
-    await _logErrors(() async {
-      await JumioMobileSDK.initDocumentVerification(
-          API_TOKEN, API_SECRET, DATACENTER, {
-        "type": "BS",
-        "userReference": "123456789",
-        "country": "USA",
-        "customerInternalReference": "123456789",
-        //"reportingCriteria": "Criteria",
-        //"callbackUrl": "URL",
-        //"documentName": "Name",
-        //"customDocumentCode": "Custom",
-        //"cameraPosition": "back",
-        //"enableExtraction": true
-      });
-      final result = await JumioMobileSDK.startDocumentVerification();
-      await _showDialogWithMessage(
-          "Document verification completed with result: " + result.toString());
-    });
-  }
-
-  Future<void> startBam() async {
-    await _logErrors(() async {
-      await JumioMobileSDK.initBAM(
-          BAM_API_TOKEN, BAM_API_SECRET, BAM_DATACENTER, {
-//      "cardHolderNameRequired": true,
-//      "sortCodeAndAccountNumberRequired": false,
-//      "expiryRequired": true,
-//      "cvvRequired": true,
-//      "expiryEditable": false,
-//      "cardHolderNameEditable": false,
-//      "reportingCriteria": "Criteria",
-//      "vibrationEffectEnabled": true,
-//      "enableFlashOnScanStart": false,
-//      "cardNumberMaskingEnabled": false,
-//      "offlineToken": "TOKEN",
-//      "cameraPosition": "back",
-//      "cardTypes": [
-//        "VISA",
-//        "MASTER_CARD",
-//        "AMERICAN_EXPRESS",
-//        "CHINA_UNIONPAY",
-//        "DINERS_CLUB",
-//        "DISCOVER",
-//        "JCB"
-//      ]
-      });
-      final result = await JumioMobileSDK.startBAM();
-      await _showDialogWithMessage("BAM checkout result: $result");
-    });
-  }
-
-  Future<void> _startSingleSessionNetverify(String authorizationToken) async {
-    await _logErrors(() async {
-      await JumioMobileSDK.initSingleSessionNetverify(
-          authorizationToken, DATACENTER, {
-        "enableVerification": true,
-        //"callbackUrl": "URL",
-        //"enableIdentityVerification": true,
-        //"preselectedCountry": "USA",
-        //"customerInternalReference": "123456789",
-        //"reportingCriteria": "Criteria",
-        //"userReference": "ID",
-        //"sendDebugInfoToJumio": true,
-        //"dataExtractionOnMobileOnly": false,
-        //"cameraPosition": "back",
-        //"preselectedDocumentVariant": "plastic",
-        //"documentTypes": ["PASSPORT", "DRIVER_LICENSE", "IDENTITY_CARD", "VISA"],
-        //"enableWatchlistScreening": ["enabled", "disabled" || "default"],
-        //"watchlistSearchProfile": "YOURPROFILENAME",
-      });
-      final result = await JumioMobileSDK.startNetverify();
-      await _showDialogWithMessage("Netverify has completed. Result: $result");
+      await Jumio.init(authorizationToken, DATACENTER);
+      final result = await Jumio.start();
+      await _showDialogWithMessage("Jumio has completed. Result: $result");
     });
   }
 

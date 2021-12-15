@@ -1,17 +1,19 @@
 PODS:
   - Flutter (1.0.0)
-  - iProov (8.3.1):
-    - Socket.IO-Client-Swift (~> 15.2)
-  - jumio_mobile_sdk_flutter (3.9.2):
+  - iProov (9.1.0):
+    - Socket.IO-Client-Swift (~> 16.0)
+  - Jumio (4.0.0):
+    - Jumio/Liveness (= 4.0.0)
+  - Jumio/Liveness (4.0.0):
+    - iProov (= 9.1.0)
+    - PPpdf417 (= 8.0.0)
+  - jumio_mobile_sdk_flutter (4.0.0):
     - Flutter
-    - JumioMobileSDK (= 3.9.1)
-  - JumioMobileSDK (3.9.1):
-    - JumioMobileSDK/JumioMobileSDK (= 3.9.1)
-  - JumioMobileSDK/JumioMobileSDK (3.9.1):
-    - iProov (= 8.3.1)
-  - Socket.IO-Client-Swift (15.2.0):
-    - Starscream (~> 3.1)
-  - Starscream (3.1.1)
+    - Jumio (= 4.0.0)
+  - PPpdf417 (8.0.0)
+  - Socket.IO-Client-Swift (16.0.1):
+    - Starscream (~> 4.0)
+  - Starscream (4.0.4)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -20,7 +22,8 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - iProov
-    - JumioMobileSDK
+    - Jumio
+    - PPpdf417
     - Socket.IO-Client-Swift
     - Starscream
 
@@ -31,13 +34,14 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/jumio_mobile_sdk_flutter/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  iProov: 6156dfc838cc11970b5c16aa33608614f26af56c
-  jumio_mobile_sdk_flutter: 7ccbd25fd49d503479aede8e1b7cfec5b7593204
-  JumioMobileSDK: f8f1d439d5ca305c25708198099e47c4f0a70709
-  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
-  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  iProov: aa2bf3acd526d9545c649e3de1a3bf2ee535c4dc
+  Jumio: 62f19c7bbf73e4fb7ec2d8d919144ac6e819b818
+  jumio_mobile_sdk_flutter: 0ce25aa26c6f44e67ae8f11a11b595a74f7830be
+  PPpdf417: aa644766d51a7e00b8d41c70868bba8b818f5215
+  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
-PODFILE CHECKSUM: f98b40307341e12b160260f07db11cda9e1697c8
+PODFILE CHECKSUM: c2211d48fe939fa71291b59548e1ffc6726497b1
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

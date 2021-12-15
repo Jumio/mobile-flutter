@@ -16,11 +16,13 @@ For help getting started with Flutter, view our
 samples, guidance on mobile development, and a full API reference.
 
 ## Usage
-Adjust your credentials in **credentials.dart** file, open a bash and run the following commands:
+Adjust your data center in the **credentials.dart** file, open a bash and run the following commands:
 ```
 cd MyProject
 flutter pub get
 ```
 Afterwards, run your project either with iOS simulator / Android emulator or on a real device.
+
+Start a specific workflow with an `sdk.token` for authorization. 
 
 __Note:__ Flutter supports Hot Reloads.

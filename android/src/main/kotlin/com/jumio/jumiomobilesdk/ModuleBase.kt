@@ -5,13 +5,16 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.util.Log
 import androidx.core.app.ActivityCompat
-import com.jumio.MobileSDK
+import com.jumio.sdk.JumioSDK
 import io.flutter.plugin.common.MethodChannel
 
 abstract class ModuleBase : JumioMobileSdkModule {
     protected lateinit var hostActivity: Activity private set
     private var currentAsyncProcessCallback: MethodChannel.Result? = null
-    private var postPermissionsBlock: (() -> Unit)? = null
+
+    companion object {
+        private const val PERMISSION_REQUEST_CODE_NETVERIFY = 303
+    }
 
     protected fun sendResult(value: Any?) {
         currentAsyncProcessCallback?.success(value)
@@ -24,14 +27,10 @@ abstract class ModuleBase : JumioMobileSdkModule {
         currentAsyncProcessCallback = null
     }
 
-    protected fun ensurePermissionsAndRun(permissionRequestCode : PermissionRequestCode, block: () -> Unit) {
-        if (MobileSDK.hasAllRequiredPermissions(hostActivity)) {
-            block()
-        } else {
-            postPermissionsBlock = block
-
-            val missingPermissions = MobileSDK.getMissingPermissions(hostActivity)
-            ActivityCompat.requestPermissions(hostActivity, missingPermissions, permissionRequestCode.ordinal)
+    protected fun ensurePermissionsAndRun() {
+        if (!JumioSDK.hasAllRequiredPermissions(hostActivity)) {
+            val missingPermissions = JumioSDK.getMissingPermissions(hostActivity)
+            ActivityCompat.requestPermissions(hostActivity, missingPermissions, PERMISSION_REQUEST_CODE_NETVERIFY)
         }
     }
 
@@ -45,12 +44,9 @@ abstract class ModuleBase : JumioMobileSdkModule {
 
     final override fun handlePermissionResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?): Boolean {
         val permissionsGranted = permissions?.size == grantResults?.size && grantResults?.all { it == PackageManager.PERMISSION_GRANTED } == true
-        val requestCodeAsEnum = PermissionRequestCode.values().getOrNull(requestCode)
-        if (permissionsGranted) {
-            postPermissionsBlock?.invoke()
-            postPermissionsBlock = null
-        }
-        return permissionsGranted && requestCodeAsEnum != null
+        val requestCode = requestCode == PERMISSION_REQUEST_CODE_NETVERIFY
+
+        return permissionsGranted && requestCode
     }
 
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?) = false

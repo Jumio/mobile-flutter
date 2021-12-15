@@ -1,12 +1,8 @@
 import Flutter
-import JumioCore
-import Netverify
 import UIKit
 
 public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
-    private let netverifyModule:            NetverifyModuleFlutter  = NetverifyModuleFlutter()
-    private let documentVerificaitonModule: JumioMobileSdkModule    = DocumentVerificationModuleFlutter()
-    private let bamCheckoutModule:          JumioMobileSdkModule    = BAMCheckoutModuleFlutter()
+    private let jumioModule = JumioModuleFlutter()
 
     public static func register(with registrar: FlutterPluginRegistrar) {
         let channel = FlutterMethodChannel(name: "com.jumio.fluttersdk", binaryMessenger: registrar.messenger())
@@ -16,20 +12,10 @@ public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
 
     public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
         switch call.method {
-        case "initNetverify":
-            netverifyModule.initialize(call: call, result: result)
-        case "initSingleSessionNetverify":
-            netverifyModule.initializeSingleSession(call: call, result: result)
-        case "startNetverify":
-            netverifyModule.start(result: result)
-        case "initDocumentVerification":
-            documentVerificaitonModule.initialize(call: call, result: result)
-        case "startDocumentVerification":
-            documentVerificaitonModule.start(result: result)
-        case "initBAM":
-            bamCheckoutModule.initialize(call: call, result: result)
-        case "startBAM":
-            bamCheckoutModule.start(result: result)
+        case "init":
+            jumioModule.initialize(call: call, result: result)
+        case "start":
+            jumioModule.start(result: result)
         default:
             break
         }
