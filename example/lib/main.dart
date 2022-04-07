@@ -22,16 +22,16 @@ class DemoApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
-  final String title;
+  final String? title;
 
-  HomePage({Key key, this.title}) : super(key: key);
+  HomePage({Key? key, this.title}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _HomePageState(title);
 }
 
 class _HomePageState extends State<HomePage> {
-  final String title;
+  final String? title;
   final tokenInputController = TextEditingController();
 
   _HomePageState(this.title);
@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Text(title!),
       ),
       body: Center(
         child: IntrinsicWidth(

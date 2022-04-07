@@ -1,15 +1,15 @@
 PODS:
   - Flutter (1.0.0)
-  - iProov (9.1.0):
+  - iProov (9.2.0):
     - Socket.IO-Client-Swift (~> 16.0)
-  - Jumio (4.0.0):
-    - Jumio/Liveness (= 4.0.0)
-  - Jumio/Liveness (4.0.0):
-    - iProov (= 9.1.0)
+  - Jumio (4.1.0):
+    - Jumio/Liveness (= 4.1.0)
+  - Jumio/Liveness (4.1.0):
+    - iProov (= 9.2.0)
     - PPpdf417 (= 8.0.0)
-  - jumio_mobile_sdk_flutter (4.0.0):
+  - jumio_mobile_sdk_flutter (4.1.0):
     - Flutter
-    - Jumio (= 4.0.0)
+    - Jumio (= 4.1.0)
   - PPpdf417 (8.0.0)
   - Socket.IO-Client-Swift (16.0.1):
     - Starscream (~> 4.0)
@@ -35,13 +35,13 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  iProov: aa2bf3acd526d9545c649e3de1a3bf2ee535c4dc
-  Jumio: 62f19c7bbf73e4fb7ec2d8d919144ac6e819b818
-  jumio_mobile_sdk_flutter: 0ce25aa26c6f44e67ae8f11a11b595a74f7830be
+  iProov: a01ee99a605be036375504e3c684fe87a9ede31c
+  Jumio: 5ba2538df84aeb1cdcc630c6f3333a2fb6c9c066
+  jumio_mobile_sdk_flutter: 80fd56eb191abb43a57864f05195be2f5b1c5fc5
   PPpdf417: aa644766d51a7e00b8d41c70868bba8b818f5215
   Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
 PODFILE CHECKSUM: c2211d48fe939fa71291b59548e1ffc6726497b1
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

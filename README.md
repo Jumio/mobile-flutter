@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.0.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
+This plugin is compatible with version 4.1.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
 - [Compatibility](#compatibility)
@@ -12,6 +12,7 @@ This plugin is compatible with version 4.0.0 of the Jumio SDK. If you have quest
  - [Android](#android)
 - [Usage](#usage)
    - [Retrieving Information](#retrieving-information)
+- [Customization](#customization)
 - [Callbacks](#callbacks)
 - [Result Objects](#result-objects)
 - [FAQ](#faq)
@@ -22,7 +23,7 @@ This plugin is compatible with version 4.0.0 of the Jumio SDK. If you have quest
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 2.5.3 and Dart 2.14.4
+Compatibility has been tested with a Flutter version of 2.10.3 and Dart 2.16.1
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -38,7 +39,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.0.0
+  jumio_mobile_sdk_flutter: ^4.1.0
 ```
 
 And install the dependency:
@@ -74,7 +75,7 @@ Make sure your compileSdkVersion, minSdkVersion and buildToolsVersion are high e
 android {
   minSdkVersion 21
   compileSdkVersion 31
-  buildToolsVersion "31.0.0"
+  buildToolsVersion "32.0.0"
   ...
 }
 ```
@@ -112,6 +113,12 @@ Modify the Gradle Wrapper version in android/gradle.properties.
 ***Proguard Rules***    
 For information on Android Proguard Rules concerning the Jumio SDK, please refer to our [Android guides](https://github.com/Jumio/mobile-sdk-android#proguard).
 
+To enable analytic feedback and internal diagnostics, please make sure to include the line
+```
+-keep class io.flutter.embedding.android.FlutterActivity
+```
+to your Proguard Rules.
+
 ## Usage
 
 1. Import "**jumiomobilesdk.dart**"
@@ -137,6 +144,10 @@ Jumio.start();
 
 ### Retrieving information
 Scan results are returned from the startXXX() methods asynchronously. Await the returned values to get the results. Exceptions are thrown issues such as invalid credentials, missing API keys, permissions errors and such.
+
+## Customization
+### Android
+The JumioSDK colors can be customized by overriding the custom theme `AppThemeCustomJumio`. An example customization of all values that can be found in the [styles.xml of the DemoApp](example/android/app/src/main/res/values/styles.xml)
 
 ## Callbacks
 In oder to get information about result fields, Retrieval API, Delete API, global settings and more, please read our [page with server related information](https://github.com/Jumio/implementation-guides/blob/master/api-guide/api_guide.md#callback).

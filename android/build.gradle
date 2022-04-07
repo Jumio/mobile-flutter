@@ -18,7 +18,17 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        maven { url 'https://mobile-sdk.jumio.com' }
+        exclusiveContent {
+            forRepository {
+                maven {
+                    url 'https://mobile-sdk.jumio.com'
+                }
+            }
+            filter {
+                includeGroup "com.jumio.android"
+                includeGroup "com.iproov.sdk"
+            }
+        }
     }
 }
 
@@ -41,7 +51,7 @@ android {
 }
 
 ext {
-    SDK_VERSION = "4.0.0"
+    SDK_VERSION = "4.1.0"
 }
 
 dependencies {
@@ -54,6 +64,7 @@ dependencies {
     implementation "com.jumio.android:barcode-mlkit:${SDK_VERSION}"
     implementation "com.jumio.android:iproov:${SDK_VERSION}"
     implementation "com.jumio.android:defaultui:${SDK_VERSION}"
+    implementation "com.jumio.android:datadog:${SDK_VERSION}"
 
     //only for the sample code
     implementation "androidx.activity:activity-ktx:1.4.0"
