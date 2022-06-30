@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.1.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
+This plugin is compatible with version 4.2.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
 - [Compatibility](#compatibility)
@@ -23,7 +23,7 @@ This plugin is compatible with version 4.1.0 of the Jumio SDK. If you have quest
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 2.10.3 and Dart 2.16.1
+Compatibility has been tested with a Flutter version of 3.0.1 and Dart 2.17.1
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -39,7 +39,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.1.0
+  jumio_mobile_sdk_flutter: ^4.2.0
 ```
 
 And install the dependency:
@@ -96,14 +96,14 @@ android {
 __Upgrade Gradle build tools__    
 The plugin requires at least version 4.0.0 of the Android build tools. This transitively requires and upgrade of the Gradle wrapper to version 7 and an update to Java 11.
 
-Upgrade build tools version to 7.0.3 in android/build.gradle:
+Upgrade build tools version to 7.2.0 in android/build.gradle:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:7.0.3'
+    classpath 'com.android.tools.build:gradle:7.2.0'
   }
 }
 ```
@@ -147,7 +147,89 @@ Scan results are returned from the startXXX() methods asynchronously. Await the 
 
 ## Customization
 ### Android
-The JumioSDK colors can be customized by overriding the custom theme `AppThemeCustomJumio`. An example customization of all values that can be found in the [styles.xml of the DemoApp](example/android/app/src/main/res/values/styles.xml)
+JumioSDK Android appearance can be customized by overriding the custom theme `AppThemeCustomJumio`. An example customization of all values that can be found in the [styles.xml](example/android/app/src/main/res/values/styles.xml) of the DemoApp.
+
+### iOS
+JumioSDK iOS appearance can be customized to your respective needs. You can customize each color based on the device's set appearance, for either Dark mode or Light mode, or you can set a single color for both appearances. Customization is optional and not required.
+
+You can pass the following customization options at [`Jumio.start`](example/lib/main.dart#L82):
+
+| Customization key                               |
+|:------------------------------------------------|
+| iProovLineColor                                 |
+| iProovHeaderTextColor                           |
+| iProovHeaderBackgroundColor                     |
+| iProovPromptTextColor                           |
+| iProovFooterBackgroundColor                     |
+| iProovCloseButtonTintColor                      |
+| iProovLivenessAssurancePrimaryTintColor         |
+| iProovLivenessAssuranceSecondaryTintColor       |
+| iProovGenuinePresenceAssuranceProgressBarColor  |
+| iProovGenuinePresenceAssuranceNotReadyTintColor |
+| iProovGenuinePresenceAssuranceReadyTintColor    |
+| iProovAnimationForeground                       |
+| iProovAnimationBackground                       |
+| iProovFloatingPromptEnabled                     |
+| primaryButtonBackground                         |
+| primaryButtonBackgroundPressed                  |
+| primaryButtonBackgroundDisabled                 |
+| primaryButtonText                               |
+| secondaryButtonBackground                       |
+| secondaryButtonBackgroundPressed                |
+| secondaryButtonBackgroundDisabled               |
+| secondaryButtonText                             |
+| bubbleBackground                                |
+| bubbleForeground                                |
+| bubbleBackgroundSelected                        |
+| bubbleCircleItemForeground                      |
+| bubbleCircleItemBackground                      |
+| bubbleSelectionIconForeground                   |
+| loadingCirclePlain                              |
+| loadingCircleGradientStart                      |
+| loadingCircleGradientEnd                        |
+| loadingErrorCircleGradientStart                 |
+| loadingErrorCircleGradientEnd                   |
+| loadingCircleIcon                               |
+| scanOverlay                                     |
+| scanOverlayFill                                 |
+| scanOverlayTransparent                          |
+| scanOverlayBackground                           |
+| nfcPassportCover                                |
+| nfcPassportPageDark                             |
+| nfcPassportPageLight                            |
+| nfcPassportForeground                           |
+| nfcPhoneCover                                   |
+| scanViewBubbleForeground                        |
+| scanViewBubbleBackground                        |
+| scanViewForeground                              |
+| scanViewAnimationBackground                     |
+| scanViewAnimationShutter                        |
+| searchBubbleBackground                          |
+| searchBubbleForeground                          |
+| searchBubbleListItemSelected                    |
+| navigationIconColor                             |
+| textForegroundColor                             |
+| primaryColor                                    |
+
+All colors are provided with a HEX string with the following formats: `#ff00ff` or `#66ff00ff` if you want to set the alpha level.
+
+**Customization example**
+
+Example for setting color based on Dark or Light mode
+```
+Jumio.start({
+    "primaryColor": { light:"ffffff", dark:"000000" }
+    "primaryButtonBackground": { light:ffffff, dark:"000000" }
+});
+```
+
+Example for setting same color for both Dark and Light mode
+```
+Jumio.start({
+    "primaryColor": "ffffff"
+    "primaryButtonBackground": "ffffff"
+});
+```
 
 ## Callbacks
 In oder to get information about result fields, Retrieval API, Delete API, global settings and more, please read our [page with server related information](https://github.com/Jumio/implementation-guides/blob/master/api-guide/api_guide.md#callback).

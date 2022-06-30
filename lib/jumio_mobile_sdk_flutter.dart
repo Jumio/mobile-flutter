@@ -11,7 +11,9 @@ class Jumio {
         {'authorizationToken': authorizationToken, 'dataCenter': dataCenter});
   }
 
-  static Future<Map<dynamic, dynamic>> start() async {
-    return await _channel.invokeMethod('start');
+  static Future<Map<dynamic, dynamic>> start(
+      [Map<String, dynamic>? customizations]) async {
+    return await _channel
+        .invokeMethod('start', {'customizations': customizations});
   }
 }

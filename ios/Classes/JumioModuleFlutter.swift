@@ -27,12 +27,20 @@ class JumioModuleFlutter: NSObject, JumioMobileSdkModule {
         result(nil)
     }
 
-    func start(result: @escaping FlutterResult) {
+    func start(call: FlutterMethodCall, result: @escaping FlutterResult) {
+        let args = call.arguments as? [String: Any?] ?? [:]
+
         self.result = result
 
         guard let jumio = jumio else { return }
 
         jumio.startDefaultUI()
+
+        // Check if customization argument is added
+        if let customizations = args["customizations"] as? [String: Any?] {
+            let customTheme = customizeSDKColors(customizations: customizations)
+            jumio.customize(theme: customTheme)
+        }
 
         do {
             try ObjcExceptionHelper.catchException {

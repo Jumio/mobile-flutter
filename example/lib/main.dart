@@ -79,7 +79,17 @@ class _HomePageState extends State<HomePage> {
   Future<void> _start(String authorizationToken) async {
     await _logErrors(() async {
       await Jumio.init(authorizationToken, DATACENTER);
-      final result = await Jumio.start();
+      final result = await Jumio.start(
+          // {
+          // "loadingCircleIcon": "#000000",
+          // "loadingCirclePlain": "#000000",
+          // "loadingCircleGradientStart": "#000000",
+          // "loadingCircleGradientEnd": "#000000",
+          // "loadingErrorCircleGradientStart": "#000000",
+          // "loadingErrorCircleGradientEnd": "#000000",
+          // "primaryButtonBackground": {"light": "#FFC0CB", "dark": "#FF1493"}
+          // }
+          );
       await _showDialogWithMessage("Jumio has completed. Result: $result");
     });
   }

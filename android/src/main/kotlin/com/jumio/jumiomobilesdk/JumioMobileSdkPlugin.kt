@@ -13,28 +13,15 @@ import io.flutter.plugin.common.PluginRegistry
 import io.flutter.plugin.common.PluginRegistry.Registrar
 
 class JumioMobileSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegistry.ActivityResultListener, PluginRegistry.RequestPermissionsResultListener {
+    companion object{
+        private const val CHANNEL_NAME = "com.jumio.fluttersdk"
+    }
+
     private lateinit var channel: MethodChannel
 
     private val modules: List<JumioMobileSdkModule> = listOf(
             JumioModule()
     )
-
-    // This static function is optional and equivalent to onAttachedToEngine. It supports the old
-    // pre-Flutter-1.12 Android projects.
-    companion object {
-        private const val CHANNEL_NAME = "com.jumio.fluttersdk"
-
-        @Suppress("unused")
-        @JvmStatic
-        fun registerWith(registrar: Registrar) {
-            val instance = JumioMobileSdkPlugin()
-            val channel = MethodChannel(registrar.messenger(), CHANNEL_NAME)
-            channel.setMethodCallHandler(instance)
-            registrar.addActivityResultListener(instance)
-            registrar.addRequestPermissionsResultListener(instance)
-            instance.modules.forEach { it.bindToActivity(registrar.activity()) }
-        }
-    }
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
         channel = MethodChannel(flutterPluginBinding.binaryMessenger, CHANNEL_NAME)
@@ -72,7 +59,7 @@ class JumioMobileSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, Pl
         return results.any { it }
     }
 
-    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?): Boolean {
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray): Boolean {
         val results = modules.map { it.handlePermissionResult(requestCode, permissions, grantResults) }
         return results.any { it }
     }

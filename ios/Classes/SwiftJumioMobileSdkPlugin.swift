@@ -15,7 +15,7 @@ public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
         case "init":
             jumioModule.initialize(call: call, result: result)
         case "start":
-            jumioModule.start(result: result)
+            jumioModule.start(call: call, result: result)
         default:
             break
         }
