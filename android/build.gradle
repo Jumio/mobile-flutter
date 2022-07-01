@@ -58,8 +58,6 @@ dependencies {
     // Jumio dependencies
     implementation "com.jumio.android:core:${SDK_VERSION}"
     implementation "com.jumio.android:linefinder:${SDK_VERSION}"
-    // The Docfinder module is still in Beta and suspect to change in the next version. If you intend to use it in production, please contact Jumio Customer Service at support@jumio.com
-	implementation "com.jumio.android:docfinder:${SDK_VERSION}"
     implementation "com.jumio.android:mrz:${SDK_VERSION}"
     implementation "com.jumio.android:nfc:${SDK_VERSION}"
     implementation "com.jumio.android:barcode:${SDK_VERSION}"
