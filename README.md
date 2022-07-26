@@ -16,7 +16,7 @@ This plugin is compatible with version 4.2.0 of the Jumio SDK. If you have quest
 - [Callbacks](#callbacks)
 - [Result Objects](#result-objects)
 - [FAQ](#faq)
-   - [iOS Runs on Debug, Crashes on Release Build](#ios-app-runs-on-debug-crashes-on-release-build)
+   - [iOS Runs on Debug, Crashes on Release Build](#ios-runs-on-debug-crashes-on-release-build)
    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
    - [iOS Localization](#ios-localization)
    - [iProov String Keys](#iproov-string-keys)
