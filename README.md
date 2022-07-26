@@ -16,6 +16,7 @@ This plugin is compatible with version 4.2.0 of the Jumio SDK. If you have quest
 - [Callbacks](#callbacks)
 - [Result Objects](#result-objects)
 - [FAQ](#faq)
+   - [iOS Runs on Debug, Crashes on Release Build](#ios-app-runs-on-debug-crashes-on-release-build)
    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
    - [iOS Localization](#ios-localization)
    - [iProov String Keys](#iproov-string-keys)
@@ -277,6 +278,21 @@ JumioSDK will return `EventResult` in case of a successfully completed workflow 
 | compositeValid | BOOL | | True if composite check digit is valid, otherwise false |
 
 ## FAQ
+
+### iOS Runs on Debug, Crashes on Release Build
+This happens due to Xcode 13 introducing a new option to their __App Store Distribution Options__:
+
+__"Manage Version and Build Number"__ (see image below)
+
+If checked, this option changes the version and build number of all content of your app to the overall application version, including third-party frameworks. __This option is enabled by default.__ Please make sure to disable this option when archiving / exporting your application to the App Store. Otherwise, the Jumio SDK version check, which ensures all bundled frameworks are up to date, will fail.
+
+![Xcode13 Issue](images/known_issues_xcode13.png)
+
+Alternatively, it is also possible to set the key `manageAppVersionAndBuildNumber` in the __exportOptions.plist__ to `false`:
+```
+<key>manageAppVersionAndBuildNumber</key>
+<false/>
+```
 
 ### App Crash at Launch for iOS
 If iOS application crashes immediately after launch and without additional information, but works fine for Android, please make sure to the following lines have been added to your `podfile`:
