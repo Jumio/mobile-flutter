@@ -4,11 +4,11 @@ import android.content.Intent
 import com.jumio.defaultui.JumioActivity
 import com.jumio.sdk.credentials.JumioCredentialCategory.FACE
 import com.jumio.sdk.credentials.JumioCredentialCategory.ID
+import com.jumio.sdk.enums.JumioDataCenter
 import com.jumio.sdk.result.JumioResult
 import io.flutter.plugin.common.MethodCall
 
 class JumioModule : ModuleBase() {
-
     companion object {
         private const val REQUEST_CODE = 101
     }
@@ -27,14 +27,9 @@ class JumioModule : ModuleBase() {
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
         return if (requestCode == REQUEST_CODE) {
             if (data != null) {
-                val jumioResult =
-                    data.getSerializableExtra(JumioActivity.EXTRA_RESULT) as JumioResult
+                val jumioResult = data.getSerializableExtra(JumioActivity.EXTRA_RESULT) as JumioResult
 
-                if (jumioResult.isSuccess) {
-                    sendScanResult(jumioResult)
-                } else {
-                    sendCancelResult(jumioResult)
-                }
+                if (jumioResult.isSuccess) sendScanResult(jumioResult) else sendCancelResult(jumioResult)
             }
             true
         } else {
@@ -42,25 +37,22 @@ class JumioModule : ModuleBase() {
         }
     }
 
-    private fun init(
-        authorizationToken: String,
-        dataCenter: String,
-    ) {
-        if (authorizationToken.isEmpty() || dataCenter.isEmpty()) {
-            showErrorMessage("Missing required parameters one-time session authorization token, or dataCenter.")
-        } else {
-            try {
-                initSdk(dataCenter, authorizationToken)
-            } catch (e: Exception) {
-                showErrorMessage("Error initializing the Netverify SDK: " + e.localizedMessage)
-            }
+    private fun init(authorizationToken: String, dataCenter: String) {
+        val jumioDataCenter = getJumioDataCenter(dataCenter)
+
+        when {
+            jumioDataCenter == null -> showErrorMessage("Invalid Datacenter value.")
+            authorizationToken.isEmpty() -> showErrorMessage("Missing required parameters one-time session authorization token.")
+            else ->
+                try {
+                    initSdk(dataCenter, authorizationToken)
+                } catch (e: Exception) {
+                    showErrorMessage("Error initializing the Jumio SDK: " + e.localizedMessage)
+                }
         }
     }
 
-    private fun initSdk(
-        dataCenter: String,
-        authorizationToken: String
-    ) {
+    private fun initSdk(dataCenter: String, authorizationToken: String) {
         val intent = Intent(hostActivity, JumioActivity::class.java).apply {
             putExtra(JumioActivity.EXTRA_TOKEN, authorizationToken)
             putExtra(JumioActivity.EXTRA_DATACENTER, dataCenter)
@@ -80,59 +72,66 @@ class JumioModule : ModuleBase() {
     private fun sendScanResult(jumioResult: JumioResult) {
         val accountId = jumioResult.accountId
         val credentialInfoList = jumioResult.credentialInfos
+        val workflowId = jumioResult.workflowExecutionId
 
         val result = mutableMapOf<String, Any?>(
-            "accountId" to accountId
+            "accountId" to accountId,
+            "workflowId" to workflowId
         )
         val credentialArray = mutableListOf<MutableMap<String, Any?>>()
 
         credentialInfoList?.let {
             credentialInfoList.forEach {
                 val eventResultMap = mutableMapOf<String, Any?>(
-                    "credentialCategory" to it.category.toString(),
                     "credentialId" to it.id,
+                    "credentialCategory" to it.category.toString()
                 )
 
-                if (it.category == ID) {
-                    val idResult = jumioResult.getIDResult(it)
+                when (it.category) {
+                    ID -> {
+                        val idResult = jumioResult.getIDResult(it)
 
-                    idResult?.let {
-                        eventResultMap.putAll(
-                            mapOf(
-                                "selectedCountry" to idResult.country,
-                                "selectedDocumentType" to idResult.idType,
-                                "idNumber" to idResult.documentNumber,
-                                "personalNumber" to idResult.personalNumber,
-                                "issuingDate" to idResult.issuingDate,
-                                "expiryDate" to idResult.expiryDate,
-                                "issuingCountry" to idResult.issuingCountry,
-                                "lastName" to idResult.lastName,
-                                "firstName" to idResult.firstName,
-                                "gender" to idResult.gender,
-                                "nationality" to idResult.nationality,
-                                "dateOfBirth" to idResult.dateOfBirth,
-                                "addressLine" to idResult.address,
-                                "city" to idResult.city,
-                                "subdivision" to idResult.subdivision,
-                                "postCode" to idResult.postalCode,
-                                "placeOfBirth" to idResult.placeOfBirth,
-                                "mrzLine1" to idResult.mrzLine1,
-                                "mrzLine2" to idResult.mrzLine2,
-                                "mrzLine3" to idResult.mrzLine3,
-                            ).compact()
-                        )
+                        idResult?.let {
+                            eventResultMap.putAll(
+                                mapOf(
+                                    "selectedCountry" to idResult.country,
+                                    "selectedDocumentType" to idResult.idType,
+                                    "idNumber" to idResult.documentNumber,
+                                    "personalNumber" to idResult.personalNumber,
+                                    "issuingDate" to idResult.issuingDate,
+                                    "expiryDate" to idResult.expiryDate,
+                                    "issuingCountry" to idResult.issuingCountry,
+                                    "lastName" to idResult.lastName,
+                                    "firstName" to idResult.firstName,
+                                    "gender" to idResult.gender,
+                                    "nationality" to idResult.nationality,
+                                    "dateOfBirth" to idResult.dateOfBirth,
+                                    "addressLine" to idResult.address,
+                                    "city" to idResult.city,
+                                    "subdivision" to idResult.subdivision,
+                                    "postCode" to idResult.postalCode,
+                                    "placeOfBirth" to idResult.placeOfBirth,
+                                    "mrzLine1" to idResult.mrzLine1,
+                                    "mrzLine2" to idResult.mrzLine2,
+                                    "mrzLine3" to idResult.mrzLine3,
+                                ).compact()
+                            )
+                        }
                     }
-                } else if (it.category == FACE) {
-                    val faceResult = jumioResult.getFaceResult(it)
+                    FACE -> {
+                        val faceResult = jumioResult.getFaceResult(it)
 
-                    faceResult?.let {
-                        eventResultMap.putAll(
-                            mapOf(
-                                "passed" to faceResult.passed.toString(),
-                            ).compact()
-                        )
+                        faceResult?.let {
+                            eventResultMap.putAll(
+                                mapOf(
+                                    "passed" to faceResult.passed.toString(),
+                                ).compact()
+                            )
+                        }
                     }
+                    else -> {}
                 }
+
                 credentialArray.add(eventResultMap)
             }
             result["credentials"] = credentialArray
@@ -158,5 +157,11 @@ class JumioModule : ModuleBase() {
                 )
             )
         }
+    }
+
+    private fun getJumioDataCenter(dataCenter: String) = try {
+        JumioDataCenter.valueOf(dataCenter)
+    } catch (e: IllegalArgumentException) {
+        null
     }
 }

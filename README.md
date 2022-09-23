@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.2.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
+This plugin is compatible with version 4.3.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
 - [Compatibility](#compatibility)
@@ -24,7 +24,7 @@ This plugin is compatible with version 4.2.0 of the Jumio SDK. If you have quest
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.0.1 and Dart 2.17.1
+Compatibility has been tested with a Flutter version of 3.3.2 and Dart 2.18.1
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -40,7 +40,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.2.0
+  jumio_mobile_sdk_flutter: ^4.3.0
 ```
 
 And install the dependency:
@@ -59,7 +59,7 @@ flutter pub get
 
 ### Android
 __AndroidManifest__    
-Open your AndroidManifest.xml file and change `allowBackup` to false. Add user permission `HIGH_SAMPLING_RATE_SENSORS` to access sensor data with a sampling rate greater than 200 Hz.
+Open your AndroidManifest.xml file and change `allowBackup` to false.
 
 ```xml
 <application
@@ -67,7 +67,6 @@ Open your AndroidManifest.xml file and change `allowBackup` to false. Add user p
 android:allowBackup="false">
 </application>
 ...
-<uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
 ```
 
 Make sure your compileSdkVersion, minSdkVersion and buildToolsVersion are high enough.
@@ -97,14 +96,14 @@ android {
 __Upgrade Gradle build tools__    
 The plugin requires at least version 4.0.0 of the Android build tools. This transitively requires and upgrade of the Gradle wrapper to version 7 and an update to Java 11.
 
-Upgrade build tools version to 7.2.0 in android/build.gradle:
+Upgrade build tools version to 7.2.1 in android/build.gradle:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:7.2.0'
+    classpath 'com.android.tools.build:gradle:7.2.1'
   }
 }
 ```

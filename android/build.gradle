@@ -2,7 +2,7 @@ group 'com.jumio.jumiomobilesdk'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.6.20'
+    ext.kotlin_version = '1.7.0'
     repositories {
         google()
         mavenCentral()
@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath 'com.android.tools.build:gradle:7.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -36,7 +36,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 32
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -51,13 +51,15 @@ android {
 }
 
 ext {
-    SDK_VERSION = "4.2.0"
+    SDK_VERSION = "4.3.0"
 }
 
 dependencies {
     // Jumio dependencies
     implementation "com.jumio.android:core:${SDK_VERSION}"
     implementation "com.jumio.android:linefinder:${SDK_VERSION}"
+    // Flutter can't properly handle results after activity restarts caused by Docfinder module
+    //implementation "com.jumio.android:docfinder:${SDK_VERSION}"
     implementation "com.jumio.android:mrz:${SDK_VERSION}"
     implementation "com.jumio.android:nfc:${SDK_VERSION}"
     implementation "com.jumio.android:barcode:${SDK_VERSION}"

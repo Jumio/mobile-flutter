@@ -114,10 +114,12 @@ extension JumioModuleFlutter: Jumio.DefaultUIDelegate {
         let accountId = jumioResult.accountId
         let authenticationResult = jumioResult.isSuccess
         let credentialInfos = jumioResult.credentialInfos
+        let workflowId = jumioResult.workflowExecutionId
 
         if authenticationResult == true {
             var body:[String: Any?] = [
                 "accountId": accountId,
+                "workflowId" : workflowId
             ]
             var credentialArray = [[String: Any?]]()
             
@@ -126,11 +128,18 @@ extension JumioModuleFlutter: Jumio.DefaultUIDelegate {
                     "credentialId": credentialInfo.id,
                     "credentialCategory": "\(credentialInfo.category)",
                 ]
-                
-                if credentialInfo.category == .id, let idResult = jumioResult.getIDResult(of: credentialInfo) {
-                    eventResultMap = eventResultMap.merging(getIDResult(idResult: idResult), uniquingKeysWith: { (first, _) in first })
-                } else if credentialInfo.category == .face, let faceResult = jumioResult.getFaceResult(of: credentialInfo) {
-                    eventResultMap = eventResultMap.merging(getFaceResult(faceResult: faceResult), uniquingKeysWith: { (first, _) in first })
+
+                switch credentialInfo.category {
+                    case .id:
+                    if let idResult = jumioResult.getIDResult(of: credentialInfo) {
+                        eventResultMap = eventResultMap.merging(getIDResult(idResult: idResult), uniquingKeysWith: { (first, _) in first })
+                    }
+                    case .face:
+                    if let faceResult = jumioResult.getFaceResult(of: credentialInfo) {
+                        eventResultMap = eventResultMap.merging(getFaceResult(faceResult: faceResult), uniquingKeysWith: { (first, _) in first })
+                    }
+                    default:
+                    break
                 }
                 
                 credentialArray.append(eventResultMap)
