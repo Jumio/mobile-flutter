@@ -1,29 +1,31 @@
 PODS:
   - DatadogSDK (1.11.1)
   - Flutter (1.0.0)
-  - iProov (9.5.0):
-    - Socket.IO-Client-Swift (~> 16.0)
-  - Jumio (4.3.0):
-    - Jumio/All (= 4.3.0)
-  - Jumio/All (4.3.0):
-    - Jumio/Datadog (= 4.3.0)
-    - Jumio/DeviceRisk (= 4.3.0)
-    - Jumio/DocFinder (= 4.3.0)
-    - Jumio/Liveness (= 4.3.0)
-  - Jumio/Datadog (4.3.0):
-    - DatadogSDK (= 1.11.1)
-  - Jumio/DeviceRisk (4.3.0)
-  - Jumio/DocFinder (4.3.0)
-  - Jumio/Liveness (4.3.0):
-    - iProov (= 9.5.0)
-    - PPpdf417 (= 8.0.0)
-  - jumio_mobile_sdk_flutter (4.3.0):
-    - Flutter
-    - Jumio (= 4.3.0)
-  - PPpdf417 (8.0.0)
-  - Socket.IO-Client-Swift (16.0.1):
+  - iProov (10.1.0):
     - Starscream (~> 4.0)
+    - SwiftProtobuf (~> 1.0)
+  - Jumio (4.4.0):
+    - Jumio/All (= 4.4.0)
+  - Jumio/All (4.4.0):
+    - Jumio/Datadog (= 4.4.0)
+    - Jumio/DeviceRisk (= 4.4.0)
+    - Jumio/DocFinder (= 4.4.0)
+    - Jumio/Jumio (= 4.4.0)
+    - Jumio/Liveness (= 4.4.0)
+  - Jumio/Datadog (4.4.0):
+    - DatadogSDK (= 1.11.1)
+  - Jumio/DeviceRisk (4.4.0)
+  - Jumio/DocFinder (4.4.0)
+  - Jumio/Jumio (4.4.0):
+    - PPpdf417 (= 8.0.0)
+  - Jumio/Liveness (4.4.0):
+    - iProov (= 10.1.0)
+  - jumio_mobile_sdk_flutter (4.4.0):
+    - Flutter
+    - Jumio (= 4.4.0)
+  - PPpdf417 (8.0.0)
   - Starscream (4.0.4)
+  - SwiftProtobuf (1.20.3)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -35,8 +37,8 @@ SPEC REPOS:
     - iProov
     - Jumio
     - PPpdf417
-    - Socket.IO-Client-Swift
     - Starscream
+    - SwiftProtobuf
 
 EXTERNAL SOURCES:
   Flutter:
@@ -47,12 +49,12 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DatadogSDK: ba0b08e235f938871691678efc4fb4032e7e27b2
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  iProov: 52df07fc60c6f848b02f2f2f506bb7b4a26898a1
-  Jumio: db6a6e5d7109362a31b6a2ad0fce8ae2c8556244
-  jumio_mobile_sdk_flutter: 8102899e567eeb384359673f17b652490df8ecc6
+  iProov: 1baef733a065659d8f2b70f5d447a1d73f55d8d2
+  Jumio: dcba7b38500570fcea598f5fec3d8a9ce10e897b
+  jumio_mobile_sdk_flutter: 49917a94ee18855fe1364b2abb5513d0237957d9
   PPpdf417: aa644766d51a7e00b8d41c70868bba8b818f5215
-  Socket.IO-Client-Swift: c116d6dc9fd6be9c259bacfe143f8725bce7d79e
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+  SwiftProtobuf: b02b5075dcf60c9f5f403000b3b0c202a11b6ae1
 
 PODFILE CHECKSUM: c2211d48fe939fa71291b59548e1ffc6726497b1
 

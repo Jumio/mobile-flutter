@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.3.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
+This plugin is compatible with version 4.4.0 of the Jumio SDK (4.4.0 for iOS, 4.4.1 for Android). If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
 - [Compatibility](#compatibility)
@@ -24,7 +24,7 @@ This plugin is compatible with version 4.3.0 of the Jumio SDK. If you have quest
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.3.2 and Dart 2.18.1
+Compatibility has been tested with a Flutter version of 3.3.10 and Dart 2.18.6
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -40,7 +40,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.3.0
+  jumio_mobile_sdk_flutter: ^4.4.0
 ```
 
 And install the dependency:
@@ -96,14 +96,14 @@ android {
 __Upgrade Gradle build tools__    
 The plugin requires at least version 4.0.0 of the Android build tools. This transitively requires and upgrade of the Gradle wrapper to version 7 and an update to Java 11.
 
-Upgrade build tools version to 7.2.1 in android/build.gradle:
+Upgrade build tools version to 7.3.0 in android/build.gradle:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:7.2.1'
+    classpath 'com.android.tools.build:gradle:7.3.0'
   }
 }
 ```
@@ -156,20 +156,19 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 
 | Customization key                               |
 |:------------------------------------------------|
-| iProovLineColor                                 |
-| iProovHeaderTextColor                           |
-| iProovHeaderBackgroundColor                     |
-| iProovPromptTextColor                           |
-| iProovFooterBackgroundColor                     |
-| iProovCloseButtonTintColor                      |
-| iProovLivenessAssurancePrimaryTintColor         |
-| iProovLivenessAssuranceSecondaryTintColor       |
-| iProovGenuinePresenceAssuranceProgressBarColor  |
-| iProovGenuinePresenceAssuranceNotReadyTintColor |
-| iProovGenuinePresenceAssuranceReadyTintColor    |
 | iProovAnimationForeground                       |
 | iProovAnimationBackground                       |
-| iProovFloatingPromptEnabled                     |
+| iProovFilterForegroundColor                     |
+| iProovFilterBackgroundColor                     |
+| iProovTitleTextColor                            |
+| iProovCloseButtonTintColor                      |
+| iProovSurroundColor                             |
+| iProovPromptTextColor                           |
+| iProovPromptBackgroundColor                     |
+| genuinePresenceAssuranceReadyOvalStrokeColor    |
+| genuinePresenceAssuranceNotReadyOvalStrokeColor |
+| livenessAssuranceOvalStrokeColor                |
+| livenessAssuranceCompletedOvalStrokeColor       |
 | primaryButtonBackground                         |
 | primaryButtonBackgroundPressed                  |
 | primaryButtonBackgroundDisabled                 |
@@ -207,6 +206,11 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | searchBubbleBackground                          |
 | searchBubbleForeground                          |
 | searchBubbleListItemSelected                    |
+| confirmationImageBackground                     |
+| confirmationImageBackgroundBorder               |
+| confirmationIndicatorActive                     |
+| confirmationIndicatorDefault                    |
+| background                                      |
 | navigationIconColor                             |
 | textForegroundColor                             |
 | primaryColor                                    |
