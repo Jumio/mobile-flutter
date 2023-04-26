@@ -1,6 +1,7 @@
 package com.jumio.jumiomobilesdk
 
 import android.content.Intent
+import android.os.Build
 import com.jumio.defaultui.JumioActivity
 import com.jumio.sdk.credentials.JumioCredentialCategory.FACE
 import com.jumio.sdk.credentials.JumioCredentialCategory.ID
@@ -26,10 +27,15 @@ class JumioModule : ModuleBase() {
 
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
         return if (requestCode == REQUEST_CODE) {
-            if (data != null) {
-                val jumioResult = data.getSerializableExtra(JumioActivity.EXTRA_RESULT) as JumioResult
+            data?.let {
+                val jumioResult = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    it.getSerializableExtra(JumioActivity.EXTRA_RESULT, JumioResult::class.java)
+                } else {
+                    @Suppress("DEPRECATION")
+                    it.getSerializableExtra(JumioActivity.EXTRA_RESULT) as JumioResult?
+                }
 
-                if (jumioResult.isSuccess) sendScanResult(jumioResult) else sendCancelResult(jumioResult)
+                if (jumioResult?.isSuccess == true) sendScanResult(jumioResult) else sendCancelResult(jumioResult)
             }
             true
         } else {
@@ -69,10 +75,10 @@ class JumioModule : ModuleBase() {
         ensurePermissionsAndRun()
     }
 
-    private fun sendScanResult(jumioResult: JumioResult) {
-        val accountId = jumioResult.accountId
-        val credentialInfoList = jumioResult.credentialInfos
-        val workflowId = jumioResult.workflowExecutionId
+    private fun sendScanResult(jumioResult: JumioResult?) {
+        val accountId = jumioResult?.accountId
+        val credentialInfoList = jumioResult?.credentialInfos
+        val workflowId = jumioResult?.workflowExecutionId
 
         val result = mutableMapOf<String, Any?>(
             "accountId" to accountId,
@@ -139,8 +145,8 @@ class JumioModule : ModuleBase() {
         sendResult(result)
     }
 
-    private fun sendCancelResult(jumioResult: JumioResult) {
-        if (jumioResult.error != null) {
+    private fun sendCancelResult(jumioResult: JumioResult?) {
+        if (jumioResult?.error != null) {
             val errorMessage = jumioResult.error?.message ?: ""
             val errorCode = jumioResult.error?.code ?: ""
             sendResult(

@@ -1,31 +1,29 @@
 PODS:
   - DatadogSDK (1.11.1)
   - Flutter (1.0.0)
-  - iProov (10.1.0):
+  - iProov (10.1.3):
     - Starscream (~> 4.0)
-    - SwiftProtobuf (~> 1.0)
-  - Jumio (4.4.0):
-    - Jumio/All (= 4.4.0)
-  - Jumio/All (4.4.0):
-    - Jumio/Datadog (= 4.4.0)
-    - Jumio/DeviceRisk (= 4.4.0)
-    - Jumio/DocFinder (= 4.4.0)
-    - Jumio/Jumio (= 4.4.0)
-    - Jumio/Liveness (= 4.4.0)
-  - Jumio/Datadog (4.4.0):
+  - Jumio (4.5.0):
+    - Jumio/All (= 4.5.0)
+  - Jumio/All (4.5.0):
+    - Jumio/Datadog (= 4.5.0)
+    - Jumio/DeviceRisk (= 4.5.0)
+    - Jumio/DocFinder (= 4.5.0)
+    - Jumio/Jumio (= 4.5.0)
+    - Jumio/Liveness (= 4.5.0)
+  - Jumio/Datadog (4.5.0):
     - DatadogSDK (= 1.11.1)
-  - Jumio/DeviceRisk (4.4.0)
-  - Jumio/DocFinder (4.4.0)
-  - Jumio/Jumio (4.4.0):
+  - Jumio/DeviceRisk (4.5.0)
+  - Jumio/DocFinder (4.5.0)
+  - Jumio/Jumio (4.5.0):
     - PPpdf417 (= 8.0.0)
-  - Jumio/Liveness (4.4.0):
-    - iProov (= 10.1.0)
-  - jumio_mobile_sdk_flutter (4.4.0):
+  - Jumio/Liveness (4.5.0):
+    - iProov (= 10.1.3)
+  - jumio_mobile_sdk_flutter (4.5.0):
     - Flutter
-    - Jumio (= 4.4.0)
+    - Jumio (= 4.5.0)
   - PPpdf417 (8.0.0)
   - Starscream (4.0.4)
-  - SwiftProtobuf (1.20.3)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -38,7 +36,6 @@ SPEC REPOS:
     - Jumio
     - PPpdf417
     - Starscream
-    - SwiftProtobuf
 
 EXTERNAL SOURCES:
   Flutter:
@@ -49,12 +46,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DatadogSDK: ba0b08e235f938871691678efc4fb4032e7e27b2
   Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
-  iProov: 1baef733a065659d8f2b70f5d447a1d73f55d8d2
-  Jumio: dcba7b38500570fcea598f5fec3d8a9ce10e897b
-  jumio_mobile_sdk_flutter: 49917a94ee18855fe1364b2abb5513d0237957d9
+  iProov: e0616d6f785f669b261c956bfa00450a74c1234d
+  Jumio: 0dbdd19942970ff8f20cdbd9a72a974f50e86766
+  jumio_mobile_sdk_flutter: 0e5874514400e35b22ce9c4989327550f1e75bd1
   PPpdf417: aa644766d51a7e00b8d41c70868bba8b818f5215
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
-  SwiftProtobuf: b02b5075dcf60c9f5f403000b3b0c202a11b6ae1
 
 PODFILE CHECKSUM: c2211d48fe939fa71291b59548e1ffc6726497b1
 
