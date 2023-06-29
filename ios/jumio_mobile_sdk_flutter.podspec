@@ -14,14 +14,14 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Jumio/mobile-flutter.git", :tag => "#{s.version}" }
 
   s.source_files = "Classes/**/*.{h,c,m,swift}"
-  s.resource = "Localization/**/*.strings"
+  s.resources    = ['Assets/**.*', 'Localization/**/*.strings']
   s.requires_arc = true
 
   s.dependency 'Flutter'
-  s.dependency "Jumio/Liveness", "4.2.0"
+  s.dependency "Jumio", "4.5.0"
 
   # Flutter.framework does not contain a i386 slice. Only x86_64 simulators are supported.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64' }
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES'}
   s.swift_version = '5.0'
 end
 

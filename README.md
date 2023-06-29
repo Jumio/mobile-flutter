@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.3.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
+This plugin is compatible with version 4.5.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
 - [Compatibility](#compatibility)
@@ -24,7 +24,7 @@ This plugin is compatible with version 4.3.0 of the Jumio SDK. If you have quest
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.3.2 and Dart 2.18.1
+Compatibility has been tested with a Flutter version of 3.7.11 and Dart 2.19.6
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -40,7 +40,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.3.0
+  jumio_mobile_sdk_flutter: ^4.5.0
 ```
 
 And install the dependency:
@@ -74,7 +74,7 @@ Make sure your compileSdkVersion, minSdkVersion and buildToolsVersion are high e
 ```groovy
 android {
   minSdkVersion 21
-  compileSdkVersion 31
+  compileSdkVersion 33
   buildToolsVersion "32.0.0"
   ...
 }
@@ -96,14 +96,14 @@ android {
 __Upgrade Gradle build tools__    
 The plugin requires at least version 4.0.0 of the Android build tools. This transitively requires and upgrade of the Gradle wrapper to version 7 and an update to Java 11.
 
-Upgrade build tools version to 7.2.1 in android/build.gradle:
+Upgrade build tools version to 7.3.0 in android/build.gradle:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:7.2.1'
+    classpath 'com.android.tools.build:gradle:7.3.0'
   }
 }
 ```
@@ -156,20 +156,19 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 
 | Customization key                               |
 |:------------------------------------------------|
-| iProovLineColor                                 |
-| iProovHeaderTextColor                           |
-| iProovHeaderBackgroundColor                     |
-| iProovPromptTextColor                           |
-| iProovFooterBackgroundColor                     |
-| iProovCloseButtonTintColor                      |
-| iProovLivenessAssurancePrimaryTintColor         |
-| iProovLivenessAssuranceSecondaryTintColor       |
-| iProovGenuinePresenceAssuranceProgressBarColor  |
-| iProovGenuinePresenceAssuranceNotReadyTintColor |
-| iProovGenuinePresenceAssuranceReadyTintColor    |
 | iProovAnimationForeground                       |
 | iProovAnimationBackground                       |
-| iProovFloatingPromptEnabled                     |
+| iProovFilterForegroundColor                     |
+| iProovFilterBackgroundColor                     |
+| iProovTitleTextColor                            |
+| iProovCloseButtonTintColor                      |
+| iProovSurroundColor                             |
+| iProovPromptTextColor                           |
+| iProovPromptBackgroundColor                     |
+| genuinePresenceAssuranceReadyOvalStrokeColor    |
+| genuinePresenceAssuranceNotReadyOvalStrokeColor |
+| livenessAssuranceOvalStrokeColor                |
+| livenessAssuranceCompletedOvalStrokeColor       |
 | primaryButtonBackground                         |
 | primaryButtonBackgroundPressed                  |
 | primaryButtonBackgroundDisabled                 |
@@ -202,11 +201,15 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | scanViewBubbleForeground                        |
 | scanViewBubbleBackground                        |
 | scanViewForeground                              |
-| scanViewAnimationBackground                     |
 | scanViewAnimationShutter                        |
 | searchBubbleBackground                          |
 | searchBubbleForeground                          |
 | searchBubbleListItemSelected                    |
+| confirmationImageBackground                     |
+| confirmationImageBackgroundBorder               |
+| confirmationIndicatorActive                     |
+| confirmationIndicatorDefault                    |
+| background                                      |
 | navigationIconColor                             |
 | textForegroundColor                             |
 | primaryColor                                    |
@@ -275,6 +278,20 @@ JumioSDK will return `EventResult` in case of a successfully completed workflow 
 | expiryDateValid |    BOOL| |    True if date of expiry check digit is valid or not available, otherwise false|
 | personalNumberValid | BOOL | | True if personal number check digit is valid or not available, otherwise false |
 | compositeValid | BOOL | | True if composite check digit is valid, otherwise false |
+
+## Local Models for JumioDocfinder
+
+If you are using our JumioDocFinder module, you can download our encrypted models and add them to your bundle from [here](https://cdn.mobile.jumio.ai/model/classifier_on_device_ep_99_float16_quant.enc) and [here](https://cdn.mobile.jumio.ai/model/normalized_ensemble_passports_v2_float16_quant.enc).
+
+We recommend to download the files and add them to your project without changing their names (the same way you add Localization files). This will save two network requests on runtime to download these files.
+
+### iOS
+
+You also need to copy those files to the "ios/Assets" folder for Flutter to recognize them.
+
+### Android
+
+You need to copy those files to the assets folder of your Android project (Path: "app/src/main/assets/")
 
 ## FAQ
 
