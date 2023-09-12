@@ -2,7 +2,8 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.5.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
+This plugin is compatible with version 4.6.1 of the Jumio SDK (4.6.1 for iOS, 4.6.0 for Android).    
+If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
 - [Compatibility](#compatibility)
@@ -10,6 +11,7 @@ This plugin is compatible with version 4.5.0 of the Jumio SDK. If you have quest
 - [Integration](#integration)
  - [iOS](#ios)
  - [Android](#android)
+  - [Proguard](#proguard)
 - [Usage](#usage)
    - [Retrieving Information](#retrieving-information)
 - [Customization](#customization)
@@ -24,7 +26,7 @@ This plugin is compatible with version 4.5.0 of the Jumio SDK. If you have quest
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.7.11 and Dart 2.19.6
+Compatibility has been tested with a Flutter version of 3.13.0 and Dart 3.1.0
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -48,6 +50,7 @@ And install the dependency:
 ```sh
 cd MyProject
 flutter pub get
+cd ios && pod install
 ```
 
 ## Integration
@@ -56,6 +59,9 @@ flutter pub get
 
 1. Add the "**NSCameraUsageDescription**"-key to your Info.plist file.    
 2. Your app's deployment target must be at least iOS 11.0
+
+#### Device Risk
+To include Jumio's Device Risk functionality, you need to add `pod Jumio/DeviceRisk` to your Podfile.
 
 ### Android
 __AndroidManifest__    
@@ -110,7 +116,7 @@ buildscript {
 
 Modify the Gradle Wrapper version in android/gradle.properties.
 
-***Proguard Rules***    
+#### Proguard    
 For information on Android Proguard Rules concerning the Jumio SDK, please refer to our [Android guides](https://github.com/Jumio/mobile-sdk-android#proguard).
 
 To enable analytic feedback and internal diagnostics, please make sure to include the line
@@ -294,6 +300,9 @@ You also need to copy those files to the "ios/Assets" folder for Flutter to reco
 You need to copy those files to the assets folder of your Android project (Path: "app/src/main/assets/")
 
 ## FAQ
+
+### iOS Simulator shows a white-screen, when the Jumio SDK is started
+The Jumio SDK does not support the iOS Simulator. Please run the Jumio SDK only on physical devices.
 
 ### iOS Runs on Debug, Crashes on Release Build
 This happens due to Xcode 13 introducing a new option to their __App Store Distribution Options__:
