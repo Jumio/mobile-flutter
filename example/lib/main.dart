@@ -33,6 +33,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   final String? title;
   final tokenInputController = TextEditingController();
+  bool pressedUS = false;
+  bool pressedEU = false;
+  bool pressedSGP = false;
 
   _HomePageState(this.title);
 
@@ -69,6 +72,51 @@ class _HomePageState extends State<HomePage> {
                   _start(tokenInputController.text);
                 },
               ),
+              ElevatedButton(
+                child: Text("US"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: pressedUS ? Colors.yellow : Colors.blue, // background
+                  foregroundColor: Colors.white, // foreground
+                ),
+                onPressed: () => {
+                  setState(() {
+                    pressedUS = !pressedUS;
+                    pressedEU = false;
+                    pressedSGP = false;
+                  }),
+                  DATACENTER = 'US',
+                },
+              ),
+              ElevatedButton(
+                child: Text("EU"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: pressedEU ? Colors.yellow : Colors.blue, // background
+                  foregroundColor: Colors.white, // foreground
+                ),
+                onPressed: () => {
+                  setState(() {
+                    pressedEU = !pressedEU;
+                    pressedUS = false;
+                    pressedSGP = false;
+                  }),
+                  DATACENTER = 'EU',
+                },
+              ),
+              ElevatedButton(
+                child: Text("SG"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: pressedSGP ? Colors.yellow : Colors.blue, // background
+                  foregroundColor: Colors.white, // foreground
+                ),
+                onPressed: () => {
+                  setState(() {
+                    pressedSGP = !pressedSGP;
+                    pressedUS = false;
+                    pressedEU = false;
+                  }),
+                  DATACENTER = 'SG',
+                },
+              ),
             ],
           ),
         ),
@@ -80,16 +128,18 @@ class _HomePageState extends State<HomePage> {
     await _logErrors(() async {
       await Jumio.init(authorizationToken, DATACENTER);
       final result = await Jumio.start(
-          // {
-          // "loadingCircleIcon": "#000000",
-          // "loadingCirclePlain": "#000000",
-          // "loadingCircleGradientStart": "#000000",
-          // "loadingCircleGradientEnd": "#000000",
-          // "loadingErrorCircleGradientStart": "#000000",
-          // "loadingErrorCircleGradientEnd": "#000000",
-          // "primaryButtonBackground": {"light": "#FFC0CB", "dark": "#FF1493"}
-          // }
-          );
+        {
+          // "background": "#AC3D9A",
+          // "primaryColor": "#FF5722",
+          // "loadingCircleIcon": "#F2F233",
+          // "loadingCirclePlain": "#57ffc7",
+          // "loadingCircleGradientStart": "#EC407A",
+          // "loadingCircleGradientEnd": "#bc2e41",
+          // "loadingErrorCircleGradientStart": "#AC3D9A",
+          // "loadingErrorCircleGradientEnd": "#C31322",
+          // "primaryButtonBackground": {"light": "#D900ff00", "dark": "#9Edd9E"}
+        }
+      );
       await _showDialogWithMessage("Jumio has completed. Result: $result");
     });
   }
