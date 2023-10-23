@@ -2,7 +2,8 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.5.0 of the Jumio SDK. If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
+This plugin is compatible with version 4.5.0 of the Jumio iOS SDK and 4.5.1 of the Jumio Android SDK.     
+If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
 - [Compatibility](#compatibility)
@@ -40,7 +41,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.5.0
+  jumio_mobile_sdk_flutter: ^4.5.1
 ```
 
 And install the dependency:

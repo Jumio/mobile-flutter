@@ -51,7 +51,7 @@ android {
 }
 
 ext {
-    SDK_VERSION = "4.5.0"
+    SDK_VERSION = "4.5.1"
 }
 
 dependencies {
