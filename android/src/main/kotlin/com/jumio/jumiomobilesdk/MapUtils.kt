@@ -12,4 +12,4 @@ fun <K, V> Map<K, V?>.compact(): Map<K, V> = filter { it.value != null }.mapValu
  * to their lowercase counterparts. If two keys become equal in this way, the latter one's
  * associated value will be retained.
  */
-fun <V> Map<String, V>.withLowercaseKeys() = mapKeys { it.key.toLowerCase(Locale.ROOT) }
+fun <V> Map<String, V>.withLowercaseKeys() = mapKeys { it.key.lowercase(Locale.ROOT) }

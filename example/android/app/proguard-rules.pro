@@ -19,17 +19,25 @@
 #   public *;
 #}
 
+# Jumio
 -keep class io.flutter.embedding.android.FlutterActivity
 -keep class com.jumio.** { *; }
 -keep class jumio.** { *; }
+# keep constraintlayout.motion classes and members for face help animation
+-keep class androidx.constraintlayout.motion.widget.** { *; }
+
+#Microblink
 -keep class com.microblink.** { *; }
 -keep class com.microblink.**$* { *; }
--keep public class com.iproov.sdk.IProov {public *; }
 
+#IProov
+-keep public class com.iproov.sdk.IProov { public *; }
+
+#JMRTD
 -keep class org.jmrtd.** { *; }
--keep class net.sf.scuba.** {*;}
--keep class org.bouncycastle.** {*;}
--keep class org.ejbca.** {*;}
+-keep class net.sf.scuba.** { *; }
+-keep class org.bouncycastle.** { *; }
+-keep class org.ejbca.** { *; }
 
 -dontwarn java.nio.**
 -dontwarn org.codehaus.**

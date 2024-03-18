@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 ## Usage
 Adjust your data center in the **credentials.dart** file, open a bash and run the following commands:
 ```
-cd MyProject
+cd my_project
 flutter pub get
 cd ios && pod install
 ```

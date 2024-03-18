@@ -102,6 +102,7 @@ class JumioModule : ModuleBase() {
                                 mapOf(
                                     "selectedCountry" to idResult.country,
                                     "selectedDocumentType" to idResult.idType,
+                                    "selectedDocumentSubType" to idResult.idSubType,
                                     "idNumber" to idResult.documentNumber,
                                     "personalNumber" to idResult.personalNumber,
                                     "issuingDate" to idResult.issuingDate,

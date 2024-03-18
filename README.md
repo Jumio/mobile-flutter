@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.7.0 of the Jumio iOS SDK and 4.7.1 of the Jumio Android SDK.    
+This plugin is compatible with version 4.9.0 of the Jumio SDK.    
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -19,6 +19,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Callbacks](#callbacks)
 - [Result Objects](#result-objects)
 - [FAQ](#faq)
+   - [Face help animation breaks on Android](#face-help-animation-breaks-on-android)
    - [iOS Runs on Debug, Crashes on Release Build](#ios-runs-on-debug-crashes-on-release-build)
    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
    - [iOS Localization](#ios-localization)
@@ -27,7 +28,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.13.6 and Dart 3.1.3
+Compatibility has been tested with a Flutter version of 3.19.1 and Dart 3.4.0
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -43,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.7.1
+  jumio_mobile_sdk_flutter: ^4.9.0
 ```
 
 And install the dependency:
@@ -61,7 +62,16 @@ cd ios && pod install
 1. Add the "**NSCameraUsageDescription**"-key to your Info.plist file.    
 2. Your app's deployment target must be at least iOS 11.0
 
+#### NFC
+
+Check out the [NFC setup guide](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/integration_guide.md#nfc-setup).
+
+#### Digital Identity
+
+Check out the [Digital Identity setup guide](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/integration_guide.md#digital-identity-setup).
+
 #### Device Risk
+
 To include Jumio's Device Risk functionality, you need to add `pod Jumio/DeviceRisk` to your Podfile.
 
 ### Android
@@ -163,8 +173,10 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 
 | Customization key                               |
 |:------------------------------------------------|
-| iProovAnimationForeground                       |
-| iProovAnimationBackground                       |
+| facePrimary                                     |
+| faceSecondary                                   |
+| faceOutline                                     |
+| faceAnimationForeground                         |
 | iProovFilterForegroundColor                     |
 | iProovFilterBackgroundColor                     |
 | iProovTitleTextColor                            |
@@ -179,17 +191,22 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | primaryButtonBackground                         |
 | primaryButtonBackgroundPressed                  |
 | primaryButtonBackgroundDisabled                 |
-| primaryButtonText                               |
+| primaryButtonForeground                         |
+| primaryButtonForegroundPressed                  |
+| primaryButtonForegroundDisabled                 |
+| primaryButtonOutline                            |
 | secondaryButtonBackground                       |
 | secondaryButtonBackgroundPressed                |
 | secondaryButtonBackgroundDisabled               |
-| secondaryButtonText                             |
+| secondaryButtonForeground                       |
+| secondaryButtonForegroundPressed                |
+| secondaryButtonForegroundDisabled               |
+| secondaryButtonOutline                          |
 | bubbleBackground                                |
 | bubbleForeground                                |
 | bubbleBackgroundSelected                        |
 | bubbleCircleItemForeground                      |
 | bubbleCircleItemBackground                      |
-| bubbleSelectionIconForeground                   |
 | loadingCirclePlain                              |
 | loadingCircleGradientStart                      |
 | loadingCircleGradientEnd                        |
@@ -208,18 +225,22 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | scanViewBubbleForeground                        |
 | scanViewBubbleBackground                        |
 | scanViewForeground                              |
-| scanViewAnimationShutter                        |
+| scanViewDocumentShutter                         |
+| scanViewFaceShutter                             |
 | searchBubbleBackground                          |
 | searchBubbleForeground                          |
-| searchBubbleListItemSelected                    |
+| searchBubbleBackgroundSelected                  |
+| searchBubbleOutline                             |
 | confirmationImageBackground                     |
 | confirmationImageBackgroundBorder               |
 | confirmationIndicatorActive                     |
 | confirmationIndicatorDefault                    |
+| confirmationImageBorder                         | 
 | background                                      |
 | navigationIconColor                             |
 | textForegroundColor                             |
 | primaryColor                                    |
+| selectionIconForeground                         |
 
 All colors are provided with a HEX string with the following formats: `#ff00ff` or `#66ff00ff` if you want to set the alpha level.
 
@@ -252,28 +273,29 @@ JumioSDK will return `EventResult` in case of a successfully completed workflow 
 
 ### EventResult
 
-| Parameter            | Type     | Max. length | Description                                                                                                |
-|:---------------------|:---------|:------------|:-----------------------------------------------------------------------------------------------------------|
-| selectedCountry      | String   | 3           | [ISO 3166-1 alpha-3](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code as provided or selected |
-| selectedDocumentType | String   | 16          | PASSPORT, DRIVER_LICENSE, IDENTITY_CARD or VISA                                                            |
-| idNumber             | String   | 100         | Identification number of the document                                                                      |
-| personalNumber       | String   | 14          | Personal number of the document                                                                            |
-| issuingDate          | Date     |             | Date of issue                                                                                              |
-| expiryDate           | Date     |             | Date of expiry                                                                                             |
-| issuingCountry       | String   | 3           | Country of issue as ([ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)) country code  |
-| lastName             | String   | 100         | Last name of the customer                                                                                  |
-| firstName            | String   | 100         | First name of the customer                                                                                 |
-| dob                  | Date     |             | Date of birth                                                                                              |
-| gender               | String   | 1           | m, f or x                                                                                                  |
-| originatingCountry   | String   | 3           | Country of origin as ([ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)) country code |
-| addressLine          | String   | 64          | Street name                                                                                                |
-| city                 | String   | 64          | City                                                                                                       |
-| subdivision          | String   | 3           | Last three characters of [ISO 3166-2:US](http://en.wikipedia.org/wiki/ISO_3166-2:US) state code            |
-| postCode             | String   | 15          | Postal code                                                                                                |
-| mrzData              | MRZ-DATA |             | MRZ data, see table below                                                                                  |
-| optionalData1        | String   | 50          | Optional field of MRZ line 1                                                                               |
-| optionalData2        | String   | 50          | Optional field of MRZ line 2                                                                               |
-| placeOfBirth         | String   | 255         | Place of Birth                                                                                             |
+| Parameter               | Type     | Max. length | Description                                                                                                |
+|:------------------------|:---------|:------------|:-----------------------------------------------------------------------------------------------------------|
+| selectedCountry         | String   | 3           | [ISO 3166-1 alpha-3](http://en.wikipedia.org/wiki/ISO_3166-1_alpha-3) country code as provided or selected |
+| selectedDocumentType    | String   | 16          | PASSPORT, DRIVER_LICENSE, IDENTITY_CARD or VISA                                                            |
+| selectedDocumentSubType | String   |             | Sub type of the scanned ID                                                                                 |
+| idNumber                | String   | 100         | Identification number of the document                                                                      |
+| personalNumber          | String   |             | Personal number of the document                                                                            |
+| issuingDate             | Date     |             | Date of issue                                                                                              |
+| expiryDate              | Date     |             | Date of expiry                                                                                             |
+| issuingCountry          | String   | 3           | Country of issue as ([ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)) country code  |
+| lastName                | String   | 100         | Last name of the customer                                                                                 |
+| firstName               | String   | 100         | First name of the customer                                                                                 |
+| dob                     | Date     |             | Date of birth                                                                                              |
+| gender                  | String   | 1           | m, f or x                                                                                                  |
+| originatingCountry      | String   | 3           | Country of origin as ([ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)) country code |
+| addressLine             | String   | 64          | Street name                                                                                                |
+| city                    | String   | 64          | City                                                                                                       |
+| subdivision             | String   | 3           | Last three characters of [ISO 3166-2:US](http://en.wikipedia.org/wiki/ISO_3166-2:US) state code            |
+| postCode                | String   | 15          | Postal code                                                                                                |
+| mrzData                 | MRZ-DATA |             | MRZ data, see table below                                                                                  |
+| optionalData1           | String   | 50          | Optional field of MRZ line 1                                                                               |
+| optionalData2           | String   | 50          | Optional field of MRZ line 2                                                                               |
+| placeOfBirth            | String   | 255         | Place of Birth                                                                                             |
 
 ### MRZ-Data
 
@@ -304,6 +326,12 @@ You also need to copy those files to the "ios/Assets" folder for Flutter to reco
 You need to copy those files to the assets folder of your Android project (Path: "app/src/main/assets/")
 
 ## FAQ
+
+### Face help animation breaks on Android
+If face help animation looks as expected in debug builds, but breaks in release builds, please make sure to include the following rule in your [**Proguard** file](example/android/app/proguard-rules.pro):
+```
+-keep class androidx.constraintlayout.motion.widget.** { *; }
+```
 
 ### iOS Simulator shows a white-screen, when the Jumio SDK is started
 The Jumio SDK does not support the iOS Simulator. Please run the Jumio SDK only on physical devices.
@@ -352,23 +380,12 @@ Please refer to [iOS guide](https://github.com/Jumio/mobile-sdk-ios#via-cocoapod
 
 ### iOS Localization
 After installing Cocoapods, please localize your iOS application using the languages provided at the following path:   
-`ios -> Pods -> Jumio -> Localizations -> xx.lproj`
+`ios -> Pods -> Jumio -> Localization -> xx.lproj`
 
 ![Localization](images/Flutter_localization.gif)
 
-### iProov String Keys
-Please note that as of 3.8.0. the following keys have been added to the SDK:
-
-* `"IProov_IntroFlash"`
-* `"IProov_IntroLa"`
-* `"IProov_PromptLivenessAlignFace"`
-* `"IProov_PromptLivenessNoTarget"`
-* `"IProov_PromptLivenessScanCompleted"`
-* `"IProov_PromptTooClose"`
-* `"IProov_PromptTooFar"`
-
 Make sure your `podfile` is up to date and that new pod versions are installed properly so your `Localizable` files include new strings.
-For more information, please refer to our [Changelog](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/changelog) and [Transition Guide](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/transition-guide_id-verification-fastfill.md#3.8.0).
+For more information, please refer to our [Changelog](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/changelog) and [Transition Guide](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/transition_guide.md).
 
 ### Empty Country List for Android Release Build
 If country list is empty for the Android release build, please make sure your app has the proper internet permissions. Without a working network connection, countries won't load in and the list will stay empty.
