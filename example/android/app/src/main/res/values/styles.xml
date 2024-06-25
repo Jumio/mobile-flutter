@@ -46,6 +46,7 @@
 
         <!--        <item name="jumio_circle_item_background">#00B0FF</item>-->
         <!--        <item name="jumio_circle_item_foreground">#E0E011</item>-->
+        <!--        <item name="jumio_doc_type_icon_foreground">#E0E011</item>-->
 
         <!--        <item name="jumio_selection_icon_foreground">#123cff</item>-->
 
@@ -117,5 +118,4 @@
         <!--        <item name="iproov_genuinePresenceAssurance_notReadyOvalStrokeColor">#060668</item>-->
         <!--        <item name="iproov_genuinePresenceAssurance_readyOvalStrokeColor">#E91E63</item>-->
     </style>
-
 </resources>

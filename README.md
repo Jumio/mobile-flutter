@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.9.0 of the Jumio SDK.    
+This plugin is compatible with version 4.10.0 of the Jumio SDK.    
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -28,7 +28,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.19.1 and Dart 3.4.0
+Compatibility has been tested with a Flutter version of 3.22.2 and Dart 3.4.3
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -44,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.9.0
+  jumio_mobile_sdk_flutter: ^4.10.0
 ```
 
 And install the dependency:
@@ -205,8 +205,7 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | bubbleBackground                                |
 | bubbleForeground                                |
 | bubbleBackgroundSelected                        |
-| bubbleCircleItemForeground                      |
-| bubbleCircleItemBackground                      |
+| bubbleOutline                                   |
 | loadingCirclePlain                              |
 | loadingCircleGradientStart                      |
 | loadingCircleGradientEnd                        |
@@ -214,22 +213,19 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | loadingErrorCircleGradientEnd                   |
 | loadingCircleIcon                               |
 | scanOverlay                                     |
-| scanOverlayFill                                 |
-| scanOverlayTransparent                          |
 | scanOverlayBackground                           |
 | nfcPassportCover                                |
 | nfcPassportPageDark                             |
 | nfcPassportPageLight                            |
 | nfcPassportForeground                           |
 | nfcPhoneCover                                   |
-| scanViewBubbleForeground                        |
-| scanViewBubbleBackground                        |
+| scanViewTooltipForeground                       |
+| scanViewTooltipBackground                       |
 | scanViewForeground                              |
 | scanViewDocumentShutter                         |
 | scanViewFaceShutter                             |
 | searchBubbleBackground                          |
 | searchBubbleForeground                          |
-| searchBubbleBackgroundSelected                  |
 | searchBubbleOutline                             |
 | confirmationImageBackground                     |
 | confirmationImageBackgroundBorder               |
@@ -385,7 +381,7 @@ After installing Cocoapods, please localize your iOS application using the langu
 ![Localization](images/Flutter_localization.gif)
 
 Make sure your `podfile` is up to date and that new pod versions are installed properly so your `Localizable` files include new strings.
-For more information, please refer to our [Changelog](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/changelog) and [Transition Guide](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/transition_guide.md).
+For more information, please refer to our [Changelog](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/changelog.md) and [Transition Guide](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/transition_guide.md).
 
 ### Empty Country List for Android Release Build
 If country list is empty for the Android release build, please make sure your app has the proper internet permissions. Without a working network connection, countries won't load in and the list will stay empty.
