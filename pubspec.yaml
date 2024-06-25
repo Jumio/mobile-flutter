@@ -5,7 +5,7 @@ homepage: https://github.com/Jumio/mobile-flutter
 license: SEE LICENSE IN README.md
 
 environment:
-  sdk: '>=3.0.0'
+  sdk: '^3.0.0'
   flutter: '>=2.10.3'
 
 dependencies:
