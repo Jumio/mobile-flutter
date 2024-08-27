@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.10.0 of the Jumio SDK.    
+This plugin is compatible with version 4.11.0 of the Jumio SDK.    
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -28,7 +28,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.22.2 and Dart 3.4.3
+Compatibility has been tested with a Flutter version of 3.24.1 and Dart 3.5.1
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -44,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.10.0
+  jumio_mobile_sdk_flutter: ^4.11.0
 ```
 
 And install the dependency:
@@ -353,8 +353,10 @@ If iOS application crashes immediately after launch and without additional infor
 ```
 post_install do |installer|
     installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
+      if ['iProov', 'DatadogRUM', 'DatadogCore', 'DatadogInternal'].include? target.name
+        target.build_configurations.each do |config|
           config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+        end
       end
     end
 end
@@ -365,8 +367,10 @@ If you are working with Xcode 15 and above, please make sure the following lines
 ```
 post_install do |installer|
     installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
+      if ['iProov', 'DatadogRUM', 'DatadogCore', 'DatadogInternal'].include? target.name
+        target.build_configurations.each do |config|
           config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+        end
       end
     end
 end
@@ -396,12 +400,13 @@ The standard Flutter template will not include this tag automatically, but still
 If you have any questions regarding our implementation guide please contact Jumio Customer Service at support@jumio.com or https://support.jumio.com. The Jumio online helpdesk contains a wealth of information regarding our service including demo videos, product descriptions, FAQs and other things that may help to get you started with Jumio. Check it out at: https://support.jumio.com.
 
 ## Licenses
+The source code and software available on this website (“Software”) is provided by Jumio Corp. or its affiliated group companies (“Jumio”) "as is” and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall Jumio be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including but not limited to procurement of substitute goods or services, loss of use, data, profits, or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this Software, even if advised of the possibility of such damage.
+
+In any case, your use of this Software is subject to the terms and conditions that apply to your contractual relationship with Jumio. As regards Jumio’s privacy practices, please see our privacy notice available here: [Privacy Policy](https://www.jumio.com/legal-information/privacy-policy/).
+
 The software contains third-party open source software. For more information, please see [Android licenses](https://github.com/Jumio/mobile-sdk-android/tree/master/licenses) and [iOS licenses](https://github.com/Jumio/mobile-sdk-ios/tree/master/licenses)
 
 This software is based in part on the work of the Independent JPEG Group.
 
 ## Copyright
 &copy; Jumio Corp. 268 Lambert Avenue, Palo Alto, CA 94306
-
-The source code and software available on this website (“Software”) is provided by Jumio Corp. or its affiliated group companies (“Jumio”) "as is” and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall Jumio be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including but not limited to procurement of substitute goods or services, loss of use, data, profits, or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this Software, even if advised of the possibility of such damage.
-In any case, your use of this Software is subject to the terms and conditions that apply to your contractual relationship with Jumio. As regards Jumio’s privacy practices, please see our privacy notice available here: [Privacy Policy](https://www.jumio.com/legal-information/privacy-policy/).
