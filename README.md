@@ -111,21 +111,26 @@ android {
 ```
 
 __Upgrade Gradle build tools__    
-The plugin requires at least version 4.0.0 of the Android build tools. This transitively requires and upgrade of the Gradle wrapper to version 7 and an update to Java 11.
+The plugin requires at least version 8.0.0 of the Android build tools. This transitively requires an upgrade of the Gradle wrapper to version 8 and an update to Java 11.
 
-Upgrade build tools version to 7.3.0 in android/build.gradle:
+If necessary, upgrade your build tools version to 8.2.2 in `android/build.gradle`:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:7.3.0'
+    classpath 'com.android.tools.build:gradle:8.2.2'
   }
 }
 ```
 
-Modify the Gradle Wrapper version in `android/gradle.properties`.
+If necessary, modify the Gradle Wrapper version in `android/gradle.wrapper/gradle-wrapper.properties`: 
+
+```groovy
+...
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-bin.zip
+```
 
 #### Proguard    
 For information on Android Proguard Rules concerning the Jumio SDK, please refer to our [Android guides](https://github.com/Jumio/mobile-sdk-android#proguard).
