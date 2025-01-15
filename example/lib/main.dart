@@ -40,6 +40,19 @@ class _HomePageState extends State<HomePage> {
   _HomePageState(this.title);
 
   @override
+  void initState() {
+    super.initState();
+    initModelPreloading();
+  }
+
+  void initModelPreloading() {
+    Jumio.setPreloaderFinishedBlock(() {
+      print('All models are preloaded. You may start the SDK now!');
+    });
+    Jumio.preloadIfNeeded();
+  }
+
+  @override
   void dispose() {
     tokenInputController.dispose();
     super.dispose();

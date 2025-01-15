@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    compileSdk 34
+    compileSdk 35
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -62,6 +62,23 @@ android {
     kotlin {
         jvmToolchain(17)
     }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/versions/9/OSGI-INF/MANIFEST.MF")
+        resources.excludes.add("META-INF/kotlin-project-structure-metadata.json")
+        resources.excludes.add("META-INF/kotlinx_coroutines_core.version")
+        resources.excludes.add("META-INF/LICENSE.md")
+        resources.excludes.add("META-INF/LICENSE-notice.md")
+        resources.excludes.add("commonMain/default/manifest")
+        resources.excludes.add("commonMain/default/linkdata/module")
+        resources.excludes.add("commonMain/default/linkdata/**/*.knm")
+        resources.excludes.add("nativeMain/default/manifest")
+        resources.excludes.add("nativeMain/default/linkdata/module")
+        resources.excludes.add("nativeMain/default/linkdata/**/*.knm")
+        resources.excludes.add("nonJvmMain/default/manifest")
+        resources.excludes.add("nonJvmMain/default/linkdata/module")
+        resources.excludes.add("nonJvmMain/default/linkdata/**/*.knm")
+    }
 }
 
 flutter {
@@ -69,6 +86,6 @@ flutter {
 }
 
 dependencies {
-    def kotlin_version = '1.9.24'
+    def kotlin_version = '2.0.20'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

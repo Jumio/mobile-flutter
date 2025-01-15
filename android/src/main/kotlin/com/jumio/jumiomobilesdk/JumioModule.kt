@@ -2,17 +2,35 @@ package com.jumio.jumiomobilesdk
 
 import android.content.Intent
 import android.os.Build
+import android.os.Handler
+import android.os.Looper
 import com.jumio.defaultui.JumioActivity
 import com.jumio.sdk.credentials.JumioCredentialCategory.FACE
 import com.jumio.sdk.credentials.JumioCredentialCategory.ID
 import com.jumio.sdk.enums.JumioDataCenter
+import com.jumio.sdk.preload.JumioPreloadCallback
+import com.jumio.sdk.preload.JumioPreloader
 import com.jumio.sdk.result.JumioResult
+import io.flutter.embedding.android.FlutterActivity
 import io.flutter.plugin.common.MethodCall
+import io.flutter.plugin.common.MethodChannel
 
-class JumioModule : ModuleBase() {
+class JumioModule : ModuleBase(), JumioPreloadCallback {
     companion object {
         private const val REQUEST_CODE = 101
     }
+
+    private var channel: MethodChannel? = null
+
+    init {
+        onHostActivitySet = {
+            (hostActivity as FlutterActivity).provideFlutterEngine(hostActivity)?.let {
+                channel = MethodChannel(it.dartExecutor, "com.jumio.fluttersdk")
+            }
+        }
+    }
+
+    private var preloaderFinishedCallback: (() -> Unit)? = null
 
     @Suppress("RedundantLambdaArrow")
     override val methods: Map<String, (MethodCall) -> Unit> = mapOf(
@@ -23,6 +41,8 @@ class JumioModule : ModuleBase() {
             )
         },
         "start" to { _ -> start() },
+        "setPreloaderFinishedBlock" to { _ -> setPreloaderFinishedBlock() },
+        "preloadIfNeeded" to { _ -> preloadIfNeeded() }
     )
 
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
@@ -170,5 +190,27 @@ class JumioModule : ModuleBase() {
         JumioDataCenter.valueOf(dataCenter)
     } catch (e: IllegalArgumentException) {
         null
+    }
+
+    private fun setPreloaderFinishedBlock() {
+        with(JumioPreloader) {
+            init(hostActivity)
+            setCallback(this@JumioModule)
+        }
+        preloaderFinishedCallback = {
+            Handler(Looper.getMainLooper()).post {
+                channel?.invokeMethod("preloadFinished", null)
+            }
+        }
+    }
+
+    private fun preloadIfNeeded() {
+        with(JumioPreloader) {
+            preloadIfNeeded()
+        }
+    }
+
+    override fun preloadFinished() {
+        preloaderFinishedCallback?.invoke()
     }
 }

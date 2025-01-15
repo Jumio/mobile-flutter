@@ -16,4 +16,17 @@ class Jumio {
     return await _channel
         .invokeMethod('start', {'customizations': customizations});
   }
+
+  static Future<void> setPreloaderFinishedBlock(Function completion) async {
+    _channel.setMethodCallHandler((MethodCall call) async {
+      if (call.method == 'preloadFinished') {
+        completion();
+      }
+    });
+    return await _channel.invokeMethod('setPreloaderFinishedBlock');
+  }
+
+  static Future<void> preloadIfNeeded() async {
+    return await _channel.invokeMethod('preloadIfNeeded');
+  }
 }

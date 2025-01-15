@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.11.0 of the Jumio SDK.    
+This plugin is compatible with version 4.12.0 of the Jumio SDK iOS and 4.12.1 of the Jumio SDK Android.    
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -18,17 +18,17 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Configuration](#configuration)
 - [Callbacks](#callbacks)
 - [Result Objects](#result-objects)
+- [Local Models for ID Verification and Liveness](#local-models-for-id-verification-and-liveness)
 - [FAQ](#faq)
    - [Face help animation breaks on Android](#face-help-animation-breaks-on-android)
    - [iOS Runs on Debug, Crashes on Release Build](#ios-runs-on-debug-crashes-on-release-build)
    - [App Crash at Launch for iOS](#app-crash-at-launch-for-ios)
    - [iOS Localization](#ios-localization)
-   - [iProov String Keys](#iproov-string-keys)
    - [Empty Country List for Android Release Build](#empty-country-list-for-android-release-build)
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.24.1 and Dart 3.5.1
+Compatibility has been tested with a Flutter version of 3.27.1 and Dart 3.6.0
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -44,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.11.0
+  jumio_mobile_sdk_flutter: ^4.12.0
 ```
 
 And install the dependency:
@@ -79,7 +79,7 @@ __AndroidManifest__
 Open your AndroidManifest.xml file and change `allowBackup` to false.
 
 ```xml
-<application
+<application>
 ...
 android:allowBackup="false">
 </application>
@@ -129,7 +129,7 @@ If necessary, modify the Gradle Wrapper version in `android/gradle.wrapper/gradl
 
 ```groovy
 ...
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.6-bin.zip
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.7-bin.zip
 ```
 
 #### Proguard    
@@ -284,7 +284,7 @@ JumioSDK will return `EventResult` in case of a successfully completed workflow 
 | issuingDate             | Date     |             | Date of issue                                                                                              |
 | expiryDate              | Date     |             | Date of expiry                                                                                             |
 | issuingCountry          | String   | 3           | Country of issue as ([ISO 3166-1 alpha-3](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-3)) country code  |
-| lastName                | String   | 100         | Last name of the customer                                                                                 |
+| lastName                | String   | 100         | Last name of the customer                                                                                  |
 | firstName               | String   | 100         | First name of the customer                                                                                 |
 | dob                     | Date     |             | Date of birth                                                                                              |
 | gender                  | String   | 1           | m, f or x                                                                                                  |
@@ -312,19 +312,25 @@ JumioSDK will return `EventResult` in case of a successfully completed workflow 
 | personalNumberValid | BOOL   |             | True if personal number check digit is valid or not available, otherwise false |
 | compositeValid      | BOOL   |             | True if composite check digit is valid, otherwise false                        |
 
-## Local Models for JumioDocfinder
+## Local Models for ID Verification and Liveness
 
-If you are using our JumioDocFinder module, you can download our encrypted models and add them to your bundle from [here](https://cdn.mobile.jumio.ai/model/classifier_on_device_ep_99_float16_quant.enc) and [here](https://cdn.mobile.jumio.ai/model/normalized_ensemble_passports_v2_float16_quant.enc).
+Our SDK requires several machine learning models to work best. We recommend to download the files and add them to your project without changing their names (the same way you add Localization files). This will save two network requests on runtime to download these files. 
 
-We recommend to download the files and add them to your project without changing their names (the same way you add Localization files). This will save two network requests on runtime to download these files.
+### Preloading models
+
+You can preload the ML models before initializing the Jumio SDK. To do so set the completion block with `JumioMobileSDK.setPreloaderFinishedBlock` and start the preloading with `JumioMobileSDK.preloadIfNeeded`.
 
 ### iOS
+
+You can find the models in the [Bundling models in the app](https://github.com/Jumio/mobile-sdk-ios/blob/master/docs/integration_guide.md#bundling-models-in-the-app) section of our integration guide.
 
 You also need to copy those files to the "ios/Assets" folder for Flutter to recognize them.
 
 ### Android
 
-You need to copy those files to the assets folder of your Android project (Path: "app/src/main/assets/")
+You can find the models in the [Bundling models in the app](https://github.com/Jumio/mobile-sdk-android/blob/master/docs/integration_guide.md#bundling-models-in-the-app) section of our integration guide.
+
+You need to copy those files to the assets folder of your Android project (Path: "app/src/main/assets/").
 
 ## FAQ
 

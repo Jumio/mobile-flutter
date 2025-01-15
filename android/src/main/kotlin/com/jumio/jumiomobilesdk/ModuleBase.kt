@@ -12,6 +12,8 @@ abstract class ModuleBase : JumioMobileSdkModule {
     protected lateinit var hostActivity: Activity private set
     private var currentAsyncProcessCallback: MethodChannel.Result? = null
 
+    var onHostActivitySet: (() -> Unit)? = null
+
     companion object {
         private const val PERMISSION_REQUEST_CODE_NETVERIFY = 303
     }
@@ -40,6 +42,7 @@ abstract class ModuleBase : JumioMobileSdkModule {
 
     final override fun bindToActivity(activity: Activity) {
         hostActivity = activity
+        onHostActivitySet?.invoke()
     }
 
     final override fun handlePermissionResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?): Boolean {

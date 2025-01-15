@@ -4,6 +4,8 @@ import Jumio
 class JumioModuleFlutter: NSObject, JumioMobileSdkModule {
     fileprivate var jumio: Jumio.SDK?
     fileprivate var jumioVC: Jumio.ViewController?
+    private var channel: FlutterMethodChannel?
+    private var preloaderFinishedCallback: (() -> Void)?
     var result: FlutterResult?
 
     func initialize(call: FlutterMethodCall, result: @escaping FlutterResult) {
@@ -61,6 +63,19 @@ class JumioModuleFlutter: NSObject, JumioMobileSdkModule {
         else { return }
 
         rootViewController.present(jumioVC, animated: true)
+    }
+    
+    func setPreloaderFinishedBlock(call: FlutterMethodCall, result: @escaping FlutterResult, channel: FlutterMethodChannel?) {
+        Jumio.Preloader.shared.delegate = self
+        preloaderFinishedCallback = {
+            DispatchQueue.main.async {
+                channel?.invokeMethod("preloadFinished", arguments: nil)
+            }
+        }
+    }
+    
+    func preloadIfNeeded(call: FlutterMethodCall, result: @escaping FlutterResult) {
+        Jumio.Preloader.shared.preloadIfNeeded()
     }
 
     private func getIDResult(idResult: Jumio.IDResult) -> [String: Any] {
@@ -161,5 +176,11 @@ extension JumioModuleFlutter: Jumio.DefaultUIDelegate {
 
             result?(FlutterError(code: errorCode, message: errorMessage, details: body))
         }
+    }
+}
+
+extension JumioModuleFlutter: JumioPreloaderDelegate {
+    func jumio(finished: Jumio.Preloader) {
+        preloaderFinishedCallback?()
     }
 }

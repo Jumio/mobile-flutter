@@ -2,7 +2,7 @@ group 'com.jumio.jumiomobilesdk'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.9.24'
+    ext.kotlin_version = '2.0.20'
     repositories {
         google()
         mavenCentral()
@@ -36,7 +36,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdk 34
+    compileSdk 35
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -60,7 +60,7 @@ android {
 }
 
 ext {
-    SDK_VERSION = "4.11.0"
+    SDK_VERSION = "4.12.1"
 }
 
 dependencies {
@@ -76,11 +76,10 @@ dependencies {
     implementation "com.jumio.android:liveness:${SDK_VERSION}"
 
     //only for the sample code
-    implementation "androidx.activity:activity-ktx:1.9.0"
+    implementation "androidx.activity:activity-ktx:1.9.3"
 
     //Kotlin
     implementation "androidx.multidex:multidex:2.0.1"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     implementation fileTree(dir: 'libs', include: '*.jar')
 }
