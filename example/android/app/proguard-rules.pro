@@ -21,6 +21,7 @@
 
 # Jumio
 -keep class io.flutter.embedding.android.FlutterActivity
+-keep class io.flutter.embedding.android.FlutterEngineProvider
 -keep class com.jumio.** { *; }
 -keep class jumio.** { *; }
 # keep constraintlayout.motion classes and members for face help animation

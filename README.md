@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.12.0 of the Jumio SDK iOS and 4.12.1 of the Jumio SDK Android.    
+This plugin is compatible with version 4.13.0 of the Jumio SDK.
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -28,7 +28,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.27.1 and Dart 3.6.0
+Compatibility has been tested with a Flutter version of 3.29.3 and Dart 3.7.2
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -44,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.12.0
+  jumio_mobile_sdk_flutter: ^4.13.0
 ```
 
 And install the dependency:
@@ -91,8 +91,8 @@ Make sure your compileSdkVersion, minSdkVersion and buildToolsVersion are high e
 ```groovy
 android {
   minSdkVersion 21
-  compileSdkVersion 33
-  buildToolsVersion "32.0.0"
+  compileSdkVersion 35
+  buildToolsVersion "35.0.0"
   ...
 }
 ```
@@ -113,14 +113,14 @@ android {
 __Upgrade Gradle build tools__    
 The plugin requires at least version 8.0.0 of the Android build tools. This transitively requires an upgrade of the Gradle wrapper to version 8 and an update to Java 11.
 
-If necessary, upgrade your build tools version to 8.2.2 in `android/build.gradle`:
+If necessary, upgrade your build tools version to 8.7.3 in `android/build.gradle`:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:8.2.2'
+    classpath 'com.android.tools.build:gradle:8.7.3'
   }
 }
 ```
@@ -129,15 +129,16 @@ If necessary, modify the Gradle Wrapper version in `android/gradle.wrapper/gradl
 
 ```groovy
 ...
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.7-bin.zip
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.9-bin.zip
 ```
 
 #### Proguard    
 For information on Android Proguard Rules concerning the Jumio SDK, please refer to our [Android guides](https://github.com/Jumio/mobile-sdk-android#proguard).
 
-To enable analytic feedback and internal diagnostics, please make sure to include the line
+To enable analytic feedback and internal diagnostics, please make sure to include the lines:
 ```
 -keep class io.flutter.embedding.android.FlutterActivity
+-keep class io.flutter.embedding.android.FlutterEngineProvider
 ```
 to your Proguard Rules.
 
@@ -364,10 +365,8 @@ If iOS application crashes immediately after launch and without additional infor
 ```
 post_install do |installer|
     installer.pods_project.targets.each do |target|
-      if ['iProov', 'DatadogRUM', 'DatadogCore', 'DatadogInternal'].include? target.name
-        target.build_configurations.each do |config|
-          config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-        end
+      target.build_configurations.each do |config|
+        config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
       end
     end
 end
@@ -378,12 +377,10 @@ If you are working with Xcode 15 and above, please make sure the following lines
 ```
 post_install do |installer|
     installer.pods_project.targets.each do |target|
-      if ['iProov', 'DatadogRUM', 'DatadogCore', 'DatadogInternal'].include? target.name
-        target.build_configurations.each do |config|
-          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
-        end
-      end
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
     end
+  end
 end
 ```
 
