@@ -36,6 +36,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.jumio.jumiomobilesdk'
     compileSdk 35
 
     sourceSets {
