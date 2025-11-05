@@ -29,4 +29,7 @@ class Jumio {
   static Future<void> preloadIfNeeded() async {
     return await _channel.invokeMethod('preloadIfNeeded');
   }
+  static Future<dynamic> getCachedResult() async {
+    return await _channel.invokeMethod('getCachedResult');
+  }
 }

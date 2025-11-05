@@ -520,7 +520,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				MARKETING_VERSION = 4.13.0;
+				MARKETING_VERSION = 4.15.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumio.flutter.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -662,7 +662,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				MARKETING_VERSION = 4.13.0;
+				MARKETING_VERSION = 4.15.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumio.flutter.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -698,7 +698,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Flutter",
 				);
-				MARKETING_VERSION = 4.13.0;
+				MARKETING_VERSION = 4.15.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jumio.flutter.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

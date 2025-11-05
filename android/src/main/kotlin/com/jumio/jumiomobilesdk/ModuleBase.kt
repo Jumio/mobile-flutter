@@ -16,23 +16,38 @@ abstract class ModuleBase : JumioMobileSdkModule {
 
     companion object {
         private const val PERMISSION_REQUEST_CODE_NETVERIFY = 303
+        private var onPermissionGranted: (() -> Unit)? = null
+        private var onPermissionDenied: (() -> Unit)? = null
     }
 
-    protected fun sendResult(value: Any?) {
-        currentAsyncProcessCallback?.success(value)
-        currentAsyncProcessCallback = null
+    protected fun sendResult(value: Any?): Boolean {
+        currentAsyncProcessCallback?.let {
+            it.success(value)
+            currentAsyncProcessCallback = null
+            return true
+        }
+        return false
     }
 
-    protected fun showErrorMessage(msg: String, code: String? = null) {
+    protected fun showErrorMessage(msg: String, code: String? = null): Boolean {
         Log.e("Error", msg)
-        currentAsyncProcessCallback?.error(code ?: "sdkError", msg, null)
-        currentAsyncProcessCallback = null
+        currentAsyncProcessCallback?.let {
+            it.error(code ?: "sdkError", msg, null)
+            currentAsyncProcessCallback = null
+            return true
+        }
+        return false
     }
 
-    protected fun ensurePermissionsAndRun() {
+    protected fun ensurePermissionsAndRun(onGranted: () -> Unit, onDenied: () -> Unit) {
         if (!JumioSDK.hasAllRequiredPermissions(hostActivity)) {
+            onPermissionGranted = onGranted
+            onPermissionDenied = onDenied
+
             val missingPermissions = JumioSDK.getMissingPermissions(hostActivity)
             ActivityCompat.requestPermissions(hostActivity, missingPermissions, PERMISSION_REQUEST_CODE_NETVERIFY)
+        } else {
+            onGranted()
         }
     }
 
@@ -46,10 +61,16 @@ abstract class ModuleBase : JumioMobileSdkModule {
     }
 
     final override fun handlePermissionResult(requestCode: Int, permissions: Array<out String>?, grantResults: IntArray?): Boolean {
-        val permissionsGranted = permissions?.size == grantResults?.size && grantResults?.all { it == PackageManager.PERMISSION_GRANTED } == true
-        val requestCode = requestCode == PERMISSION_REQUEST_CODE_NETVERIFY
+        if (requestCode != PERMISSION_REQUEST_CODE_NETVERIFY) {
+            return false
+        }
 
-        return permissionsGranted && requestCode
+        val allGranted = grantResults != null && grantResults.all { it == PackageManager.PERMISSION_GRANTED }
+        if (allGranted) onPermissionGranted?.invoke() else onPermissionDenied?.invoke()
+
+        onPermissionGranted = null
+        onPermissionDenied = null
+        return true
     }
 
     override fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?) = false

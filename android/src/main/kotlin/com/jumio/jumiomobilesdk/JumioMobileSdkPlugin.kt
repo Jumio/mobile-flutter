@@ -13,6 +13,8 @@ import io.flutter.plugin.common.PluginRegistry
 class JumioMobileSdkPlugin : FlutterPlugin, MethodCallHandler, ActivityAware, PluginRegistry.ActivityResultListener, PluginRegistry.RequestPermissionsResultListener {
     companion object{
         private const val CHANNEL_NAME = "com.jumio.fluttersdk"
+        var pendingResult: Map<String, Any?>? = null
+        var pendingError: Map<String, Any?>? = null
     }
 
     private lateinit var channel: MethodChannel

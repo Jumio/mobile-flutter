@@ -21,10 +21,12 @@ class JumioModule : ModuleBase(), JumioPreloadCallback {
     }
 
     private var channel: MethodChannel? = null
+    private var authorizationToken: String? = null
+    private var dataCenter: String? = null
 
     init {
         onHostActivitySet = {
-            (hostActivity as FlutterEngineProvider)?.provideFlutterEngine(hostActivity)?.let {
+            (hostActivity as FlutterEngineProvider).provideFlutterEngine(hostActivity)?.let {
                 channel = MethodChannel(it.dartExecutor, "com.jumio.fluttersdk")
             }
         }
@@ -32,15 +34,22 @@ class JumioModule : ModuleBase(), JumioPreloadCallback {
 
     private var preloaderFinishedCallback: (() -> Unit)? = null
 
-    @Suppress("RedundantLambdaArrow")
     override val methods: Map<String, (MethodCall) -> Unit> = mapOf(
         "init" to { call ->
-            init(
-                call.argument("authorizationToken") ?: "",
-                call.argument("dataCenter") ?: ""
-            )
+            this.authorizationToken = call.argument("authorizationToken")
+            this.dataCenter = call.argument("dataCenter")
+            init(this.authorizationToken ?: "", this.dataCenter ?: "")
         },
-        "start" to { _ -> start() },
+        "start" to { _ ->
+            if (!checkAndSendCachedResult()) {
+                start()
+            }
+        },
+        "getCachedResult" to { _ ->
+            if (!checkAndSendCachedResult()) {
+                sendResult(null)
+            }
+        },
         "setPreloaderFinishedBlock" to { _ -> setPreloaderFinishedBlock() },
         "preloadIfNeeded" to { _ -> preloadIfNeeded() }
     )
@@ -69,30 +78,58 @@ class JumioModule : ModuleBase(), JumioPreloadCallback {
         when {
             jumioDataCenter == null -> showErrorMessage("Invalid Datacenter value.")
             authorizationToken.isEmpty() -> showErrorMessage("Missing required parameters one-time session authorization token.")
-            else ->
-                try {
-                    initSdk(dataCenter, authorizationToken)
-                } catch (e: Exception) {
-                    showErrorMessage("Error initializing the Jumio SDK: " + e.localizedMessage)
-                }
+            else -> {
+                sendResult(null)
+            }
         }
     }
 
-    private fun initSdk(dataCenter: String, authorizationToken: String) {
-        val intent = Intent(hostActivity, JumioActivity::class.java).apply {
-            putExtra(JumioActivity.EXTRA_TOKEN, authorizationToken)
-            putExtra(JumioActivity.EXTRA_DATACENTER, dataCenter)
+    private fun initSdk() {
+        val token = this.authorizationToken
+        val dataCenter = this.dataCenter
 
-            //The following intent extra can be used to customize the Theme of Default UI
-            putExtra(JumioActivity.EXTRA_CUSTOM_THEME, R.style.AppThemeCustomJumio)
+        if (token == null || dataCenter == null) {
+            showErrorMessage("SDK not initialized. Please call init() first.")
+            return
         }
-        hostActivity.startActivityForResult(intent, REQUEST_CODE)
 
-        sendResult(null)
+        try {
+            val intent = Intent(hostActivity, JumioActivity::class.java).apply {
+                putExtra(JumioActivity.EXTRA_TOKEN, token)
+                putExtra(JumioActivity.EXTRA_DATACENTER, dataCenter)
+                putExtra(JumioActivity.EXTRA_CUSTOM_THEME, R.style.AppThemeCustomJumio)
+            }
+            hostActivity.startActivityForResult(intent, REQUEST_CODE)
+        } catch (e: Exception) {
+            showErrorMessage("Error starting the Jumio SDK: " + e.localizedMessage)
+        }
     }
 
     private fun start() {
-        ensurePermissionsAndRun()
+        ensurePermissionsAndRun(
+            onGranted = {
+                initSdk()
+            },
+            onDenied = {
+                showErrorMessage("Camera permissions are required to continue.", "PERMISSIONS_DENIED")
+            }
+        )
+    }
+
+    private fun checkAndSendCachedResult(): Boolean {
+        JumioMobileSdkPlugin.pendingResult?.let {
+            sendResult(it)
+            JumioMobileSdkPlugin.pendingResult = null
+            JumioMobileSdkPlugin.pendingError = null
+            return true
+        }
+        JumioMobileSdkPlugin.pendingError?.let {
+            sendResult(it)
+            JumioMobileSdkPlugin.pendingResult = null
+            JumioMobileSdkPlugin.pendingError = null
+            return true
+        }
+        return false
     }
 
     private fun sendScanResult(jumioResult: JumioResult?) {
@@ -163,26 +200,31 @@ class JumioModule : ModuleBase(), JumioPreloadCallback {
             }
             result["credentials"] = credentialArray
         }
-        sendResult(result)
+        if (!sendResult(result)) {
+            JumioMobileSdkPlugin.pendingResult = result
+            JumioMobileSdkPlugin.pendingError = null
+        }
     }
 
     private fun sendCancelResult(jumioResult: JumioResult?) {
+        val errorMap: Map<String, Any?>
         if (jumioResult?.error != null) {
             val errorMessage = jumioResult.error?.message ?: ""
             val errorCode = jumioResult.error?.code ?: ""
-            sendResult(
-                mapOf(
-                    "errorCode" to errorCode,
-                    "errorMessage" to errorMessage
-                )
+            errorMap = mapOf(
+                "errorCode" to errorCode,
+                "errorMessage" to errorMessage
             )
         } else {
-            sendResult(
-                mapOf(
-                    "errorCode" to "000000",
-                    "errorMessage" to "There was a problem extracting the scan result"
-                )
+            errorMap = mapOf(
+                "errorCode" to "000000",
+                "errorMessage" to "There was a problem extracting the scan result"
             )
+        }
+
+        if (!sendResult(errorMap)) {
+            JumioMobileSdkPlugin.pendingError = errorMap
+            JumioMobileSdkPlugin.pendingResult = null
         }
     }
 

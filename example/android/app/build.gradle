@@ -23,7 +23,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    compileSdk 35
+    compileSdk 36
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -36,8 +36,8 @@ android {
     defaultConfig {
         applicationId "com.jumio.jumiomobilesdk_example"
         namespace "com.jumio.jumiomobilesdk_example"
-        minSdkVersion 21
-        targetSdkVersion 34
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 36
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
         multiDexEnabled true
@@ -86,6 +86,6 @@ flutter {
 }
 
 dependencies {
-    def kotlin_version = '2.0.20'
+    def kotlin_version = '2.1.20'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

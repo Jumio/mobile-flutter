@@ -43,6 +43,16 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     initModelPreloading();
+    _checkCachedResult();
+  }
+
+  Future<void> _checkCachedResult() async {
+    await _logErrors(() async {
+      final result = await Jumio.getCachedResult();
+      if (result != null) {
+        await _showDialogWithMessage("Jumio has completed. Result: $result");
+      }
+    });
   }
 
   void initModelPreloading() {

@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.13.0 of the Jumio SDK.
+This plugin is compatible with version 4.15.0 of the Jumio SDK.
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -28,7 +28,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.29.3 and Dart 3.7.2
+Compatibility has been tested with a Flutter version of 3.35.6 and Dart 3.9.2
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -44,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.13.0
+  jumio_mobile_sdk_flutter: ^4.15.0
 ```
 
 And install the dependency:
@@ -90,9 +90,9 @@ Make sure your compileSdkVersion, minSdkVersion and buildToolsVersion are high e
 
 ```groovy
 android {
-  minSdkVersion 21
-  compileSdkVersion 35
-  buildToolsVersion "35.0.0"
+  minSdkVersion 23
+  compileSdkVersion 36
+  buildToolsVersion "36.0.0"
   ...
 }
 ```
@@ -113,14 +113,14 @@ android {
 __Upgrade Gradle build tools__    
 The plugin requires at least version 8.0.0 of the Android build tools. This transitively requires an upgrade of the Gradle wrapper to version 8 and an update to Java 11.
 
-If necessary, upgrade your build tools version to 8.7.3 in `android/build.gradle`:
+If necessary, upgrade your build tools version to 8.9.3 in `android/build.gradle`:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:8.7.3'
+    classpath 'com.android.tools.build:gradle:8.9.3'
   }
 }
 ```
@@ -129,7 +129,7 @@ If necessary, modify the Gradle Wrapper version in `android/gradle.wrapper/gradl
 
 ```groovy
 ...
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.9-bin.zip
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.11.1-bin.zip
 ```
 
 #### Proguard    
@@ -225,6 +225,11 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | nfcPassportPageLight                            |
 | nfcPassportForeground                           |
 | nfcPhoneCover                                   |
+| nfcPhoneScreen                                  |
+| nfcChipPrimary                                  |
+| nfcChipSecondary                                |
+| nfcChipGlow                                     |
+| nfcPulse                                        |
 | scanViewTooltipForeground                       |
 | scanViewTooltipBackground                       |
 | scanViewForeground                              |

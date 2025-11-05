@@ -36,14 +36,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
-    compileSdk 35
+    namespace 'com.jumio.jumiomobilesdk'
+    compileSdk 36
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 23
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -60,7 +61,7 @@ android {
 }
 
 ext {
-    SDK_VERSION = "4.13.0"
+    SDK_VERSION = "4.15.0"
 }
 
 dependencies {
@@ -77,7 +78,7 @@ dependencies {
     implementation "com.jumio.android:camerax"
 
     //only for the sample code
-    implementation "androidx.activity:activity-ktx:1.9.3"
+    implementation "androidx.activity:activity-ktx:1.10.1"
 
     //Kotlin
     implementation "androidx.multidex:multidex:2.0.1"
