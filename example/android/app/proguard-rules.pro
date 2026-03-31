@@ -31,8 +31,6 @@
 -keep class com.microblink.** { *; }
 -keep class com.microblink.**$* { *; }
 
-#IProov
--keep public class com.iproov.sdk.IProov { public *; }
 
 #JMRTD
 -keep class org.jmrtd.** { *; }

@@ -44,6 +44,10 @@ class _HomePageState extends State<HomePage> {
     super.initState();
     initModelPreloading();
     _checkCachedResult();
+
+    tokenInputController.addListener(() {
+      setState(() {});
+    });
   }
 
   Future<void> _checkCachedResult() async {
@@ -70,6 +74,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    double targetWidth = MediaQuery.of(context).size.width * 0.9;
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title!),
@@ -81,25 +87,42 @@ class _HomePageState extends State<HomePage> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                width: 250.0,
+                width: targetWidth,
+                height: 50,
+                margin: const EdgeInsets.only(bottom: 20),
                 child: TextFormField(
                   controller: tokenInputController,
+                  textAlignVertical: TextAlignVertical.center,
                   decoration: InputDecoration(
-                      border: UnderlineInputBorder(),
-                      labelText: 'Authorization token'),
+                    labelText: 'Authorization token',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(8.0),
+                    ),
+                    suffixIcon: tokenInputController.text.isNotEmpty
+                        ? IconButton(
+                      icon: const Icon(Icons.cancel),
+                      onPressed: () {
+                        tokenInputController.clear();
+                        setState(() {});
+                      },
+                    )
+                        : null,
+                  ),
                 ),
               ),
+
               ElevatedButton(
-                child: Text("Start"),
+                child: const Text("Start"),
                 onPressed: () {
                   _start(tokenInputController.text);
                 },
               ),
+              const SizedBox(height: 16),
               ElevatedButton(
-                child: Text("US"),
+                child: const Text("US"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: pressedUS ? Colors.yellow : Colors.blue, // background
-                  foregroundColor: Colors.white, // foreground
+                  backgroundColor: pressedUS ? Colors.yellow : Colors.blue,
+                  foregroundColor: Colors.white,
                 ),
                 onPressed: () => {
                   setState(() {
@@ -110,11 +133,12 @@ class _HomePageState extends State<HomePage> {
                   DATACENTER = 'US',
                 },
               ),
+              const SizedBox(height: 4),
               ElevatedButton(
-                child: Text("EU"),
+                child: const Text("EU"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: pressedEU ? Colors.yellow : Colors.blue, // background
-                  foregroundColor: Colors.white, // foreground
+                  backgroundColor: pressedEU ? Colors.yellow : Colors.blue,
+                  foregroundColor: Colors.white,
                 ),
                 onPressed: () => {
                   setState(() {
@@ -125,11 +149,12 @@ class _HomePageState extends State<HomePage> {
                   DATACENTER = 'EU',
                 },
               ),
+              const SizedBox(height: 4),
               ElevatedButton(
-                child: Text("SG"),
+                child: const Text("SG"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: pressedSGP ? Colors.yellow : Colors.blue, // background
-                  foregroundColor: Colors.white, // foreground
+                  backgroundColor: pressedSGP ? Colors.yellow : Colors.blue,
+                  foregroundColor: Colors.white,
                 ),
                 onPressed: () => {
                   setState(() {

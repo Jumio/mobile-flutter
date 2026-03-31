@@ -1,3 +1,7 @@
+## 4.17.0
+* Updated Jumio SDK Android and iOS to 4.17.0
+* Update dependencies to Flutter 3.41.6 and Dart 3.11.4
+
 ## 4.15.0
 * Updated Jumio SDK Android and iOS to 4.15.0
 * Update dependencies to Flutter 3.35.6 and Dart 3.9.2

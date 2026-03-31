@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.15.0 of the Jumio SDK.
+This plugin is compatible with version 4.17.0 of the Jumio SDK.
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -28,7 +28,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.35.6 and Dart 3.9.2
+Compatibility has been tested with a Flutter version of 3.41.6 and Dart 3.11.4
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -44,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.15.0
+  jumio_mobile_sdk_flutter: ^4.17.0
 ```
 
 And install the dependency:
@@ -168,20 +168,6 @@ Jumio.start();
 ### Retrieving information
 Scan results are returned from the startXXX() methods asynchronously. Await the returned values to get the results. Exceptions are thrown issues such as invalid credentials, missing API keys, permissions errors and such.
 
-### Cached Results
-The SDK provides a method to retrieve cached results from previous sessions. This is useful when the app is restarted or the Flutter engine is recreated after a scan has completed.
-
-```dart
-Future<void> checkCachedResult() async {
-  final result = await Jumio.getCachedResult();
-  if (result != null) {
-    // Handle the cached result
-  }
-}
-```
-
-It's recommended to call `getCachedResult()` during app initialization (e.g., in `initState()`) to check for any pending results from previous sessions.
-
 ## Customization
 ### Android
 JumioSDK Android appearance can be customized by overriding the custom theme `AppThemeCustomJumio`. An example customization of all values that can be found in the [styles.xml](example/android/app/src/main/res/values/styles.xml) of the DemoApp.
@@ -197,13 +183,6 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | faceSecondary                                   |
 | faceOutline                                     |
 | faceAnimationForeground                         |
-| iProovFilterForegroundColor                     |
-| iProovFilterBackgroundColor                     |
-| iProovTitleTextColor                            |
-| iProovCloseButtonTintColor                      |
-| iProovSurroundColor                             |
-| iProovPromptTextColor                           |
-| iProovPromptBackgroundColor                     |
 | genuinePresenceAssuranceReadyOvalStrokeColor    |
 | genuinePresenceAssuranceNotReadyOvalStrokeColor |
 | livenessAssuranceOvalStrokeColor                |
@@ -247,8 +226,7 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | scanViewTooltipForeground                       |
 | scanViewTooltipBackground                       |
 | scanViewForeground                              |
-| scanViewDocumentShutter                         |
-| scanViewFaceShutter                             |
+| scanViewShutter                                 |
 | searchBubbleBackground                          |
 | searchBubbleForeground                          |
 | searchBubbleOutline                             |
@@ -262,6 +240,7 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | textForegroundColor                             |
 | primaryColor                                    |
 | selectionIconForeground                         |
+| termsOfUseForeground                            |
 
 All colors are provided with a HEX string with the following formats: `#ff00ff` or `#66ff00ff` if you want to set the alpha level.
 
@@ -420,23 +399,6 @@ If country list is empty for the Android release build, please make sure your ap
 If necessary, please add `android.permission.INTERNET` permission to your `AndroidManifest.xml` file.
 
 The standard Flutter template will not include this tag automatically, but still allows Internet access during development to enable communication between Flutter tools and a running app. For more information, please refer to the [official Flutter documentation.](https://flutter.dev/docs/deployment/android#reviewing-the-app-manifest)
-
-### Missing Namespace Error for Android
-If you encounter the error "Namespace not specified. Specify a namespace in the module's build file", add the `namespace` declaration to your app's `android/app/build.gradle` file:
-
-```gradle
-android {
-    namespace 'com.example.yourapp'  // Add this line at the top of android block
-    compileSdk 36
-    
-    defaultConfig {
-        applicationId "com.example.yourapp"
-        // ... rest of your configuration
-    }
-}
-```
-
-Replace `com.example.yourapp` with your actual application package name.
 
 # Support
 

@@ -14,19 +14,22 @@ class JumioModuleFlutter: NSObject, JumioMobileSdkModule {
         let token = args["authorizationToken"] as? String ?? ""
         let dataCenter = args["dataCenter"] as? String ?? ""
 
+        guard let validDataCenter = getJumioDataCenter(dataCenter) else {
+            result(FlutterError(code: "ERROR", message: "Invalid Datacenter value.", details: nil))
+            return
+        }
+
+        if token.isEmpty {
+            result(FlutterError(code: "ERROR", message: "Missing required parameters one-time session authorization token.", details: nil))
+            return
+        }
+
         jumio = Jumio.SDK()
         jumio?.defaultUIDelegate = self
         jumio?.token = token
+        jumio?.dataCenter = validDataCenter
         jumio?.setResourcesBundle(Bundle.main)
 
-        switch dataCenter.lowercased() {
-        case "eu":
-            jumio?.dataCenter = .EU
-        case "sg":
-            jumio?.dataCenter = .SG
-        default:
-            jumio?.dataCenter = .US
-        }
         result(nil)
     }
 
@@ -112,6 +115,19 @@ class JumioModuleFlutter: NSObject, JumioMobileSdkModule {
         ]
 
         return result.compactMapValues { $0 }
+    }
+
+    private func getJumioDataCenter(_ dataCenter: String) -> Jumio.DataCenter? {
+        switch dataCenter.lowercased() {
+        case "eu":
+            return .EU
+        case "sg":
+            return .SG
+        case "us":
+            return .US
+        default:
+            return nil
+        }
     }
 }
 
