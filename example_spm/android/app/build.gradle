@@ -1,0 +1,91 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+android {
+    compileSdk 36
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    defaultConfig {
+        applicationId "com.jumio.jumiomobilesdk_example"
+        namespace "com.jumio.jumiomobilesdk_example"
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 36
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17
+    }
+    kotlin {
+        jvmToolchain(17)
+    }
+
+    packagingOptions {
+        resources.excludes.add("META-INF/versions/9/OSGI-INF/MANIFEST.MF")
+        resources.excludes.add("META-INF/kotlin-project-structure-metadata.json")
+        resources.excludes.add("META-INF/kotlinx_coroutines_core.version")
+        resources.excludes.add("META-INF/LICENSE.md")
+        resources.excludes.add("META-INF/LICENSE-notice.md")
+        resources.excludes.add("commonMain/default/manifest")
+        resources.excludes.add("commonMain/default/linkdata/module")
+        resources.excludes.add("commonMain/default/linkdata/**/*.knm")
+        resources.excludes.add("nativeMain/default/manifest")
+        resources.excludes.add("nativeMain/default/linkdata/module")
+        resources.excludes.add("nativeMain/default/linkdata/**/*.knm")
+        resources.excludes.add("nonJvmMain/default/manifest")
+        resources.excludes.add("nonJvmMain/default/linkdata/module")
+        resources.excludes.add("nonJvmMain/default/linkdata/**/*.knm")
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    def kotlin_version = '2.2.20'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}

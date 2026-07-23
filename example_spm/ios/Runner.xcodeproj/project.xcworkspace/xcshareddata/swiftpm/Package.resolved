@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mobile-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Jumio/mobile-sdk-ios.git",
+      "state" : {
+        "revision" : "ebf88af63fb2b2f6ebc6b70128fb0a5bd63f556d",
+        "version" : "4.18.0"
+      }
+    }
+  ],
+  "version" : 2
+}
