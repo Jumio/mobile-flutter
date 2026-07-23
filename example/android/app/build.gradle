@@ -86,6 +86,6 @@ flutter {
 }
 
 dependencies {
-    def kotlin_version = '2.1.20'
+    def kotlin_version = '2.2.20'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

@@ -1,4 +1,5 @@
 import Jumio
+import UIKit
 
 extension JumioModuleFlutter {
     func customizeSDKColors(customizations: [String: Any?]) -> Jumio.Theme {

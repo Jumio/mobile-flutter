@@ -30,3 +30,29 @@ flutter run
 Start a specific workflow with an `sdk.token` for authorization. 
 
 __Note:__ Flutter supports Hot Reloads.
+
+## Swift Package Manager
+
+Swift Package Manager requires the local checkout folder name to match the package name (`jumio_mobile_sdk_flutter`). 
+Developers should rename the checkout directory if it does not match.
+
+## iOS Example Apps
+
+This repository contains two iOS example applications demonstrating different dependency managers:
+
+- `example` — uses **CocoaPods**
+- `example_spm` — uses **Swift Package Manager (SPM)**
+
+Flutter supports switching between CocoaPods and Swift Package Manager. To select which example app to use, configure Flutter accordingly.
+
+### Use CocoaPods example
+
+Disable Swift Package Manager support:
+
+flutter config --no-enable-swift-package-manager
+
+### Use Swift Package Manager (SPM) example
+
+Enable Swift Package Manager support:
+
+flutter config --enable-swift-package-manager

@@ -1,6 +1,7 @@
 import Flutter
 import UIKit
 
+@objc(JumioMobileSdkPlugin)
 public class SwiftJumioMobileSdkPlugin: NSObject, FlutterPlugin {
     private let jumioModule = JumioModuleFlutter()
     private static var flutterMethodChannel: FlutterMethodChannel? = nil

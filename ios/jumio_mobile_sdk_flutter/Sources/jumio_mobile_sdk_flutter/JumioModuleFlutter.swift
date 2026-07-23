@@ -1,5 +1,9 @@
 import Foundation
 import Jumio
+import Flutter
+#if SWIFT_PACKAGE
+import JumioMobileSdkObjC
+#endif
 
 class JumioModuleFlutter: NSObject, JumioMobileSdkModule {
     fileprivate var jumio: Jumio.SDK?

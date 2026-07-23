@@ -2,7 +2,7 @@ group 'com.jumio.jumiomobilesdk'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '2.1.0'
+    ext.kotlin_version = '2.2.20'
     repositories {
         google()
         mavenCentral()
@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.7.3"
+        classpath "com.android.tools.build:gradle:8.11.1"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -43,7 +43,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 23
+        minSdkVersion 24
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -60,12 +60,12 @@ android {
 }
 
 ext {
-    SDK_VERSION = "4.17.0"
+    SDK_VERSION = "4.18.0"
 }
 
 dependencies {
     // Kotlin
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.1.20"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:2.2.20"
     // only for the sample code
     implementation "androidx.activity:activity-ktx:1.10.1"
     implementation "androidx.multidex:multidex:2.0.1"

@@ -1,4 +1,6 @@
 import Foundation
+import Flutter
+import UIKit
 
 protocol JumioMobileSdkModule {
     var result: FlutterResult? { get set }
