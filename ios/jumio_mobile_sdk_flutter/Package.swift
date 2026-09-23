@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "jumio_mobile_sdk_flutter",
     platforms: [
-        .iOS("13.0")
+        .iOS("15.0")
     ],
     products: [
         .library(
@@ -17,7 +17,7 @@ let package = Package(
         .package(name: "FlutterFramework", path: "../FlutterFramework"),
         .package(
             url: "https://github.com/Jumio/mobile-sdk-ios.git",
-            from: "4.18.0"
+            from: "4.19.0"
         )
     ],
     targets: [

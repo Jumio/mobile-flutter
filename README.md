@@ -2,7 +2,7 @@
 
 Official Jumio Mobile SDK plugin for Flutter
 
-This plugin is compatible with version 4.18.0 of the Jumio SDK.
+This plugin is compatible with version 4.19.0 of the Jumio SDK.
 If you have questions, please reach out to your Account Manager or contact [Jumio Support](#support).
 
 # Table of Contents
@@ -28,7 +28,7 @@ If you have questions, please reach out to your Account Manager or contact [Jumi
 - [Support](#support)
 
 ## Compatibility
-Compatibility has been tested with a Flutter version of 3.44.6 and Dart 3.12.2
+Compatibility has been tested with a Flutter version of 3.47.4 and Dart 3.13.3
 
 ## Setup
 Create Flutter project and add the Jumio Mobile SDK module to it.
@@ -44,7 +44,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  jumio_mobile_sdk_flutter: ^4.18.0
+  jumio_mobile_sdk_flutter: ^4.19.0
 ```
 
 And install the dependency:
@@ -60,7 +60,7 @@ cd ios && pod install
 ### iOS
 
 1. Add the "**NSCameraUsageDescription**"-key to your Info.plist file.    
-2. Your app's deployment target must be at least iOS 11.0
+2. Your app's deployment target must be at least iOS 15.0
 
 #### NFC
 
@@ -91,8 +91,8 @@ Make sure your compileSdkVersion, minSdkVersion and buildToolsVersion are high e
 ```groovy
 android {
   minSdkVersion 24
-  compileSdkVersion 36
-  buildToolsVersion "36.0.0"
+  compileSdkVersion 37
+  buildToolsVersion "37.0.0"
   ...
 }
 ```
@@ -111,16 +111,16 @@ android {
 ```
 
 __Upgrade Gradle build tools__    
-The plugin requires at least version 8.0.0 of the Android build tools. This transitively requires an upgrade of the Gradle wrapper to version 8 and an update to Java 11.
+The plugin requires at least version 9.4.0 of the Android build tools. This transitively requires an upgrade of the Gradle wrapper to version 9.6.0+ and an update to Java 17.
 
-If necessary, upgrade your build tools version to 8.11.1 in `android/build.gradle`:
+If necessary, upgrade your build tools version to 9.4.0 in `android/build.gradle`:
 
 ```groovy
 buildscript {
   ...
   dependencies {
     ...
-    classpath 'com.android.tools.build:gradle:8.11.1'
+    classpath 'com.android.tools.build:gradle:9.4.0'
   }
 }
 ```
@@ -129,7 +129,7 @@ If necessary, modify the Gradle Wrapper version in `android/gradle.wrapper/gradl
 
 ```groovy
 ...
-distributionUrl=https\://services.gradle.org/distributions/gradle-8.14.5-bin.zip
+distributionUrl=https\://services.gradle.org/distributions/gradle-9.7.1-bin.zip
 ```
 
 #### Proguard    
@@ -240,6 +240,17 @@ You can pass the following customization options at [`Jumio.start`](example/lib/
 | textForegroundColor                             |
 | primaryColor                                    |
 | selectionIconForeground                         |
+| fasterVerificationBackCardBackground            |
+| fasterVerificationBackCardOutline               |
+| fasterVerificationBackCardAvatar                |
+| fasterVerificationBackCardDetailLine            |
+| fasterVerificationFrontCardBackground           |
+| fasterVerificationFrontCardOutline              |
+| fasterVerificationFrontCardPhotoBackground      |
+| fasterVerificationFrontCardPhotoAvatar          |
+| fasterVerificationFrontCardDetailLine           |
+| fasterVerificationVerifiedAccent                |
+| fasterVerificationVerifiedBadgeBackground       |
 | termsOfUseForeground                            |
 
 All colors are provided with a HEX string with the following formats: `#ff00ff` or `#66ff00ff` if you want to set the alpha level.
@@ -376,7 +387,7 @@ If you are working with Xcode 15 and above, please make sure the following lines
 post_install do |installer|
     installer.pods_project.targets.each do |target|
       target.build_configurations.each do |config|
-        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '15.0'
     end
   end
 end

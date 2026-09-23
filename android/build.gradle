@@ -10,7 +10,7 @@ buildscript {
     }
 
     dependencies {
-        classpath "com.android.tools.build:gradle:8.11.1"
+        classpath "com.android.tools.build:gradle:9.4.0"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
@@ -36,7 +36,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace 'com.jumio.jumiomobilesdk'
-    compileSdk 36
+    compileSdk 37
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -60,7 +60,7 @@ android {
 }
 
 ext {
-    SDK_VERSION = "4.18.0"
+    SDK_VERSION = "4.19.0"
 }
 
 dependencies {
